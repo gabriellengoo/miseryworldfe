@@ -21,8 +21,8 @@ export default function MiserySite() {
   <Layout>
 {/* HEad */}
          <Head>
-         <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
-  <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
+         {/* <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script> */}
   <title>collaborators</title>
         </Head>
         <Toolbar /> 
@@ -283,7 +283,7 @@ export default function MiserySite() {
 </p>
 
       <p className=' font-light p-3'>
-      <b className=' font-bold'>a misery memory:</b>  while making the poster for misery (at the yard, february 2020), i remember aisha checking in to make sure i don't overextend myself and remember to take breaks 💖 💖. at that time their genuine gesture of kindness made me simultaneously awkward and cry! 
+      <b className=' font-bold'>a misery memory:</b>  while making the poster for misery (at the yard, february 2020), i remember aisha checking in to make sure i don&apos;t overextend myself and remember to take breaks 💖 💖. at that time their genuine gesture of kindness made me simultaneously awkward and cry! 
       looking back now, that interaction helped me make positive and intentional changes to how and who i work with. never going back 💖
 
 </p>
@@ -316,7 +316,7 @@ export default function MiserySite() {
 </p>
 
       <p className=' font-light p-3'>
-      <b className=' font-bold'>a misery memory:</b>when misery came to berlin in 2019 and we were all able to draw out our emotions together and i also got a 'sad femme' flash tattoo to commemorate the moment
+      <b className=' font-bold'>a misery memory:</b>when misery came to berlin in 2019 and we were all able to draw out our emotions together and i also got a &apos;sad femme&apos; flash tattoo to commemorate the moment
 
 </  p>
 
@@ -456,7 +456,7 @@ fawziyah.com
 </  p>
 
       <p className='  font-light p-3'>
-      <b className=' font-bold'>when i am sad this makes me feel better:</b> submerging my self in water, whether that's the sea, ocean or river. did that alot during lockdown. it’s definitely my point of bliss. 
+      <b className=' font-bold'>when i am sad this makes me feel better:</b> submerging my self in water, whether that&apos;s the sea, ocean or river. did that alot during lockdown. it&apos;s definitely my point of bliss. 
 
 </p>
 
@@ -518,7 +518,7 @@ fawziyah.com
 </p>
 
       <p className=' font-light p-3'>
-      <b className=' font-bold'>a misery memory:</b>   yoooowww, my first misery was such a defining point for me. i’d really never hosted a session with so many folk and the gang at misery believed in & opened that door for me. i remember leaving my partner to tend the balm-making table and creeping downstairs for the first time in the night, the warmth of bodies crowded into a basement in east london, i wandered around alone, was embraced by strangers who felt so familiar, so much like family. i filled my plate with the beautiful food on offer and then came back upstairs to my little stall to continue making balms with community. when i left, i talked about the energy in the space for months after. it’s unlike anything else. ever since, i always feel at peace and softened by the love in the space. and i'm so hyped we get to go on foraging walks together now too, aaaah!! 
+      <b className=' font-bold'>a misery memory:</b>   yoooowww, my first misery was such a defining point for me. i&apos;d really never hosted a session with so many folk and the gang at misery believed in & opened that door for me. i remember leaving my partner to tend the balm-making table and creeping downstairs for the first time in the night, the warmth of bodies crowded into a basement in east london, i wandered around alone, was embraced by strangers who felt so familiar, so much like family. i filled my plate with the beautiful food on offer and then came back upstairs to my little stall to continue making balms with community. when i left, i talked about the energy in the space for months after. it’s unlike anything else. ever since, i always feel at peace and softened by the love in the space. and i'm so hyped we get to go on foraging walks together now too, aaaah!! 
 
 </  p>
 

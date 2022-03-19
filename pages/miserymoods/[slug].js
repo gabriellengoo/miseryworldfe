@@ -11,7 +11,7 @@ import Footer from '../../components/Footer';
 import Head from 'next/head';
 import { SectionTitle } from "../../components/SectionTitle";
 
-export const moods = ({ title, phonetextsupport, inperson, communitiesUk, communitiesGlobal, housing, }) => {
+export const Moods = ({ title, phonetextsupport, inperson, communitiesUk, communitiesGlobal, housing, }) => {
   
     // The back-to-top button is hidden at the beginning
   const [showButton, setShowButton] = useState(false);
@@ -38,8 +38,8 @@ export const moods = ({ title, phonetextsupport, inperson, communitiesUk, commun
   return (
     <div>
              <Head>
-       <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
-<script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
+       {/* <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script> */}
 <title>misery moods</title>
       </Head>
       <Toolbar /> 
@@ -173,4 +173,4 @@ export const getServerSideProps = async pageContext => {
   }
 };
 
-export default moods;
+export default Moods;

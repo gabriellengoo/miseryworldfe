@@ -11,7 +11,7 @@ import Footer from '../../components/Footer';
 import Head from 'next/head';
 import { SectionTitle } from "../../components/SectionTitle";
 
-export const madebymisery = ({ title, mainImage, images, body, bodytwo,
+export const Madebymisery = ({ title, mainImage, images, body, bodytwo,
     bodythree, }) => {
   const [imageUrl, setImageUrl] = useState('');
 
@@ -27,8 +27,8 @@ export const madebymisery = ({ title, mainImage, images, body, bodytwo,
   return (
     <div>
              <Head>
-       <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
-<script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
+       {/* <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script> */}
 <title>Made by misery</title>
       </Head>
       <Toolbar /> 
@@ -94,7 +94,7 @@ export const getServerSideProps = async pageContext => {
     }
   }
 
-  const query = encodeURIComponent(`*[ _type == "madebymisery" && slug.current == "${pageSlug}" ] { 
+  const query = encodeURIComponent(`*[ _type == "Madebymisery" && slug.current == "${pageSlug}" ] { 
     title, mainImage, images, body, bodytwo,
     bodythree,
 }`);
@@ -122,4 +122,4 @@ export const getServerSideProps = async pageContext => {
   }
 };
 
-export default madebymisery;
+export default Madebymisery;

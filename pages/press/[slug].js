@@ -11,7 +11,7 @@ import Footer from '../../components/Footer';
 import Head from 'next/head';
 import { SectionTitle } from "../../components/SectionTitle";
 
-export const pressp = ({ title, bodypanels, images, imagestwo, body, bodytwo,
+export const Pressp = ({ title, bodypanels, images, imagestwo, body, bodytwo,
     bodythree, }) => {
   const [imageUrl, setImageUrl] = useState('');
   console.log(title, bodypanels, images, imagestwo, body, bodytwo,
@@ -29,8 +29,8 @@ export const pressp = ({ title, bodypanels, images, imagestwo, body, bodytwo,
   return (
     <div>
              <Head>
-       <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
-<script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
+       {/* <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script> */}
 <title>Press</title>
       </Head>
       <Toolbar /> 
@@ -133,4 +133,4 @@ export const getServerSideProps = async pageContext => {
   }
 };
 
-export default pressp;
+export default Pressp;

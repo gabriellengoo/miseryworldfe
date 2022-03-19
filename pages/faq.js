@@ -34,7 +34,9 @@ export default function Index() {
     ];
 
     const faqComponents = faqs.map((faq) => {
+        <div key={faqs.key}>
         return <FaqComponent title={faq.title} description={faq.description}/>
+        </div>
     });
 
 
@@ -45,8 +47,8 @@ export default function Index() {
     return <div >
 
 <Head>
-         <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
-  <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
+         {/* <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script> */}
   <title>Our Team</title>
         </Head>
         <Toolbar /> 

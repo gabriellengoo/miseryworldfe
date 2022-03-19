@@ -45,7 +45,7 @@ export const Toolbar = () => {
 
 
 <div className="  border-l-2 border-solid border-[black]" onClick={() => router.push('../Menu')}>
-  <svg fill="currentColor" stroke="none" viewBox="0 0 4 4" className='text-black-500  w-17 h-16 drop-shadow-[0_5px_35px_rgba(81,255,156,255)] hover:text-[#e6e6e6] border border-solid rounded-full border-[#20291700] p-3 ' viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <svg fill="currentColor" stroke="none" className='text-black-500  w-17 h-16 drop-shadow-[0_5px_35px_rgba(81,255,156,255)] hover:text-[#e6e6e6] border border-solid rounded-full border-[#20291700] p-3 ' viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path d="M3 13h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1zM3 7h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1zM3 19h18c0.552 0 1-0.448 1-1s-0.448-1-1-1h-18c-0.552 0-1 0.448-1 1s0.448 1 1 1z"></path>
         </svg></div>
 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { findDOMNode } from 'react-dom'
+// import { findDOMNode } from 'react-dom'
 
 class TiltPhaseSix extends Component {
   constructor(props) {
@@ -34,9 +34,9 @@ class TiltPhaseSix extends Component {
     this.handleMouseMove = this.handleMouseMove.bind(this, this.props.handleMouseMove)
     this.handleMouseLeave = this.handleMouseLeave.bind(this, this.props.handleMouseLeave)
   }
-  componentDidMount() {
-    this.element = findDOMNode(this)
-  }
+  // componentDidMount() {
+  //   this.element = findDOMNode(this)
+  // }
   componentWillUnmount() {
     clearTimeout(this.transitionTimeout)
     cancelAnimationFrame(this.updateCall)

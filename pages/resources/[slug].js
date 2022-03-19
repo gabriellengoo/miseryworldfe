@@ -11,7 +11,7 @@ import Footer from '../../components/Footer';
 import Head from 'next/head';
 import { SectionTitle } from "../../components/SectionTitle";
 
-export const resourcesp = ({ title, phonetextsupport, inperson, communitiesUk, communitiesGlobal, housing, grief, sexualhealth, antiblackness, fatphobia, suicide, substancereduction, lgbtqiaherbalism, therapy, movingyourbody, transformativejustice }) => {
+export const Resourcesp = ({ title, phonetextsupport, inperson, communitiesUk, communitiesGlobal, housing, grief, sexualhealth, antiblackness, fatphobia, suicide, substancereduction, lgbtqiaherbalism, therapy, movingyourbody, transformativejustice }) => {
 
 
   console.log( title, phonetextsupport, inperson, communitiesUk, communitiesGlobal, housing,
@@ -41,8 +41,8 @@ export const resourcesp = ({ title, phonetextsupport, inperson, communitiesUk, c
   return (
     <div>
              <Head>
-       <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
-<script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
+       {/* <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script> */}
 <title>Resources for qtibpoc healing</title>
       </Head>
       <Toolbar /> 
@@ -96,7 +96,7 @@ export const resourcesp = ({ title, phonetextsupport, inperson, communitiesUk, c
 
 <section className=' text-center justify-center reletive flex  pt-12 lg:pt-62 px-8  z-50 '>
         <div className={styles.body}>
-                    <Link href="https://philome.la/jace_harr/you-feel-like-shit-an-interactive-self-care-guide/play/index.html"><a target="_blank" className=' py-8 font-black text-3xl tracking-wide' >"you feel like shit" interactive self care guide</a></Link>
+                    <Link href="https://philome.la/jace_harr/you-feel-like-shit-an-interactive-self-care-guide/play/index.html"><a target="_blank" className=' py-8 font-black text-3xl tracking-wide' >&quot;you feel like shit&quot; interactive self care guide</a></Link>
         </div>
         </section>
 
@@ -302,4 +302,4 @@ export const getServerSideProps = async pageContext => {
   }
 };
 
-export default resourcesp;
+export default Resourcesp;

@@ -11,7 +11,7 @@ import Footer from '../../components/Footer';
 import Head from 'next/head';
 import { SectionTitle } from "../../components/SectionTitle";
 
-export const crisisp = ({ title, phonetextsupport, inperson, communitiesUk, communitiesGlobal, housing, grief, sexualhealth, antiblackness,fatphobia, }) => {
+export const Crisisp = ({ title, phonetextsupport, inperson, communitiesUk, communitiesGlobal, housing, grief, sexualhealth, antiblackness,fatphobia, }) => {
 
 
   console.log( title, phonetextsupport, inperson, communitiesUk, communitiesGlobal, housing,
@@ -42,8 +42,8 @@ export const crisisp = ({ title, phonetextsupport, inperson, communitiesUk, comm
   return (
     <div>
              <Head>
-       <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
-<script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
+       {/* <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script> */}
 <title>Crisis</title>
       </Head>
       <Toolbar /> 
@@ -183,4 +183,4 @@ export const getServerSideProps = async pageContext => {
   }
 };
 
-export default crisisp;
+export default Crisisp;

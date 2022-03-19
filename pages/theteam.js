@@ -21,8 +21,8 @@ export default function MiserySite() {
   <Layout>
 {/* HEad */}
          <Head>
-         <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
-  <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
+         {/* <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script> */}
   <title>Our Team</title>
         </Head>
         <Toolbar /> 
@@ -127,7 +127,7 @@ export default function MiserySite() {
       </p>
 
       <p className=' font-light p-3'>
-      <b className=' font-bold'>a misery memory:</b>so many memories… from going to the crisis unit to pulling it back together. misery brings me joy and hope and keeps on reminding me of how blissful and blessed life can be. when aisha called me to get involved with misery, it was like an invitation to come home. i slept in their bed one time in brooklyn during the summer of 2015 before we even really knew each other. it was the night britain decided to brexit and everything was melting but maybe that's where the seed of our miserable dreams were planted… who really knows how magic happens? 
+      <b className=' font-bold'>a misery memory:</b>so many memories… from going to the crisis unit to pulling it back together. misery brings me joy and hope and keeps on reminding me of how blissful and blessed life can be. when aisha called me to get involved with misery, it was like an invitation to come home. i slept in their bed one time in brooklyn during the summer of 2015 before we even really knew each other. it was the night britain decided to brexit and everything was melting but maybe that&apos;s where the seed of our miserable dreams were planted… who really knows how magic happens? 
 </p>
 
       <p className=' font-light p-3'>

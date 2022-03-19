@@ -9,7 +9,7 @@ import Link from 'next/link'
 import Footer from '../../components/Footer';
 
 
-export const eventsarchivebby = ({ name, description, images, summary }) => {
+export const Eventsarchivebby = ({ name, description, images, summary }) => {
   const [imageUrl, setImageUrl] = useState('');
 
   useEffect(() => {
@@ -54,7 +54,7 @@ export const getServerSideProps = async pageContext => {
     }
   }
 
-  const query = encodeURIComponent(`*[ _type == "eventsarchivebby" && slug.current == "${pageSlug}" ]`);
+  const query = encodeURIComponent(`*[ _type == "Eventsarchivebby" && slug.current == "${pageSlug}" ]`);
   const url = `https://ngizar2r.api.sanity.io/v1/data/query/production?query=${query}`;
 
   const result = await fetch(url).then(res => res.json());
@@ -76,4 +76,4 @@ export const getServerSideProps = async pageContext => {
   }
 };
 
-export default eventsarchivebby;
+export default Eventsarchivebby;

@@ -24,8 +24,8 @@ export default function MiserySite() {
 <Layout>
    
        <Head>
-       <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
-<script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script>
+       {/* <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script> */}
 <title>MiserySite</title>
       </Head>
       <Toolbar />  
@@ -124,7 +124,7 @@ we work for and with lived experience leaders to co-create accessible, playful, 
         <section id="ourgoals" className={styles.ourgoals}>
     <SectionTitle >our goals</SectionTitle>
       <div className=' p-10 flex h-screen mx-auto px-0 max-w-6xl '>
- <ul class="list-disc text-3xl p-15 font-light">
+ <ul className="list-disc text-3xl p-15 font-light">
 <li className=' hover:ml-9 p-3 duration-1000' >
 To provide accessible, supportive and politically engaged events, spaces and services by and for qtibpoc to build community and help us to be in right relationship with ourselves, each other, and the land
 </li>
