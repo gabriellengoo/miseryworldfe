@@ -23,7 +23,7 @@ export default function FirstPost() {
     <section className='flex h-screen mx-auto px-0'>
         <div className="text-8xl top-0 p-15 flex h- screen m-auto mx-auto px-0">
         {/* newsec */}
-        <Link  href="./"><img className="z-10 text-center items-center m-auto w-5/12 hover:w-7/12 duration-500 drop-shadow-[0_0px_5px_#c21b9e] " src="https://i.ibb.co/bQ4n39B/misery-site-slime.png"/>
+        <Link  href="./"><img className="z-10 text-center items-center m-auto w-5/12 hover:w-7/12 duration-500 drop-shadow-[0_0px_5px_#c21b9e] " src="https://i.ibb.co/6yR3mjn/misery-world-glitter.png"/>
 </Link>
 <Link  href="./Miserysite"><img className="z-10 text-center items-center m-auto w-5/12 hover:w-7/12 duration-500 drop-shadow-[0_0px_5px_#c21b9e] " src="https://i.ibb.co/bQ4n39B/misery-site-slime.png"/>
 </Link>
