@@ -1,0 +1,122 @@
+{/* links start */}
+<section id="whatismisery?" className="flex  flex-col p-7 items-center text-xl h-3/6">
+<div className={styles.whatismisery}>
+<div className=' flex  '>
+
+
+      <ul className=' z-50 p-3 '>
+      {/* <img className="flex flex-col items-center w-4/12 " src="https://i.ibb.co/DMmhFb6/Layer-2.png"/> */}
+      {/* <li  className='hover:text-[#e6e6e6] z-50 duration-500'onClick={() => router.push('/')}>
+      what is misery?
+      </li>
+      <li  className='hover:text-[#e6e6e6] z-50 duration-500'onClick={() => router.push('/')}>
+      our story
+      </li>
+      <li  className='hover:text-[#e6e6e6] z-50 duration-500'onClick={() => router.push('/')}>
+      the team
+      </li>
+      <li  className='hover:text-[#e6e6e6] z-50 duration-500'onClick={() => router.push('/')}>
+      collaborators 
+      </li>
+      <li  className='hover:text-[#e6e6e6] z-50 duration-500'onClick={() => router.push('/')}>
+      faq 
+      </li> */}
+      </ul>
+
+      <ul className=' z-50 p-3 '>
+      {/* <img className="flex flex-col items-center w-12/12 " src="https://i.ibb.co/PC6ndJ5/Layer-3.png"/> */}
+      {/* <li  className='hover:text-[#e6e6e6] z-50 duration-500'onClick={() => router.push('/')}>
+      now & coming up
+      </li>
+      <li  className='hover:text-[#e6e6e6] z-50 duration-500'onClick={() => router.push('/')}>
+      archive
+      </li>
+      <li  className='hover:text-[#e6e6e6] z-50 duration-500'onClick={() => router.push('/')}>
+      misery moods
+      </li> */}
+      </ul>
+
+
+      <ul className=' z-50 p-3 '>
+      {/* <img className="flex flex-col items-center w-10/12 " src="https://i.ibb.co/tXp19yy/Layer-4.png"/> */}
+      {/* <li  className='hover:text-[#e6e6e6] z-50 duration-500'onClick={() => router.push('/')}>
+      radio
+      </li>
+      <li  className='hover:text-[#e6e6e6] z-50 duration-500'onClick={() => router.push('/')}>
+      zine
+      </li>
+      <li  className='hover:text-[#e6e6e6] z-50 duration-500'onClick={() => router.push('/')}>
+      mixtapes
+      </li>
+      <li  className='hover:text-[#e6e6e6] z-50 duration-500'onClick={() => router.push('/')}>
+      memes 
+      </li> */}
+      </ul>
+
+
+      <ul className=' z-50 p-3 '>
+      {/* <img className="flex flex-col items-center w-10/12" src="https://i.ibb.co/V25jWY5/Layer-5.png"/> */}
+      {/* <li  className='hover:text-[#e6e6e6] z-50 duration-500'onClick={() => router.push('/')}>
+      crisis section
+      </li>
+      <li  className='hover:text-[#e6e6e6] z-50 duration-500'onClick={() => router.push('/')}>
+      resources
+      </li>
+      <li  className='hover:text-[#e6e6e6] z-50 duration-500'onClick={() => router.push('/')}>
+      misery’s database
+      </li> */}
+      </ul>
+
+    </div>
+    </div>
+    </section>
+
+
+
+import React from "react";
+import styles from '../styles/Footer.module.css';
+
+
+
+function FooterComponent() {    
+	return (       
+		<div className={styles.Box}>
+		<div className={styles.container}>
+			<div className={styles.row}>
+			<div className={styles.Column}>
+			<div className={styles.Heading}>About us</div>
+			<a className={styles.FooterLink}>Aim</a>
+			<a className={styles.FooterLink}>Aim</a>
+			<a className={styles.FooterLink}>Aim</a>
+			</div>
+
+			<div className={styles.Column}>
+			<div className={styles.Heading}>About us</div>
+			<a className={styles.FooterLink}>Aim</a>
+			<a className={styles.FooterLink}>Aim</a>
+			<a className={styles.FooterLink}>Aim</a>
+			</div>
+
+			<div className={styles.Column}>
+			<div className={styles.Heading}>About us</div>
+			<a className={styles.FooterLink}>Aim</a>
+			<a className={styles.FooterLink}>Aim</a>
+			<a className={styles.FooterLink}>Aim</a>
+			</div>
+
+			<div className={styles.Column}>
+			<span style={{ marginLeft: "10px" }}>
+				Youtube
+				</span>
+			</div>
+
+			<div className={styles.Column}>
+			<a className={styles.FooterLink}>Site Credit The Internet Arcitect</a>
+			<span>© Misery 2022</span>
+			</div>
+			</div>
+		</div>  
+		</div>   
+	)
+}
+export default FooterComponent

@@ -1,0 +1,51 @@
+
+.main h1{
+        font-size: 48px; 
+}
+
+.main p{
+    font-size: 48px; 
+    text-indent: 50px;
+    line-height: 45px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    padding: 2vh;
+}
+
+
+.main iframe{
+    /* margin: auto;
+    width: 950px;
+    padding-top: 100px;
+    max-width: calc(100vw - 50px); */
+z-index: 0;
+/* mix-blend-mode: multiply; */
+  }
+  .mainImage {
+    width: 100%;
+  }
+  .body p {
+    font-size: 24px;
+    text-indent: 50px;
+    line-height: 45px;
+    text-align: justify;
+    letter-spacing: 1.5px;
+  }
+
+  .body a{
+    text-decoration: underline 1px solid;
+      }
+
+  .body a:hover{
+color: grey;
+  }
+
+
+  .main p a:hover{
+    color: grey;
+      }
+
+
+.main p a{
+    text-decoration: underline 1px solid;
+          }

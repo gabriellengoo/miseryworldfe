@@ -1,0 +1,172 @@
+
+
+/* .card:hover {
+    filter: drop-shadow(0 0 0.75rem rgb(0, 231, 255));
+}
+
+
+.card:before {
+   background: linear-gradient(transparent 0%,#fff 100%);transform:scale(1.2);
+} */
+
+
+.card:hover{
+  /* opacity: 1; */
+  background-image: url("https://assets.codepen.io/13471/sparkles.gif");
+  /* url(https://assets.codepen.io/13471/holo.png);  */
+    /* linear-gradient(125deg, #ff008450 15%, #fca40040 30%, #ffff0030 40%, #00ff8a20 60%, #00cfff40 70%, #cc4cfa50 85%); */
+  background-position: 50% 50%;
+  /* background-size: 160%; */
+  /* background-image: url("https://assets.codepen.io/13471/holo.png") ; */
+  background-blend-mode: overlay;
+  z-index: 2;
+  filter: brightness(1) contrast(1);
+  /* transition: all .33s ease; */
+  mix-blend-mode:color-dodge;
+  /* opacity: .75; */
+  animation:  holoSparkle 5s infinite;
+  animation:  holoGradient 5s infinite;
+  animation:  holoCard 5s infinite;
+  transform: skewY(50px);
+  border-radius: 5%;
+}
+
+
+.card {
+  transform: translate(-17.5px, 0);
+  filter: drop-shadow(0 30px 2px rgba(0, 0, 0, 0.05));
+  /* background-color: rgba(255, 255, 255, 0.548); */
+}
+
+
+.card-md {
+  transform: translate(-20%, 0);
+  margin-top: 0;
+  /*top:50px;*/
+  filter: drop-shadow(0 30px 2px rgba(0, 0, 0, 0.05));
+}
+
+
+@keyframes holoSparkle {
+  0%, 100% {
+    opacity: .75; background-position: 50% 50%; filter: brightness(1.2) contrast(1.25);
+  }
+  5%, 8% {
+    opacity: 1; background-position: 40% 40%; filter: brightness(.8) contrast(1.2);
+  }
+  13%, 16% {
+    opacity: .5; background-position: 50% 50%; filter: brightness(1.2) contrast(.8);
+  }
+  35%, 38% {
+    opacity: 1; background-position: 60% 60%; filter: brightness(1) contrast(1);
+  }
+  55% {
+    opacity: .33; background-position: 45% 45%; filter: brightness(1.2) contrast(1.25);
+  }
+}
+
+@keyframes holoGradient {
+  0%, 100% {
+    opacity: 0.5;
+    background-position: 50% 50%;
+    filter: brightness(.5) contrast(1);
+  }
+  5%, 9% {
+    background-position: 100% 100%;
+    opacity: 1;
+    filter: brightness(.75) contrast(1.25);
+  }
+  13%, 17% {
+    background-position: 0% 0%;
+    opacity: .88;
+  }
+  35%, 39% {
+    background-position: 100% 100%;
+    opacity: 1;
+    filter: brightness(.5) contrast(1);
+  }
+  55% {
+    background-position: 0% 0%;
+    opacity: 1;
+    filter: brightness(.75) contrast(1.25);
+  }
+}
+
+@keyframes holoCard {
+  0%, 100% {
+    transform: rotateZ(0deg) rotateX(0deg) rotateY(0deg);
+  }
+  5%, 8% {
+    transform: rotateZ(0deg) rotateX(6deg) rotateY(-20deg);
+  }
+  13%, 16% {
+    transform: rotateZ(0deg) rotateX(-9deg) rotateY(32deg);
+  }
+  35%, 38% {
+    transform: rotateZ(3deg) rotateX(12deg) rotateY(20deg);
+  }
+  55% {
+    transform: rotateZ(-3deg) rotateX(-12deg) rotateY(-27deg);
+  }
+}
+
+
+
+
+.wrapper {
+  margin-top: 150px;
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+      margin-top: 0;
+  }
+}
+
+.shadow {
+  box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.translated {
+  transform: translate(-17.5px, 0);
+  margin-top: -120px;
+  filter: drop-shadow(0 30px 2px rgba(0, 0, 0, 0.05));
+}
+
+.translated-md {
+  transform: translate(-20%, 0);
+  margin-top: 0;
+  /*top:50px;*/
+  filter: drop-shadow(0 30px 2px rgba(0, 0, 0, 0.05));
+}
+
+@media (min-width: 768px) {
+  .translated-md {
+      clip-path: inset(-30px -30px -30px 54px);
+  }
+
+  .translated-box {
+      margin-top: 45px;
+      margin-left: -80px;
+      width: 140px;
+      top: 50%;
+      transform: translate(0, -50%)
+  }
+}
+
+@media (min-width: 1024px) {
+  .translated-md {
+      clip-path: inset(-30px -30px -30px 82px);
+  }
+
+  .translated-box {
+
+      margin-top: 70px;
+      margin-left: -105px;
+      width: 190px;
+
+      top: 50%;
+      transform: translate(0, -50%)
+  }
+}
+

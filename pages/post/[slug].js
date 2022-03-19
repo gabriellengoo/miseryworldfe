@@ -4,8 +4,8 @@ import styles from '../../styles/Post.module.css';
 import BlockContent from '@sanity/block-content-to-react';
 import { Toolbar } from '../../components/toolbar';
 
-export const Post = ({ title, body, image }) => {
-  const [imageUrl, setImageUrl] = useState('');
+export const Post = ({ title, body, image, images }) => {
+  const [imageUrl, setImageUrl,] = useState('');
 
   useEffect(() => {
     const imgBuilder = imageUrlBuilder({
@@ -13,8 +13,14 @@ export const Post = ({ title, body, image }) => {
       dataset: 'production',
     });
 
-    setImageUrl(imgBuilder.image(image));
-  }, [image]);
+    console.log(images);
+
+
+    setImageUrl(imgBuilder.image(image, images));
+  }, [image, images]);
+
+
+
 
   return (
     <div>
@@ -22,6 +28,8 @@ export const Post = ({ title, body, image }) => {
       <div className={styles.main}>
         <h1>{title}</h1>
         {imageUrl && <img className={styles.mainImage} src={imageUrl} />}
+        {imageUrl && <img className={styles.mainImage} src={imageUrl} />}
+
 
         <div className={styles.body}>
           <BlockContent blocks={body} />
@@ -56,6 +64,7 @@ export const getServerSideProps = async pageContext => {
         body: post.body,
         title: post.title,
         image: post.mainImage,
+        array: post.images,
       }
     }
   }
