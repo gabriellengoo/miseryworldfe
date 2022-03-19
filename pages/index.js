@@ -5,7 +5,7 @@ import imageUrlBuilder from '@sanity/image-url';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 
 export default function FirstPost() {
   return (

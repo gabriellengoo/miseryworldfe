@@ -4,7 +4,7 @@ import styles from '../styles/Menu.module.css'
 import { useRouter } from 'next/router';
 import 'animate.css';
 import { SectionTitle } from '../components/SectionTitle';
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 // import { Container, Row, Col } from "reactstrap";
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import TextField from '@mui/material/TextField';
