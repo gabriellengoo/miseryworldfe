@@ -5,7 +5,7 @@ import styles from '../../styles/Post.module.css';
 import BlockContent from '@sanity/block-content-to-react';
 import { Toolbar } from '../../components/toolbar';
 import { sanityClient } from '@sanity/client'
-import Image from "../../components/Image"
+// import Image from "../../components/Image"
 import Link from "next/link"
 import Footer from '../../components/Footer';
 import Head from 'next/head';

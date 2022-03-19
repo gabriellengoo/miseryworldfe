@@ -10,7 +10,7 @@ import 'animate.css';
 import { BrowserView, MobileView, isBrowser, isMobile } from 'react-device-detect';
 import React from 'react';
 import { SectionTitle } from "../components/SectionTitle";
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 import { ReactDimmer } from 'react-dimmer'
 
 
