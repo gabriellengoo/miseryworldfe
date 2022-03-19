@@ -15,7 +15,7 @@ import useEmblaCarousel from 'embla-carousel-react';
 import { motion } from 'framer-motion';
 import Fade from 'react-reveal/Fade';
 import { SectionTitle } from "../components/SectionTitle";
-import Layout from "../components/layout";
+import Layout from "../components/Layout";
 import { ReactDimmer } from 'react-dimmer'
 
 

@@ -1,10 +1,10 @@
 import Link from 'next/link'
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
-import { Toolbar } from '../components/toolbar';
+import styles from '../../styles/Home.module.css'
+import { Toolbar } from '../../components/toolbar';
 // import { Header } from '../components/Header';
-import Footer from '../components/Footer';
-import image from '../public/hero.jpg';
+import Footer from '../../components/Footer';
+import image from '../../public/hero.jpg';
 import imageUrlBuilder from '@sanity/image-url';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
