@@ -11,12 +11,12 @@ import Footer from '../../components/Footer';
 import Head from 'next/head';
 import { SectionTitle } from "../../components/SectionTitle";
 
-export const Resourcesp = ({ title, phonetextsupport, inperson, communitiesUk, communitiesGlobal, housing, grief, sexualhealth, antiblackness, fatphobia, suicide, substancereduction, lgbtqiaherbalism, therapy, movingyourbody, transformativejustice }) => {
+export const Resourcesp = ({ title, phonetextsupport, inperson, communitiesUk, communitiesGlobal, housing,  }) => {
 
 
-  console.log( title, phonetextsupport, inperson, communitiesUk, communitiesGlobal, housing,
-    grief, sexualhealth, antiblackness, fatphobia, suicide, substancereduction, lgbtqiaherbalism, therapy, movingyourbody, transformativejustice,);
-  // The back-to-top button is hidden at the beginning
+  // console.log( title, phonetextsupport, inperson, communitiesUk, communitiesGlobal, housing,
+  //   ,);
+  // // The back-to-top button is hidden at the beginning
   const [showButton, setShowButton] = useState(false);
 
   useEffect(() => {
@@ -72,7 +72,7 @@ export const Resourcesp = ({ title, phonetextsupport, inperson, communitiesUk, c
 <Link href="#communitiesGlobal"><a className='pl-10'>communities & collectives (global)</a></Link>
 <div></div>
 <Link href="#housing"><a className='pl-10'>housing (london/uk)</a></Link>
-<Link href="#grief"><a className='pl-10'>grief</a></Link>
+{/* <Link href="#grief"><a className='pl-10'>grief</a></Link>
 <Link href="#sexualhealth"><a className='pl-10'>sexual health</a></Link>
 <div></div>
 <Link href="#antiblackness"><a className='pl-10'>anti-blackness</a></Link>
@@ -87,7 +87,7 @@ export const Resourcesp = ({ title, phonetextsupport, inperson, communitiesUk, c
 <div></div>
 <Link href="#movingyourbody"><a className='pl-10'>queer and trans friendly: moving your body!</a></Link>
 <div></div>
-<Link href="#transformativejustice"><a className='pl-10'>transformative justice</a></Link>
+<Link href="#transformativejustice"><a className='pl-10'>transformative justice</a></Link> */}
 </div>
 </div>
 </div>
@@ -146,7 +146,7 @@ export const Resourcesp = ({ title, phonetextsupport, inperson, communitiesUk, c
         </section>
 
 
-
+{/* 
 
         <section id="grief" className=' reletive flex  pt-12 lg:pt-62 px-8 z-50 p-10 '>
         <div className={styles.body}>
@@ -234,7 +234,7 @@ export const Resourcesp = ({ title, phonetextsupport, inperson, communitiesUk, c
                     <h1 className='  py-8 font-black text-3xl tracking-wide'>transformative justice</h1>
         <BlockContent className={styles.body} blocks={transformativejustice} />
         </div>
-        </section>
+        </section> */}
 
 
 
@@ -264,9 +264,7 @@ export const getServerSideProps = async pageContext => {
   }
 
   const query = encodeURIComponent(`*[ _type == "resources" && slug.current == "${pageSlug}" ] { 
-    title, phonetextsupport, inperson, communitiesUk, communitiesGlobal, housing,
-    grief, sexualhealth, antiblackness, fatphobia, suicide, substancereduction, lgbtqiaherbalism, therapy, movingyourbody, transformativejustice,
-}`);
+    title, phonetextsupport, inperson, communitiesUk, communitiesGlobal, housing}`);
 
   const url = `https://ngizar2r.api.sanity.io/v1/data/query/production?query=${query}`;
 
@@ -287,16 +285,16 @@ export const getServerSideProps = async pageContext => {
         communitiesUk: resources.communitiesUk,
         communitiesGlobal: resources.communitiesGlobal,
         housing: resources.housing,
-        grief: resources.grief,
-        sexualhealth: resources.sexualhealth,
-        antiblackness: resources.antiblackness,
-        fatphobia: resources.fatphobia,
-        suicide: resources.suicide,
-        substancereduction: resources.substancereduction,
-        lgbtqiaherbalism: resources.lgbtqiaherbalism,
-        therapy: resources.therapy,
-        movingyourbody: resources.movingyourbody,
-        transformativejustice: resources.transformativejustice,
+        // grief: resources.grief,
+        // sexualhealth: resources.sexualhealth,
+        // antiblackness: resources.antiblackness,
+        // fatphobia: resources.fatphobia,
+        // suicide: resources.suicide,
+        // substancereduction: resources.substancereduction,
+        // lgbtqiaherbalism: resources.lgbtqiaherbalism,
+        // therapy: resources.therapy,
+        // movingyourbody: resources.movingyourbody,
+        // transformativejustice: resources.transformativejustice,
       }
     }
   }

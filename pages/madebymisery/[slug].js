@@ -94,7 +94,7 @@ export const getServerSideProps = async pageContext => {
     }
   }
 
-  const query = encodeURIComponent(`*[ _type == "Madebymisery" && slug.current == "${pageSlug}" ] { 
+  const query = encodeURIComponent(`*[ _type == "madebymisery" && slug.current == "${pageSlug}" ] { 
     title, mainImage, images, body, bodytwo,
     bodythree,
 }`);
