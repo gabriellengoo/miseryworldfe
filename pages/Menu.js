@@ -67,7 +67,7 @@ export const Menu = () => {
     <img className="p-4 text-center items-center m-auto w-2/12 hover:w-3/12 duration-500 hover:drop-shadow-[0_0px_5px_#3d9335] " onClick={() => router.push('videoBlogPost/our-story')} src="https://i.ibb.co/DMmhFb6/Layer-2.png"/>
     <img className="p-4 text-center items-center m-auto w-2/12 hover:w-3/12 duration-500 hover:drop-shadow-[0_0px_5px_#3d9335] " onClick={() => router.push('/eventsupcoming')} src="https://i.ibb.co/PC6ndJ5/Layer-3.png"/>
     <img className="p-4 text-center items-center m-auto w-4/12 hover:w-5/12 duration-500 hover:drop-shadow-[0_0px_5px_#3d9335] " onClick={() => router.push('/madebymisery/made-by-misery')} src="https://i.ibb.co/tXp19yy/Layer-4.png"/>
-    <img className="p-4 text-center items-center m-auto w-3/12 hover:w-4/12 duration-500 hover:drop-shadow-[0_0px_5px_#3d9335]"  onClick={() => router.push('/resources')} src="https://i.ibb.co/V25jWY5/Layer-5.png"/>
+    <img className="p-4 text-center items-center m-auto w-3/12 hover:w-4/12 duration-500 hover:drop-shadow-[0_0px_5px_#3d9335]"  onClick={() => router.push('/resources/resources-for-qtibpoc-healing')} src="https://i.ibb.co/V25jWY5/Layer-5.png"/>
     {/* newsec */}
     <img className="p-4 text-center items-center m-auto w-2/12 hover:w-3/12 duration-500 hover:drop-shadow-[0_0px_5px_#3d9335] " onClick={() => router.push('../press/press')} src="https://i.ibb.co/mCW1MxP/Layer-6.png"/>
     <img className="p-4 text-center items-center m-auto h-1/6 hover:w-4/12 duration-500 hover:drop-shadow-[0_0px_5px_#3d9335]  " onClick={() => router.push('../getinvolved/get-involved')} src="https://i.ibb.co/s3Mfn3q/Layer-7.png"/>

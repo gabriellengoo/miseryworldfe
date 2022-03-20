@@ -67,23 +67,83 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 50%;
-  z-index: 0;
-  filter: blur(10px);
+  z-index: 30;
+  padding:0px;
+  /* filter: blur(10px); */
   /* filter: drop-shadow(1rem 1rem 1rem #86eab4); */
+}
+
+.logomishome{
+  /* position: fixed; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  z-index:2;
+  padding:0px;
+  /* pointer-events: none; */
+  opacity: 0;
+  /* filter: blur(10px); */
+  filter: drop-shadow(1rem 1rem 1rem #ffffff);
+}
+
+
+.logoa{
+  /* position: fixed; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  z-index: 1;
+  padding:0px;
+  pointer-events: none;
+  /* opacity: 0; */
+  /* filter: blur(10px); */
+  filter: drop-shadow(1rem 1rem 1rem #ffffff);
 }
 
 
 
 .swerl{
-  /* position: fixed; */
-  position: absolute;
+  position: fixed;
+  /* position: absolute; */
   /* top: 50%;
   left: 50%; */
   transform: translate(0vh + -50vh);
   animation: y 30s linear infinite alternate;
   /* z-index: 0; */
-  width: 20%;
-  z-index: 10;
+  width: 10%;
+  z-index: 20;
+  /* mix-blend-mode: multiply; */
+  filter: drop-shadow(0 0 0.75rem #86eab4);
+}
+
+.swerl1{
+  position: fixed;
+  /* position: absolute; */
+  /* top: 50%;
+  left: 50%; */
+  transform: translate(0vh + -20vh);
+  animation: y 10s linear infinite alternate;
+  /* z-index: 0; */
+  width: 10%;
+  z-index: 20;
+  /* mix-blend-mode: multiply; */
+  filter: drop-shadow(0 0 0.75rem #86eab4);
+}
+
+.swerl2{
+  position: fixed;
+  /* position: absolute; */
+  /* top: 50%;
+  left: 50%; */
+  transform: translate(10vh + -10vh);
+  animation: y 50s linear infinite alternate;
+  /* z-index: 0; */
+  width: 10%;
+  z-index: 0;
   /* mix-blend-mode: multiply; */
   filter: drop-shadow(0 0 0.75rem #86eab4);
 }
@@ -125,7 +185,7 @@
   top: 15%;
   left:calc(60vw - 49vh);
   left:40vw;
-  /* transform: translate(-50%, -50%); */
+  transform: translate(-50%, -50%);
   animation: twink 30s linear infinite alternate;
   /* z-index: 0; */
   width: 20%;
@@ -169,40 +229,41 @@
 }
 }
 
-
+/* 
 .logoa{
   position: relative;
-  /* width: 360px; can be omitted for a regular non-lazy image */
   max-width: 100%;
   position: absolute;
   top: 40vh;
   left: 70vw;
   width: 20%;
   z-index: -1
-}
+} */
 
-.figure {
+/* .figure {
   position: relative;
-  /* width: 360px; can be omitted for a regular non-lazy image */
   max-width: 100%;
   position: absolute;
   top: 30vh;
   left: 70vw;
   width: 20%;
   z-index: -1;
-  /* opacity: 0; */
-  /* width: 2vh; */
   animation: glitter 5s infinite;
-}
+} */
 
-/* .figure:hover{
+/* .figurenew {
+  animation: glitter 5s infinite;
+} */
+
+/* .logoa:hover{
 opacity: 1;
-z-index: 1-;
-}
+z-index: 10;
+width: 60%;
+} */
 
-.logoa:hover {
+/* .logomishome:hover {
   opacity: 0;
-  z-index: -1
+  z-index: 0;
   } */
 
 @keyframes fade {
@@ -265,14 +326,16 @@ z-index: 1-;
 }
 
 .whatismiserydas{
-  /* background: radial-gradient(#94eaaf 20%, #ece784, #eb90cf 50%, white 80%); */
 
+  /* background: radial-gradient(#94eaaf 20%, #ece784, #eb90cf 50%, white 80%); */
+/* background: var(--bg-gradient); */
 }
 
 
 .whatwedo{
   background: radial-gradient(#94eaaf 20%, #ece784, #eb90cf 50%, white 60%);
   /* color: #921265; */
+  z-index: 90;
 }
 
 .ourgoals{
@@ -767,4 +830,40 @@ transition-duration: 1s;
   text-align: right;
   text-transform: capitalize;
 
+}
+
+
+.scene{
+  width:100vw;
+  height:100vh;
+  z-index: -0;
+  position: absolute;
+
+}
+
+.canvas{
+  background: rgba(255, 255, 255, 0);
+}
+
+
+
+.backtotop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 50px;
+  width: auto;
+  height: auto;
+  background: #e7dbef;
+  color: white;
+  cursor: pointer;
+  border-radius: 100px;
+  border: none;
+  padding: 30px;
+  box-shadow: 0 5px 10px #ccc;
+  z-index: 100;
+}
+
+.backtotop:hover {
+  background: #88e3b0;
 }
