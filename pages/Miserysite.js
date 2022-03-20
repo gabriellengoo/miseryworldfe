@@ -117,22 +117,22 @@ export default function MiserySite() {
       </Canvas>
     </div> */}
 
-<div class="fixed">
-  <div class="absolute flex overflow-x-hidden">
-  <div class="py-9 animate-marquee whitespace-nowrap">
-    <span class="mx-4 text-xl text-[#2b2b2b]">  &nbsp;  ✳ &nbsp; misery is..</span>
-    <span class="mx-4 text-xl text-[#2b2b2b]">  &nbsp; ✳ &nbsp;  crying at the party</span>
-    <span class="mx-4 text-xl text-[#2b2b2b]">  &nbsp; ✳ &nbsp;  your emotional support stuffed animal that looks more depressed than you do </span>
-    <span class="mx-4 text-xl text-[#2b2b2b]">  &nbsp; ✳ &nbsp;  being a fag and a dyke at the same time</span>
-    <span class="mx-4 text-xl text-[#2b2b2b]">  &nbsp; ✳ &nbsp;  a 4 hour bath and a 7 day free trial</span>
+<div className="fixed">
+  <div className="absolute flex overflow-x-hidden">
+  <div className="py-9 animate-marquee whitespace-nowrap">
+    <span className="mx-4 text-xl text-[#2b2b2b]">  &nbsp;  ✳ &nbsp; misery is..</span>
+    <span className="mx-4 text-xl text-[#2b2b2b]">  &nbsp; ✳ &nbsp;  crying at the party</span>
+    <span className="mx-4 text-xl text-[#2b2b2b]">  &nbsp; ✳ &nbsp;  your emotional support stuffed animal that looks more depressed than you do </span>
+    <span className="mx-4 text-xl text-[#2b2b2b]">  &nbsp; ✳ &nbsp;  being a fag and a dyke at the same time</span>
+    <span className="mx-4 text-xl text-[#2b2b2b]">  &nbsp; ✳ &nbsp;  a 4 hour bath and a 7 day free trial</span>
   </div>
 
-  <div class="absolute bottom-0 py-9 animate-marquee2 whitespace-nowrap">
-    <span class="mx-4 text-xl text-[#2b2b2b]">  &nbsp; ✳ &nbsp;  waxing your butt in the first place</span>
-    <span class="mx-4 text-xl text-[#2b2b2b]">  &nbsp; ✳ &nbsp;  living in your overdraft but eating out anyway</span>
-    <span class="mx-4 text-xl text-[#2b2b2b]">  &nbsp; ✳ &nbsp;  searching for a halal photo to send nani ji</span>
-    <span class="mx-4 text-xl text-[#2b2b2b]">  &nbsp; ✳ &nbsp;  putting your headphones in at the back of the cab but not even listening to anything you just don’t want to chat</span>
-    <span class="mx-4 text-xl text-[#2b2b2b]">  &nbsp; ✳ &nbsp;  forgiving your younger self for the things they did to get you here</span>
+  <div className="absolute bottom-0 py-9 animate-marquee2 whitespace-nowrap">
+    <span className="mx-4 text-xl text-[#2b2b2b]">  &nbsp; ✳ &nbsp;  waxing your butt in the first place</span>
+    <span className="mx-4 text-xl text-[#2b2b2b]">  &nbsp; ✳ &nbsp;  living in your overdraft but eating out anyway</span>
+    <span className="mx-4 text-xl text-[#2b2b2b]">  &nbsp; ✳ &nbsp;  searching for a halal photo to send nani ji</span>
+    <span className="mx-4 text-xl text-[#2b2b2b]">  &nbsp; ✳ &nbsp;  putting your headphones in at the back of the cab but not even listening to anything you just don’t want to chat</span>
+    <span className="mx-4 text-xl text-[#2b2b2b]">  &nbsp; ✳ &nbsp;  forgiving your younger self for the things they did to get you here</span>
   </div>
 </div>
 
