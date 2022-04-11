@@ -47,6 +47,15 @@ export const Pressp = ({ title, bodypanels, images, imagestwo, body, bodytwo,
           </div>
         </div>
 
+        <div className={`container mx-auto flex items-center  ${styles.wrapper}`}>
+        <div className={"flex-auto flex-col md:flex-row items-center bg-white rounded-xl m-5 p-3 md:m-10 " + styles.shadow}>
+        <div className='text-center text-l p-5 font-light indent-5 tracking-wide'>
+        <h1 className=' pl-3 py-8 font-black text-3xl tracking-wide'>press  ↗</h1>
+          <BlockContent className={styles.body} blocks={bodythree} />
+        </div>
+        </div>
+    </div>
+
 
         <div className={`container mx-auto flex items-center  ${styles.wrapper}`}>
         <div className={"flex-auto flex-col md:flex-row items-center bg-white rounded-xl m-5 p-3 md:m-10 " + styles.shadow}>
@@ -67,14 +76,7 @@ export const Pressp = ({ title, bodypanels, images, imagestwo, body, bodytwo,
         </div>
     </div>
 
-        <div className={`container mx-auto flex items-center  ${styles.wrapper}`}>
-        <div className={"flex-auto flex-col md:flex-row items-center bg-white rounded-xl m-5 p-3 md:m-10 " + styles.shadow}>
-        <div className='text-center text-l p-5 font-light indent-5 tracking-wide'>
-        <h1 className=' pl-3 py-8 font-black text-3xl tracking-wide'>press  ↗</h1>
-          <BlockContent className={styles.body} blocks={bodythree} />
-        </div>
-        </div>
-    </div>
+  
 
 
  

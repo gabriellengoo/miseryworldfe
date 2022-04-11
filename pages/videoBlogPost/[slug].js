@@ -23,7 +23,7 @@ export const videoBlogPost = ({ name, description }) => {
 
   return (
     <div>
-      <Toolbar />
+      {/* <Toolbar /> */}
       
 
 
@@ -46,11 +46,6 @@ export const videoBlogPost = ({ name, description }) => {
         <p className=''> <a href="https://vimeo.com/402987081">QB FILM gal-dem x Levi&#039;s x Queer Britain: Aisha Mirza &amp; DJ Ritu</a> from <a href="https://vimeo.com/queerbritain">Queer Britain</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
         </section> 
 
-        <div className=' '>
-        {/* <ReactPlayer className='text-center items-center m-auto' url='https://player.vimeo.com/video/402987081?h=1d50017fb2' /> */}
-        <iframe className=' object-cover h-screen w-screen z-0' src="https://player.vimeo.com/video/402987081?h=1d50017fb2" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen></iframe>
-        </div>
-
 
 
 
@@ -65,6 +60,10 @@ export const videoBlogPost = ({ name, description }) => {
         </div>
         </section>
 
+        <div className=' '>
+        {/* <ReactPlayer className='text-center items-center m-auto' url='https://player.vimeo.com/video/402987081?h=1d50017fb2' /> */}
+        <iframe className=' object-cover h-screen w-screen z-0' src="https://player.vimeo.com/video/402987081?h=1d50017fb2" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen></iframe>
+        </div>
 
       </div>
 

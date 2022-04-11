@@ -52,21 +52,20 @@ export default function MiserySite() {
 
 
 {/* headder title         ---------------- */}
-<div className={`container mx-auto flex items-center  ${styles.wrapper}`}>
-        <div
-            className={"flex-auto flex flex-col md:flex-row items-center bg-white rounded-xl m-5 p-3 md:m-10 " + styles.shadow}>
+<div className={`container mx-auto flex   ${styles.wrapper}`}>
+        <div className={"flex-auto flex flex-col md:flex-row  bg-white rounded-xl m-5 p-3 md:m-10 " + styles.shadow}>
             {/* <img className={"md:hidden flex-none pb-4 " + styles.translated}
                  src="/images/illustration-woman-online-mobile.svg" alt="Woman Online"/> */}
 
             <div className="flex-none relative hidden md:block   z-10 w-1/2">
             <h1 className="flex-none pl-3 py-8 font-black text-6xl tracking-wide ">collaborators</h1>
-            <p className="flex-none pl-3 text-xl tracking-wide ">        Here are some of the big hearts and brilliant minds we have been lucky enough to work with regularly over the last few years
+            <p className="flex-none pl-3 text-xl tracking-wide ">        here are some of the big hearts and brilliant minds we have been lucky enough to work with regularly over the last few years
 </p>
             </div>
 
 
             <div className="flex-auto mb-2 w-full  ">
-<div className="overflow-scroll h-screen">
+<div className="overflow-scroll">
 
 
 <section className="  text-center text-xs m-auto px-0 max-w-8xl overflow-scroll mx-auto my-md">
@@ -326,7 +325,7 @@ export default function MiserySite() {
 </p>
 
 <p className="hover:skew-y-6"> 
-      <Link href="./"><a target="_blank" className=' font-bold p-3' >find me: @kjcounselling.com 
+      <Link href="./"><a target="_blank" className=' font-bold p-3' >find me@: @kjcounselling.com 
  </a></Link>
  </p>
  </div>
@@ -396,11 +395,11 @@ export default function MiserySite() {
 
 <p className="hover:skew-y-6"> 
       <Link href="./"><a target="_blank" className=' font-bold p-3' >
-fawziyah.com
+      find me @: fawziyah.com
  </a></Link>
- <Link href="./"><a target="_blank" className=' font-bold p-3' >
-fawziyah.com
- </a></Link>
+ {/* <Link href="./"><a target="_blank" className=' font-bold p-3' >
+ find me @: fawziyah.com
+ </a></Link> */}
  </p>
  </div>
  </div>
