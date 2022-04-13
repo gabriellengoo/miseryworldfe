@@ -31,15 +31,7 @@ export default function MiserySite() {
 {/*  */}
 
 
-
-
-
-{/* mini nav          ---------------- */}
-
-{/* TEAM MEMBERS  hover:drop-shadow-[0_35px_35px_#d1b200] */}
-<section className='max-w-5xl mx-auto my-md'>
-
-<section className=" max-w-2xl font-normal text-xl mx-auto px-0 pt-28 ">
+<section className=" max-w-2xl font-normal text-xl mx-auto px-0 pt-36 ">
       <div className=" flex ">
 <Link  href="../videoBlogPost/our-story"><a className='  hover:bg-[#dbff00]  rounded-full p-4 m-auto items-center justify-evenly font-black tracking-wide"'>our story</a></Link>
 <Link href="./theteam"><a className='  hover:bg-[#dbff00] rounded-full p-4 m-auto items-center justify-evenly font-black tracking-wide"'>the team</a></Link>
@@ -49,28 +41,23 @@ export default function MiserySite() {
 </section>
 
 
-
-
-{/* headder title         ---------------- */}
-<div className={`container mx-auto flex   ${styles.wrapper}`}>
-        <div className={"flex-auto flex flex-col md:flex-row  bg-white rounded-xl m-5 p-3 md:m-10 " + styles.shadow}>
-            {/* <img className={"md:hidden flex-none pb-4 " + styles.translated}
-                 src="/images/illustration-woman-online-mobile.svg" alt="Woman Online"/> */}
-
-            <div className="flex-none relative hidden md:block   z-10 w-1/2">
-            <h1 className="flex-none pl-3 py-8 font-black text-6xl tracking-wide ">collaborators</h1>
-            <p className="flex-none pl-3 text-xl tracking-wide ">        here are some of the big hearts and brilliant minds we have been lucky enough to work with regularly over the last few years
+<div className="items-center mx-auto px-0">
+      <div className=" text-center flex md:block   z-10 w-1/2">
+            <h1 className=" pl-3 py-8 font-black text-6xl tracking-wide items-center justify-evenly m-auto ">collaborators</h1>
+            <p className=" pl-3 text-xl tracking-wide items-center justify-evenly m-auto ">        here are some of the big hearts and brilliant minds we have been lucky enough to work with regularly over the last few years
 </p>
             </div>
+            </div>
+
+{/* mini nav          ---------------- */}
+
+{/* TEAM MEMBERS  hover:drop-shadow-[0_35px_35px_#d1b200] */}
+<section className='max-w-9xl mx-10 '>
 
 
-            <div className="flex-auto mb-2 w-full  ">
-<div className="overflow-scroll">
+<section className=" grid m-0 grid-cols-2 gap-30 text-center text-xs">
 
-
-<section className="  text-center text-xs m-auto px-0 max-w-8xl overflow-scroll mx-auto my-md">
-
-<div className=' duration-500 p-5 hover:skew-x-6 '>
+<div className=' duration-500 p-5 hover:skew-x-6  '>
 <div className={styles.card}>
 <div className="  hover:drop-shadow-[0_35px_35px_#ffffffd3]  duration-1000 bg-[#ffffffd3]  items-center border-2 rounded-3xl border-black">
 
@@ -635,10 +622,14 @@ export default function MiserySite() {
 </section>
 
 
-</div> 
-            </div>
-        </div>
-    </div>
+
+
+
+
+
+
+
+
 
 
 

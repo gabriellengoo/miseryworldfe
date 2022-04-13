@@ -23,7 +23,7 @@ export const videoBlogPost = ({ name, description }) => {
 
   return (
     <div>
-      {/* <Toolbar /> */}
+      <Toolbar />
       
 
 
@@ -32,18 +32,18 @@ export const videoBlogPost = ({ name, description }) => {
         {/* {imageUrl && <img className={styles.mainImage} src={imageUrl} />} */}
 
 
-        <section className=" max-w-2xl font-normal text-xl mx-auto px-0 pt-28 p-5 ">
-      <div className=" flex ">
-<Link  href="./"><a className='  hover:bg-[#dbff00]  rounded-full p-4 m-auto items-center justify-evenly font-black tracking-wide"'>our story</a></Link>
-<Link href="../../theteam"><a className='  hover:bg-[#dbff00] rounded-full p-4 m-auto items-center justify-evenly font-black tracking-wide"'>the team</a></Link>
-<Link href="../../collaborators"><a className='  hover:bg-[#dbff00] rounded-full p-4 m-auto items-center justify-evenly font-black tracking-wide"'>collaborators</a></Link>
-<Link href="../../faq"><a className='  hover:bg-[#dbff00] rounded-full p-4 m-auto items-center justify-evenly font-black tracking-wide"'>faqs </a></Link>
+        <section className=" w-screen font-light text-xl mx-auto px-0 pt-36 p-5 ">
+      <div className=" flex border-[.5px] w-screen border-[#030303] ">
+<Link  href="./"><a className='  hover:bg-[#dbff00] border-l-[.5px] border-[#030303] rounded-full p-4 m-auto items-center justify-evenly  tracking-wide"'>our story</a></Link>
+<Link href="../../theteam"><a className='  hover:bg-[#dbff00] border-l-[.5px] border-[#030303] rounded-full p-4 m-auto items-center justify-evenly tracking-wide"'>the team</a></Link>
+<Link href="../../collaborators"><a className='  hover:bg-[#dbff00] border-l-[.5px] border-[#030303] rounded-full p-4 m-auto items-center justify-evenly  tracking-wide"'>collaborators</a></Link>
+<Link href="../../faq"><a className='  hover:bg-[#dbff00] border-l-[.5px] border-[#030303] rounded-full p-4 m-auto items-center justify-evenly tracking-wide"'>faqs </a></Link>
 </div>
 </section>
 
 
-        <section className=' font-black text-center items-center m-auto flex justify-center pt-12 lg:pt-62 px-8'>
-        <p className=''> <a href="https://vimeo.com/402987081">QB FILM gal-dem x Levi&#039;s x Queer Britain: Aisha Mirza &amp; DJ Ritu</a> from <a href="https://vimeo.com/queerbritain">Queer Britain</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+        <section className=' text-[48px] font-black text-center items-center m-auto flex justify-center pt-12 lg:pt-62 px-8'>
+        <p className=''> 𝓐&#039;bout .｡.:*☆ </p>
         </section> 
 
 
@@ -54,11 +54,15 @@ export const videoBlogPost = ({ name, description }) => {
        
 
         
-<section className=' reletive flex justify-center pt-12 lg:pt-62 px-8 z-50 '>
-        <div className={styles.body}>
+<section className=' border-[.5px] border-[#030303] reletive flex justify-center pt-12 lg:pt-62 px-8 z-50 '>
+        <div className=' font-light text-xl '>
           <BlockContent blocks={description} />
         </div>
         </section>
+
+        <section className=' text-[48px]  font-black text-center items-center m-auto flex justify-center pt-12 lg:pt-62 px-8'>
+        <p className=''> <a href="https://vimeo.com/402987081">QB FILM gal-dem x Levi&#039;s x Queer Britain: Aisha Mirza &amp; DJ Ritu</a> from <a href="https://vimeo.com/queerbritain">Queer Britain</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+        </section> 
 
         <div className=' '>
         {/* <ReactPlayer className='text-center items-center m-auto' url='https://player.vimeo.com/video/402987081?h=1d50017fb2' /> */}

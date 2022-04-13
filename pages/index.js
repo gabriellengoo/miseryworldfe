@@ -33,10 +33,12 @@ export default function FirstPost() {
      */}
 
 {/* -bottom-20  className={styles.das}*/}
-        <Link  href="./"><img className=" overflow-hidden z-50 float-right absolute -bottom-0 p-10 w-5/12 hover:w-7/12 duration-500 hover:drop-shadow-[0_0px_5px_#ffffff]" src="https://i.ibb.co/6yR3mjn/misery-world-glitter.png"/></Link>
-<Link  href="./Miserysite"><img className=" overflow-hidden z-50 absolute right-0 -bottom-0  p-10  w-5/12 hover:w-7/12 duration-500 hover:drop-shadow-[0_0px_5px_#ffffff]" src="https://i.ibb.co/bQ4n39B/misery-site-slime.png"/></Link>
+        <Link  href="./"><img className=" overflow-hidden z-50 float-right absolute  p-10 w-4/12 hover:w-5/12 duration-500 hover:drop-shadow-[0_0px_5px_#ffffff]" src="https://i.ibb.co/6yR3mjn/misery-world-glitter.png"/></Link>
+<Link  href="./Miserysite"><img className=" overflow-hidden z-50 absolute right-0   p-10  w-4/12 hover:w-5/12 duration-500 hover:drop-shadow-[0_0px_5px_#ffffff]" src="https://i.ibb.co/bQ4n39B/misery-site-slime.png"/></Link>
 {/* <img className={styles.figuredas} src="https://i.ibb.co/sFyFWsf/Bald.png"/> */}
 <img className={styles.logomis} src="https://i.ibb.co/qB2YqyQ/MISERY-FAUX-FUR.png"/>
+
+
         {/* <img className={styles.swerldas} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" />  */}
 
     
@@ -51,9 +53,7 @@ export default function FirstPost() {
       >
         <ambientLight color={"white"} intensity={0.2} />
         <LightBulb position={[0, 30, 0]} />
-        <Draggable>
-
-        </Draggable>
+        <Draggable></Draggable>
         <OrbitControls />
         <Box rotateX={3} rotateY={0.2} />
         <Floor position={[0, -1, 0]} />

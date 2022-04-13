@@ -9,6 +9,8 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import { Toolbar } from '../components/toolbar';
 import Footer from '../components/Footer';
+import Image from 'next/image'
+import mypic from '../public/rotatelogo.gif'
 import image from '../public/hero.jpg';
 import imageUrlBuilder from '@sanity/image-url';
 import { useState, useEffect } from 'react';
@@ -59,7 +61,6 @@ export default function MiserySite() {
     });
   };
   
-  
   return (
 <Layout>
    
@@ -70,6 +71,23 @@ export default function MiserySite() {
       </Head>
       <Toolbar />  
 
+{/* 
+<div className=" h-screen z-0">
+      <div className={css.scene}>
+      <Canvas
+        shadows={true}
+        className={css.canvas}
+        camera={{
+          position: [-6, 7, 7],
+        }}
+      >
+        <ambientLight color={"white"} intensity={0.2} />
+        <LightBulb position={[0, 30, 0]} />
+        <OrbitControls />
+        <Box rotateX={3} rotateY={0.2} />
+      </Canvas>
+    </div>
+    </div> */}
 
 
 
@@ -79,28 +97,83 @@ export default function MiserySite() {
      </div> */}
 {/* hover:drop-shadow-[0_0px_5px_#3d9335] */}
 
-<section className='  flex h-screen mx-auto px-0  '>
-<h1 className='text-6xl m-auto text-[#78b1c4] p-15 z-0 max-w-2xl float-left -skew-x-6 '> misery is.. </h1>
-    <p className=' text-[#f8f8f8]  pt-20 text-6xl m-auto p-6 font-light z-0 h-2/5 w-4/6 float left overflow-scroll' >
-    <p className=' z-0 p-3  '></p>
-      <p className=' hover:text-[#78b1c4] ml-0 hover:ml-9 duration-1000  '>crying at the party</p>
-      <p className=' hover:text-[#78b1c4]  ml-0 hover:ml-9 duration-1000 '>your emotional support stuffed animal that looks more depressed than you do </p>
-      <p className=' hover:text-[#78b1c4]  ml-0 hover:ml-9 duration-1000 '>being a fag and a dyke at the same time</p>
-      <p className=' hover:text-[#78b1c4]  ml-0 hover:ml-9 duration-1000 '>a 4 hour bath and a 7 day free trial</p>
-      <p className=' hover:text-[#78b1c4]  ml-0 hover:ml-9 duration-1000 '>that one piece of butt hair the beautician forgot about </p>
-      <p className=' hover:text-[#78b1c4]  ml-0 hover:ml-9 duration-1000 '>waxing your butt in the first place</p>
-      <p className=' hover:text-[#78b1c4]  ml-0 hover:ml-9 duration-1000 '>living in your overdraft but eating out anyway</p>
-      <p className=' hover:text-[#78b1c4]  ml-0 hover:ml-9 duration-1000 '>searching for a halal photo to send nani ji</p>
-      <p className=' hover:text-[#78b1c4]  ml-0 hover:ml-9 duration-1000 '>putting your headphones in at the back of the cab but not even listening to anything you just don’t want to chat</p>
-      <p className=' hover:text-[#78b1c4]  ml-0 hover:ml-9 duration-1000 '>forgiving your younger self for the things they did to get you here</p>
-      <p className=' hover:text-[#78b1c4]  ml-0 hover:ml-9 duration-1000 '>your second hand binder</p>
-      <p className=' hover:text-[#78b1c4]  ml-0 hover:ml-9 duration-1000 '>falling in love with your therapist</p>
-      <p className=' hover:text-[#78b1c4]  ml-0 hover:ml-9 duration-1000 '> this too shall pass</p>
-      <p className=' hover:text-[#78b1c4]  ml-0 hover:ml-9 duration-1000 '>freedom is sorrow is moments of connection is dissociation is remembering is moving through</p>
-      <p className=' hover:text-[#78b1c4]  ml-0 hover:ml-9 duration-1000 '>company</p>
-      <p className=' text-[#000000] ml-0 text-9xl hover:ml-9 duration-1000 '><i>me and you</i></p>
+{/* <h1 className='text-6xl m-auto text-[#78b1c4] p-15 z-0 max-w-2xl float-left -skew-x-6 '> misery is.. </h1> */}
+
+
+<section className="h-screen">
+{/* <img className=" w-2/6 absolute drop-shadow-[0_0px_5px_red]" src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" />  */}
+
+
+{/* <Image
+        src={mypic}
+        alt="Picture of the author"
+        width="350px"
+        height="300px"
+        layout="fixed" // layout="fill", layout="intrinsic" 
+        position="absolute"
+    /> */}
+
+
+
+  <div className=' h-5/6 flex text-center w-screen  mx-auto px-0  '>
+<h1 className='text-6xl m-auto text-[#000000] w-3/6 p-15 z-0 max-w-2xl font-bold float-left -skew-x-6 '> misery is.. </h1>
+    <p className=' text-[#0f0f0f]  pt-20  text-4xl p-10 m-auto font-thin z-0 h-4/5 w-6/6 float-right overflow-scroll' >
+    <p className=' z-0 '></p>
+    {/* <hr /> */}
+      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10 ml-0 hover:ml-9 duration-1000  '> <p>crying at the party,</p></p><br/>
+      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10 ml-0 hover:ml-9 duration-1000 '>your emotional support stuffed animal that looks more depressed than you do </p><br/>
+      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>being a fag and a dyke at the same time</p><br/>
+      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>a 4 hour bath and a 7 day free trial</p><br/>
+      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>that one piece of butt hair the beautician forgot about </p><br/>
+      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>waxing your butt in the first place</p><br/>
+      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>living in your overdraft but eating out anyway</p><br/>
+      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>searching for a halal photo to send nani ji</p><br/>
+      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>putting your headphones in at the back of the cab but not even listening to anything you just don’t want to chat</p><br/>
+      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>forgiving your younger self for the things they did to get you here</p><br/>
+      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>your second hand binder</p><br/>
+      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>falling in love with your therapist</p><br/>
+      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '> this too shall pass</p><br/>
+      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>freedom is sorrow is moments of connection is dissociation is remembering is moving through</p><br/>
+      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>company</p><br/>
+      <p className=' text-[#000000] ml-0 text-9xl hover:ml-9 duration-1000 '><i>me and you  </i></p><br/>
+    <img className=' w-2/6 m-auto ' src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/> 
       <p className=' p-10 '></p>
     </p>
+    </div>
+    
+
+    {/* <div className={styles.rotate}>
+  <div className=' m-auto flex text-center  mx-auto px-0 '>
+<Image
+        src={mypic}
+        width="350px"
+        height="350px"
+    />
+</div>
+</div> */}
+
+    <div className=" border-[.5px] border-[#030303]  ">
+  <div className="absolute  font-normal text-xs w-screen flex overflow-x-hidden ">
+  <div className="py-5 text-xl animate-marquee whitespace-nowrap">
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp;  .｡.:☆.｡.: &nbsp; u can cry if u want to</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  u can cry if u want to</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  u can cry if u want to</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  u can cry if u want to</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  u can cry if u want to</span>
+  </div>
+
+  <div className="absolute text-xl bottom-0 py-5 animate-marquee2 whitespace-nowrap">
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  u can cry if u want to</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  u can cry if u want to</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  u can cry if u want to</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  u can cry if u want to</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  u can cry if u want to</span>
+  </div>
+</div>
+</div>
+
+
+
 </section>
 
 {/* <Link  href="./"><img className=" overflow-hidden z-50 float-right absolute -bottom-20 p-10 w-5/12 duration-500 hover:drop-shadow-[0_0px_5px_#ffffff]" src="https://i.ibb.co/6yR3mjn/misery-world-glitter.png"/></Link>
@@ -114,15 +187,16 @@ export default function MiserySite() {
     
 
 
+
 {/* what is miss */}
 
-<section id="whatismisery?" className={styles.whatismiserydas}>
+{/* <section id="whatismisery?" className={styles.whatismiserydas}>
   <div  className='  flex h-screen mx-auto px-0  '>
     <div className={styles.logoaa}>
   <img className={styles.swerl} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" /> 
   <img className={styles.swerl1} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" /> 
   <img className={styles.swerl2} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" /> 
-  </div>
+  </div> */}
   {/* <img className={styles.logomishome} src="https://i.ibb.co/qB2YqyQ/MISERY-FAUX-FUR.png"/> */}
   {/* <img className={styles.logoa} src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/> */}
   {/* <img className={styles.figure} src="https://i.ibb.co/sFyFWsf/Bald.png"/> */}
@@ -150,53 +224,37 @@ export default function MiserySite() {
       </Canvas>
     </div> */}
 
-{/* <div className="fixed">
-  <div className="absolute flex overflow-x-hidden">
-  <div className="py-9 animate-marquee whitespace-nowrap">
-    <span className="mx-4 text-xl text-[#2b2b2b]">  &nbsp;  ✳ &nbsp; misery is..</span>
-    <span className="mx-4 text-xl text-[#2b2b2b]">  &nbsp; ✳ &nbsp;  crying at the party</span>
-    <span className="mx-4 text-xl text-[#2b2b2b]">  &nbsp; ✳ &nbsp;  your emotional support stuffed animal that looks more depressed than you do </span>
-    <span className="mx-4 text-xl text-[#2b2b2b]">  &nbsp; ✳ &nbsp;  being a fag and a dyke at the same time</span>
-    <span className="mx-4 text-xl text-[#2b2b2b]">  &nbsp; ✳ &nbsp;  a 4 hour bath and a 7 day free trial</span>
-  </div>
 
-  <div className="absolute bottom-0 py-9 animate-marquee2 whitespace-nowrap">
-    <span className="mx-4 text-xl text-[#2b2b2b]">  &nbsp; ✳ &nbsp;  waxing your butt in the first place</span>
-    <span className="mx-4 text-xl text-[#2b2b2b]">  &nbsp; ✳ &nbsp;  living in your overdraft but eating out anyway</span>
-    <span className="mx-4 text-xl text-[#2b2b2b]">  &nbsp; ✳ &nbsp;  searching for a halal photo to send nani ji</span>
-    <span className="mx-4 text-xl text-[#2b2b2b]">  &nbsp; ✳ &nbsp;  putting your headphones in at the back of the cab but not even listening to anything you just don’t want to chat</span>
-    <span className="mx-4 text-xl text-[#2b2b2b]">  &nbsp; ✳ &nbsp;  forgiving your younger self for the things they did to get you here</span>
-  </div>
-</div>
-</div> */}
+    
+
 
   {/*   */}
       {/* <img className={styles.logoa} src="https://i.ibb.co/JyJxKXh/Esther-copy-2-Glow.png"/> */}
     {/* <img className={styles.swerl} src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" />  */}
     {/* https://i.ibb.co/qB2YqyQ/MISERY-FAUX-FUR.png text-[#ece784] */}
-    </div>
-    </section>
+    {/* </div>
+    </section> */}
 
 
 {/* <section className='  flex h-screen mx-auto px-0  '>
 <h1 className='text-8xl m-auto  p-15 z-0 max-w-2xl float-left '> misery is.. </h1>
     <p className=' text-[#f8f8f8]  pt-20 text-8xl m-auto p-6 font-light z-0 h-2/5 w-4/6 float left overflow-scroll' >
     <p className=' z-0 p-3  '></p>
-      <p className=' hover:text-[#78b1c4] ml-0 hover:ml-9 duration-1000  '>crying at the party</p>
-      <p className=' hover:text-[#78b1c4]  ml-0 hover:ml-9 duration-1000 '>your emotional support stuffed animal that looks more depressed than you do </p>
-      <p className=' hover:text-[#78b1c4]  ml-0 hover:ml-9 duration-1000 '>being a fag and a dyke at the same time</p>
-      <p className=' hover:text-[#78b1c4]  ml-0 hover:ml-9 duration-1000 '>a 4 hour bath and a 7 day free trial</p>
-      <p className=' hover:text-[#78b1c4]  ml-0 hover:ml-9 duration-1000 '>that one piece of butt hair the beautician forgot about </p>
-      <p className=' hover:text-[#78b1c4]  ml-0 hover:ml-9 duration-1000 '>waxing your butt in the first place</p>
-      <p className=' hover:text-[#78b1c4]  ml-0 hover:ml-9 duration-1000 '>living in your overdraft but eating out anyway</p>
-      <p className=' hover:text-[#78b1c4]  ml-0 hover:ml-9 duration-1000 '>searching for a halal photo to send nani ji</p>
-      <p className=' hover:text-[#78b1c4]  ml-0 hover:ml-9 duration-1000 '>putting your headphones in at the back of the cab but not even listening to anything you just don’t want to chat</p>
-      <p className=' hover:text-[#78b1c4]  ml-0 hover:ml-9 duration-1000 '>forgiving your younger self for the things they did to get you here</p>
-      <p className=' hover:text-[#78b1c4]  ml-0 hover:ml-9 duration-1000 '>your second hand binder</p>
-      <p className=' hover:text-[#78b1c4]  ml-0 hover:ml-9 duration-1000 '>falling in love with your therapist</p>
-      <p className=' hover:text-[#78b1c4]  ml-0 hover:ml-9 duration-1000 '> this too shall pass</p>
-      <p className=' hover:text-[#78b1c4]  ml-0 hover:ml-9 duration-1000 '>freedom is sorrow is moments of connection is dissociation is remembering is moving through</p>
-      <p className=' hover:text-[#78b1c4]  ml-0 hover:ml-9 duration-1000 '>company</p>
+      <p className=' hover:text-[black] hover:font-light  ml-0 hover:ml-9 duration-1000  '>crying at the party</p>
+      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>your emotional support stuffed animal that looks more depressed than you do </p>
+      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>being a fag and a dyke at the same time</p>
+      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>a 4 hour bath and a 7 day free trial</p>
+      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>that one piece of butt hair the beautician forgot about </p>
+      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>waxing your butt in the first place</p>
+      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>living in your overdraft but eating out anyway</p>
+      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>searching for a halal photo to send nani ji</p>
+      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>putting your headphones in at the back of the cab but not even listening to anything you just don’t want to chat</p>
+      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>forgiving your younger self for the things they did to get you here</p>
+      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>your second hand binder</p>
+      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>falling in love with your therapist</p>
+      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '> this too shall pass</p>
+      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>freedom is sorrow is moments of connection is dissociation is remembering is moving through</p>
+      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>company</p>
       <p className=' text-[#000000] ml-0 text-9xl hover:ml-9 duration-1000 '><i>me and you</i></p>
       <p className=' p-10 '></p>
     </p>

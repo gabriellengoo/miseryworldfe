@@ -10,7 +10,8 @@ import TextField from '@mui/material/TextField';
 
 function FooterComponent() {    
 	return ( 
-<Box component="footer" sx={{ py: 5, bgcolor: "#fef1ef" }}>
+		// #fef1ef
+<Box component="footer" sx={{ py: 5, bgcolor: "white" , border: "solid" }}>
 
 <Stack padding={2} justifyContent="center" direction={{ xs: 'column', sm: 'row' }} spacing={{ xs: 1, sm: 2, md: 4 }}>
 <MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="https://YourTwitterLink/" target="_blank" rel="noopener noreferrer" >

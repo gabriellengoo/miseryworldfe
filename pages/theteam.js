@@ -25,7 +25,7 @@ export default function MiserySite() {
   <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script> */}
   <title>Our Team</title>
         </Head>
-        <Toolbar /> 
+        {/* <Toolbar />  */}
 
 
 
@@ -60,7 +60,7 @@ export default function MiserySite() {
                  src="/images/illustration-woman-online-mobile.svg" alt="Woman Online"/> */}
 
             <div className="flex-none relative hidden md:block   z-10 w-1/2">
-            <h1 className="flex-none pl-3 py-8 font-black text-6xl tracking-wide ">The team</h1>
+            <h1 className="flex-none pl-3 py-8 font-black text-6xl tracking-wide ">the team</h1>
             <p className="flex-none pl-3 text-xl tracking-wide ">Get to know the team behind misery :)</p>
             </div>
 

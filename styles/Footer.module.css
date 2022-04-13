@@ -16,6 +16,8 @@ padding: 80px 60px;
 /* background: #4859ff; */
 bottom: 0;
 width: 100%;
+border-style: solid;
+border-top: 40px #b6b6b6;
 }
 
 @media (max-width: 1000px) {

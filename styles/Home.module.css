@@ -2,9 +2,11 @@
   --bg-gradient: linear-gradient(169.78deg, rgba(255, 255, 255, 0.23) 4.65%, rgba(255, 255, 255, 0) 91.48%), radial-gradient(62.3% 67.27% at 20.42% 27.48%, #5E4B1E 0%, #2B2A28 100%), linear-gradient(112.91deg, #676561 3.51%, #242321 111.71%);
 } */
 
+/* #f579f5 */
+
 .das{
   --bg-gradient: linear-gradient(169.78deg, rgba(255, 255, 255, 0.23) 4.65%, rgba(255, 255, 255, 0) 91.48%), radial-gradient(62.3% 67.27% at 20.42% 27.48%, #5E4B1E 0%, #2B2A28 100%), linear-gradient(112.91deg, #676561 3.51%, #242321 111.71%);
-  background:radial-gradient(circle, rgba(142,233,181,1) 0%, rgba(159,238,163,1) 16%, #ece97d,#f579f5 50%, #91e5ef 65%);
+  background:radial-gradient(circle, rgba(142,233,181,1) 0%, rgba(159,238,163,1) 16%, #ece97d, #d1c8cd 65%);
   height:100vh;
   overflow: hidden;
 }
@@ -72,7 +74,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 50%;
+  width: 30%;
   z-index: 30;
   padding:0px;
   /* filter: blur(10px); */
@@ -366,6 +368,13 @@ width: 60%;
 }
 
 
+.rotate{
+position: absolute;
+/* margin: auto; */
+/* width: 100%; */
+top: 0;
+z-index: 0;
+}
 
 
 /* all */

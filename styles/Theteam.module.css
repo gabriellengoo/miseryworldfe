@@ -29,6 +29,7 @@
   animation:  holoCard 5s infinite;
   transform: skewY(50px);
   border-radius: 5%;
+  /* flex: 10; */
 }
 
 
