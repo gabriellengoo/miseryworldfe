@@ -12,7 +12,6 @@ import Footer from '../components/Footer';
 import FooterComponent from '../components/foottest';
 import Image from 'next/image'
 import mypic from '../public/rotatelogo.gif'
-// import image from '../public/hero.jpg';
 import imageUrlBuilder from '@sanity/image-url';
 import { useState, useEffect } from 'react';
 import Script from "next/script";
