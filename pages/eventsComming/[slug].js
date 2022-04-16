@@ -7,6 +7,8 @@ import { Aboutnav } from '../../components/aboutnav';
 import ReactPlayer from 'react-player'
 import Link from 'next/link'
 import Footer from '../../components/Footer';
+import FooterComponent from '../../components/foottest';
+import Marquee from "react-fast-marquee";
 
 
 export const EventsComming = ({ name, description, image, summary }) => {

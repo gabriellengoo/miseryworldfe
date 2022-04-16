@@ -28,7 +28,7 @@
   animation:  holoGradient 5s infinite;
   animation:  holoCard 5s infinite;
   transform: skewY(50px);
-  border-radius: 5%;
+  /* border-radius: 5%; */
   /* flex: 10; */
 }
 
@@ -46,6 +46,245 @@
   /*top:50px;*/
   filter: drop-shadow(0 30px 2px rgba(0, 0, 0, 0.05));
 }
+
+/* .a:hover{
+cursor:  url("https://studio-push.com/public/img/cursor-red.svg") 30 11, auto;
+} */
+
+.cardone{
+  background-image:url('https://i.ibb.co/Z6FVzYw/aisha.jpg');
+  position:relative;
+  z-index: 100;
+  top: 0;
+  width:  auto;
+  height: 100%;
+  overflow: hidden;
+  opacity: 100%;
+  color: #00000000;
+}
+
+
+.cardone:hover{
+  background-image:none;
+  position:relative;
+  z-index: 100;
+  top: 0;
+  width:  auto;
+  height: 100%;
+  overflow: hidden;
+  /* opacity: 0; */
+  color: #000000;
+}
+
+.card2{
+  background-image:url('https://i.ibb.co/dkdhD8Q/babetheory.jpg');
+  position:relative;
+  z-index: 100;
+  top: 0;
+  width:  auto;
+  height: 100%;
+  overflow: hidden;
+  opacity: 100%;
+  color: #00000000;
+  padding-bottom: 10vh;
+}
+
+
+.card2:hover{
+  background-image:none;
+  position:relative;
+  z-index: 100;
+  top: 0;
+  width:  auto;
+  height: 100%;
+  overflow: hidden;
+  /* opacity: 0; */
+  color: #000000;
+}
+
+.card3{
+  background-image:url('https://i.ibb.co/55Djvb5/soha.jpg');
+  position:relative;
+  z-index: 100;
+  top: 0;
+  width:  auto;
+  height: 100%;
+  overflow: hidden;
+  opacity: 100%;
+  color: #00000000;
+  padding-bottom: 20vh;
+}
+
+
+.card3:hover{
+  background-image:none;
+  position:relative;
+  z-index: 100;
+  top: 0;
+  width:  auto;
+  height: 100%;
+  overflow: hidden;
+  /* opacity: 0; */
+  color: #000000;
+}
+
+.card4{
+  background-image:url('https://i.ibb.co/fn0xZ73/leala.jpg');
+  position:relative;
+  z-index: 100;
+  top: 0;
+  width:  auto;
+  height: 100%;
+  overflow: hidden;
+  opacity: 100%;
+  color: #00000000;
+}
+
+
+.card4:hover{
+  background-image:none;
+  position:relative;
+  z-index: 100;
+  top: 0;
+  width:  auto;
+  height: 100%;
+  overflow: hidden;
+  /* opacity: 0; */
+  color: #000000;
+}
+
+
+/*  */
+.card5{
+  background-image:url('https://i.ibb.co/hKgXMHS/maymana.png');
+  position:relative;
+  z-index: 100;
+  top: 0;
+  width:  auto;
+  height: 100%;
+  overflow: hidden;
+  opacity: 100%;
+  color: #00000000;
+  padding-bottom: 17vh;
+}
+
+
+.card5:hover{
+  background-image:none;
+  position:relative;
+  z-index: 100;
+  top: 0;
+  width:  auto;
+  height: 100%;
+  overflow: hidden;
+  /* opacity: 0; */
+  color: #000000;
+}
+
+.card6{
+  background-image:url('https://i.ibb.co/4t7Cw0F/sonji.jpg');
+  position:relative;
+  z-index: 100;
+  top: 0;
+  width:  auto;
+  height: 100%;
+  overflow: hidden;
+  opacity: 100%;
+  padding-bottom: 21vh;
+  color: #00000000;
+}
+
+
+.card6:hover{
+  background-image:none;
+  position:relative;
+  z-index: 100;
+  top: 0;
+  width:  auto;
+  height: 100%;
+  overflow: hidden;
+  /* opacity: 0; */
+  color: #000000;
+}
+
+.card7{
+  background-image:url('https://i.ibb.co/KscjFt6/ella.jpg');
+  position:relative;
+  z-index: 100;
+  top: 0;
+  width:  auto;
+  height: 100%;
+  overflow: hidden;
+  opacity: 100%;
+  color: #00000000;
+}
+
+
+.card7:hover{
+  background-image:none;
+  position:relative;
+  z-index: 100;
+  top: 0;
+  width:  auto;
+  height: 100%;
+  overflow: hidden;
+  /* opacity: 0; */
+  color: #000000;
+}
+
+.card8{
+  background-image:url('https://i.ibb.co/rsGx8n6/firpii.jpg');
+  position:relative;
+  z-index: 100;
+  top: 0;
+  width:  auto;
+  height: 100%;
+  overflow: hidden;
+  opacity: 100%;
+  color: #00000000;
+}
+
+
+.card8:hover{
+  background-image:none;
+  position:relative;
+  z-index: 100;
+  top: 0;
+  width:  auto;
+  height: 100%;
+  overflow: hidden;
+  /* opacity: 0; */
+  color: #000000;
+}
+
+
+
+
+
+
+
+.backtotop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 50px;
+  width: auto;
+  height: auto;
+  background: #000000;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  border-radius: 100px;
+  border: none;
+  padding: 20px;
+  box-shadow: 0 5px 10px #ccc;
+  z-index: 200 !important;
+
+}
+
+.backtotop:hover {
+  background: #88e3b0;
+}
+
 
 
 @keyframes holoSparkle {

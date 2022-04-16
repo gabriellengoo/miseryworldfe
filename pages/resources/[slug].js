@@ -7,9 +7,14 @@ import { Toolbar } from '../../components/toolbar';
 import { sanityClient } from '@sanity/client'
 // import Image from "../../components/Image"
 import Link from "next/link"
-import Footer from '../../components/Footer';
+// import Footer from '../../components/Footer';
+import FooterComponent from '../../components/foottest';
 import Head from 'next/head';
 import { SectionTitle } from "../../components/SectionTitle";
+import Marquee from "react-fast-marquee";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
+
 
 export const Resourcesp = ({ title, phonetextsupport, inperson, communitiesUk, communitiesGlobal, housing,  }) => {
 
@@ -48,55 +53,80 @@ export const Resourcesp = ({ title, phonetextsupport, inperson, communitiesUk, c
       <Toolbar /> 
 
 
-      {/* <Toolbar /> */}
-      <div className={styles.main}>
- 
-        <div className='pt-28 pb-5 p-5 text-center text-xl  relative hidden md:block '>
-        <h1 className=' pl-3 py-8 font-black text-6xl tracking-wide'>{title}</h1>
-        <div className='p-3 m-auto text-xl font-light'>
-        {/* <BlockContent blocks={communitiesUk} /> */}
-        <h1 className=' '></h1>
-        <Link href="../crisis/crisis"><a target="_blank" className=' font-normal text-4xl tracking-wide' >*click here for crisis support* ↗</a></Link>
+      {/* <section className="  pt-36 z-50 w-screen font-bold text-base mx-auto px-0  border-[.5px] border-[#030303] ">
+      <div className=" flex border-[.5px] border-[#030303] w-screen ">
+      <Link  href="#memes"><a className='  hover:bg-[#dbff00] border-l-[.5px] border-[#030303] rounded-full p-4 m-auto items-center justify-evenly  tracking-wide"'>memes</a></Link>
+<Link href="#radio"><a className='  hover:bg-[#dbff00] border-l-[.5px] border-[#030303] rounded-full p-4 m-auto items-center justify-evenly tracking-wide"'>radio</a></Link>
+<Link href="#zine"><a className='  hover:bg-[#dbff00] border-l-[.5px] border-[#030303] rounded-full p-4 m-auto items-center justify-evenly  tracking-wide"'>zine</a></Link>
+<Link href="#mixtapes"><a className='  hover:bg-[#dbff00] border-l-[.5px] border-[#030303] rounded-full p-4 m-auto items-center justify-evenly  tracking-wide"'>mixtapes</a></Link>
+</div>
+</section> */}
+
+<div className=' p-5 pt-28 text-center text-5xl font-semibold  relative hidden md:block '>
+        <h1 className=' py-8 text-center font-base  tracking-wide'>{title}</h1>
+        <div className='m-auto text-2xl font-light'>
+        <Link href="../crisis/crisis"><a target="_blank" className=' font-normal tracking-wide' >*click here for crisis support* ↗</a></Link>
           </div>
         </div>
 
 
+
+
+
+      {/* <Toolbar /> */}
+      
+ 
+        {/* <div className='pt-28 pb-5 p-5 text-center text-xl  relative hidden md:block '>
+        <h1 className=' pl-3 py-8 font-black text-6xl tracking-wide'>{title}</h1>
+        <div className='p-3 m-auto text-xl font-light'>
+        <h1 className=' '></h1>
+        <Link href="../crisis/crisis"><a target="_blank" className=' font-normal text-4xl tracking-wide' >*click here for crisis support* ↗</a></Link>
+          </div>
+        </div> */}
+
+<div className={styles.main}>
         <section className='flex space-x-2 list-decimal justify-center text-center max-w-9xl mx-auto h-2/6 '>
             <div className={styles.links}>
-        <div className="  text-4xl tracking-wide justify-center mx-auto px-0 p-5 ">
+        <div className="  text-3xl tracking-wide justify-center mx-auto px-0 p-5 ">
       <div className=" justify-evenly p-5 ">
-<Link  href="#phonetextsupport"><a className='pl-10'>phone/text support</a></Link>
-<Link href="#inperson"><a className='pl-10'>in-person london-based support</a></Link>
-<Link href="#communitiesUk"><a className='pl-10'>communities & collectives (uk)</a></Link>
+<Link  href="#phonetextsupport"><a className='pl-10'>☆ phone/text support ☆</a></Link>
+<Link href="#inperson"><a className='pl-10'>☆ in-person london-based support ☆</a></Link>
+<Link href="#communitiesUk"><a className='pl-10'>☆ communities & collectives (uk) ☆</a></Link>
 <div></div>
-<Link href="#communitiesGlobal"><a className='pl-10'>communities & collectives (global)</a></Link>
+<Link href="#communitiesGlobal"><a className='pl-10'>☆ communities & collectives (global) ☆</a></Link>
 <div></div>
-<Link href="#housing"><a className='pl-10'>housing (london/uk)</a></Link>
-{/* <Link href="#grief"><a className='pl-10'>grief</a></Link>
-<Link href="#sexualhealth"><a className='pl-10'>sexual health</a></Link>
-<div></div>
-<Link href="#antiblackness"><a className='pl-10'>anti-blackness</a></Link>
-
-<Link href="#fatphobia"><a className='pl-10'>fatphobia</a></Link>
-<Link href="#suicide"><a className='pl-10'>suicide</a></Link>
-<div></div>
-<Link href="#substancereduction"><a className='pl-10'>substance use/harm reduction</a></Link>
-<div></div>
-<Link href="#lgbtqiaherbalism"><a className='pl-10'>lgbtqia+ & trauma herbalism</a></Link>
-<Link href="#therapy"><a className='pl-10'>therapy</a></Link>
-<div></div>
-<Link href="#movingyourbody"><a className='pl-10'>queer and trans friendly: moving your body!</a></Link>
-<div></div>
-<Link href="#transformativejustice"><a className='pl-10'>transformative justice</a></Link> */}
+<Link href="#housing"><a className='pl-10'>☆ housing (london/uk) ☆</a></Link>
 </div>
 </div>
 </div>
 </section>
-       
+</div>
 
+<div className=" bg-[white] ">
+  <div className=" p-3 border-[.5px] border-[#030303] font-normal text-xl w-screen overflow-x-hidden ">
+
+<Marquee>
+<span className="mx-4  text-[#2b2b2b]">  .｡.:☆.｡.: &nbsp;  Resources for qtibpoc healing</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  Resources for qtibpoc healing</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  Resources for qtibpoc healing</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  Resources for qtibpoc healing</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  Resources for qtibpoc healing</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  Resources for qtibpoc healing</span>
+    <span className="mx-4  text-[#2b2b2b]">  .｡.:☆.｡.: &nbsp;  Resources for qtibpoc healing</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  Resources for qtibpoc healing</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  Resources for qtibpoc healing</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  Resources for qtibpoc healing</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  Resources for qtibpoc healing</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  Resources for qtibpoc healing</span>
+</Marquee>
+
+</div>
+</div>
+       
+<div className={styles.main}>
 <section className=' text-center justify-center reletive flex  pt-12 lg:pt-62 px-8  z-50 '>
         <div className={styles.body}>
-                    <Link href="https://philome.la/jace_harr/you-feel-like-shit-an-interactive-self-care-guide/play/index.html"><a target="_blank" className=' py-8 font-black text-3xl tracking-wide' >&quot;you feel like shit&quot; interactive self care guide</a></Link>
+                    <Link href="https://philome.la/jace_harr/you-feel-like-shit-an-interactive-self-care-guide/play/index.html"><a target="_blank" className=' font-normal text-2xl tracking-wide' >&quot;you feel like shit&quot; interactive self care guide ↗</a></Link>
         </div>
         </section>
 
@@ -105,7 +135,7 @@ export const Resourcesp = ({ title, phonetextsupport, inperson, communitiesUk, c
 
         <section id="phonetextsupport" className=' reletive flex  pt-12 lg:pt-62 px-8  z-50 '>
         <div className={styles.body}>
-                    <h1 className='  py-8 font-black text-3xl tracking-wide'>phone/text support</h1>
+                    <h1 className='  py-8 tracking-wide  text-5xl font-semibold '>phone/text support</h1>
           <BlockContent blocks={phonetextsupport} />
         </div>
         </section>
@@ -113,7 +143,7 @@ export const Resourcesp = ({ title, phonetextsupport, inperson, communitiesUk, c
 
         <section id="inperson" className=' reletive flex  pt-12 lg:pt-62 px-8  z-50 '>
         <div className={styles.body}>
-                    <h1 className='  py-8 font-black text-3xl tracking-wide'>in-person london-based support</h1>
+                    <h1 className='  py-8 tracking-wide  text-5xl font-semibold '>in-person london-based support</h1>
           <BlockContent blocks={inperson} />
         </div>
         </section>
@@ -121,7 +151,7 @@ export const Resourcesp = ({ title, phonetextsupport, inperson, communitiesUk, c
 
         <section id="communitiesUk" className=' reletive flex  pt-12 lg:pt-62 px-8  z-50 '>
         <div className={styles.body}>
-                    <h1 className='  py-8 font-black text-3xl tracking-wide'>communities & collectives (uk)</h1>
+                    <h1 className='  py-8 tracking-wide  text-5xl font-semibold '>communities & collectives (uk)</h1>
           <BlockContent blocks={communitiesUk} />
         </div>
         </section>
@@ -130,7 +160,7 @@ export const Resourcesp = ({ title, phonetextsupport, inperson, communitiesUk, c
 
         <section id="communitiesGlobal" className=' reletive flex  pt-12 lg:pt-62 px-8 z-50 p-10 '>
         <div className={styles.body}>
-                    <h1 className='  py-8 font-black text-3xl tracking-wide'>communities & collectives (global)</h1>
+                    <h1 className='  py-8 tracking-wide  text-5xl font-semibold '>communities & collectives (global)</h1>
           <BlockContent className={styles.body} blocks={communitiesGlobal} />
         </div>
         </section>
@@ -140,101 +170,11 @@ export const Resourcesp = ({ title, phonetextsupport, inperson, communitiesUk, c
 
         <section id="housing" className=' reletive flex  pt-12 lg:pt-62 px-8 z-50 p-10 '>
         <div className={styles.body}>
-                    <h1 className='  py-8 font-black text-3xl tracking-wide'>housing (london/uk)</h1>
+                    <h1 className='  py-8 tracking-wide  text-5xl font-semibold '>housing (london/uk)</h1>
           <BlockContent className={styles.body} blocks={housing} />
         </div>
         </section>
 
-
-{/* 
-
-        <section id="grief" className=' reletive flex  pt-12 lg:pt-62 px-8 z-50 p-10 '>
-        <div className={styles.body}>
-                    <h1 className='  py-8 font-black text-3xl tracking-wide'>grief</h1>
-        <BlockContent className={styles.body} blocks={grief} />
-        </div>
-        </section>
-
- 
-
-        <section id="sexualhealth" className=' reletive flex  pt-12 lg:pt-62 px-8 z-50 p-10 '>
-        <div className={styles.body}>
-                    <h1 className='  py-8 font-black text-3xl tracking-wide'>sexual health</h1>
-        <BlockContent className={styles.body} blocks={sexualhealth} />
-        </div>
-        </section>
-
-
-
-        <section id="antiblackness" className=' reletive flex  pt-12 lg:pt-62 px-8 z-50 p-10 '>
-        <div className={styles.body}>
-                    <h1 className='  py-8 font-black text-3xl tracking-wide'>anti-blackness</h1>
-        <BlockContent className={styles.body} blocks={antiblackness} />
-        </div>
-        </section>
-
-
-
-        <section id="fatphobia" className=' reletive flex  pt-12 lg:pt-62 px-8 z-50 p-10 '>
-        <div className={styles.body}>
-                    <h1 className='  py-8 font-black text-3xl tracking-wide'>fatphobia</h1>
-        <BlockContent className={styles.body} blocks={fatphobia} />
-        </div>
-        </section>
-
-
-
-        <section id="suicide" className=' reletive flex  pt-12 lg:pt-62 px-8 z-50 p-10 '>
-        <div className={styles.body}>
-                    <h1 className='  py-8 font-black text-3xl tracking-wide'>suicide</h1>
-        <BlockContent className={styles.body} blocks={suicide} />
-        </div>
-        </section>
-        
-
-
-        <section id="substancereduction" className=' reletive flex  pt-12 lg:pt-62 px-8 z-50 p-10 '>
-        <div className={styles.body}>
-                    <h1 className='  py-8 font-black text-3xl tracking-wide'>substance use/harm reduction</h1>
-        <BlockContent className={styles.body} blocks={substancereduction} />
-        </div>
-        </section>
-
-
-
-        <section id="lgbtqiaherbalism" className=' reletive flex  pt-12 lg:pt-62 px-8 z-50 p-10 '>
-        <div className={styles.body}>
-                    <h1 className='  py-8 font-black text-3xl tracking-wide'>lgbtqia+ & trauma herbalism</h1>
-        <BlockContent className={styles.body} blocks={lgbtqiaherbalism} />
-        </div>
-        </section>
-
-
-
-        <section id="therapy" className=' reletive flex  pt-12 lg:pt-62 px-8 z-50 p-10 '>
-        <div className={styles.body}>
-                    <h1 className='  py-8 font-black text-3xl tracking-wide'>therapy</h1>
-        <BlockContent className={styles.body} blocks={therapy} />
-        </div>
-        </section>
-
-
-
-        <section id="movingyourbody" className=' reletive flex  pt-12 lg:pt-62 px-8 z-50 p-10 '>
-        <div className={styles.body}>
-                    <h1 className='  py-8 font-black text-3xl tracking-wide'>queer and trans friendly: moving your body!</h1>
-        <BlockContent className={styles.body} blocks={movingyourbody} />
-        </div>
-        </section>
-
-
-
-        <section id="transformativejustice" className=' reletive flex  pt-12 lg:pt-62 px-8 z-50 p-10 '>
-        <div className={styles.body}>
-                    <h1 className='  py-8 font-black text-3xl tracking-wide'>transformative justice</h1>
-        <BlockContent className={styles.body} blocks={transformativejustice} />
-        </div>
-        </section> */}
 
 
 
@@ -247,7 +187,8 @@ export const Resourcesp = ({ title, phonetextsupport, inperson, communitiesUk, c
       </div>
 
 
-      <Footer></Footer> 
+      <FooterComponent></FooterComponent>
+ 
     </div>
   );
 };
@@ -278,23 +219,13 @@ export const getServerSideProps = async pageContext => {
   } else {
     return {
       props: {
-        // body: resources.body,
         title: resources.title,
         phonetextsupport: resources.phonetextsupport,
         inperson: resources.inperson,
         communitiesUk: resources.communitiesUk,
         communitiesGlobal: resources.communitiesGlobal,
         housing: resources.housing,
-        // grief: resources.grief,
-        // sexualhealth: resources.sexualhealth,
-        // antiblackness: resources.antiblackness,
-        // fatphobia: resources.fatphobia,
-        // suicide: resources.suicide,
-        // substancereduction: resources.substancereduction,
-        // lgbtqiaherbalism: resources.lgbtqiaherbalism,
-        // therapy: resources.therapy,
-        // movingyourbody: resources.movingyourbody,
-        // transformativejustice: resources.transformativejustice,
+  
       }
     }
   }

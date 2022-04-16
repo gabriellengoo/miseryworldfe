@@ -62,24 +62,24 @@ const NewsletterForm = ( { status, message, onValidated }) => {
 
   return (
     <>
-      <div className="d-flex newsletter-input-fields   p-10">
-        <div className="mc-field-group text-center ">
+      <div className="d-flex border-[#000000] newsletter-input-fields w-3/6 ">
+        <div className="mc-field-group border-[#000000] text-center ">
           <input
             onChange={(event) => setEmail(event?.target?.value ?? '')}
             type="email"
             placeholder="Insert email here"
-            className="mr-2 bg-white border-[#dbff00] text-center text-xl  w-[600px] p-5 border-2 border-black;"
+            className=" border-[#000000] text-center text-base  w-3/6 p-5 border-[.5] border-black;"
             onKeyUp={(event) => handleInputKeyEvent(event)}
           />
-          <button className="wp-block-button__link text-center text-2xl border-2 border-[#dbff00]  hover:bg-[#dbff00] rounded-full  p-5" onClick={handleFormSubmit}>
-          Subscribe
+          <button className="wp-block-button__link text-center text-base border-[.5px] font-light border-[#000000]  hover:bg-[#ffffff] hover:text-[#000000] rounded-full  p-5" onClick={handleFormSubmit}>
+          subscribe
           </button>
         </div>
         {/* <div className="button-wrap wp-block-button text-center pt-10">
           
         </div> */}
       </div>
-      <div className="newsletter-form-info">
+      <div className=" border-[#000000] newsletter-form-info">
         {status === "sending" && <div>Sending...</div>}
         {status === "error" || error ? (
           <div

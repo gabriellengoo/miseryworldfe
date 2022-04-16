@@ -7,14 +7,16 @@ import { Toolbar } from '../../components/toolbar';
 import { sanityClient } from '@sanity/client'
 // import Image from "../../components/Image"
 import Link from "next/link"
-import Footer from '../../components/Footer';
+// import Footer from '../../components/Footer';
 import Head from 'next/head';
 import { SectionTitle } from "../../components/SectionTitle";
 import { Facebook, Instagram, Twitter } from "@mui/icons-material";
 import MuiNextLink from "../../components/MuiNextLink"
 import MailchimpSubscribe from 'react-mailchimp-subscribe';
 import NewsletterForm from '../../components/NewsletterForm';
-
+// import FooterComponent from '../components/foottest';
+import FooterComponent from '../../components/foottest';
+import Marquee from "react-fast-marquee";
 
 export const contactus = ({ title, body, bodytwo, }) => {
 //   const [imageUrl, setImageUrl] = useState('');
@@ -41,50 +43,78 @@ const MAILCHIMP_URL = process.env.NEXT_PUBLIC_MAILCHIMP_URL;
       <Toolbar /> 
 
 
+
       {/* <Toolbar /> */}
-      <div className=' h-screen'>
-        <div className='pt-28 pb-5 p-5 text-center text-xl  relative hidden md:block '>
+      
+
+      <div className="pt-28 bg-[white] ">
+  <div className=" p-3 border-[.5px] border-[#030303] font-normal text-xl w-screen overflow-x-hidden text-[#005c99] underline ">
+  <a href="mailto:hello@miseryparty.org">
+<Marquee>
+<span className="mx-4  ]">  &nbsp; .｡.:☆.｡.: &nbsp; hello@miseryparty.org</span>
+    <span className="mx-4  ]">  &nbsp; .｡.:☆.｡.: &nbsp; hello@miseryparty.org</span>
+    <span className="mx-4  ]">  &nbsp; .｡.:☆.｡.: &nbsp; hello@miseryparty.org</span>
+    <span className="mx-4  ]">  &nbsp; .｡.:☆.｡.: &nbsp; hello@miseryparty.org</span>
+    <span className="mx-4  ]">  &nbsp; .｡.:☆.｡.: &nbsp; hello@miseryparty.org</span>
+</Marquee>
+</a>
+</div>
+</div>
+
+
+      <div className=' p-10 h-screen'>
+      {/* <div className={styles.main}> */}
+
+
+
+
+        <div className=' pb-5  text-base  relative hidden md:block '>
         {/* <h1 className=' pl-3 py-8 font-black text-6xl tracking-wide'>{title}</h1> */}
-        <h1 className='  pl-3 text-6xl font-black tracking-wide'>Contact</h1>
+        <h1 className='  pl-3  font-medium tracking-wide'>contact</h1>
         </div>
 
-        
-        <div className='text-center text-l indent-5 tracking-wide  m-auto text-2xl font-light'>
-        
-        
-    {/* <BlockContent className={styles.body} blocks={body} /> */}
-  
 
-        <div className='text-center text-l p-10 font-light indent-5 tracking-wide p-3 m-auto text-2xl font-light'>
+        <div className=' pb-5  text-base  relative hidden md:block '>
+        {/* <h1 className=' pl-3 py-8 font-black text-6xl tracking-wide'>{title}</h1> */}
+        <h1 className='  pl-3  font-light tracking-wide'>  email:<a href="mailto:hello@miseryparty.org"> hello@miseryparty.org</a></h1>
+        </div>
+
+        <div className=' pb-5  text-base  relative hidden md:block '>
+        <h1 className=' pl-3  font-light tracking-wide'>anonymous Feedback form!
+misery confessions: tell us ur secrets</h1>
+         </div>
+        
+        <div className='text-l indent-5 tracking-wide  m-auto text-2xl font-light'>
+        {/* <div className='text-l indent-5 tracking-wide p-3 m-auto text-2xl font-light'>
           <BlockContent className={styles.body} blocks={bodytwo} />
-        </div>
+        </div> */}
         
 
-        <div className=' text-center indent-5 tracking-wide p-3 m-auto text-2xl font-light  relative hidden md:block '>
-        <h1 className=' pl-3 tracking-wide'>Sign up to our Newsletter</h1>
+        <div className='   text-base relative hidden md:block '>
+            <h1 className='  font-light tracking-wide'>sign up to our Newsletter</h1>
         </div>
-        <MailchimpSubscribe
-      url={ MAILCHIMP_URL }
-      render={ ( props ) => {
-        const { subscribe, status, message } = props || {};
-        return (
-          <NewsletterForm
-            status={ status }
-            message={ message }
-            onValidated={ formData => subscribe( formData ) }
-          />
-        );
-      } }
+              <MailchimpSubscribe
+            url={ MAILCHIMP_URL }
+            render={ ( props ) => {
+              const { subscribe, status, message } = props || {};
+              return (
+                <NewsletterForm
+                  status={ status }
+                  message={ message }
+                  onValidated={ formData => subscribe( formData ) }
+                />
+              );
+            } }
     />
 
 
 
 <MuiNextLink sx={{ textDecoration: "none", }} href="https://www.instagram.com/miseryparty/?hl=en" target="_blank" rel="noopener noreferrer">
-		<Instagram  className=' text-[#de2a7b] p-5  text-9xl' />
+		<Instagram  className=' text-[#de2a7b]   text-3xl' />
 		</MuiNextLink>
 
 		<MuiNextLink sx={{ textDecoration: "none", color: "common.blue" }} href="https://twitter.com/miseryparty_" target="_blank" rel="noopener noreferrer" >
-		<Twitter className=' text-9xl p-5' />
+		<Twitter className=' text-3xl ' />
 		</MuiNextLink>
 
     </div>
@@ -92,13 +122,13 @@ const MAILCHIMP_URL = process.env.NEXT_PUBLIC_MAILCHIMP_URL;
        
 
 
-
+  
  
 
+      {/* </div> */}
       </div>
 
-
-      <Footer></Footer> 
+      <FooterComponent></FooterComponent>
     </div>
   );
 };

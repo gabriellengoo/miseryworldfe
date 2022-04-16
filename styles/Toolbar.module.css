@@ -59,7 +59,13 @@
   }
 
 
+  .ul:active {
+    color: teal;
+  }
 
+  .ul:hover {
+    color: yellow;
+  }
 
 
 

@@ -3,7 +3,10 @@ import styles from '../styles/Theteam.module.css';
 import Link from "next/dist/client/link";
 import Head from 'next/head';
 import { Toolbar } from '../components/toolbar';
-import Footer from '../components/Footer';
+// import Footer from '../components/Footer';
+import FooterComponent from '../components/foottest';
+import Marquee from "react-fast-marquee";
+
 
 export default function Index() {
     
@@ -49,20 +52,57 @@ export default function Index() {
 <Head>
          {/* <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
   <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script> */}
-  <title>Our Team</title>
+  <title>f𝓐q</title>
         </Head>
         <Toolbar /> 
 
-        {/* TEAM MEMBERS  hover:drop-shadow-[0_35px_35px_#d1b200] */}
 
-        <section className=" max-w-2xl font-normal text-xl mx-auto px-0 pt-28 ">
-      <div className=" flex ">
-<Link  href="./videoBlogPost/our-story"><a className='  hover:bg-[#dbff00]  rounded-full p-4 m-auto items-center justify-evenly font-black tracking-wide"'>our story</a></Link>
-<Link href="../theteam"><a className='  hover:bg-[#dbff00] rounded-full p-4 m-auto items-center justify-evenly font-black tracking-wide"'>the team</a></Link>
-<Link href="../collaborators"><a className='  hover:bg-[#dbff00] rounded-full p-4 m-auto items-center justify-evenly font-black tracking-wide"'>collaborators</a></Link>
-<Link href="./"><a className='  hover:bg-[#dbff00] rounded-full p-4 m-auto items-center justify-evenly font-black tracking-wide"'>faqs </a></Link>
+        {/* <div className={styles.main}>
+        <section className=' pt-36 w-4/6  z-50 text-4xl font-normal text-center items-center m-auto  justify-center pb-5 px-8'>
+        <p className=' font-bold p-3'>.｡.:*☆ f𝓐q.｡.:*☆</p>
+        </section> 
+</div> */}
+
+<div className=" pt-36 flex-auto mb-2 w-full p-2  text-center text[red]">
+                    <h1 className=" flex-none pl-3 text-4xl py-8 font-black tracking-wide">.｡.:*☆ f𝓐q.｡.:*☆</h1>
+                    {/* {faqComponents} */}
+                </div> 
+
+        <section className="  z-50 w-screen font-normal text-base mx-auto px-0 ">
+      <div className=" flex border-b-[.5px] border-t-[.5px] w-screen border-[#030303] ">
+<Link  href="../videoBlogPost/our-story"><a className='  hover:bg-[#dbff00] border-l-[.5px] border-[#030303] rounded-full p-4 m-auto items-center justify-evenly  tracking-wide"'>our story</a></Link>
+<Link href="../theteam"><a className='  hover:bg-[#dbff00] border-l-[.5px] border-[#030303] rounded-full p-4 m-auto items-center justify-evenly tracking-wide"'>the team</a></Link>
+<Link href="../collaborators"><a className='  hover:bg-[#dbff00] border-l-[.5px] border-[#030303] rounded-full p-4 m-auto items-center justify-evenly  tracking-wide"'>collaborators</a></Link>
+<Link href="./"><a className='  hover:bg-[#dbff00] border-l-[.5px] border-[#030303] rounded-full p-4 m-auto items-center justify-evenly tracking-wide"'>faqs </a></Link>
 </div>
 </section>
+
+
+<div className=" bg-[white] ">
+  <div className=" p-3 border-b-[.5px] border-[#030303] font-normal text-xl w-screen overflow-x-hidden ">
+
+<Marquee>
+<span className="mx-4  text-[#2b2b2b]">  .｡.:☆.｡.: &nbsp;  f𝓐q</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  f𝓐q</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  f𝓐q</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  f𝓐q</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  f𝓐q</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  f𝓐q</span>
+    <span className="mx-4  text-[#2b2b2b]">  .｡.:☆.｡.: &nbsp;  f𝓐q</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  f𝓐q</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  f𝓐q</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  f𝓐q</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  f𝓐q</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  f𝓐q</span>
+</Marquee>
+
+</div>
+</div>
+
+
+        {/* TEAM MEMBERS  hover:drop-shadow-[0_35px_35px_#d1b200] */}
+
+  
 
 {/* <section >
 <div >
@@ -73,31 +113,27 @@ export default function Index() {
 </div>
 </section> */}
 
+<div className="flex-auto mb-2 w-full p-2  text-center text[red]">
+                    {/* <h1 className="border-b-[.5px] border-[#030303] flex-none pl-3 text-2xl py-8 font-black tracking-wide">.｡.:*☆ f𝓐q.｡.:*☆</h1> */}
+                    {faqComponents}
+                </div> 
 
 
-        <div className={`container mx-auto flex items-center   ${styles.wrapper}`}>
-        <div className={"flex-auto flex flex-col md:flex-row items-center bg-[#f1f4f4] rounded-xl m-5  p-3 md:m-10 " + styles.shadow}>
-            {/* <img className={"md:hidden flex-none pb-4 " + styles.translated}
-                 src="/images/illustration-woman-online-mobile.svg" alt="Woman Online"/>
-
-            <div className="flex-none relative hidden md:block  z-10 w-1/2">
-                <img className={"z-20 relative " + styles["translated-md"]}
-                     src="/images/illustration-woman-online-desktop.svg" alt="Woman Online"/>
-                <img className={"z-40 absolute " + styles["translated-box"]}
-                     src="/images/illustration-box-desktop.svg" alt="Woman Online"/>
-
-            </div> */}
- <div className="flex-auto mb-2 w-full p-2 text-center">
-                <h1 className="flex-none pl-3 text-3xl py-8 font-black tracking-wide">FAQS</h1>
-
-                {faqComponents}
+{/* old */}
+        {/* <div className={`container mx-auto flex items-center   ${styles.wrapper}`}>
+            <div className={"flex-auto flex flex-col  md:flex-row items-center bg-[#ffffff] m-5  p-3 md:m-10 " + styles.shadow}>
+            <div className="flex-auto mb-2 w-full p-2  text-center text[red]">
+                    <h1 className="border-b-[.5px] border-[#030303] flex-none pl-3 text-2xl py-8 font-black tracking-wide">.｡.:*☆ f𝓐q.｡.:*☆</h1>
+                    {faqComponents}
+                </div>         
             </div>
+         </div> */}
+{/* old */}
 
-         
-        </div>
-
-       
-    </div>;
-    <Footer></Footer> 
+<div>
+              
+                </div> 
+    <FooterComponent></FooterComponent>
+ 
     </div>
 }

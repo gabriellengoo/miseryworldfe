@@ -7,7 +7,8 @@ import { Toolbar } from '../../components/toolbar';
 import { sanityClient } from '@sanity/client'
 // import Image from "../../components/Image"
 import Link from "next/link"
-import Footer from '../../components/Footer';
+// import Footer from '../../components/Footer';
+import FooterComponent from '../../components/foottest';
 import Head from 'next/head';
 import { SectionTitle } from "../../components/SectionTitle";
 
@@ -37,68 +38,68 @@ export const getin = ({ title, body, bodytwo,
 
 
       {/* <Toolbar /> */}
-      <div className={styles.main}>
+      
         {/* <h1>hi</h1> */}
-        <div className='pt-28 pb-5 p-5 text-center text-xl  relative hidden md:block '>
-        <h1 className=' pl-3 py-8 font-black text-6xl tracking-wide'>{title}</h1>
-        <div className='p-3 m-auto text-2xl font-light'>
+        <div className='pt-28 pb-5 p-5 text-left text-xl  relative hidden md:block '>
+        <h1 className=' py-8 tracking-wide  text-5xl font-semibold '>{title}</h1>
+        <div className=' text-3xl tracking-wide justify-center mx-auto px-0 p-5 font-normal border-b-[.5px] border-[#030303]'>
         <p className=' font-light p-3'>
         it’s so affirming to hear from people who want to work with misery in some capacity. as you might have seen in our
-      <Link href="../../about"><a target="_blank" className=' font-bold p-3' > ‘about’ </a></Link>
+      <Link href="../../about"><a target="_blank" className=' font-semibold p-3 hover:text-[#85ff85]' > ☆‘about’☆ </a></Link>
       section, we have a small core   
-       <Link href="../../theteam"><a target="_blank" className=' font-bold p-3' > team </a></Link>
+       <Link href="../../theteam"><a target="_blank" className=' font-semibold p-3 hover:text-[#85ff85]' > ☆team☆ </a></Link>
        supported by many
-        <Link href="../collaborators"><a target="_blank" className=' font-bold p-3' > collaborators </a></Link>
+        <Link href="../collaborators"><a target="_blank" className=' font-semibold p-3 hover:text-[#92ff92]' > ☆collaborators☆ </a></Link>
         we love and work with regularly. 
 </p>  </div>
         </div>
 
-
-        <div className={`container mx-auto flex items-center  ${styles.wrapper}`}>
-        <div className={"flex-auto flex-col md:flex-row items-center bg-white rounded-xl m-5 p-3 md:m-10 " + styles.shadow}>
-        <div className='text-center text-l p-5 font-light indent-5 tracking-wide'>
-        <h1 className=' pl-3 py-8 font-black text-3xl tracking-wide'>join the team</h1>
+        <div className={styles.main}>
+        {/* <div className={`container mx-auto flex items-center  ${styles.wrapper}`}>
+        <div className={"flex-auto flex-col md:flex-row items-center bg-white rounded-xl m-5 p-3 md:m-10 " + styles.shadow}> */}
+        <div className=''>
+        <h1 className=' py-8 tracking-wide  text-5xl font-semibold'>join the team</h1>
           <BlockContent className={styles.body} blocks={body} />
         </div>
-        </div>
-    </div>
+        {/* </div>
+    </div> */}
 
 
-        <div className={`container mx-auto flex items-center  ${styles.wrapper}`}>
-        <div className={"flex-auto flex-col md:flex-row items-center bg-white rounded-xl m-5 p-3 md:m-10 " + styles.shadow}>
-        <div className='text-center text-l p-5 font-light indent-5 tracking-wide'>
-        <h1 className=' pl-3 py-8 font-black text-3xl tracking-wide'>hire us</h1>
+        {/* <div className={`container mx-auto flex items-center  ${styles.wrapper}`}>
+        <div className={"flex-auto flex-col md:flex-row items-center bg-white rounded-xl m-5 p-3 md:m-10 " + styles.shadow}> */}
+        <div className=''>
+        <h1 className=' py-8 tracking-wide  text-5xl font-semibold'>hire us</h1>
           <BlockContent className={styles.body} blocks={bodytwo} />
         </div>
-        </div>
-    </div>
+        {/* </div>
+    </div> */}
 
-        <div className={`container mx-auto flex items-center  ${styles.wrapper}`}>
-        <div className={"flex-auto flex-col md:flex-row items-center bg-white rounded-xl m-5 p-3 md:m-10 " + styles.shadow}>
-        <div className='text-center text-l p-5 font-light indent-5 tracking-wide'>
-        <h1 className=' pl-3 py-8 font-black text-3xl tracking-wide'>donate to us</h1>
+        {/* <div className={`container mx-auto flex items-center  ${styles.wrapper}`}>
+        <div className={"flex-auto flex-col md:flex-row items-center bg-white rounded-xl m-5 p-3 md:m-10 " + styles.shadow}> */}
+        <div className=''>
+        <h1 className=' py-8 tracking-wide  text-5xl font-semibold'>donate to us</h1>
           <BlockContent className={styles.body} blocks={bodythree} />
         </div>
-        </div>
-    </div>
+        {/* </div>
+    </div> */}
 
-    <div className={`container mx-auto flex items-center  ${styles.wrapper}`}>
-        <div className={"flex-auto flex-col md:flex-row items-center bg-white rounded-xl m-5 p-3 md:m-10 " + styles.shadow}>
-        <div className='text-center text-l p-5 font-light indent-5 tracking-wide'>
-        <h1 className=' pl-3 py-8 font-black text-3xl tracking-wide'>share our work with someone</h1>
+    {/* <div className={`container mx-auto flex items-center  ${styles.wrapper}`}>
+        <div className={"flex-auto flex-col md:flex-row items-center bg-white rounded-xl m-5 p-3 md:m-10 " + styles.shadow}> */}
+        <div className=''>
+        <h1 className=' py-8 tracking-wide  text-5xl font-semibold'>share our work with someone</h1>
           <BlockContent className={styles.body} blocks={bodyfour} />
         </div>
-        </div>
-    </div>
+        {/* </div>
+    </div> */}
 
-    <div className={`container mx-auto flex items-center  ${styles.wrapper}`}>
-        <div className={"flex-auto flex-col md:flex-row items-center bg-white rounded-xl m-5 p-3 md:m-10 " + styles.shadow}>
-        <div className='text-center text-l p-5 font-light indent-5 tracking-wide'>
-        <h1 className=' pl-3 py-8 font-black text-3xl tracking-wide'>give us feedback</h1>
+    {/* <div className={`container mx-auto flex items-center  ${styles.wrapper}`}>
+        <div className={"flex-auto flex-col md:flex-row items-center bg-white rounded-xl m-5 p-3 md:m-10 " + styles.shadow}> */}
+        <div className='pb-8'>
+        <h1 className=' py-8  tracking-wide  text-5xl font-semibold'>give us feedback</h1>
           <BlockContent className={styles.body} blocks={bodyfive} />
         </div>
-        </div>
-    </div>
+        {/* </div>
+    </div> */}
 
 
  
@@ -106,7 +107,7 @@ export const getin = ({ title, body, bodytwo,
       </div>
 
 
-      <Footer></Footer> 
+      <FooterComponent></FooterComponent>
     </div>
   );
 };

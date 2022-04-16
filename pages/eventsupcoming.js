@@ -5,6 +5,9 @@ import imageUrlBuilder from '@sanity/image-url';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Footer from '../components/Footer';
+import FooterComponent from '../components/foottest';
+import Marquee from "react-fast-marquee";
+
 
 export default function Home({ posts }) {
   const router = useRouter();
@@ -48,12 +51,52 @@ export default function Home({ posts }) {
       <div className="text-center  justify-center  mx-auto  p-0 ">
     
       <div className='pt-28  text-left text-xl max-w-7xl mx-auto my-md  relative hidden md:block '>
-<h1 className=" pl-3 text-5xl py-8   mx-auto font-black tracking-wide"> now & coming up</h1>
+{/* <h1 className=" pl-3 text-5xl py-8   mx-auto font-black tracking-wide"> now & coming up</h1> */}
     </div>
 
+    <div className="">
+    <div className=' p-5  text-center text-5xl  font-semibold  relative hidden md:block '>
+        <h1 className=' py-8 text-center  font-base  tracking-wide flex-none font-black'>events</h1>
+        <div className='m-auto text-2xl font-light'>
+        {/* <Link href="../crisis/crisis"><a target="_blank" className=' font-normal tracking-wide' >*click here for crisis support* ↗</a></Link> */}
+          </div>
+        </div>
+        </div>
+  
 
 
-    <div className=' text-center justify-center max-w-7xl mx-auto my-md pb-20  relative hidden md:block '>
+        <div className=" bg-[white] ">
+  <div className=" p-3 border-[.5px] border-[#030303] font-normal text-xl w-screen overflow-x-hidden ">
+
+<Marquee>
+<span className="mx-4  text-[#2b2b2b]">  .｡.:☆.｡.: &nbsp; events now & coming up</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp; events now & coming up</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp; events now & coming up</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp; events now & coming up</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp; events now & coming up</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp; events now & coming up</span>
+    <span className="mx-4  text-[#2b2b2b]">  .｡.:☆.｡.: &nbsp; events now & coming up</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp; events now & coming up</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp; events now & coming up</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp; events now & coming up</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp; events now & coming up</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp; events now & coming up</span>
+</Marquee>
+
+</div>
+</div>
+
+
+<div className="">
+    <div className=' p-5 text-5xl border-b-[.5px] border-[#030303]  font-light  relative hidden md:block '>
+        <h1 className=' font-base text-left  tracking-wide flex-none text-5xl '>now & coming up</h1>
+        <div className='m-auto text-2xl font-light'>
+        {/* <Link href="../crisis/crisis"><a target="_blank" className=' font-normal tracking-wide' >*click here for crisis support* ↗</a></Link> */}
+          </div>
+        </div>
+        </div>
+
+    <div className=' text-center justify-center mx-auto my-md  relative hidden md:block '>
         <div className={styles.feed}>
           {mappedPosts.length ? mappedPosts.map((p, index) => (
             <div onClick={() => router.push(`/eventsComming/${p.slug.current}`)} key={index} className={styles.post}>
@@ -65,7 +108,48 @@ export default function Home({ posts }) {
         </div>
       </div>
     </div>
-    <Footer></Footer> 
+
+<div className=" ">
+    <div className=' p-5  text-center text-5xl  font-semibold  relative hidden md:block '>
+        <h1 className=' py-8 text-center  font-base  tracking-wide font-black'>archive</h1>
+        <div className='m-auto text-2xl font-light'>
+        {/* <Link href="../crisis/crisis"><a target="_blank" className=' font-normal tracking-wide' >*click here for crisis support* ↗</a></Link> */}
+          </div>
+        </div>
+        </div>
+
+        <div className=" bg-[white] ">
+  <div className=" p-3 border-[.5px] border-[#030303] font-normal text-xl w-screen overflow-x-hidden ">
+
+<Marquee>
+<span className="mx-4  text-[#2b2b2b]">  .｡.:☆.｡.: &nbsp; events archive</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp; events archive</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp; events archive</span>
+    <span className="mx-4  text-[#2b2b2b]">  .｡.:☆.｡.: &nbsp; events archive</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp; events archive</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp; events archive</span>
+    <span className="mx-4  text-[#2b2b2b]">  .｡.:☆.｡.: &nbsp; events archive</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp; events archive</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp; events archive</span>
+    <span className="mx-4  text-[#2b2b2b]">  .｡.:☆.｡.: &nbsp; events archive</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp; events archive</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp; events archive</span>
+
+</Marquee>
+
+</div>
+</div>
+
+<div className="">
+    <div className=' p-5 text-5xl font-light  relative hidden md:block '>
+        <h1 className=' font-base text-left  tracking-wide flex-none text-5xl '>events archive</h1>
+        <div className='m-auto text-2xl font-light'>
+        {/* <Link href="../crisis/crisis"><a target="_blank" className=' font-normal tracking-wide' >*click here for crisis support* ↗</a></Link> */}
+          </div>
+        </div>
+        </div>
+
+    <FooterComponent></FooterComponent>
     </div>
   );
 }

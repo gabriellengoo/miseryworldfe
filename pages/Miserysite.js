@@ -9,9 +9,10 @@ import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import { Toolbar } from '../components/toolbar';
 import Footer from '../components/Footer';
+import FooterComponent from '../components/foottest';
 import Image from 'next/image'
 import mypic from '../public/rotatelogo.gif'
-import image from '../public/hero.jpg';
+// import image from '../public/hero.jpg';
 import imageUrlBuilder from '@sanity/image-url';
 import { useState, useEffect } from 'react';
 import Script from "next/script";
@@ -32,8 +33,10 @@ import LightBulb from "../components/LightBulb";
 import Floor from "../components/Floor";
 import Draggable from "../components/Draggable";
 import OrbitControls from "../components/OrbitControls";
-
-
+import Marquee from "react-fast-marquee";
+import { Component } from 'react';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Carousel } from 'react-responsive-carousel';
 
 
 
@@ -100,47 +103,96 @@ export default function MiserySite() {
 {/* <h1 className='text-6xl m-auto text-[#78b1c4] p-15 z-0 max-w-2xl float-left -skew-x-6 '> misery is.. </h1> */}
 
 
-<section className="h-screen">
+<section className="h-screen relative hidden md:block">
 {/* <img className=" w-2/6 absolute drop-shadow-[0_0px_5px_red]" src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" />  */}
 
 
-{/* <Image
+
+    
+
+<div className=' z-0 absolute top-0 cursor-grabbing h-screen overflow-hidden'>
+              <Carousel  zIndex={-2}  dynamicHeight={false} minHeight={5} interval={4000} showThumbs={false} showIndicators={false} showArrows={false} infiniteLoop={true} emulateTouch={true} swipeable={true} autoPlay >
+                
+                  <div className='z-0 '>
+                      <img src="/1.jpeg" alt="image1"/>
+                  </div>
+                  <div className='z-0 '>
+                      <img src="/2.jpg" alt="image2" />
+  
+                  </div>
+                  <div className='z-0 '>
+                      <img src="/3.jpg" alt="image3"/>
+  
+                  </div>
+                  <div className='z-0 '>
+                      <img src="/4.jpg" alt="image4"/>
+  
+                  </div>
+                  <div className='z-0 '>
+                      <img src="/5.jpg" alt="image5"/>
+                      
+  
+                  </div>
+                  <div className='z-0 '>
+                      <img src="/6.jpg" alt="image5"/>
+                      
+  
+                  </div>
+              </Carousel>
+            </div>
+
+
+            
+
+
+
+
+
+  <div className=' absolute top-0  h-5/6 flex text-center w-screen  mx-auto px-0  '>
+{/* <h1 className='border-t-[.5px] border-[#030303] text-6xl m-auto text-[#ffffff] w-3/6 p-15 z-0 max-w-2xl font-bold float-left -skew-x-6  '> misery is.. </h1> */}
+{/* <h1 className=' text-6xl m-auto text-[#ffffff] w-3/6 p-10 z-0 max-w-2xl font-bold float-left -skew-x-6  '> <div className="border-[1px] z-50 p-2 rounded-full border-[#ffffff] ">
+            <Image
         src={mypic}
         alt="Picture of the author"
-        width="350px"
-        height="300px"
-        layout="fixed" // layout="fill", layout="intrinsic" 
+        layout="fixed" 
         position="absolute"
-    /> */}
+    /> 
+            </div> 
+            </h1> */}
 
 
+        <path id="curve" d="M450,250c0,110.5-89.5,200-200,200S50,360.5,50,250S139.5,50,250,50S450,139.5,450,250z"></path>
+        <text width="500">
+          {/* <textPath id="manifest-path-textPath" alignment-baseline="top" xlink:href="#curve">❤ ~ you are <tspan class="text--bold"> special</tspan> and unique ~ ❤</textPath> */}
+        </text>
+      
 
-  <div className=' h-5/6 flex text-center w-screen  mx-auto px-0  '>
-<h1 className='text-6xl m-auto text-[#000000] w-3/6 p-15 z-0 max-w-2xl font-bold float-left -skew-x-6 '> misery is.. </h1>
-    <p className=' text-[#0f0f0f]  pt-20  text-4xl p-10 m-auto font-thin z-0 h-4/5 w-6/6 float-right overflow-scroll' >
+
+    {/* <p className=' text-[#f1f1f19c] mix-blend-diffrence pt-20  text-4xl p-10 m-auto font-normal z-0 h-4/5 w-6/6 float-right overflow-scroll' >
     <p className=' z-0 '></p>
-    {/* <hr /> */}
-      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10 ml-0 hover:ml-9 duration-1000  '> <p>crying at the party,</p></p><br/>
-      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10 ml-0 hover:ml-9 duration-1000 '>your emotional support stuffed animal that looks more depressed than you do </p><br/>
-      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>being a fag and a dyke at the same time</p><br/>
-      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>a 4 hour bath and a 7 day free trial</p><br/>
-      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>that one piece of butt hair the beautician forgot about </p><br/>
-      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>waxing your butt in the first place</p><br/>
-      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>living in your overdraft but eating out anyway</p><br/>
-      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>searching for a halal photo to send nani ji</p><br/>
-      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>putting your headphones in at the back of the cab but not even listening to anything you just don’t want to chat</p><br/>
-      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>forgiving your younger self for the things they did to get you here</p><br/>
-      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>your second hand binder</p><br/>
-      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>falling in love with your therapist</p><br/>
-      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '> this too shall pass</p><br/>
-      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>freedom is sorrow is moments of connection is dissociation is remembering is moving through</p><br/>
-      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>company</p><br/>
-      <p className=' text-[#000000] ml-0 text-9xl hover:ml-9 duration-1000 '><i>me and you  </i></p><br/>
+    <p className=' hover:text-[white] drop-shadow-[1rem_1rem_1rem_white] hover:font-normal w-5/6 p-7 ml-0 hover:ml-9 duration-1000  '> <p>misery is ...</p></p><br/>
+      <p className=' hover:text-[white] drop-shadow-[1rem_1rem_1rem_white] hover:font-normal w-5/6 p-7 ml-0 hover:ml-9 duration-1000  '> <p>crying at the party,</p></p><br/>
+      <p className=' hover:text-[white] drop-shadow-[1rem_1rem_1rem_white] hover:font-normal w-5/6 p-7 ml-0 hover:ml-9 duration-1000 '>your emotional support stuffed animal that looks more depressed than you do </p><br/>
+      <p className=' hover:text-[white] drop-shadow-[1rem_1rem_1rem_white] hover:font-normal w-5/6 p-7  ml-0 hover:ml-9 duration-1000 '>being a fag and a dyke at the same time</p><br/>
+      <p className=' hover:text-[white] drop-shadow-[1rem_1rem_1rem_white] hover:font-normal w-5/6 p-7  ml-0 hover:ml-9 duration-1000 '>a 4 hour bath and a 7 day free trial</p><br/>
+      <p className=' hover:text-[white] drop-shadow-[1rem_1rem_1rem_white] hover:font-normal w-5/6 p-7  ml-0 hover:ml-9 duration-1000 '>that one piece of butt hair the beautician forgot about </p><br/>
+      <p className=' hover:text-[white] drop-shadow-[1rem_1rem_1rem_white] hover:font-normal w-5/6 p-7  ml-0 hover:ml-9 duration-1000 '>waxing your butt in the first place</p><br/>
+      <p className=' hover:text-[white] drop-shadow-[1rem_1rem_1rem_white] hover:font-normal w-5/6 p-7  ml-0 hover:ml-9 duration-1000 '>living in your overdraft but eating out anyway</p><br/>
+      <p className=' hover:text-[white] drop-shadow-[1rem_1rem_1rem_white] hover:font-normal w-5/6 p-7  ml-0 hover:ml-9 duration-1000 '>searching for a halal photo to send nani ji</p><br/>
+      <p className=' hover:text-[white] drop-shadow-[1rem_1rem_1rem_white] hover:font-normal w-5/6 p-7  ml-0 hover:ml-9 duration-1000 '>putting your headphones in at the back of the cab but not even listening to anything you just don’t want to chat</p><br/>
+      <p className=' hover:text-[white] drop-shadow-[1rem_1rem_1rem_white] hover:font-normal w-5/6 p-7  ml-0 hover:ml-9 duration-1000 '>forgiving your younger self for the things they did to get you here</p><br/>
+      <p className=' hover:text-[white] drop-shadow-[1rem_1rem_1rem_white] hover:font-normal w-5/6 p-7  ml-0 hover:ml-9 duration-1000 '>your second hand binder</p><br/>
+      <p className=' hover:text-[white] drop-shadow-[1rem_1rem_1rem_white] hover:font-normal w-5/6 p-7  ml-0 hover:ml-9 duration-1000 '>falling in love with your therapist</p><br/>
+      <p className=' hover:text-[white] drop-shadow-[1rem_1rem_1rem_white] hover:font-normal w-5/6 p-7  ml-0 hover:ml-9 duration-1000 '> this too shall pass</p><br/>
+      <p className=' hover:text-[white] drop-shadow-[1rem_1rem_1rem_white] hover:font-normal w-5/6 p-7  ml-0 hover:ml-9 duration-1000 '>freedom is sorrow is moments of connection is dissociation is remembering is moving through</p><br/>
+      <p className=' hover:text-[white] drop-shadow-[1rem_1rem_1rem_white] hover:font-normal w-5/6 p-7  ml-0 hover:ml-9 duration-1000 '>company</p><br/>
+      <p className=' text-[white] mix-blend-diffrence p-10 ml-0 text-7xl hover:ml-9 duration-1000 '><i>me and you</i></p><br/>
     <img className=' w-2/6 m-auto ' src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/> 
       <p className=' p-10 '></p>
-    </p>
+    </p> */}
     </div>
     
+
 
     {/* <div className={styles.rotate}>
   <div className=' m-auto flex text-center  mx-auto px-0 '>
@@ -152,9 +204,16 @@ export default function MiserySite() {
 </div>
 </div> */}
 
-    <div className=" border-[.5px] border-[#030303]  ">
-  <div className="absolute  font-normal text-xs w-screen flex overflow-x-hidden ">
-  <div className="py-5 text-xl animate-marquee whitespace-nowrap">
+
+    
+</section>
+
+
+
+<div className="bottom-0 absolute bg-[white] ">
+  <div className=" p-3 border-t-[.5px] border-[#030303] font-normal text-xl w-screen overflow-x-hidden ">
+{/*     
+  <div className="  bottom-0 py-5 text-xl animate-marquee whitespace-nowrap">
     <span className="mx-4  text-[#2b2b2b]">  &nbsp;  .｡.:☆.｡.: &nbsp; u can cry if u want to</span>
     <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  u can cry if u want to</span>
     <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  u can cry if u want to</span>
@@ -162,20 +221,137 @@ export default function MiserySite() {
     <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  u can cry if u want to</span>
   </div>
 
-  <div className="absolute text-xl bottom-0 py-5 animate-marquee2 whitespace-nowrap">
+  <div className="text-xl bottom-0 py-5 animate-marquee2 whitespace-nowrap">
     <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  u can cry if u want to</span>
     <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  u can cry if u want to</span>
     <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  u can cry if u want to</span>
     <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  u can cry if u want to</span>
     <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  u can cry if u want to</span>
-  </div>
+  </div> */}
+
+<Marquee>
+<span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  u can cry if u want to</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  u can cry if u want to</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  u can cry if u want to</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  u can cry if u want to</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  u can cry if u want to</span>
+</Marquee>
+
 </div>
 </div>
 
+<section className=' h-3/6 border-b-[.5px]  border-t-[.5px] border-[#030303]  z-50 text-5xl font-normal text-center items-center m-auto flex justify-center p-5 px-8'>
+        <p className=''> 𝓐&#039;bout .｡.:*☆ </p>
+        </section> 
 
 
+        <div className=''>
+        {/* <h1>{name}</h1> */}
+        {/* {imageUrl && <img className={styles.mainImage} src={imageUrl} />} */}
+        <section className=" z-50 w-screen text-base mx-auto px-0  border-[.5px] border-b-[#030303] ">
+      <div className=" flex border-[.5px] w-screen ">
+      <Link  href="#whatismisery"><a className='  hover:bg-[#dbff00] border-l-[.5px] border-[#030303] rounded-full p-4 m-auto items-center justify-evenly  tracking-wide"'>what is misery?</a></Link>
+<Link href="#whatwedo"><a className='  hover:bg-[#dbff00] border-l-[.5px] border-[#030303] rounded-full p-4 m-auto items-center justify-evenly tracking-wide"'>what we do</a></Link>
+<Link href="#ourgoals"><a className='  hover:bg-[#dbff00] border-l-[.5px] border-[#030303] rounded-full p-4 m-auto items-center justify-evenly  tracking-wide"'>our goals</a></Link>
+<Link href="#ourroots"><a className='  hover:bg-[#dbff00] border-l-[.5px] border-[#030303] rounded-full p-4 m-auto items-center justify-evenly tracking-wide"'>our roots </a></Link>
+<Link href="#ourdreams"><a className='  hover:bg-[#dbff00] border-l-[.5px] border-[#030303] rounded-full p-4 m-auto items-center justify-evenly tracking-wide"'>our dreams (for a less miserable world) </a></Link>
+</div>
+</section>
+</div>
+
+
+{/* bg-[#c0c4ff] text-[#f6ee63] */}
+<div className='flex tracking-wider text-lg overflow-scroll h-screen w-screen '>
+<div className='  p-5 float-right right-0 overflow-scroll border-b-[.5px]  border-r-[.5px] border-[#030303]  w-2/6 top-0 font-normal  '>
+<section id="whatismisery?" className={styles.whatismiserydas}>
+        <p className='  text-3xl text-center p-5  '>what is misery?</p>
+        <p>misery is a mental health community and sober rave based in london and led by and for queer, trans, intersex, black people and people of colour (qtibpoc) with lived experience of madness, mental health challenges, time in hospital, addiction, public service use, disability, trauma, medication and neurodivergence.
+
+we co-create free, playful, accessible sober spaces, services, practices, parties and resources to cultivate communities of care that can support and sustain the collective healing and resilience of qtibpoc world over.
+
+misery is a reminder that you’re not too sensitive, it’s mad out here.</p>
+</section>
+        </div>
+        
+        <div className='  z-0 object-cover  cursor-grabbing h-6/6 w-5/6 overflow-hidden'>
+              <Carousel zIndex={-2}  dynamicHeight={false} minHeight={5} interval={4000} showThumbs={false} showIndicators={false} showArrows={false} infiniteLoop={true} emulateTouch={true} swipeable={true} >
+                
+                  {/* <div className='z-0  overflow-hidden '>
+                      <img  src="/1.jpeg" alt="image1"/>
+                  </div> */}
+                  <div className='z-0 w-[160%]'>
+                      <img src="/2.jpg" alt="image2" />
+                      {/* <p className="legend">Image 2</p> */}
+  
+                  </div>
+                  <div className='z-0 w-[160%]'>
+                      <img src="/3.jpg" alt="image3"/>
+                      {/* <p className="legend">Image 3</p> */}
+  
+                  </div>
+                  <div className='z-0 w-[160%]'>
+                      <img src="/4.jpg" alt="image4"/>
+                      {/* <p className="legend">Image 4</p> */}
+  
+                  </div>
+                  <div className='z-0 w-[160%]'>
+                      <img src="/5.jpg" alt="image5"/>
+                      {/* <p className="legend">Image 5</p> */}
+  
+                  </div>
+                
+              </Carousel>
+            </div>
+
+            <div className=' tracking-wider text-lg float-right right-0 overflow-scroll   w-2/6  top-0 font-normal  p-5 '>
+            <section id="whatwedo" className={styles.whatismiserydas}>
+            {/* <img className={styles.swerl} src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" /> */}
+            <p className=' text-3xl text-center p-5  '>what we do</p>
+        <p>we strive to cultivate generative ecologies of connection, care and solidarity that can support and sustain the collective healing and resilience of our community. we know first hand that healing and liberation is interwoven and by nurturing community care and addressing collective trauma, we seek to disrupt the growing privatisation of healing and the “self-care industrial complex”. we work for and with lived experience leaders to co-create accessible, playful, and transformative peer-led healing spaces, services and resources by (un)archiving and (re)generating the vast wisdom, community resilience strategies and potential for joy that are abundant amongst our people..</p>
+        </section>
+        </div>
+            </div>
+
+
+<section id="ourgoals">
+<div className=' tracking-wide  border-[.5px] border-[#030303]  font-normal text-lg '>
+            <p className=' text-3xl text-center  border-b-[.5px] border-[#030303] p-5 '>our goals</p>
+            <div className=' p-20'>
+        <li className=' duration-500 hover:ml-5 p-5'> ｡ to provide accessible, supportive and politically engaged events, spaces and services by and for qtibpoc to build community and help us to be in right relationship with ourselves, each other, and the land</li>
+<li className=' duration-500 hover:ml-5 p-5'>｡ to develop resources, research, artistic work, modalities and practices that facilitate healing and challenge dominant misperceptions about mental health, addiction, disability, trauma and neurodiversity</li>
+<li className=' duration-500 hover:ml-5 p-5'>｡ to promote leadership and development opportunities for qtibipoc with lived experience of mental health problems, madness, addiction, disability, trauma, and neurodivergence - within our communities, health and wellbeing settings, the arts and wider society</li>
+        </div>
+        </div>
 </section>
 
+
+<section id="ourroots">
+<div className=' tracking-wide  font-normal text-lg '>
+            <p className=' text-3xl text-center border-b-[.5px] border-[#030303] p-5 '>our roots</p>
+            <div className=' p-20'>
+        <p className=' duration-500  p-5'> the work of creating communities of care is not new, nor invented by us. it is ancient work that exists within communities, cultures and species around the world. we continue the legacies and lineages of our ancestors and the artists, activists and community workers that have come before us and those around the world that are committed to this work.</p>
+<p className=' duration-500  p-5'>we are inspired by our friends and lovers, the creative power of our communities and the mistakes of our parents. we give thanks and draw strength from the disability and healing justice movements, black feminist theory and praxis, mad studies, queer of colour critique, radical transfeminists, our dyke, faggot and gender divine sibings worldwide, femmes of colour spaces, wxtchcraft, raving on the dancefloor, community-based transformative justice interventions, indigenous herbalists, generative somatics, revolutionary mothering, nurses, sex workers, teachers, survivors, carers, youth workers and black, brown, indigenous and diasporic spiritual traditions.</p>
+<p className=' duration-500  p-5'>we have learnt that people are the experts in their own lives and believe that everyone should have the right to fail and the support they need to grow. we acknowledge that harm is an integral part of the human experience and that experiencing harm is one of the many ways our lives, minds, and hearts adapt to the world.</p>
+<p className=' duration-500  p-5'>our work is rooted in the principles of healing centered harm reduction including trauma-informed care, agency, collaboration, intersectionality, consent and acknowledges the historical and on-going social, cultural, environmental and economic systems that constantly terrorise our communities including experiences of colonisation, anti-blackness and racism, sexism, homophobia, transphobia, classism, ableism and other oppressions.</p>
+</div>   </div>
+</section>
+
+
+<section id="ourdreams">
+<div className='tracking-wide border-[.5px] border-[#030303]  font-normal text-lg '>
+            <p className=' text-3xl text-center p-5 border-b-[.5px] border-[#030303] '>our dreams</p>
+            <div className=' text-center flex p-10   font-normal text-lg '>
+            <p className=' flex-none text-8xl duration-500 font-light  m-auto'> 1｡ </p>
+            <p className=' flex-none text-8xl duration-500 font-light  m-auto'> 2｡ </p>
+            <p className=' flex-none text-8xl duration-500 font-light  m-auto'> Ɛ｡ </p>
+            </div>
+            <div className=' text-center flex p-10   font-normal text-lg '>
+        <p className=' duration-500  pl-5 w-2/6'> we are dreaming of worlds where every queer, trans, intersex black, brown and indigenous person has access to a choice of knowledges, resources, communities and health care services that they need to sustain their wellbeing.We are dreaming of worlds where every queer, trans, intersex black, brown and indigenous person has access to a choice of knowledges, resources, communities and health care services that they need to sustain their wellbeing.</p>
+<p className=' duration-500  pl-5 w-2/6'> worlds that are safer, happier, healthier and more peaceful. worlds where we all work to acknowledge and minimise our own potential for intimate, interpersonal, structural and ecological violence and in doing so resolve conflict compassionately.</p>
+<p className=' duration-500  pl-5 w-2/6'> worlds where people before profits, harm-reduction and post traumatic growth is the norm. where we are all supported in alchemising our pain through play, consent, connection, boundaries and rest. worlds where you can cry and be held, if you want to.</p>
+        </div>
+        </div>
+</section>
 {/* <Link  href="./"><img className=" overflow-hidden z-50 float-right absolute -bottom-20 p-10 w-5/12 duration-500 hover:drop-shadow-[0_0px_5px_#ffffff]" src="https://i.ibb.co/6yR3mjn/misery-world-glitter.png"/></Link>
 <Link  href="./Miserysite"><img className=" overflow-hidden z-50 absolute right-0 -bottom-20  p-10  w-5/12  duration-500 hover:drop-shadow-[0_0px_5px_#ffffff]" src="https://i.ibb.co/bQ4n39B/misery-site-slime.png"/></Link> */}
 
@@ -198,7 +374,7 @@ export default function MiserySite() {
   <img className={styles.swerl2} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" /> 
   </div> */}
   {/* <img className={styles.logomishome} src="https://i.ibb.co/qB2YqyQ/MISERY-FAUX-FUR.png"/> */}
-  {/* <img className={styles.logoa} src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/> */}
+  <img className={styles.logoa} src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/>
   {/* <img className={styles.figure} src="https://i.ibb.co/sFyFWsf/Bald.png"/> */}
   {/* <div className={styles.figurenew}> https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"  */}
   {/* <img className='flex justify-center m-auto items-center h-4/4 w-1/4  ' src="https://i.ibb.co/sFyFWsf/Bald.png"/> */}
@@ -240,29 +416,34 @@ export default function MiserySite() {
 <h1 className='text-8xl m-auto  p-15 z-0 max-w-2xl float-left '> misery is.. </h1>
     <p className=' text-[#f8f8f8]  pt-20 text-8xl m-auto p-6 font-light z-0 h-2/5 w-4/6 float left overflow-scroll' >
     <p className=' z-0 p-3  '></p>
-      <p className=' hover:text-[black] hover:font-light  ml-0 hover:ml-9 duration-1000  '>crying at the party</p>
-      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>your emotional support stuffed animal that looks more depressed than you do </p>
-      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>being a fag and a dyke at the same time</p>
-      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>a 4 hour bath and a 7 day free trial</p>
-      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>that one piece of butt hair the beautician forgot about </p>
-      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>waxing your butt in the first place</p>
-      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>living in your overdraft but eating out anyway</p>
-      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>searching for a halal photo to send nani ji</p>
-      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>putting your headphones in at the back of the cab but not even listening to anything you just don’t want to chat</p>
-      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>forgiving your younger self for the things they did to get you here</p>
-      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>your second hand binder</p>
-      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>falling in love with your therapist</p>
-      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '> this too shall pass</p>
-      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>freedom is sorrow is moments of connection is dissociation is remembering is moving through</p>
-      <p className=' hover:text-[black] hover:font-light  border-[.5px] border-[#030303] rounded-[100%] bg-white w-2/6 p-10  ml-0 hover:ml-9 duration-1000 '>company</p>
+      <p className=' hover:text-[white] drop-shadow-[1rem_1rem_1rem_white] hover:font-normal  ml-0 hover:ml-9 duration-1000  '>crying at the party</p>
+      <p className=' hover:text-[white] drop-shadow-[1rem_1rem_1rem_white] hover:font-normal w-5/6 p-7  ml-0 hover:ml-9 duration-1000 '>your emotional support stuffed animal that looks more depressed than you do </p>
+      <p className=' hover:text-[white] drop-shadow-[1rem_1rem_1rem_white] hover:font-normal w-5/6 p-7  ml-0 hover:ml-9 duration-1000 '>being a fag and a dyke at the same time</p>
+      <p className=' hover:text-[white] drop-shadow-[1rem_1rem_1rem_white] hover:font-normal w-5/6 p-7  ml-0 hover:ml-9 duration-1000 '>a 4 hour bath and a 7 day free trial</p>
+      <p className=' hover:text-[white] drop-shadow-[1rem_1rem_1rem_white] hover:font-normal w-5/6 p-7  ml-0 hover:ml-9 duration-1000 '>that one piece of butt hair the beautician forgot about </p>
+      <p className=' hover:text-[white] drop-shadow-[1rem_1rem_1rem_white] hover:font-normal w-5/6 p-7  ml-0 hover:ml-9 duration-1000 '>waxing your butt in the first place</p>
+      <p className=' hover:text-[white] drop-shadow-[1rem_1rem_1rem_white] hover:font-normal w-5/6 p-7  ml-0 hover:ml-9 duration-1000 '>living in your overdraft but eating out anyway</p>
+      <p className=' hover:text-[white] drop-shadow-[1rem_1rem_1rem_white] hover:font-normal w-5/6 p-7  ml-0 hover:ml-9 duration-1000 '>searching for a halal photo to send nani ji</p>
+      <p className=' hover:text-[white] drop-shadow-[1rem_1rem_1rem_white] hover:font-normal w-5/6 p-7  ml-0 hover:ml-9 duration-1000 '>putting your headphones in at the back of the cab but not even listening to anything you just don’t want to chat</p>
+      <p className=' hover:text-[white] drop-shadow-[1rem_1rem_1rem_white] hover:font-normal w-5/6 p-7  ml-0 hover:ml-9 duration-1000 '>forgiving your younger self for the things they did to get you here</p>
+      <p className=' hover:text-[white] drop-shadow-[1rem_1rem_1rem_white] hover:font-normal w-5/6 p-7  ml-0 hover:ml-9 duration-1000 '>your second hand binder</p>
+      <p className=' hover:text-[white] drop-shadow-[1rem_1rem_1rem_white] hover:font-normal w-5/6 p-7  ml-0 hover:ml-9 duration-1000 '>falling in love with your therapist</p>
+      <p className=' hover:text-[white] drop-shadow-[1rem_1rem_1rem_white] hover:font-normal w-5/6 p-7  ml-0 hover:ml-9 duration-1000 '> this too shall pass</p>
+      <p className=' hover:text-[white] drop-shadow-[1rem_1rem_1rem_white] hover:font-normal w-5/6 p-7  ml-0 hover:ml-9 duration-1000 '>freedom is sorrow is moments of connection is dissociation is remembering is moving through</p>
+      <p className=' hover:text-[white] drop-shadow-[1rem_1rem_1rem_white] hover:font-normal w-5/6 p-7  ml-0 hover:ml-9 duration-1000 '>company</p>
       <p className=' text-[#000000] ml-0 text-9xl hover:ml-9 duration-1000 '><i>me and you</i></p>
       <p className=' p-10 '></p>
     </p>
 </section> */}
 
+{showButton && (
+        <button onClick={scrollToTop} className={styles.backtotop}>
+          &#8679;
+        </button>
+      )}
 
-
-    <Footer></Footer> 
+    {/* <Footer></Footer>  */}
+    <FooterComponent></FooterComponent>
 
     </Layout>
   )

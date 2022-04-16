@@ -1,0 +1,680 @@
+
+
+/* .card:hover {
+    filter: drop-shadow(0 0 0.75rem rgb(0, 231, 255));
+}
+
+
+.card:before {
+   background: linear-gradient(transparent 0%,#fff 100%);transform:scale(1.2);
+} */
+
+
+.card:hover{
+    /* opacity: 1; */
+    background-image: url("https://assets.codepen.io/13471/sparkles.gif");
+    /* url(https://assets.codepen.io/13471/holo.png);  */
+      /* linear-gradient(125deg, #ff008450 15%, #fca40040 30%, #ffff0030 40%, #00ff8a20 60%, #00cfff40 70%, #cc4cfa50 85%); */
+    background-position: 50% 50%;
+    /* background-size: 160%; */
+    /* background-image: url("https://assets.codepen.io/13471/holo.png") ; */
+    background-blend-mode: overlay;
+    z-index: 2;
+    filter: brightness(1) contrast(1);
+    /* transition: all .33s ease; */
+    mix-blend-mode:color-dodge;
+    /* opacity: .75; */
+    animation:  holoSparkle 5s infinite;
+    animation:  holoGradient 5s infinite;
+    animation:  holoCard 5s infinite;
+    transform: skewY(50px);
+    /* border-radius: 5%; */
+    /* flex: 10; */
+  }
+  
+  
+  .card {
+    transform: translate(-17.5px, 0);
+    filter: drop-shadow(0 30px 2px rgba(0, 0, 0, 0.05));
+    /* background-color: rgba(255, 255, 255, 0.548); */
+  }
+  
+  
+  .card-md {
+    transform: translate(-20%, 0);
+    margin-top: 0;
+    /*top:50px;*/
+    filter: drop-shadow(0 30px 2px rgba(0, 0, 0, 0.05));
+  }
+  
+  /* .a:hover{
+  cursor:  url("https://studio-push.com/public/img/cursor-red.svg") 30 11, auto;
+  } */
+  
+  .cardone{
+    background-image:url('https://i.ibb.co/9sckD7N/nooriyah.jpg');
+    position:relative;
+    z-index: 100;
+    top: 0;
+    width:  auto;
+    height: 100%;
+    overflow: hidden;
+    opacity: 100%;
+    color: #00000000;
+    padding-bottom: 22vh;
+  }
+  
+  
+  .cardone:hover{
+    background-image:none;
+    position:relative;
+    z-index: 100;
+    top: 0;
+    width:  auto;
+    height: 100%;
+    overflow: hidden;
+    /* opacity: 0; */
+    color: #000000;
+  }
+  
+  .card2{
+    background-image:url('https://i.ibb.co/SNM6D4f/lady-shaka.jpg');
+    position:relative;
+    z-index: 100;
+    top: 0;
+    width:  auto;
+    height: 100%;
+    overflow: hidden;
+    opacity: 100%;
+    color: #00000000;
+
+  }
+  
+  
+  .card2:hover{
+    background-image:none;
+    position:relative;
+    z-index: 100;
+    top: 0;
+    width:  auto;
+    height: 100%;
+    overflow: hidden;
+    /* opacity: 0; */
+    color: #000000;
+  }
+  
+  .card3{
+    background-image:url('https://i.ibb.co/S0s3c3S/hannah.png');
+    position:relative;
+    z-index: 100;
+    top: 0;
+    width:  auto;
+    height: 100%;
+    overflow: hidden;
+    opacity: 100%;
+    color: #00000000;
+    padding-bottom: 29vh;
+  }
+  
+  
+  .card3:hover{
+    background-image:none;
+    position:relative;
+    z-index: 100;
+    top: 0;
+    width:  auto;
+    height: 100%;
+    overflow: hidden;
+    /* opacity: 0; */
+    color: #000000;
+  }
+  
+  .card4{
+    background-image:url('https://i.ibb.co/fn0xZ73/leala.jpg');
+    position:relative;
+    z-index: 100;
+    top: 0;
+    width:  auto;
+    height: 100%;
+    overflow: hidden;
+    opacity: 100%;
+    color: #00000000;
+    padding-bottom: 10vh;
+  }
+  
+  
+  .card4:hover{
+    background-image:none;
+    position:relative;
+    z-index: 100;
+    top: 0;
+    width:  auto;
+    height: 100%;
+    overflow: hidden;
+    /* opacity: 0; */
+    color: #000000;
+  }
+  
+  
+  /*  */
+  .card5{
+    /* background-image:url('https://i.ibb.co/hKgXMHS/maymana.png'); */
+    position:relative;
+    z-index: 100;
+    top: 0;
+    width:  auto;
+    height: 100%;
+    overflow: hidden;
+    opacity: 100%;
+    color: #000000;
+    padding-bottom: 24vh;
+  }
+  
+  
+  .card5:hover{
+    background-image:none;
+    position:relative;
+    z-index: 100;
+    top: 0;
+    width:  auto;
+    height: 100%;
+    overflow: hidden;
+    /* opacity: 0; */
+    color: #000000;
+  }
+  
+  .card6{
+    background-image:url('https://i.ibb.co/N3r4Y2H/huq-that.jpg');
+    position:relative;
+    z-index: 100;
+    top: 0;
+    width:  auto;
+    height: 100%;
+    overflow: hidden;
+    opacity: 100%;
+    padding-bottom: 20vh;
+    color: #00000000;
+  }
+  
+  
+  .card6:hover{
+    background-image:none;
+    position:relative;
+    z-index: 100;
+    top: 0;
+    width:  auto;
+    height: 100%;
+    overflow: hidden;
+    /* opacity: 0; */
+    color: #000000;
+  }
+  
+  .card7{
+    background-image:url('https://i.ibb.co/31CmbLP/oopie.png');
+    position:relative;
+    z-index: 100;
+    top: 0;
+    width:  auto;
+    height: 100%;
+    overflow: hidden;
+    opacity: 100%;
+    color: #00000000;
+  }
+  
+  
+  .card7:hover{
+    background-image:none;
+    position:relative;
+    z-index: 100;
+    top: 0;
+    width:  auto;
+    height: 100%;
+    overflow: hidden;
+    /* opacity: 0; */
+    color: #000000;
+    
+  }
+  
+  .card8{
+    background-image:url('https://i.ibb.co/KjxFQ5V/kemoy.png');
+    position:relative;
+    z-index: 100;
+    top: 0;
+    width:  auto;
+    height: 100%;
+    overflow: hidden;
+    opacity: 100%;
+    color: #00000000;
+    padding-bottom: 14vh;
+  }
+  
+  
+  .card8:hover{
+    background-image:none;
+    position:relative;
+    z-index: 100;
+    top: 0;
+    width:  auto;
+    height: 100%;
+    overflow: hidden;
+    /* opacity: 0; */
+    color: #000000;
+  }
+
+  /* more */
+  
+
+
+  .card9{
+    /* background-image:url('https://i.ibb.co/WknQLNZ/bones.jpg'); */
+    position:relative;
+    z-index: 100;
+    top: 0;
+    width:  auto;
+    height: 100%;
+    overflow: hidden;
+    opacity: 100%;
+    color: #000000;
+    padding-bottom: 12vh;
+  }
+  
+  
+  .card9:hover{
+    background-image:none;
+    position:relative;
+    z-index: 100;
+    top: 0;
+    width:  auto;
+    height: 100%;
+    overflow: hidden;
+    /* opacity: 0; */
+    color: #000000;
+  }
+  
+  .card11{
+    background-image:url('https://i.ibb.co/WknQLNZ/minara-el-waters.jpg');
+    position:relative;
+    z-index: 100;
+    top: 0;
+    width:  auto;
+    height: 100%;
+    overflow: hidden;
+    opacity: 100%;
+    color: #00000000;
+    /* padding-bottom: 10vh; */
+    
+  }
+
+  .card11:hover{
+    background-image:none;
+    position:relative;
+    z-index: 100;
+    top: 0;
+    width:  auto;
+    height: 100%;
+    overflow: hidden;
+    /* opacity: 0; */
+    color: #000000;
+    
+  }
+  
+  .card22{
+    background-image:none;
+    position:relative;
+    z-index: 100;
+    top: 0;
+    width:  auto;
+    height: 100%;
+    overflow: hidden;
+    /* opacity: 0; */
+    color: #000000;
+    padding-bottom: 42vh;
+  }
+  
+  .card22:hover{
+    background-image:none;
+    position:relative;
+    z-index: 100;
+    top: 0;
+    width:  auto;
+    height: 100%;
+    overflow: hidden;
+    /* opacity: 0; */
+    color: #000000;
+  }
+  
+  .card33{
+    /* background-image:url('https://i.ibb.co/55Djvb5/soha.jpg'); */
+    position:relative;
+    z-index: 100;
+    top: 0;
+    width:  auto;
+    height: 100%;
+    overflow: hidden;
+    opacity: 100%;
+    color: #000000;
+    padding-bottom: 42vh;
+  }
+  
+  
+  .card33:hover{
+    background-image:none;
+    position:relative;
+    z-index: 100;
+    top: 0;
+    width:  auto;
+    height: 100%;
+    overflow: hidden;
+    /* opacity: 0; */
+    color: #000000;
+  }
+  
+  .card44{
+    background-image:url('https://i.ibb.co/ZXTSp9g/tryb.jpg');
+    position:relative;
+    z-index: 100;
+    top: 0;
+    width:  auto;
+    height: 100%;
+    overflow: hidden;
+    opacity: 100%;
+    color: #00000000;
+    padding-bottom: 33vh;
+  }
+  
+  
+  .card44:hover{
+    background-image:none;
+    position:relative;
+    z-index: 100;
+    top: 0;
+    width:  auto;
+    height: 100%;
+    overflow: hidden;
+    /* opacity: 0; */
+    color: #000000;
+  }
+  
+  
+  /*  */
+  .card55{
+    /* background-image:url('https://i.ibb.co/hKgXMHS/maymana.png'); */
+    position:relative;
+    z-index: 100;
+    top: 0;
+    width:  auto;
+    height: 100%;
+    overflow: hidden;
+    opacity: 100%;
+    color: #000000;
+    padding-bottom: 17vh;
+  }
+  
+  
+  .card55:hover{
+    background-image:none;
+    position:relative;
+    z-index: 100;
+    top: 0;
+    width:  auto;
+    height: 100%;
+    overflow: hidden;
+    /* opacity: 0; */
+    color: #000000;
+  }
+  
+  .card66{
+    /* background-image:url('https://i.ibb.co/XYQjJmm/neo10y.jpg'); */
+    position:relative;
+    z-index: 100;
+    top: 0;
+    width:  auto;
+    height: 100%;
+    overflow: hidden;
+    opacity: 100%;
+    padding-bottom: 17vh;
+    color: #000000;
+  }
+  
+  
+  .card66:hover{
+    background-image:none;
+    position:relative;
+    z-index: 100;
+    top: 0;
+    width:  auto;
+    height: 100%;
+    overflow: hidden;
+    /* opacity: 0; */
+    color: #000000;
+  }
+  
+  .card77{
+    background-image:url('https://i.ibb.co/wKqJ6k2/parissah.png');
+    position:relative;
+    z-index: 100;
+    top: 0;
+    width:  auto;
+    height: 100%;
+    overflow: hidden;
+    opacity: 100%;
+    color: #00000000;
+  }
+  
+  
+  .card77:hover{
+    background-image:none;
+    position:relative;
+    z-index: 100;
+    top: 0;
+    width:  auto;
+    height: 100%;
+    overflow: hidden;
+    /* opacity: 0; */
+    color: #000000;
+  }
+  
+  .card88{
+    background-image:url('https://i.ibb.co/gtbwHf2/jamilla.jpg');
+    position:relative;
+    z-index: 100;
+    top: 0;
+    width:  auto;
+    height: 100%;
+    overflow: hidden;
+    opacity: 100%;
+    color: #00000000;
+    padding-bottom: 31vh;
+  }
+  
+  
+  .card88:hover{
+    background-image:none;
+    position:relative;
+    z-index: 100;
+    top: 0;
+    width:  auto;
+    height: 100%;
+    overflow: hidden;
+    /* opacity: 0; */
+    color: #000000;
+  }
+
+  .card99{
+    /* background-image:url('https://i.ibb.co/rsGx8n6/firpii.jpg'); */
+    position:relative;
+    z-index: 100;
+    top: 0;
+    width:  auto;
+    height: 100%;
+    overflow: hidden;
+    opacity: 100%;
+    color: #000000;
+  }
+  
+  
+  .card99:hover{
+    background-image:none;
+    position:relative;
+    z-index: 100;
+    top: 0;
+    width:  auto;
+    height: 100%;
+    overflow: hidden;
+    /* opacity: 0; */
+    color: #000000;
+  }
+  /* end */
+  
+  
+  
+  
+  
+  .backtotop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    font-size: 50px;
+    width: auto;
+    height: auto;
+    background: #000000;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    border-radius: 100px;
+    border: none;
+    padding: 20px;
+    box-shadow: 0 5px 10px #ccc;
+    z-index: 200 !important;
+  
+  }
+  
+  .backtotop:hover {
+    background: #88e3b0;
+  }
+  
+  
+  
+  @keyframes holoSparkle {
+    0%, 100% {
+      opacity: .75; background-position: 50% 50%; filter: brightness(1.2) contrast(1.25);
+    }
+    5%, 8% {
+      opacity: 1; background-position: 40% 40%; filter: brightness(.8) contrast(1.2);
+    }
+    13%, 16% {
+      opacity: .5; background-position: 50% 50%; filter: brightness(1.2) contrast(.8);
+    }
+    35%, 38% {
+      opacity: 1; background-position: 60% 60%; filter: brightness(1) contrast(1);
+    }
+    55% {
+      opacity: .33; background-position: 45% 45%; filter: brightness(1.2) contrast(1.25);
+    }
+  }
+  
+  @keyframes holoGradient {
+    0%, 100% {
+      opacity: 0.5;
+      background-position: 50% 50%;
+      filter: brightness(.5) contrast(1);
+    }
+    5%, 9% {
+      background-position: 100% 100%;
+      opacity: 1;
+      filter: brightness(.75) contrast(1.25);
+    }
+    13%, 17% {
+      background-position: 0% 0%;
+      opacity: .88;
+    }
+    35%, 39% {
+      background-position: 100% 100%;
+      opacity: 1;
+      filter: brightness(.5) contrast(1);
+    }
+    55% {
+      background-position: 0% 0%;
+      opacity: 1;
+      filter: brightness(.75) contrast(1.25);
+    }
+  }
+  
+  @keyframes holoCard {
+    0%, 100% {
+      transform: rotateZ(0deg) rotateX(0deg) rotateY(0deg);
+    }
+    5%, 8% {
+      transform: rotateZ(0deg) rotateX(6deg) rotateY(-20deg);
+    }
+    13%, 16% {
+      transform: rotateZ(0deg) rotateX(-9deg) rotateY(32deg);
+    }
+    35%, 38% {
+      transform: rotateZ(3deg) rotateX(12deg) rotateY(20deg);
+    }
+    55% {
+      transform: rotateZ(-3deg) rotateX(-12deg) rotateY(-27deg);
+    }
+  }
+  
+  
+  
+  
+  .wrapper {
+    margin-top: 150px;
+  }
+  
+  @media (min-width: 768px) {
+    .wrapper {
+        margin-top: 0;
+    }
+  }
+  
+  .shadow {
+    box-shadow: 0 15px 20px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .translated {
+    transform: translate(-17.5px, 0);
+    margin-top: -120px;
+    filter: drop-shadow(0 30px 2px rgba(0, 0, 0, 0.05));
+  }
+  
+  .translated-md {
+    transform: translate(-20%, 0);
+    margin-top: 0;
+    /*top:50px;*/
+    filter: drop-shadow(0 30px 2px rgba(0, 0, 0, 0.05));
+  }
+  
+  @media (min-width: 768px) {
+    .translated-md {
+        clip-path: inset(-30px -30px -30px 54px);
+    }
+  
+    .translated-box {
+        margin-top: 45px;
+        margin-left: -80px;
+        width: 140px;
+        top: 50%;
+        transform: translate(0, -50%)
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .translated-md {
+        clip-path: inset(-30px -30px -30px 82px);
+    }
+  
+    .translated-box {
+  
+        margin-top: 70px;
+        margin-left: -105px;
+        width: 190px;
+  
+        top: 50%;
+        transform: translate(0, -50%)
+    }
+  }
+  
+  

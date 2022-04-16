@@ -5,11 +5,18 @@
 
 .main p{
     /* font-size: 48px;  */
-    text-indent: 50px;
+    /* text-indent: 50px;
     line-height: 45px;
     text-align: center;
     letter-spacing: 1.5px;
-    padding: 2vh;
+    padding: 2vh; */
+    padding: 20px;
+    letter-spacing: 1.5px;
+}
+
+
+.Carousel{
+  z-index: -1 !important;
 }
 
 
