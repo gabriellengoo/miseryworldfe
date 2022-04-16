@@ -133,11 +133,9 @@ export default function MiserySite() {
                       
   
                   </div>
-                  <div className='z-0 '>
+                  {/* <div className='z-0 '>
                       <img src="/6.jpg" alt="image5"/>
-                      
-  
-                  </div>
+                  </div> */}
               </Carousel>
             </div>
 

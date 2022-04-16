@@ -165,7 +165,7 @@ export default function FirstPost() {
     </div> */}
 
     
-<script src="/scripts/bundle.min.js"></script>
+{/* <script src="/scripts/bundle.min.js"></script> */}
     </div>
 
 

@@ -39,7 +39,7 @@ export default function FirstPost() {
 <Toolbar />
 <div className="h-screen grid place-items-center text-5xl">
   
-   <p  className="py-8 tracking-wide m-auto  font-semibold"> <p  className="py-8 tracking-wide  m-auto   text-5xl font-semibold place-items-center text-center">shop</p>＊coming soon＊</p>
+   <p  className="py-8 tracking-wide m-auto  font-semibold"> <p  className="py-8 tracking-wide  m-auto   text-5xl font-semibold place-items-center text-center">shop</p>＊misery merch coming soon!＊</p>
    </div>
    <div className="flex  grid place-items-center text-5xl">
    {/* <MuiNextLink sx={{ textDecoration: "none", }} href="https://www.instagram.com/miseryparty/?hl=en" target="_blank" rel="noopener noreferrer">
@@ -53,7 +53,7 @@ export default function FirstPost() {
         </div>
 
 
-<script src="/scripts/bundle.min.js"></script>
+{/* <script src="/scripts/bundle.min.js"></script> */}
     </div>
     <FooterComponent></FooterComponent>
     </Layout>
