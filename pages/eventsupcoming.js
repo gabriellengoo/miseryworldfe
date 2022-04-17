@@ -54,9 +54,9 @@ export default function Home({ posts }) {
 {/* <h1 className=" pl-3 text-5xl py-8   mx-auto font-black tracking-wide"> now & coming up</h1> */}
     </div>
 
-    <div className="">
-    <div className=' p-5  text-center text-5xl  font-semibold  relative hidden md:block '>
-        <h1 className=' py-8 text-center  font-base  tracking-wide flex-none font-black'>events</h1>
+    <div className="  ">
+    <div className=' p-5 text-left h-5/6 text-9xl  font-semibold   relative hidden md:block '>
+        <h1 className=' py-8  text-left  h-5/6  font-base  tracking-wide flex-none '>events</h1>
         <div className='m-auto text-2xl font-light'>
         {/* <Link href="../crisis/crisis"><a target="_blank" className=' font-normal tracking-wide' >*click here for crisis support* ↗</a></Link> */}
           </div>
@@ -89,7 +89,7 @@ export default function Home({ posts }) {
 
 <div className="">
     <div className=' p-5 text-5xl border-b-[.5px] border-[#030303]  font-light  relative hidden md:block '>
-        <h1 className=' font-base text-left  tracking-wide flex-none text-5xl '>now & coming up</h1>
+        <h1 className=' font-base text-center  tracking-wide flex-none text-5xl '>now & coming up</h1>
         <div className='m-auto text-2xl font-light'>
         {/* <Link href="../crisis/crisis"><a target="_blank" className=' font-normal tracking-wide' >*click here for crisis support* ↗</a></Link> */}
           </div>
@@ -109,9 +109,10 @@ export default function Home({ posts }) {
       </div>
     </div>
 
-<div className=" ">
-    <div className=' p-5  text-center text-5xl  font-semibold  relative hidden md:block '>
-        <h1 className=' py-8 text-center  font-base  tracking-wide font-black'>archive</h1>
+
+        <div className="  ">
+    <div className=' p-5 text-left h-5/6 text-9xl  font-semibold   relative hidden md:block '>
+        <h1 className=' py-8  text-left  h-5/6  font-base  tracking-wide flex-none '>archive</h1>
         <div className='m-auto text-2xl font-light'>
         {/* <Link href="../crisis/crisis"><a target="_blank" className=' font-normal tracking-wide' >*click here for crisis support* ↗</a></Link> */}
           </div>
@@ -142,7 +143,7 @@ export default function Home({ posts }) {
 
 <div className="">
     <div className=' p-5 text-5xl font-light  relative hidden md:block '>
-        <h1 className=' font-base text-left  tracking-wide flex-none text-5xl '>events archive</h1>
+        <h1 className=' font-base text-center  tracking-wide flex-none text-5xl '>events archive</h1>
         <div className='m-auto text-2xl font-light'>
         {/* <Link href="../crisis/crisis"><a target="_blank" className=' font-normal tracking-wide' >*click here for crisis support* ↗</a></Link> */}
           </div>
