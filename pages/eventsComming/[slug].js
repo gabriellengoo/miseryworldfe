@@ -9,6 +9,7 @@ import Link from 'next/link'
 import Footer from '../../components/Footer';
 import FooterComponent from '../../components/foottest';
 import Marquee from "react-fast-marquee";
+import Head from 'next/head';
 
 
 export const EventsComming = ({ name, description, image, summary }) => {
@@ -16,7 +17,7 @@ export const EventsComming = ({ name, description, image, summary }) => {
 
   useEffect(() => {
     const imgBuilder = imageUrlBuilder({
-      projectId: 'ngizar2r',
+      projectId: 'jgs4s870',
       dataset: 'production',
     });
 
@@ -24,21 +25,57 @@ export const EventsComming = ({ name, description, image, summary }) => {
   }, []);
 
   return (
+  
+  
     <div>
+
+<Head>
+         {/* <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script> */}
+  <title> events </title>
+        </Head>
+      
       <Toolbar />
       
 
+      {/* <div className={styles.main}> */}
+        {/* <h1>{name}</h1> */}
+        {/* {imageUrl && <img className={styles.mainImage} src={imageUrl} />} */}
+        <section className=' pt-36  z-50 text-4xl font-normal items-center m-auto flex pb-5 px-8 font-black '>
+        {/* <h1>{name}</h1>        */}
+         </section> 
 
-      <div className={styles.main}>
+      <div className='flex'>
+        <div className=' object-cover z-0  top-0  h-6/6 w-5/6 '>
+              {/* <Carousel zIndex={-2}  dynamicHeight={false} minHeight={5} interval={4000} showThumbs={false} showIndicators={false} showArrows={false} infiniteLoop={true} emulateTouch={true} swipeable={true} > */}
+                
+                  {/* <div className='z-0  overflow-hidden '>
+                      <img  src="/1.jpeg" alt="image1"/>
+                  </div> */}
+                  <div className='z-0 w-[100%] drop-shadow-xl p-10'>
+                  {imageUrl && <img className='z-0 w-[100%] drop-shadow-xl p-10' src={imageUrl} />}
+                      {/* <p className="legend">Image 2</p> */}
+  
+                  </div>
+             
+                
+              {/* </Carousel> */}
+            </div>
+            <div className='float-right right-0  w-4/6 h-6/6 top-0 font-light text-lg p-10  '>
+            <h1 className='text-4xl font-black p-5 items-center'>{name}</h1>  
+            <p className='text-4xl font-normal p-5'>{summary}</p>
+          <BlockContent className='p-5' blocks={description} />
+        </div>
+            </div>
+            {/* </div> */}
+      {/* <div className={styles.main}>
 {imageUrl && <img className={styles.mainImage} src={imageUrl} />}
         <div className={styles.body}>
+        <BlockContent blocks={name} />
           <BlockContent blocks={description} />
           <BlockContent blocks={summary} />
         </div>
-
-
-
-      </div>
+      </div> */}
 
       <Footer></Footer> 
     </div>
@@ -56,8 +93,8 @@ export const getServerSideProps = async pageContext => {
     }
   }
 
-  const query = encodeURIComponent(`*[ _type == "EventsComming" && slug.current == "${pageSlug}" ]`);
-  const url = `https://ngizar2r.api.sanity.io/v1/data/query/production?query=${query}`;
+  const query = encodeURIComponent(`*[ _type == "eventsComming" && slug.current == "${pageSlug}" ]`);
+  const url = `https://jgs4s870.api.sanity.io/v1/data/query/production?query=${query}`;
 
   const result = await fetch(url).then(res => res.json());
   const post = result.result[0];
@@ -73,6 +110,7 @@ export const getServerSideProps = async pageContext => {
         name: post.name,
         image: post.image,
         summary: post.summary,
+        date: post.date,
       }
     }
   }

@@ -36,8 +36,8 @@ import Marquee from "react-fast-marquee";
 import { Component } from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
-
-
+import MuiNextLink from "../components/MuiNextLink"
+import { Facebook, Instagram, Twitter } from "@mui/icons-material";
 
 
 export default function MiserySite() {
@@ -71,7 +71,7 @@ export default function MiserySite() {
 <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script> */}
 <title>MiserySite</title>
       </Head>
-      <Toolbar />  
+      {/* <Toolbar />   */}
 
 {/* 
 <div className=" h-screen z-0">
@@ -107,8 +107,59 @@ export default function MiserySite() {
 
 
 
-    
 
+  <div className='flex overflow-scroll h-screen'>
+    <div className='float-right right-0 p-5 overflow-scroll w-2/6 top-0 font-normal text-lg '>
+          {/* <BlockContent blocks={description} /> */}
+          
+          <img className="w-3/6 text-center object-center justify-center mx-auto" src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/>
+          <p className="text-center object-center font-serif "> u can cry if u want to</p>
+          <p className="text-left pt-10 object-center text-base z-50 ">misery is a mental health community and sober rave based in london and led by and for queer, trans, intersex, black people and people of colour (qtibpoc)
+           with lived experience of madness, mental health challenges, time in hospital, addiction, public service use, disability, trauma, medication and ...      
+           <Link  href="#whatwedo"><a className=' hover:text-[#dbff00] font-bold p-4 m-auto items-center justify-evenly  tracking-wide"'>read more </a></Link><svg className="w-3/6"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0">
+  <polygon points="78.03 103.94 120 61.97 78.03 20 74.12 23.78 109.74 59.27 20 59.27 20 64.67 109.74 64.67 74.12 100.16 78.03 103.94"></polygon>
+</svg>
+           </p>
+
+           <div className=" pt-10 list-[none] text-2xl font-semibold   ">
+      <Link  href="#whatismisery"><li className='pt-2'><a className=' hover:text-[#dbff00]'>☆ what is misery?</a></li></Link>
+<Link href="#whatwedo"><li className='pt-2'><a className=' hover:text-[#dbff00] '>☆ what we do</a></li></Link>
+<Link href="#ourgoals"><li className='pt-2'><a className=' hover:text-[#dbff00] '>☆ our goals</a></li></Link>
+<Link href="#ourroots"><li className='pt-2'><a className=' hover:text-[#dbff00] '>☆ our roots</a></li></Link>
+<Link href="#ourdreams"><li className='pt-2'><a className=' hover:text-[#dbff00] '>☆ our dreams</a></li></Link>
+</div>
+
+
+<div className=" flex pt-5 bottom-0 absolute ">
+            <div className=" p-4">
+        <MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="https://www.instagram.com/miseryparty/?hl=en" target="_blank" rel="noopener noreferrer">
+		<Instagram fontSize="small" />
+		</MuiNextLink>
+        </div>
+        <div className=" p-4">
+        <MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="https://twitter.com/miseryparty_" target="_blank" rel="noopener noreferrer" >
+		<Twitter fontSize="small" />
+		</MuiNextLink>
+        </div>
+        <div className=" bg-white m-auto items-center justify-evenly  tracking-wide">
+        <Link  href="./"><a className='  m-auto items-center justify-evenly  tracking-wide'>© Misery 2022</a></Link>
+        </div>
+        </div>
+
+    </div>
+
+        <div className=' object-cover  z-0 p-5 top-0 h-6/6 w-4/6 overflow-hidden'>
+                  <div className='z-0 w-[100%]'>
+                      <img src="/2.jpg" alt="image2" />
+                  </div>
+            </div>
+
+   
+
+
+  </div>
+    
+{/* 
 <div className=' z-0 absolute top-0 cursor-grabbing h-screen overflow-hidden'>
               <Carousel  zIndex={-2}  dynamicHeight={false} minHeight={5} interval={4000} showThumbs={false} showIndicators={false} showArrows={false} infiniteLoop={true} emulateTouch={true} swipeable={true} autoPlay >
                 
@@ -132,12 +183,9 @@ export default function MiserySite() {
                       
   
                   </div>
-                  {/* <div className='z-0 '>
-                      <img src="/6.jpg" alt="image5"/>
-                  </div> */}
               </Carousel>
             </div>
-
+ */}
 
             
 
@@ -145,7 +193,7 @@ export default function MiserySite() {
 
 
 
-  <div className=' absolute top-0  h-5/6 flex text-center w-screen  mx-auto px-0  '>
+  {/* <div className=' absolute top-0  h-5/6 flex text-center w-screen  mx-auto px-0  '> */}
 {/* <h1 className='border-t-[.5px] border-[#030303] text-6xl m-auto text-[#ffffff] w-3/6 p-15 z-0 max-w-2xl font-bold float-left -skew-x-6  '> misery is.. </h1> */}
 {/* <h1 className=' text-6xl m-auto text-[#ffffff] w-3/6 p-10 z-0 max-w-2xl font-bold float-left -skew-x-6  '> <div className="border-[1px] z-50 p-2 rounded-full border-[#ffffff] ">
             <Image
@@ -158,10 +206,10 @@ export default function MiserySite() {
             </h1> */}
 
 
-        <path id="curve" d="M450,250c0,110.5-89.5,200-200,200S50,360.5,50,250S139.5,50,250,50S450,139.5,450,250z"></path>
-        <text width="500">
+        {/* <path id="curve" d="M450,250c0,110.5-89.5,200-200,200S50,360.5,50,250S139.5,50,250,50S450,139.5,450,250z"></path> */}
+        {/* <text width="500"> */}
           {/* <textPath id="manifest-path-textPath" alignment-baseline="top" xlink:href="#curve">❤ ~ you are <tspan class="text--bold"> special</tspan> and unique ~ ❤</textPath> */}
-        </text>
+        {/* </text> */}
       
 
 
@@ -187,7 +235,7 @@ export default function MiserySite() {
     <img className=' w-2/6 m-auto ' src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/> 
       <p className=' p-10 '></p>
     </p> */}
-    </div>
+    {/* </div> */}
     
 
 
@@ -201,30 +249,14 @@ export default function MiserySite() {
 </div>
 </div> */}
 
-
+<FooterComponent></FooterComponent>
     
 </section>
 
 
 
-<div className="bottom-0 absolute bg-[white] ">
+{/* <div className="bottom-0 absolute bg-[white] ">
   <div className=" p-3 border-t-[.5px] border-[#030303] font-normal text-xl w-screen overflow-x-hidden ">
-{/*     
-  <div className="  bottom-0 py-5 text-xl animate-marquee whitespace-nowrap">
-    <span className="mx-4  text-[#2b2b2b]">  &nbsp;  .｡.:☆.｡.: &nbsp; u can cry if u want to</span>
-    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  u can cry if u want to</span>
-    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  u can cry if u want to</span>
-    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  u can cry if u want to</span>
-    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  u can cry if u want to</span>
-  </div>
-
-  <div className="text-xl bottom-0 py-5 animate-marquee2 whitespace-nowrap">
-    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  u can cry if u want to</span>
-    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  u can cry if u want to</span>
-    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  u can cry if u want to</span>
-    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  u can cry if u want to</span>
-    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  u can cry if u want to</span>
-  </div> */}
 
 <Marquee>
 <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.: &nbsp;  u can cry if u want to</span>
@@ -235,7 +267,7 @@ export default function MiserySite() {
 </Marquee>
 
 </div>
-</div>
+</div> */}
 
 <section className=' h-3/6 border-b-[.5px]  border-t-[.5px] border-[#030303]  z-50 text-5xl font-normal text-center items-center m-auto flex justify-center p-5 px-8'>
         <p className=''> 𝓐&#039;bout .｡.:*☆ </p>
@@ -371,7 +403,7 @@ misery is a reminder that you’re not too sensitive, it’s mad out here.</p>
   <img className={styles.swerl2} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" /> 
   </div> */}
   {/* <img className={styles.logomishome} src="https://i.ibb.co/qB2YqyQ/MISERY-FAUX-FUR.png"/> */}
-  <img className={styles.logoa} src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/>
+ 
   {/* <img className={styles.figure} src="https://i.ibb.co/sFyFWsf/Bald.png"/> */}
   {/* <div className={styles.figurenew}> https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"  */}
   {/* <img className='flex justify-center m-auto items-center h-4/4 w-1/4  ' src="https://i.ibb.co/sFyFWsf/Bald.png"/> */}

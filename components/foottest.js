@@ -1,3 +1,5 @@
+
+
 import imageUrlBuilder from '@sanity/image-url';
 import { useState, useEffect } from 'react';
 import BlockContent from '@sanity/block-content-to-react';
@@ -15,25 +17,25 @@ function FooterComponent() {
 	return ( 
         <div className={styles.footer}>
         <section className="  w-screen font-normal  items-center text-9l mx-auto px-0  ">
-        <div className="  flex border-t-[.5px] w-screen text-center  items-center border-[#030303] ">
+        <div className="  flex  w-screen text-center  items-center ] ">
 
             <div className="  w-2/6 ">
             <TextField id="outlined-basic" label="Search" variant="outlined" color="secondary" />
             </div>
 
-  <Link  href="./"><a className=' text-center  border-l-[.5px] border-[#030303]  p-4 m-auto items-center justify-evenly  tracking-wide'>about</a></Link>
-  <Link href="../../contact/contact"><a className=' text-center   border-l-[.5px] border-[#030303]  p-4 m-auto items-center justify-evenly tracking-wide"'>contact</a></Link>
-  <Link href="../../resources/resources-for-qtibpoc-healing"><a className=' text-center   border-l-[.5px] border-[#030303]  p-4 m-auto items-center justify-evenly  tracking-wide"'>resources</a></Link>
-  <Link href="../../getinvolved/get-involved"><a className=' text-center   border-l-[.5px] border-[#030303]  p-4 m-auto items-center justify-evenly tracking-wide"'>get involved </a></Link>
-  <Link href="../../faq"><a className=' text-center   border-l-[.5px] border-[#030303]  p-4 m-auto items-center justify-evenly tracking-wide"'> donate  </a></Link>
+  <Link  href="./"><a className=' text-center     p-4 m-auto items-center justify-evenly  tracking-wide'>about</a></Link>
+  <Link href="../../contact/contact"><a className=' text-center      p-4 m-auto items-center justify-evenly tracking-wide"'>contact</a></Link>
+  <Link href="../../resources/resources-for-qtibpoc-healing"><a className=' text-center      p-4 m-auto items-center justify-evenly  tracking-wide"'>resources</a></Link>
+  <Link href="../../getinvolved/get-involved"><a className=' text-center      p-4 m-auto items-center justify-evenly tracking-wide"'>get involved </a></Link>
+  <Link href="../../faq"><a className=' text-center      p-4 m-auto items-center justify-evenly tracking-wide"'> donate  </a></Link>
   {/* pop up link */}
-  <Link href="../../faq"><a className=' text-center   border-l-[.5px] border-[#030303]  p-4 m-auto items-center justify-evenly tracking-wide"'>newsletter </a></Link> 
+  <Link href="../../faq"><a className=' text-center      p-4 m-auto items-center justify-evenly tracking-wide"'>newsletter </a></Link> 
   {/* pop up link */}
   </div>
   </section>
 
   <section className=" w-screen font-normal text-9l mx-auto px-0   ">
-        <div className=" flex border-t-[.5px] w-screen border-[#030303] ">
+        <div className=" flex  w-screen ] ">
             <div className=" p-4">
         <MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="https://www.instagram.com/miseryparty/?hl=en" target="_blank" rel="noopener noreferrer">
 		<Instagram fontSize="small" />

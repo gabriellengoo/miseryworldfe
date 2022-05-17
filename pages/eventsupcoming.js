@@ -16,7 +16,7 @@ export default function Home({ posts }) {
   useEffect(() => {
     if (posts.length) {
       const imgBuilder = imageUrlBuilder({
-        projectId: 'ngizar2r',
+        projectId: 'jgs4s870',
         dataset: 'production',
       });
 
@@ -157,7 +157,7 @@ export default function Home({ posts }) {
 
 export const getServerSideProps = async pageContext => {
   const query = encodeURIComponent('*[ _type == "eventsComming" ]');
-  const url = `https://ngizar2r.api.sanity.io/v1/data/query/production?query=${query}`;
+  const url = `https://jgs4s870.api.sanity.io/v1/data/query/production?query=${query}`;
   const result = await fetch(url).then(res => res.json());
 
   if (!result.result || !result.result.length) {
