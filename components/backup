@@ -1,3 +1,39 @@
+
+
+// carecell
+        <div className='  z-0 object-cover  cursor-grabbing h-6/6 w-5/6 overflow-hidden'>
+        <Carousel zIndex={-2}  dynamicHeight={false} minHeight={5} interval={4000} showThumbs={false} showIndicators={false} showArrows={false} infiniteLoop={true} emulateTouch={true} swipeable={true} >
+          
+            {/* <div className='z-0  overflow-hidden '>
+                <img  src="/1.jpeg" alt="image1"/>
+            </div> */}
+            <div className='z-0 w-[160%]'>
+                <img src="/2.jpg" alt="image2" />
+                {/* <p className="legend">Image 2</p> */}
+
+            </div>
+            <div className='z-0 w-[160%]'>
+                <img src="/3.jpg" alt="image3"/>
+                {/* <p className="legend">Image 3</p> */}
+
+            </div>
+            <div className='z-0 w-[160%]'>
+                <img src="/4.jpg" alt="image4"/>
+                {/* <p className="legend">Image 4</p> */}
+
+            </div>
+            <div className='z-0 w-[160%]'>
+                <img src="/5.jpg" alt="image5"/>
+                {/* <p className="legend">Image 5</p> */}
+
+            </div>
+          
+        </Carousel>
+      </div>
+
+
+
+
 {/* links start */}
 <section id="whatismisery?" className="flex  flex-col p-7 items-center text-xl h-3/6">
 <div className={styles.whatismisery}>

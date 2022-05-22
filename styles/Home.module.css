@@ -2,6 +2,18 @@
   --bg-gradient: linear-gradient(169.78deg, rgba(255, 255, 255, 0.23) 4.65%, rgba(255, 255, 255, 0) 91.48%), radial-gradient(62.3% 67.27% at 20.42% 27.48%, #5E4B1E 0%, #2B2A28 100%), linear-gradient(112.91deg, #676561 3.51%, #242321 111.71%);
 } */
 
+/* #c0ff3c
+#c0ff3c
+#c0ff3c */
+
+
+.righthome{
+  /* background: linear-gradient(90deg, #ffffff 0%, #ffffff 36%, #dff78a 48%, #dff78a 52%, #ffffff 64%, #ffffff 100%); */
+  /* box-shadow: inset 0vw -3.47222vw 3.47222vw -3.47222vw #dff78a; */
+}
+
+
+
 /* #f579f5 */
 /* #d1c8cd */
 .das{
@@ -432,7 +444,7 @@ z-index: 0;
 .noscroll img{
   display: flex;
   align-items: center;
-  width: 50vw;
+  /* width: 50vw; */
   padding: 6vh;
   height: 98vh;
   padding-top: 5vh;

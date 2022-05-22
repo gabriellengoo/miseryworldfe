@@ -40,28 +40,54 @@ import MuiNextLink from "../components/MuiNextLink"
 import { Facebook, Instagram, Twitter } from "@mui/icons-material";
 
 
-export default function MiserySite() {
+// export default function MiserySite() {
   
   
-  const [showButton, setShowButton] = useState(false);
+//   const [showButton, setShowButton] = useState(false);
+
+//   useEffect(() => {
+//     window.addEventListener("scroll", () => {
+//       if (window.pageYOffset > 300) {
+//         setShowButton(true);
+//       } else {
+//         setShowButton(false);
+//       }
+//     });
+//   }, []);
+
+//   const scrollToTop = () => {
+//     window.scrollTo({
+//       top: 0,
+//       behavior: 'smooth' 
+//     });
+//   };
+
+
+
+export default function Home({ posts }) {
+  const router = useRouter();
+  const [mappedPosts, setMappedPosts] = useState([]);
 
   useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (window.pageYOffset > 300) {
-        setShowButton(true);
-      } else {
-        setShowButton(false);
-      }
-    });
-  }, []);
+    if (posts.length) {
+      const imgBuilder = imageUrlBuilder({
+        projectId: 'jgs4s870',
+        dataset: 'production',
+      });
 
-  // This function will scroll the window to the top 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth' // for smoothly scrolling
-    });
-  };
+      setMappedPosts(
+        posts.map(p => {
+          return {
+            ...p,
+            image: imgBuilder.image(p.image),
+          }
+        })
+      );
+    } else {
+      setMappedPosts([]);
+    }
+  }, [posts]);
+
   
   return (
 <Layout>
@@ -69,7 +95,7 @@ export default function MiserySite() {
        <Head>
        {/* <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
 <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script> */}
-<title>MiserySite</title>
+<title>misery</title>
       </Head>
       {/* <Toolbar />   */}
 
@@ -108,50 +134,175 @@ export default function MiserySite() {
 
 
 
-  <div className='flex overflow-scroll h-screen'>
-    <div className='float-right right-0 p-5 overflow-scroll w-2/6 top-0 font-normal text-lg '>
+  <div className='flex h-screen'>
+
+
+ {/* --------------------------------------------  right */}
+ 
+    <div className='float-right h-screen right-0 overflow-hidden w-2/6 top-0 font-normal text-lg '>
+    <div className={styles.righthome}>
           {/* <BlockContent blocks={description} /> */}
           
-          <img className="w-3/6 text-center object-center justify-center mx-auto" src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/>
-          <p className="text-center object-center font-serif "> u can cry if u want to</p>
-          <p className="text-left pt-10 object-center text-base z-50 ">misery is a mental health community and sober rave based in london and led by and for queer, trans, intersex, black people and people of colour (qtibpoc)
+          <div className=' p-5  h-screen '>
+          
+
+          {/* /text */}
+          {/* <p className="text-left pt-10 object-center text-base z-50 font-light ">misery is a mental health community and sober rave based in london and led by and for queer, trans, intersex, black people and people of colour (qtibpoc)
            with lived experience of madness, mental health challenges, time in hospital, addiction, public service use, disability, trauma, medication and ...      
-           <Link  href="#whatwedo"><a className=' hover:text-[#dbff00] font-bold p-4 m-auto items-center justify-evenly  tracking-wide"'>read more </a></Link><svg className="w-3/6"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0">
-  <polygon points="78.03 103.94 120 61.97 78.03 20 74.12 23.78 109.74 59.27 20 59.27 20 64.67 109.74 64.67 74.12 100.16 78.03 103.94"></polygon>
-</svg>
-           </p>
-
-           <div className=" pt-10 list-[none] text-2xl font-semibold   ">
-      <Link  href="#whatismisery"><li className='pt-2'><a className=' hover:text-[#dbff00]'>☆ what is misery?</a></li></Link>
-<Link href="#whatwedo"><li className='pt-2'><a className=' hover:text-[#dbff00] '>☆ what we do</a></li></Link>
-<Link href="#ourgoals"><li className='pt-2'><a className=' hover:text-[#dbff00] '>☆ our goals</a></li></Link>
-<Link href="#ourroots"><li className='pt-2'><a className=' hover:text-[#dbff00] '>☆ our roots</a></li></Link>
-<Link href="#ourdreams"><li className='pt-2'><a className=' hover:text-[#dbff00] '>☆ our dreams</a></li></Link>
-</div>
+           <Link  href="#whatwedo"><a className=' hover:text-[#dbff00] font-semibold p-4 m-auto items-center justify-evenly  tracking-wide"'>read more ↗</a></Link>
+           </p> */}
 
 
-<div className=" flex pt-5 bottom-0 absolute ">
-            <div className=" p-4">
+           <div className="flex items-center justify-center min-h-screen w-full">
+           <img className="w-5/6 object-center justify-center" src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/>
+          {/* <p className="text-center object-center font-serif font-light "> u can cry if u want to</p> */}
+          </div>
+
+{/* links */}
+           {/* <div className=" pt-10 list-[none] text-2xl font-base   ">
+      <Link  href="#whatismisery"><a className=' hover:text-[#dbff00]'>☆ what is misery?</a></Link>
+<Link href="#whatwedo"><a className=' hover:text-[#dbff00] '>☆ what we do</a></Link>
+<Link href="#ourgoals"><a className=' hover:text-[#dbff00] '>☆ our goals</a></Link>
+<Link href="#ourroots"><a className=' hover:text-[#dbff00] '>☆ our roots</a></Link>
+<Link href="#ourdreams"><a className=' hover:text-[#dbff00] '>☆ our dreams</a></Link>
+</div> */}
+
+
+  {/* <div className=" p-5 flex bottom-0 absolute ">
+            <div className="p-5 ">
         <MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="https://www.instagram.com/miseryparty/?hl=en" target="_blank" rel="noopener noreferrer">
-		<Instagram fontSize="small" />
+		<Instagram fontSize="large" />
 		</MuiNextLink>
         </div>
-        <div className=" p-4">
+        <div className=" p-5">
         <MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="https://twitter.com/miseryparty_" target="_blank" rel="noopener noreferrer" >
-		<Twitter fontSize="small" />
+		<Twitter fontSize="large" />
 		</MuiNextLink>
         </div>
-        <div className=" bg-white m-auto items-center justify-evenly  tracking-wide">
-        <Link  href="./"><a className='  m-auto items-center justify-evenly  tracking-wide'>© Misery 2022</a></Link>
+        <div className=" p-5 m-auto items-center justify-evenly  tracking-wide">
+        <Link  href="./"><a className='  m-auto items-center font-light justify-evenly  tracking-wide'>© Misery 2022</a></Link>
         </div>
-        </div>
+  </div> */}
+
 
     </div>
 
-        <div className=' object-cover  z-0 p-5 top-0 h-6/6 w-4/6 overflow-hidden'>
-                  <div className='z-0 w-[100%]'>
-                      <img src="/2.jpg" alt="image2" />
+    
+    </div>
+    </div>
+
+{/* -------------------------------------------- left */}
+        <div className='  z-0 p-5 top-0 h-screen w-4/6 overflow-scroll'>
+
+        <Toolbar /> 
+
+        <p className="text-6xl  text-center pt-20 font-semibold  "> u can cry if u want to 💧 </p> 
+        {/* <p className="text-center object-center font-serif font-light "> u can cry if u want to</p> */}
+
+
+
+        <div className=' flex w-auto pt-5 h-auto '>
+          {mappedPosts.length ? mappedPosts.map((p, index) => (
+            <div onClick={() => router.push(`/eventsComming/${p.slug.current}`)} key={index}>
+              <div className='z-0'>
+                {/* hover:saturate-50  hover:z-0 */}
+                      <img className='flex w-80 h-auto p-1 ' src={p.image} />
                   </div>
+            </div>
+          )) : <>No Posts Yet</>}
+        </div>
+
+
+                  {/* <div className='z-0 w-[100%]'>
+                      <img src="/2.jpg" alt="image2" />
+                  </div> */}
+
+<p className="text-left pt-10 object-center text-base z-50 font-light ">ok so here’s the story so far. misery was created in late 2018 by aisha mirza and babetheory. we were frustrated with how unwell us and our friends were and how little support was accessible to us. we had dealt with the suicide of friends and other qtibpoc, our own suicidality and chronic mental health struggles, and the addiction issues that famously taunt the qtibpoc community were feeling all too close to home ...      
+           <Link  href="./videoBlogPost/our-story"><a className=' hover:text-[#dbff00] font-semibold p-4 m-auto items-center justify-evenly  tracking-wide"'>read more ↗</a></Link>
+           </p> 
+
+
+{/* links */}
+{/* <div className=" pt-10 list-[none] text-center text-2xl font-base   ">
+      <Link  href="#whatismisery"><li className='pt-2'><a className=' hover:text-[#dbff00]'>☆ what is misery? ☆</a></li></Link>
+<Link href="#whatwedo"><li className='pt-2'><a className=' hover:text-[#dbff00] '>☆ what we do ☆</a></li></Link>
+<Link href="#ourgoals"><li className='pt-2'><a className=' hover:text-[#dbff00] '>☆ our goals ☆</a></li></Link>
+<Link href="#ourroots"><li className='pt-2'><a className=' hover:text-[#dbff00] '>☆ our roots ☆</a></li></Link>
+<Link href="#ourdreams"><li className='pt-2'><a className=' hover:text-[#dbff00] '>☆ our dreams ☆</a></li></Link>
+</div> */}
+
+
+<div className=" pt-20 list-[none] text-center text-4xl font-base  ">
+      <Link  href="#whatismisery"><a className=' hover:text-[#dbff00]'>☆ what is misery? </a></Link>
+<Link href="#whatwedo"><a className=' hover:text-[#dbff00] '>☆ what we do </a></Link>
+<Link href="#ourgoals"><a className=' hover:text-[#dbff00] '>☆ our goals </a></Link>
+<Link href="#ourroots"><a className=' hover:text-[#dbff00] '>☆ our roots </a></Link>
+<Link href="#ourdreams"><a className=' hover:text-[#dbff00] '>☆ our dreams ☆</a></Link>
+</div>
+
+
+{/* what is misery */}
+<section id="whatismisery?" className={styles.whatismiserydas}>
+        <p className=' text-xl  text-center pt-10 font-semibold  '>what is misery?</p>
+        <p>misery is a mental health community and sober rave based in london and led by and for queer, trans, intersex, black people and people of colour (qtibpoc) with lived experience of madness, mental health challenges, time in hospital, addiction, public service use, disability, trauma, medication and neurodivergence.
+
+we co-create free, playful, accessible sober spaces, services, practices, parties and resources to cultivate communities of care that can support and sustain the collective healing and resilience of qtibpoc world over.
+
+misery is a reminder that you’re not too sensitive, it’s mad out here.</p>
+</section>
+
+
+{/* what we do */}
+<section id="whatwedo" className={styles.whatismiserydas}>
+            <p className=' text-xl text-center pt-10 font-semibold  '>what we do</p>
+        <p className='text-center'>we strive to cultivate generative ecologies of connection, care and solidarity that can support and sustain the collective healing and resilience of our community. we know first hand that healing and liberation is interwoven and by nurturing community care and addressing collective trauma, we seek to disrupt the growing privatisation of healing and the “self-care industrial complex”. we work for and with lived experience leaders to co-create accessible, playful, and transformative peer-led healing spaces, services and resources by (un)archiving and (re)generating the vast wisdom, community resilience strategies and potential for joy that are abundant amongst our people..</p>
+        </section>
+
+
+{/* our goals */}
+
+
+<section id="ourgoals">
+<div className=' text-center font-normal pt-10 '>
+            <p className=' text-xl text-center font-semibold  '>our goals</p>
+            <div className=' text-base list-[none] '>
+        <li className=' duration-500 hover:ml-5 p-2 '> to provide accessible, supportive and politically engaged events, spaces and services by and for qtibpoc to build community and help us to be in right relationship with ourselves, each other, and the land</li>
+<li className=' duration-500 hover:ml-5 p-2 '>to develop resources, research, artistic work, modalities and practices that facilitate healing and challenge dominant misperceptions about mental health, addiction, disability, trauma and neurodiversity</li>
+<li className=' duration-500 hover:ml-5 p-2 '>to promote leadership and development opportunities for qtibipoc with lived experience of mental health problems, madness, addiction, disability, trauma, and neurodivergence - within our communities, health and wellbeing settings, the arts and wider society</li>
+        </div>
+        </div>
+</section>
+
+{/* our roots */}
+<section id="ourroots">
+<div className=' pt-10 font-normal  '>
+            <p className=' text-xl text-center font-semibold  '>our roots</p>
+            <div className='text-center'>
+        <p className=' duration-500 p-2'> the work of creating communities of care is not new, nor invented by us. it is ancient work that exists within communities, cultures and species around the world. we continue the legacies and lineages of our ancestors and the artists, activists and community workers that have come before us and those around the world that are committed to this work.</p>
+<p className=' duration-500  p-2'>we are inspired by our friends and lovers, the creative power of our communities and the mistakes of our parents. we give thanks and draw strength from the disability and healing justice movements, black feminist theory and praxis, mad studies, queer of colour critique, radical transfeminists, our dyke, faggot and gender divine sibings worldwide, femmes of colour spaces, wxtchcraft, raving on the dancefloor, community-based transformative justice interventions, indigenous herbalists, generative somatics, revolutionary mothering, nurses, sex workers, teachers, survivors, carers, youth workers and black, brown, indigenous and diasporic spiritual traditions.</p>
+<p className=' duration-500 p-2'>we have learnt that people are the experts in their own lives and believe that everyone should have the right to fail and the support they need to grow. we acknowledge that harm is an integral part of the human experience and that experiencing harm is one of the many ways our lives, minds, and hearts adapt to the world.</p>
+<p className=' duration-500 p-2'>our work is rooted in the principles of healing centered harm reduction including trauma-informed care, agency, collaboration, intersectionality, consent and acknowledges the historical and on-going social, cultural, environmental and economic systems that constantly terrorise our communities including experiences of colonisation, anti-blackness and racism, sexism, homophobia, transphobia, classism, ableism and other oppressions.</p>
+</div>   </div>
+</section>
+
+
+{/* our dreams */}
+<section id="ourdreams">
+<div className=' font-normal pt-10 '>
+            <p className=' text-xl text-center font-semibold  '>our dreams</p>
+            {/* <div className=' text-center flex p-10   font-normal  '>
+            <p className=' flex-none text-8xl duration-500 font-light  m-auto'> 1｡ </p>
+            <p className=' flex-none text-8xl duration-500 font-light  m-auto'> 2｡ </p>
+            <p className=' flex-none text-8xl duration-500 font-light  m-auto'> Ɛ｡ </p>
+            </div> */}
+            <div className=' text-center   font-normal  '>
+        <p className=' duration-500  pt-5 '> we are dreaming of worlds where every queer, trans, intersex black, brown and indigenous person has access to a choice of knowledges, resources, communities and health care services that they need to sustain their wellbeing.We are dreaming of worlds where every queer, trans, intersex black, brown and indigenous person has access to a choice of knowledges, resources, communities and health care services that they need to sustain their wellbeing.</p>
+<p className=' duration-500  pt-5 '> worlds that are safer, happier, healthier and more peaceful. worlds where we all work to acknowledge and minimise our own potential for intimate, interpersonal, structural and ecological violence and in doing so resolve conflict compassionately.</p>
+<p className=' duration-500  pt-5 '> worlds where people before profits, harm-reduction and post traumatic growth is the norm. where we are all supported in alchemising our pain through play, consent, connection, boundaries and rest. worlds where you can cry and be held, if you want to.</p>
+        </div>
+        </div>
+</section>
+
             </div>
 
    
@@ -269,14 +420,11 @@ export default function MiserySite() {
 </div>
 </div> */}
 
-<section className=' h-3/6 border-b-[.5px]  border-t-[.5px] border-[#030303]  z-50 text-5xl font-normal text-center items-center m-auto flex justify-center p-5 px-8'>
+{/* <section className=' h-3/6 border-b-[.5px]  border-t-[.5px] border-[#030303]  z-50 text-5xl font-normal text-center items-center m-auto flex justify-center p-5 px-8'>
         <p className=''> 𝓐&#039;bout .｡.:*☆ </p>
         </section> 
 
-
         <div className=''>
-        {/* <h1>{name}</h1> */}
-        {/* {imageUrl && <img className={styles.mainImage} src={imageUrl} />} */}
         <section className=" z-50 w-screen text-base mx-auto px-0  border-[.5px] border-b-[#030303] ">
       <div className=" flex border-[.5px] w-screen ">
       <Link  href="#whatismisery"><a className='  hover:bg-[#dbff00] border-l-[.5px] border-[#030303] rounded-full p-4 m-auto items-center justify-evenly  tracking-wide"'>what is misery?</a></Link>
@@ -286,11 +434,10 @@ export default function MiserySite() {
 <Link href="#ourdreams"><a className='  hover:bg-[#dbff00] border-l-[.5px] border-[#030303] rounded-full p-4 m-auto items-center justify-evenly tracking-wide"'>our dreams (for a less miserable world) </a></Link>
 </div>
 </section>
-</div>
+</div> */}
 
 
-{/* bg-[#c0c4ff] text-[#f6ee63] */}
-<div className='flex tracking-wider text-lg overflow-scroll h-screen w-screen '>
+{/* <div className='flex tracking-wider text-lg overflow-scroll h-screen w-screen '>
 <div className='  p-5 float-right right-0 overflow-scroll border-b-[.5px]  border-r-[.5px] border-[#030303]  w-2/6 top-0 font-normal  '>
 <section id="whatismisery?" className={styles.whatismiserydas}>
         <p className='  text-3xl text-center p-5  '>what is misery?</p>
@@ -302,47 +449,18 @@ misery is a reminder that you’re not too sensitive, it’s mad out here.</p>
 </section>
         </div>
         
-        <div className='  z-0 object-cover  cursor-grabbing h-6/6 w-5/6 overflow-hidden'>
-              <Carousel zIndex={-2}  dynamicHeight={false} minHeight={5} interval={4000} showThumbs={false} showIndicators={false} showArrows={false} infiniteLoop={true} emulateTouch={true} swipeable={true} >
-                
-                  {/* <div className='z-0  overflow-hidden '>
-                      <img  src="/1.jpeg" alt="image1"/>
-                  </div> */}
-                  <div className='z-0 w-[160%]'>
-                      <img src="/2.jpg" alt="image2" />
-                      {/* <p className="legend">Image 2</p> */}
-  
-                  </div>
-                  <div className='z-0 w-[160%]'>
-                      <img src="/3.jpg" alt="image3"/>
-                      {/* <p className="legend">Image 3</p> */}
-  
-                  </div>
-                  <div className='z-0 w-[160%]'>
-                      <img src="/4.jpg" alt="image4"/>
-                      {/* <p className="legend">Image 4</p> */}
-  
-                  </div>
-                  <div className='z-0 w-[160%]'>
-                      <img src="/5.jpg" alt="image5"/>
-                      {/* <p className="legend">Image 5</p> */}
-  
-                  </div>
-                
-              </Carousel>
-            </div>
+
 
             <div className=' tracking-wider text-lg float-right right-0 overflow-scroll   w-2/6  top-0 font-normal  p-5 '>
             <section id="whatwedo" className={styles.whatismiserydas}>
-            {/* <img className={styles.swerl} src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" /> */}
             <p className=' text-3xl text-center p-5  '>what we do</p>
         <p>we strive to cultivate generative ecologies of connection, care and solidarity that can support and sustain the collective healing and resilience of our community. we know first hand that healing and liberation is interwoven and by nurturing community care and addressing collective trauma, we seek to disrupt the growing privatisation of healing and the “self-care industrial complex”. we work for and with lived experience leaders to co-create accessible, playful, and transformative peer-led healing spaces, services and resources by (un)archiving and (re)generating the vast wisdom, community resilience strategies and potential for joy that are abundant amongst our people..</p>
         </section>
         </div>
-            </div>
+            </div> */}
 
 
-<section id="ourgoals">
+{/* <section id="ourgoals">
 <div className=' tracking-wide  border-[.5px] border-[#030303]  font-normal text-lg '>
             <p className=' text-3xl text-center  border-b-[.5px] border-[#030303] p-5 '>our goals</p>
             <div className=' p-20'>
@@ -351,10 +469,10 @@ misery is a reminder that you’re not too sensitive, it’s mad out here.</p>
 <li className=' duration-500 hover:ml-5 p-5'>｡ to promote leadership and development opportunities for qtibipoc with lived experience of mental health problems, madness, addiction, disability, trauma, and neurodivergence - within our communities, health and wellbeing settings, the arts and wider society</li>
         </div>
         </div>
-</section>
+</section> */}
 
 
-<section id="ourroots">
+{/* <section id="ourroots">
 <div className=' tracking-wide  font-normal text-lg '>
             <p className=' text-3xl text-center border-b-[.5px] border-[#030303] p-5 '>our roots</p>
             <div className=' p-20'>
@@ -363,10 +481,10 @@ misery is a reminder that you’re not too sensitive, it’s mad out here.</p>
 <p className=' duration-500  p-5'>we have learnt that people are the experts in their own lives and believe that everyone should have the right to fail and the support they need to grow. we acknowledge that harm is an integral part of the human experience and that experiencing harm is one of the many ways our lives, minds, and hearts adapt to the world.</p>
 <p className=' duration-500  p-5'>our work is rooted in the principles of healing centered harm reduction including trauma-informed care, agency, collaboration, intersectionality, consent and acknowledges the historical and on-going social, cultural, environmental and economic systems that constantly terrorise our communities including experiences of colonisation, anti-blackness and racism, sexism, homophobia, transphobia, classism, ableism and other oppressions.</p>
 </div>   </div>
-</section>
+</section> */}
 
 
-<section id="ourdreams">
+{/* <section id="ourdreams">
 <div className='tracking-wide border-[.5px] border-[#030303]  font-normal text-lg '>
             <p className=' text-3xl text-center p-5 border-b-[.5px] border-[#030303] '>our dreams</p>
             <div className=' text-center flex p-10   font-normal text-lg '>
@@ -380,7 +498,7 @@ misery is a reminder that you’re not too sensitive, it’s mad out here.</p>
 <p className=' duration-500  pl-5 w-2/6'> worlds where people before profits, harm-reduction and post traumatic growth is the norm. where we are all supported in alchemising our pain through play, consent, connection, boundaries and rest. worlds where you can cry and be held, if you want to.</p>
         </div>
         </div>
-</section>
+</section> */}
 {/* <Link  href="./"><img className=" overflow-hidden z-50 float-right absolute -bottom-20 p-10 w-5/12 duration-500 hover:drop-shadow-[0_0px_5px_#ffffff]" src="https://i.ibb.co/6yR3mjn/misery-world-glitter.png"/></Link>
 <Link  href="./Miserysite"><img className=" overflow-hidden z-50 absolute right-0 -bottom-20  p-10  w-5/12  duration-500 hover:drop-shadow-[0_0px_5px_#ffffff]" src="https://i.ibb.co/bQ4n39B/misery-site-slime.png"/></Link> */}
 
@@ -465,11 +583,11 @@ misery is a reminder that you’re not too sensitive, it’s mad out here.</p>
     </p>
 </section> */}
 
-{showButton && (
+{/* {showButton && (
         <button onClick={scrollToTop} className={styles.backtotop}>
           &#8679;
         </button>
-      )}
+      )} */}
 
     {/* <Footer></Footer>  */}
     <FooterComponent></FooterComponent>
@@ -477,3 +595,24 @@ misery is a reminder that you’re not too sensitive, it’s mad out here.</p>
     </Layout>
   )
 }
+
+
+export const getServerSideProps = async pageContext => {
+  const query = encodeURIComponent('*[ _type == "eventsComming" ]');
+  const url = `https://jgs4s870.api.sanity.io/v1/data/query/production?query=${query}`;
+  const result = await fetch(url).then(res => res.json());
+
+  if (!result.result || !result.result.length) {
+    return {
+      props: {
+        posts: [],
+      }
+    }
+  } else {
+    return {
+      props: {
+        posts: result.result,
+      }
+    }
+  }
+};
