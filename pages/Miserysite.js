@@ -139,12 +139,25 @@ export default function Home({ posts }) {
 
  {/* --------------------------------------------  right */}
  
+
+
     <div className='float-right h-screen right-0 overflow-hidden w-2/6 top-0 font-normal text-lg '>
     <div className={styles.righthome}>
           {/* <BlockContent blocks={description} /> */}
           
           <div className=' p-5  h-screen '>
           
+          <img className={styles.swerl} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" /> 
+  <img className={styles.swerl1} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" /> 
+  <img className={styles.swerl2} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" /> 
+
+  {/* <img className={styles.logomishome} src="https://i.ibb.co/qB2YqyQ/MISERY-FAUX-FUR.png"/> */}
+ 
+  
+  {/* <img className={styles.figurenew} src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/> */}
+  {/* <img className='flex justify-center m-auto items-center h-4/4 w-1/4  ' src="https://i.ibb.co/sFyFWsf/Bald.png"/> */}
+      {/* <img className={styles.logoa} src="https://i.ibb.co/JyJxKXh/Esther-copy-2-Glow.png"/> */}
+   
 
           {/* /text */}
           {/* <p className="text-left pt-10 object-center text-base z-50 font-light ">misery is a mental health community and sober rave based in london and led by and for queer, trans, intersex, black people and people of colour (qtibpoc)
@@ -155,6 +168,7 @@ export default function Home({ posts }) {
 
            <div className="flex items-center justify-center min-h-screen w-full">
            <img className="w-5/6 object-center justify-center" src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/>
+           {/* <img className="w-5/6 object-center justify-center" src="https://i.ibb.co/qB2YqyQ/MISERY-FAUX-FUR.png"/> */}
           {/* <p className="text-center object-center font-serif font-light "> u can cry if u want to</p> */}
           </div>
 
@@ -193,10 +207,12 @@ export default function Home({ posts }) {
 
 {/* -------------------------------------------- left */}
         <div className='  z-0 p-5 top-0 h-screen w-4/6 overflow-scroll'>
-
+          
+        <img className={styles.figure} src="https://i.ibb.co/sFyFWsf/Bald.png"/>
+        <img className={styles.figure2} src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" /> 
         <Toolbar /> 
 
-        <p className="text-6xl  text-center pt-20 font-semibold  "> u can cry if u want to 💧 </p> 
+        <p className="text-6xl  text-center pt-20 font-base  "> 💧 u can cry if u want to 💧 </p> 
         {/* <p className="text-center object-center font-serif font-light "> u can cry if u want to</p> */}
 
 
@@ -244,7 +260,7 @@ export default function Home({ posts }) {
 {/* what is misery */}
 <section id="whatismisery?" className={styles.whatismiserydas}>
         <p className=' text-xl  text-center pt-10 font-semibold  '>what is misery?</p>
-        <p>misery is a mental health community and sober rave based in london and led by and for queer, trans, intersex, black people and people of colour (qtibpoc) with lived experience of madness, mental health challenges, time in hospital, addiction, public service use, disability, trauma, medication and neurodivergence.
+        <p className='text-center font-light pt-2'>misery is a mental health community and sober rave based in london and led by and for queer, trans, intersex, black people and people of colour (qtibpoc) with lived experience of madness, mental health challenges, time in hospital, addiction, public service use, disability, trauma, medication and neurodivergence.
 
 we co-create free, playful, accessible sober spaces, services, practices, parties and resources to cultivate communities of care that can support and sustain the collective healing and resilience of qtibpoc world over.
 
@@ -255,7 +271,7 @@ misery is a reminder that you’re not too sensitive, it’s mad out here.</p>
 {/* what we do */}
 <section id="whatwedo" className={styles.whatismiserydas}>
             <p className=' text-xl text-center pt-10 font-semibold  '>what we do</p>
-        <p className='text-center'>we strive to cultivate generative ecologies of connection, care and solidarity that can support and sustain the collective healing and resilience of our community. we know first hand that healing and liberation is interwoven and by nurturing community care and addressing collective trauma, we seek to disrupt the growing privatisation of healing and the “self-care industrial complex”. we work for and with lived experience leaders to co-create accessible, playful, and transformative peer-led healing spaces, services and resources by (un)archiving and (re)generating the vast wisdom, community resilience strategies and potential for joy that are abundant amongst our people..</p>
+        <p className='text-center font-light pt-2'>we strive to cultivate generative ecologies of connection, care and solidarity that can support and sustain the collective healing and resilience of our community. we know first hand that healing and liberation is interwoven and by nurturing community care and addressing collective trauma, we seek to disrupt the growing privatisation of healing and the “self-care industrial complex”. we work for and with lived experience leaders to co-create accessible, playful, and transformative peer-led healing spaces, services and resources by (un)archiving and (re)generating the vast wisdom, community resilience strategies and potential for joy that are abundant amongst our people..</p>
         </section>
 
 
@@ -263,25 +279,25 @@ misery is a reminder that you’re not too sensitive, it’s mad out here.</p>
 
 
 <section id="ourgoals">
-<div className=' text-center font-normal pt-10 '>
+<div className=' text-center font-normal font-light pt-10 '>
             <p className=' text-xl text-center font-semibold  '>our goals</p>
             <div className=' text-base list-[none] '>
-        <li className=' duration-500 hover:ml-5 p-2 '> to provide accessible, supportive and politically engaged events, spaces and services by and for qtibpoc to build community and help us to be in right relationship with ourselves, each other, and the land</li>
-<li className=' duration-500 hover:ml-5 p-2 '>to develop resources, research, artistic work, modalities and practices that facilitate healing and challenge dominant misperceptions about mental health, addiction, disability, trauma and neurodiversity</li>
-<li className=' duration-500 hover:ml-5 p-2 '>to promote leadership and development opportunities for qtibipoc with lived experience of mental health problems, madness, addiction, disability, trauma, and neurodivergence - within our communities, health and wellbeing settings, the arts and wider society</li>
+        <li className=' duration-500 hover:ml-5 p-2 font-light '> to provide accessible, supportive and politically engaged events, spaces and services by and for qtibpoc to build community and help us to be in right relationship with ourselves, each other, and the land</li>
+<li className=' duration-500 font-light hover:ml-5 p-2 '>to develop resources, research, artistic work, modalities and practices that facilitate healing and challenge dominant misperceptions about mental health, addiction, disability, trauma and neurodiversity</li>
+<li className=' duration-500 font-light hover:ml-5 p-2 '>to promote leadership and development opportunities for qtibipoc with lived experience of mental health problems, madness, addiction, disability, trauma, and neurodivergence - within our communities, health and wellbeing settings, the arts and wider society</li>
         </div>
         </div>
 </section>
 
 {/* our roots */}
 <section id="ourroots">
-<div className=' pt-10 font-normal  '>
+<div className=' pt-10 font-normal   '>
             <p className=' text-xl text-center font-semibold  '>our roots</p>
             <div className='text-center'>
-        <p className=' duration-500 p-2'> the work of creating communities of care is not new, nor invented by us. it is ancient work that exists within communities, cultures and species around the world. we continue the legacies and lineages of our ancestors and the artists, activists and community workers that have come before us and those around the world that are committed to this work.</p>
-<p className=' duration-500  p-2'>we are inspired by our friends and lovers, the creative power of our communities and the mistakes of our parents. we give thanks and draw strength from the disability and healing justice movements, black feminist theory and praxis, mad studies, queer of colour critique, radical transfeminists, our dyke, faggot and gender divine sibings worldwide, femmes of colour spaces, wxtchcraft, raving on the dancefloor, community-based transformative justice interventions, indigenous herbalists, generative somatics, revolutionary mothering, nurses, sex workers, teachers, survivors, carers, youth workers and black, brown, indigenous and diasporic spiritual traditions.</p>
-<p className=' duration-500 p-2'>we have learnt that people are the experts in their own lives and believe that everyone should have the right to fail and the support they need to grow. we acknowledge that harm is an integral part of the human experience and that experiencing harm is one of the many ways our lives, minds, and hearts adapt to the world.</p>
-<p className=' duration-500 p-2'>our work is rooted in the principles of healing centered harm reduction including trauma-informed care, agency, collaboration, intersectionality, consent and acknowledges the historical and on-going social, cultural, environmental and economic systems that constantly terrorise our communities including experiences of colonisation, anti-blackness and racism, sexism, homophobia, transphobia, classism, ableism and other oppressions.</p>
+        <p className=' duration-500 p-2 font-light'> the work of creating communities of care is not new, nor invented by us. it is ancient work that exists within communities, cultures and species around the world. we continue the legacies and lineages of our ancestors and the artists, activists and community workers that have come before us and those around the world that are committed to this work.</p>
+<p className=' duration-500 font-light p-2'>we are inspired by our friends and lovers, the creative power of our communities and the mistakes of our parents. we give thanks and draw strength from the disability and healing justice movements, black feminist theory and praxis, mad studies, queer of colour critique, radical transfeminists, our dyke, faggot and gender divine sibings worldwide, femmes of colour spaces, wxtchcraft, raving on the dancefloor, community-based transformative justice interventions, indigenous herbalists, generative somatics, revolutionary mothering, nurses, sex workers, teachers, survivors, carers, youth workers and black, brown, indigenous and diasporic spiritual traditions.</p>
+<p className=' duration-500 font-light p-2'>we have learnt that people are the experts in their own lives and believe that everyone should have the right to fail and the support they need to grow. we acknowledge that harm is an integral part of the human experience and that experiencing harm is one of the many ways our lives, minds, and hearts adapt to the world.</p>
+<p className=' duration-500 font-light p-2'>our work is rooted in the principles of healing centered harm reduction including trauma-informed care, agency, collaboration, intersectionality, consent and acknowledges the historical and on-going social, cultural, environmental and economic systems that constantly terrorise our communities including experiences of colonisation, anti-blackness and racism, sexism, homophobia, transphobia, classism, ableism and other oppressions.</p>
 </div>   </div>
 </section>
 
@@ -296,20 +312,18 @@ misery is a reminder that you’re not too sensitive, it’s mad out here.</p>
             <p className=' flex-none text-8xl duration-500 font-light  m-auto'> Ɛ｡ </p>
             </div> */}
             <div className=' text-center   font-normal  '>
-        <p className=' duration-500  pt-5 '> we are dreaming of worlds where every queer, trans, intersex black, brown and indigenous person has access to a choice of knowledges, resources, communities and health care services that they need to sustain their wellbeing.We are dreaming of worlds where every queer, trans, intersex black, brown and indigenous person has access to a choice of knowledges, resources, communities and health care services that they need to sustain their wellbeing.</p>
-<p className=' duration-500  pt-5 '> worlds that are safer, happier, healthier and more peaceful. worlds where we all work to acknowledge and minimise our own potential for intimate, interpersonal, structural and ecological violence and in doing so resolve conflict compassionately.</p>
-<p className=' duration-500  pt-5 '> worlds where people before profits, harm-reduction and post traumatic growth is the norm. where we are all supported in alchemising our pain through play, consent, connection, boundaries and rest. worlds where you can cry and be held, if you want to.</p>
+        <p className=' duration-500  pt-5 font-light'> we are dreaming of worlds where every queer, trans, intersex black, brown and indigenous person has access to a choice of knowledges, resources, communities and health care services that they need to sustain their wellbeing.We are dreaming of worlds where every queer, trans, intersex black, brown and indigenous person has access to a choice of knowledges, resources, communities and health care services that they need to sustain their wellbeing.</p>
+<p className=' duration-500  font-light pt-5 '> worlds that are safer, happier, healthier and more peaceful. worlds where we all work to acknowledge and minimise our own potential for intimate, interpersonal, structural and ecological violence and in doing so resolve conflict compassionately.</p>
+<p className=' duration-500  font-light pt-5 '> worlds where people before profits, harm-reduction and post traumatic growth is the norm. where we are all supported in alchemising our pain through play, consent, connection, boundaries and rest. worlds where you can cry and be held, if you want to.</p>
         </div>
         </div>
 </section>
 
             </div>
 
-   
-
-
   </div>
-    
+  </section>
+  {/* <FooterComponent></FooterComponent> */}
 {/* 
 <div className=' z-0 absolute top-0 cursor-grabbing h-screen overflow-hidden'>
               <Carousel  zIndex={-2}  dynamicHeight={false} minHeight={5} interval={4000} showThumbs={false} showIndicators={false} showArrows={false} infiniteLoop={true} emulateTouch={true} swipeable={true} autoPlay >
@@ -400,9 +414,9 @@ misery is a reminder that you’re not too sensitive, it’s mad out here.</p>
 </div>
 </div> */}
 
-<FooterComponent></FooterComponent>
+{/* <FooterComponent></FooterComponent> */}
     
-</section>
+{/* </section> */}
 
 
 
@@ -590,7 +604,7 @@ misery is a reminder that you’re not too sensitive, it’s mad out here.</p>
       )} */}
 
     {/* <Footer></Footer>  */}
-    <FooterComponent></FooterComponent>
+    {/* <FooterComponent></FooterComponent> */}
 
     </Layout>
   )

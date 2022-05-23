@@ -28,7 +28,7 @@
   animation:  holoGradient 5s infinite;
   animation:  holoCard 5s infinite;
   transform: skewY(50px);
-  /* border-radius: 5%; */
+  border-radius: 5%;
   /* flex: 10; */
 }
 
@@ -36,6 +36,7 @@
 .card {
   transform: translate(-17.5px, 0);
   filter: drop-shadow(0 30px 2px rgba(0, 0, 0, 0.05));
+  border-radius: 5%;
   /* background-color: rgba(255, 255, 255, 0.548); */
 }
 
@@ -45,6 +46,7 @@
   margin-top: 0;
   /*top:50px;*/
   filter: drop-shadow(0 30px 2px rgba(0, 0, 0, 0.05));
+  border-radius: 5%;
 }
 
 /* .a:hover{
@@ -57,10 +59,12 @@ cursor:  url("https://studio-push.com/public/img/cursor-red.svg") 30 11, auto;
   z-index: 100;
   top: 0;
   width:  auto;
+   border-radius: 5%;
   height: 100%;
   overflow: hidden;
   opacity: 100%;
   color: #00000000;
+  border-radius: 5%;
 }
 
 
@@ -70,10 +74,12 @@ cursor:  url("https://studio-push.com/public/img/cursor-red.svg") 30 11, auto;
   z-index: 100;
   top: 0;
   width:  auto;
+   border-radius: 5%;
   height: 100%;
   overflow: hidden;
   /* opacity: 0; */
   color: #000000;
+  border-radius: 5%;
 }
 
 .card2{
@@ -82,11 +88,13 @@ cursor:  url("https://studio-push.com/public/img/cursor-red.svg") 30 11, auto;
   z-index: 100;
   top: 0;
   width:  auto;
+   border-radius: 5%;
   height: 100%;
   overflow: hidden;
   opacity: 100%;
   color: #00000000;
   padding-bottom: 10vh;
+  border-radius: 5%;
 }
 
 
@@ -96,10 +104,12 @@ cursor:  url("https://studio-push.com/public/img/cursor-red.svg") 30 11, auto;
   z-index: 100;
   top: 0;
   width:  auto;
+   border-radius: 5%;
   height: 100%;
   overflow: hidden;
   /* opacity: 0; */
   color: #000000;
+  border-radius: 5%;
 }
 
 .card3{
@@ -108,11 +118,13 @@ cursor:  url("https://studio-push.com/public/img/cursor-red.svg") 30 11, auto;
   z-index: 100;
   top: 0;
   width:  auto;
+   border-radius: 5%;
   height: 100%;
   overflow: hidden;
   opacity: 100%;
   color: #00000000;
   padding-bottom: 20vh;
+  border-radius: 5%;
 }
 
 
@@ -122,10 +134,12 @@ cursor:  url("https://studio-push.com/public/img/cursor-red.svg") 30 11, auto;
   z-index: 100;
   top: 0;
   width:  auto;
+   border-radius: 5%;
   height: 100%;
   overflow: hidden;
   /* opacity: 0; */
   color: #000000;
+  border-radius: 5%;
 }
 
 .card4{
@@ -134,10 +148,12 @@ cursor:  url("https://studio-push.com/public/img/cursor-red.svg") 30 11, auto;
   z-index: 100;
   top: 0;
   width:  auto;
+   border-radius: 5%;
   height: 100%;
   overflow: hidden;
   opacity: 100%;
   color: #00000000;
+  
 }
 
 
@@ -147,10 +163,12 @@ cursor:  url("https://studio-push.com/public/img/cursor-red.svg") 30 11, auto;
   z-index: 100;
   top: 0;
   width:  auto;
+   border-radius: 5%;
   height: 100%;
   overflow: hidden;
   /* opacity: 0; */
   color: #000000;
+  border-radius: 5%;
 }
 
 
@@ -161,11 +179,13 @@ cursor:  url("https://studio-push.com/public/img/cursor-red.svg") 30 11, auto;
   z-index: 100;
   top: 0;
   width:  auto;
+   border-radius: 5%;
   height: 100%;
   overflow: hidden;
   opacity: 100%;
   color: #00000000;
   padding-bottom: 17vh;
+  border-radius: 5%;
 }
 
 
@@ -175,10 +195,12 @@ cursor:  url("https://studio-push.com/public/img/cursor-red.svg") 30 11, auto;
   z-index: 100;
   top: 0;
   width:  auto;
+   border-radius: 5%;
   height: 100%;
   overflow: hidden;
   /* opacity: 0; */
   color: #000000;
+  border-radius: 5%;
 }
 
 .card6{
@@ -187,6 +209,7 @@ cursor:  url("https://studio-push.com/public/img/cursor-red.svg") 30 11, auto;
   z-index: 100;
   top: 0;
   width:  auto;
+   border-radius: 5%;
   height: 100%;
   overflow: hidden;
   opacity: 100%;
@@ -201,10 +224,12 @@ cursor:  url("https://studio-push.com/public/img/cursor-red.svg") 30 11, auto;
   z-index: 100;
   top: 0;
   width:  auto;
+   border-radius: 5%;
   height: 100%;
   overflow: hidden;
   /* opacity: 0; */
   color: #000000;
+  border-radius: 5%;
 }
 
 .card7{
@@ -213,6 +238,7 @@ cursor:  url("https://studio-push.com/public/img/cursor-red.svg") 30 11, auto;
   z-index: 100;
   top: 0;
   width:  auto;
+   border-radius: 5%;
   height: 100%;
   overflow: hidden;
   opacity: 100%;
@@ -226,10 +252,12 @@ cursor:  url("https://studio-push.com/public/img/cursor-red.svg") 30 11, auto;
   z-index: 100;
   top: 0;
   width:  auto;
+   border-radius: 5%;
   height: 100%;
   overflow: hidden;
   /* opacity: 0; */
   color: #000000;
+  border-radius: 5%;
 }
 
 .card8{
@@ -238,6 +266,7 @@ cursor:  url("https://studio-push.com/public/img/cursor-red.svg") 30 11, auto;
   z-index: 100;
   top: 0;
   width:  auto;
+   border-radius: 5%;
   height: 100%;
   overflow: hidden;
   opacity: 100%;
@@ -251,10 +280,12 @@ cursor:  url("https://studio-push.com/public/img/cursor-red.svg") 30 11, auto;
   z-index: 100;
   top: 0;
   width:  auto;
+   border-radius: 5%;
   height: 100%;
   overflow: hidden;
   /* opacity: 0; */
   color: #000000;
+  border-radius: 5%;
 }
 
 
@@ -410,3 +441,136 @@ cursor:  url("https://studio-push.com/public/img/cursor-red.svg") 30 11, auto;
   }
 }
 
+@keyframes y {
+  0% {
+    transform: translateX( calc(50vw - 50vh) );
+  }
+  50% {
+    transform: translateY( calc(50vh + -50vh) );
+  }
+  75% {
+    transform: translateX( calc(50vh - -90vh) );
+  }
+  100% {
+    transform: translateY( calc(90vh +  50vh) );
+  }
+}
+
+
+@keyframes twink {
+  0% {
+    transform: rotate(-20deg);
+}
+
+25% {
+    transform: rotate(20deg);
+}
+50% {
+    transform: rotate(-20deg);
+}
+70% {
+    transform: rotate(20deg);
+}
+100% {
+    transform: rotate(-20deg);
+}
+}
+
+@keyframes glitter {
+  0% {
+    transform: rotate(-2deg);
+}
+
+25% {
+    transform: rotate(2deg);
+}
+50% {
+    transform: rotate(-2deg);
+}
+70% {
+    transform: rotate(2deg);
+}
+100% {
+    transform: rotate(-2deg);
+}
+}
+
+
+.swerl{
+  position: fixed;
+  /* position: absolute; */
+  /* top: 50%;
+  left: 50%; */
+  transform: translate(0vh + -50vh);
+  animation: y 30s linear infinite alternate;
+  /* z-index: 0; */
+  width: 10%;
+  z-index: 20;
+  mix-blend-mode: multiply;
+  filter: drop-shadow(0 0 0.75rem #86eab4);
+}
+
+.swerl1{
+  position: fixed;
+  /* position: absolute; */
+  /* top: 50%;
+  left: 50%; */
+  transform: translate(0vh + -20vh);
+  animation: y 10s linear infinite alternate;
+  /* z-index: 0; */
+  width: 10%;
+  z-index: 20;
+  /* mix-blend-mode: multiply; */
+  filter: drop-shadow(0 0 0.75rem #86eab4);
+}
+
+.swerl2{
+  position: fixed;
+  /* position: absolute; */
+  /* top: 50%;
+  left: 50%; */
+  transform: translate(10vh + -10vh);
+  animation: y 50s linear infinite alternate;
+  /* z-index: 0; */
+  width: 10%;
+  z-index: 0;
+  /* mix-blend-mode: multiply; */
+  filter: drop-shadow(0 0 0.75rem #86eab4);
+}
+
+.swerltwo{
+  /* position: fixed; */
+  position: absolute;
+  /* top: 50%;
+  left: 50%; */
+  transform: translate(0vh + -50vh);
+  animation: y 30s linear infinite alternate;
+  /* z-index: 0; */
+  width: auto;
+  z-index: 10;
+  /* mix-blend-mode: multiply; */
+  filter: drop-shadow(0 0 0.75rem #86eab4);
+}
+
+
+.figure {
+  position: relative;
+  max-width: 100%;
+  position: absolute;
+  top: 30vh;
+  left: 33vw;
+  width: 5%;
+  z-index: 100;
+  animation: glitter 5s infinite;
+}
+.figure2 {
+  position: relative;
+  max-width: 100%;
+  position: absolute;
+  top: 50vh;
+  left: 70vw;
+  width: 10%;
+  z-index: 100;
+  animation: glitter 5s infinite;
+  filter: drop-shadow(0 0 0.75rem crimson);
+}

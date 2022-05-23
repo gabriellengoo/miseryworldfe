@@ -43,79 +43,123 @@ export default function MiserySite() {
   <Layout>
 {/* HEad */}
          <Head>
-         {/* <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
-  <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script> */}
-  <title>.｡.:*☆ ㆜hƐ ㆜Ɛ𝓐m.｡.:*☆</title>
+         {/* <script src="https://unpkg.com/react@16.12.0/ulg/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom@16.12.0/ulg/react-dom.development.js"></script> */}
+  <title>.｡.:*☆ thƐ tƐ𝓐m.｡.:*☆</title>
         </Head>
+        {/* <Toolbar />  */}
+
+
+        <section className="h-screen relative hidden lg:block">
+{/* <img className=" w-2/6 absolute drop-shadow-[0_0px_5px_red]" src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" />  */}
+
+
+
+
+  <div className='flex h-screen'>
+
+
+ {/* --------------------------------------------  right */}
+ 
+
+
+    <div className='float-right h-screen right-0 overflow-hidden w-2/6 top-0 font-normal text-lg '>
+    <div className={styles.righthome}>
+          {/* <BlockContent blocks={description} /> */}
+          
+          <div className=' p-5  h-screen '>
+          
+          <img className={styles.swerl} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" /> 
+  <img className={styles.swerl1} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" /> 
+  <img className={styles.swerl2} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" /> 
+
+  {/* <img className={styles.logomishome} src="https://i.ibb.co/qB2YqyQ/MISERY-FAUX-FUR.png"/> */}
+ 
+  
+  {/* <img className={styles.figurenew} src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/> */}
+  {/* <img className='flex justify-center m-auto items-center h-4/4 w-1/4  ' src="https://i.ibb.co/sFyFWsf/Bald.png"/> */}
+      {/* <img className={styles.logoa} src="https://i.ibb.co/JyJxKXh/Esther-copy-2-Glow.png"/> */}
+   
+
+          {/* /text */}
+          {/* <p className="text-left pt-10 object-center text-base z-50 font-light ">misery is a mental health community and sober rave based in london and led by and for queer, trans, intersex, black people and people of colour (qtibpoc)
+           with lived experience of madness, mental health challenges, time in hospital, addiction, public service use, disability, trauma, medication and ...      
+           <Link  href="#whatwedo"><a className=' hover:text-[#dbff00] font-semibold p-4 m-auto items-center justify-evenly  tracking-wide"'>read more ↗</a></Link>
+           </p> */}
+
+
+           <div className="flex items-center justify-center min-h-screen w-full">
+           <img className="w-5/6 object-center justify-center" src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/>
+           {/* <img className="w-5/6 object-center justify-center" src="https://i.ibb.co/qB2YqyQ/MISERY-FAUX-FUR.png"/> */}
+          {/* <p className="text-center object-center font-serif font-light "> u can cry if u want to</p> */}
+          </div>
+
+{/* links */}
+           {/* <div className=" pt-10 list-[none] text-2xl font-base   ">
+      <Link  href="#whatismisery"><a className=' hover:text-[#dbff00]'>☆ what is misery?</a></Link>
+<Link href="#whatwedo"><a className=' hover:text-[#dbff00] '>☆ what we do</a></Link>
+<Link href="#ourgoals"><a className=' hover:text-[#dbff00] '>☆ our goals</a></Link>
+<Link href="#ourroots"><a className=' hover:text-[#dbff00] '>☆ our roots</a></Link>
+<Link href="#ourdreams"><a className=' hover:text-[#dbff00] '>☆ our dreams</a></Link>
+</div> */}
+
+
+  {/* <div className=" p-5 flex bottom-0 absolute ">
+            <div className="p-5 ">
+        <MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="https://www.instagram.com/miseryparty/?hl=en" target="_blank" rel="noopener noreferrer">
+		<Instagram fontSize="large" />
+		</MuiNextLink>
+        </div>
+        <div className=" p-5">
+        <MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="https://twitter.com/miseryparty_" target="_blank" rel="noopener noreferrer" >
+		<Twitter fontSize="large" />
+		</MuiNextLink>
+        </div>
+        <div className=" p-5 m-auto items-center justify-evenly  tracking-wide">
+        <Link  href="./"><a className='  m-auto items-center font-light justify-evenly  tracking-wide'>© Misery 2022</a></Link>
+        </div>
+  </div> */}
+
+
+    </div>
+
+    
+    </div>
+    </div>
+
+{/* -------------------------------------------- left */}
+        <div className='  z-0 p-5 top-0 h-screen w-4/6 overflow-scroll'>
+          
+        <img className={styles.figure} src="https://i.ibb.co/sFyFWsf/Bald.png"/>
+        <img className={styles.figure2} src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" /> 
         <Toolbar /> 
 
+        {/* <p className="text-6xl  text-center pt-20 font-semibold  "> .｡.:*☆thƐ tƐ𝓐m.｡.:*☆ </p>  */}
+        <p className="text-6xl  text-center pt-20 font-semibold  "> the team</p> 
+        <p className="text-center object-center font-light text-xl italic pl-5 ">Get to know the team behind misery :)</p>
 
-
-
-
-
-
-{/* mini nav          ---------------- */}
-{/* TEAM MEMBERS  hover:drop-shadow-[0_35px_35px_#d1b200] */}
-{/* <section className='max-w-5xl mx-auto my-md'> */}
-
-{/* <section className=" max-w-2xl font-normal text-xl mx-auto px-0 pt-28 ">
-      <div className=" flex ">
-<Link  href="../videoBlogPost/our-story"><a className='  hover:bg-[#dbff00]  rounded-full p-4 m-auto items-center justify-evenly font-black tracking-wide"'>our story</a></Link>
-<Link href="./"><a className='  hover:bg-[#dbff00] rounded-full p-4 m-auto items-center justify-evenly font-black tracking-wide"'>the team</a></Link>
-<Link href="./collaborators"><a className='  hover:bg-[#dbff00] rounded-full p-4 m-auto items-center justify-evenly font-black tracking-wide"'>collaborators</a></Link>
-<Link href="./faq"><a className='  hover:bg-[#dbff00] rounded-full p-4 m-auto items-center justify-evenly font-black tracking-wide"'>faqs </a></Link>
-</div>
-</section>
- */}
-{/* old */}
-
-<div className={styles.main}>
-        {/* <h1>{name}</h1> */}
-        {/* {imageUrl && <img className={styles.mainImage} src={imageUrl} />} */} 
-        <section className=' pt-36 w-4/6  z-50 text-4xl font-normal text-center items-center m-auto  justify-center pb-5 px-8'>
-        <p className=' font-bold p-3'>.｡.:*☆ ㆜hƐ ㆜Ɛ𝓐m.｡.:*☆</p>
- <p className=' font-light text-3xl'> Get to know the team behind misery :) </p>
-        </section> 
-</div>
-
-
-        <section className=" z-50 w-screen border-t-[.5px] border-[#030303] font-normal text-base mx-auto px-0 ">
-      <div className=" flex border-b-[.5px] w-screen border-[#030303] ">
-<Link  href="../videoBlogPost/our-story"><a className='  hover:bg-[#dbff00] border-l-[.5px] border-[#030303] rounded-full p-4 m-auto items-center justify-evenly  tracking-wide"'>our story</a></Link>
-<Link href="../../theteam"><a className='  hover:bg-[#dbff00] border-l-[.5px] border-[#030303] rounded-full p-4 m-auto items-center justify-evenly tracking-wide"'>the team</a></Link>
-<Link href="../../collaborators"><a className='  hover:bg-[#dbff00] border-l-[.5px] border-[#030303] rounded-full p-4 m-auto items-center justify-evenly  tracking-wide"'>collaborators</a></Link>
-<Link href="../../faq"><a className='  hover:bg-[#dbff00] border-l-[.5px] border-[#030303] rounded-full p-4 m-auto items-center justify-evenly tracking-wide"'>faqs </a></Link>
+<section className=" z-50  font-normal text-base pt-5  text-center  ">
+      <div className=" text-center   ">
+<Link  href="../videoBlogPost/our-story"><a className=' text-xl pl-5 text-center  hover:text-[#dbff00] font-light'>(remove this part and change to drop down)our story</a></Link>
+<Link href="../../theteam"><a className=' text-xl pl-5 text-center hover:text-[#dbff00] font-light'>the team</a></Link>
+<Link href="../../collaborators"><a className=' pl-5 text-xl text-center hover:text-[#dbff00]  font-light'>collaborators</a></Link>
+<Link href="../../faq"><a className=' text-xl pl-5 text-center hover:text-[#dbff00]  font-light'>faqs </a></Link>
 </div>
 </section>
 
 
-<div className=" bg-[white] ">
-  <div className=" p-3 border-b-[.5px] border-[#030303] font-normal text-xl w-screen overflow-x-hidden ">
-
-<Marquee>
-<span className="mx-4  text-[#2b2b2b]">  .｡.:☆.｡.:(ง❍_❍)ง &nbsp;  chOOsƐ УouᎡ fighteʀ</span>
-    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.:(ง❍_❍)ง &nbsp;  chOOsƐ УouᎡ fighteʀ</span>
-    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.:(ง❍_❍)ง &nbsp;  chOOsƐ УouᎡ fighteʀ</span>
-    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.:(ง❍_❍)ง &nbsp;  chOOsƐ УouᎡ fighteʀ</span>
-    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.:(ง❍_❍)ง &nbsp;  chOOsƐ УouᎡ fighteʀ</span>
-    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.:(ง❍_❍)ง &nbsp;  chOOsƐ УouᎡ fighteʀ</span>
-</Marquee>
-
-</div>
-</div>
 
 
 
 <div className=' flex '>
       {/* p1 */}
-      <div className=' w-2/6 h-2/6  '>
+      <div className=' w-4/6 h-2/6  '>
             <div className=' duration-500 p-10 hover:skew-x-6 '>
                   <div className={styles.card}>
-                        <div className="  hover:drop-shadow-[0_35px_35px_#ffffffd3]   duration-1000 bg-[#ffffffd3]  items-center border-[1px] z-50  border-black">
+                        <div className="  hover:drop-shadow-[0_35px_35px_#ffffffd3]   duration-1000 bg-[#ffffffd3]  items-center border-[1px] rounded-[5%] rounded-[5%] z-50  border-[#efefef]">
 
                               <div className="  text-xs  ">
-                                          <p className=' text-base text-center font-bold  border-b-[.5px] border-[#030303] p-5 '>aisha mirza</p>
+                                          <p className=' text-base text-center font-bold  p-5 '>aisha mirza</p>
                                           <Link href="https://www.instagram.com/uglyinahotway/?hl=es"><a target="_blank" className=' font-bold' >
                                           {/* <img className='hover:drop-shadow-[0_35px_35px_#ffffffd3]  bg-[#ffffffd3]  w-[105%] h-5/6 absolute z-40 hover:opacity-0 ' src="https://i.ibb.co/Z6FVzYw/aisha.jpg"/> */}
                                           
@@ -159,13 +203,13 @@ export default function MiserySite() {
 
 {/* end*/}
       {/* p1 */}
-      <div className=' w-2/6 h-2/6  '>
+      <div className=' w-4/6 h-2/6  '>
       <div className=' duration-500 p-10 hover:skew-x-6 '>
       <div className={styles.card}>
-      <div className="  hover:drop-shadow-[0_35px_35px_#ffffffd3]   duration-1000 bg-[#ffffffd3]  items-center border-[1px]  border-black">
+      <div className="  hover:drop-shadow-[0_35px_35px_#ffffffd3]   duration-1000 bg-[#ffffffd3]  items-center border-[1px] rounded-[5%] rounded-[5%]  border-[#efefef]">
 
       <div className="  text-xs  ">
-      <p className=' text-base text-center font-bold  border-b-[.5px] border-[#030303] p-5 '>babetheory</p>
+      <p className=' text-base text-center font-bold  p-5 '>babetheory</p>
       {/* <Link href="https://www.youtube.com/watch?v=r-Nw7HbaeWY&ab_channel=MIAVEVO"><a target="_blank" className=' font-bold' >
       <img className='hover:drop-shadow-[0_35px_35px_#ffffffd3]  bg-[#ffffffd3] items-center m-auto  w-screen absolute z-0 hover:opacity-0 ' src="https://i.ibb.co/dkdhD8Q/babetheory.jpg"/></a></Link> */}
       {/* <h6 className=' flex-none  text-xl py-8 font-black tracking-wide underline underline-offset-8 decoration-sky-500 '>aisha mirza</h6> */}
@@ -208,14 +252,23 @@ export default function MiserySite() {
 </div>
 {/* end*/}
 </div>
-{/* p1 */}
-<div className=' w-2/6 h-2/6  '>
+
+
+
+
+</div>
+
+
+
+<div className=' flex '>
+    {/* p1 */}
+<div className=' w-4/6 h-2/6  '>
             <div className=' duration-500 p-10 hover:skew-x-6 '>
             <div className={styles.card}>
-            <div className="  hover:drop-shadow-[0_35px_35px_#ffffffd3]   duration-1000 bg-[#ffffffd3]  items-center border-[1px]  border-black">
+            <div className="  hover:drop-shadow-[0_35px_35px_#ffffffd3]   duration-1000 bg-[#ffffffd3]  items-center border-[1px] rounded-[5%]  border-[#efefef]">
 
             <div className="  text-base  ">
-            <p className=' text-base text-center font-bold  border-b-[.5px] border-[#030303] p-5 '>soha</p>
+            <p className=' text-base text-center font-bold  p-5 '>soha</p>
             <Link href="https://www.instagram.com/lovely_caring_creatures/"><a target="_blank" className=' font-bold' >
             {/* <Link href="https://www.youtube.com/watch?v=r-Nw7HbaeWY&ab_channel=MIAVEVO"><a target="_blank" className=' font-bold' >
             <img className='hover:drop-shadow-[0_35px_35px_#ffffffd3]  bg-[#ffffffd3] items-center m-auto  w-screen absolute z-0 hover:opacity-0 ' src="https://i.ibb.co/dkdhD8Q/babetheory.jpg"/></a></Link> */}
@@ -244,25 +297,15 @@ export default function MiserySite() {
       </div>
       </div>
       {/* end*/}
-
-</div>
-
-
-
-
-
-{/* row 2------------------ */}
-<div className=' flex '>
-  
-      <div className=' w-2/6 h-2/6  '>
+      <div className=' w-4/6 h-2/6  '>
             <div className=' duration-500 p-10 hover:skew-x-6 '>
             <div className={styles.card}>
-            <div className="  hover:drop-shadow-[0_35px_35px_#ffffffd3]   duration-1000 bg-[#ffffffd3]  items-center border-[1px]  border-black">
+            <div className="  hover:drop-shadow-[0_35px_35px_#ffffffd3]   duration-1000 bg-[#ffffffd3]  items-center border-[1px] rounded-[5%]  border-[#efefef]">
 
             <div className="  text-base  ">
             <Link href="http://www.instagram.com/leala.rain/"><a target="_blank" className=' font-bold' >
 
-            <p className=' text-base text-center font-bold  border-b-[.5px] border-[#030303] p-5 '>leala-rain shonaiya</p>
+            <p className=' text-base text-center font-bold  p-5 '>leala-rain shonaiya</p>
             {/* <Link href="https://www.youtube.com/watch?v=r-Nw7HbaeWY&ab_channel=MIAVEVO"><a target="_blank" className=' font-bold' >
             <img className='hover:drop-shadow-[0_35px_35px_#ffffffd3]  bg-[#ffffffd3] items-center m-auto  w-screen absolute z-0 hover:opacity-0 ' src="https://i.ibb.co/dkdhD8Q/babetheory.jpg"/></a></Link> */}
             {/* <h6 className=' flex-none  text-xl py-8 font-black tracking-wide underline underline-offset-8 decoration-sky-500 '>aisha mirza</h6> */}
@@ -294,172 +337,84 @@ export default function MiserySite() {
       </div>
       </div>
       {/* end*/}
-      <div className=' w-2/6 h-2/6  '>
-            <div className=' duration-500 p-10 hover:skew-x-6 '>
-            <div className={styles.card}>
-            <div className="  hover:drop-shadow-[0_35px_35px_#ffffffd3]   duration-1000 bg-[#ffffffd3]  items-center border-[1px]  border-black">
 
-            <div className="  text-xs  ">
-            <Link href="https://www.instagram.com/m4ymana/"><a target="_blank" className=' font-bold' >
-            <p className=' text-base text-center font-bold  border-b-[.5px] border-[#030303] p-5 '>maymana arefin</p>
-            {/* <Link href="https://www.youtube.com/watch?v=r-Nw7HbaeWY&ab_channel=MIAVEVO"><a target="_blank" className=' font-bold' >
-            <img className='hover:drop-shadow-[0_35px_35px_#ffffffd3]  bg-[#ffffffd3] items-center m-auto  w-screen absolute z-0 hover:opacity-0 ' src="https://i.ibb.co/dkdhD8Q/babetheory.jpg"/></a></Link> */}
-            {/* <h6 className=' flex-none  text-xl py-8 font-black tracking-wide underline underline-offset-8 decoration-sky-500 '>aisha mirza</h6> */}
-            <div className={styles.card5}>
-            <p  className=' font-light'>
-      <b className=' font-bold '>my pronouns:</b> she/they </p>
 
-      <p className=' font-light'>
-      <b className=' font-bold'>my offerings:</b> i am a community gardener, forager, fungi lover, multimedia artist + spoken word poet based in south london. i feel most grounded in my body when i am outdoors exploring nature, sitting with fungi and plant relatives, and thinking about what they can teach us. my work ties together the mycelial threads between mind, body and soul. central to each of my offerings is a politics of hope and a cornerstone of radical care.
-      </p>
 
-      <p className=' font-light'>
-      <b className=' font-bold'>a misery memory:</b> looking forward to the monthly misery meets (i attended all of them bc i am a dork 🤓) which got me through a very difficult year and lockdown. i remember being amazed and moved at how well misery held us all, even on a zoom call. misery is where my heart is 💗 i am co-facilitating the misery medicines programme 2022-23 and could not be more excited for what this will bring!
 
-</p>
 
-      <p className=' font-light'>
-      <b className=' font-bold'>when i am sad this makes me feel better:</b> sunlight coming through my bedroom window + wrapping myself tightly in my duvet.
-</p>
-
-<p className="hover:skew-y-6"> 
-      <Link href="https://www.instagram.com/m4ymana/"><a target="_blank" className=' font-bold' >find me @: m4ymana
- </a></Link>
- or
- <Link href="https://www.instagram.com/fungi.futures/?hl=es"><a target="_blank" className=' font-bold' > @fungi.futures
- </a></Link>
- </p> 
-            </div></a></Link>
-            </div>
-            </div>
-            </div>
-      </div>
-      </div>
-      {/* end*/}
-      <div className=' w-2/6 h-2/6  '>
-            <div className=' duration-500 p-10 hover:skew-x-6 '>
-            <div className={styles.card}>
-            <div className="  hover:drop-shadow-[0_35px_35px_#ffffffd3]   duration-1000 bg-[#ffffffd3]  items-center border-[1px]  border-black">
-
-            <div className="  text-base  ">
-                  
-            <p className=' text-base text-center font-bold  border-b-[.5px] border-[#030303] p-5 '>sonji shah</p>
-            {/* <Link href="https://www.youtube.com/watch?v=r-Nw7HbaeWY&ab_channel=MIAVEVO"><a target="_blank" className=' font-bold' >
-            <img className='hover:drop-shadow-[0_35px_35px_#ffffffd3]  bg-[#ffffffd3] items-center m-auto  w-screen absolute z-0 hover:opacity-0 ' src="https://i.ibb.co/dkdhD8Q/babetheory.jpg"/></a></Link> */}
-            {/* <h6 className=' flex-none  text-xl py-8 font-black tracking-wide underline underline-offset-8 decoration-sky-500 '>aisha mirza</h6> */}
-            <div className={styles.card6}>
-            <p  className='  font-light'>
-      <b className=' font-bold '>my pronouns:</b> they/them </p>
-
-      <p className=' font-light'>
-      <b className=' font-bold'>my offerings:</b>  i like to write things - whether it’s sad poems for my personal enjoyment, lil stories for friends, overthought think pieces, or funding applications for misery. since nov. 2020 i’ve also been a community mental health researcher.
-</p>
-
-      <p className=' font-light'>
-      <b className=' font-bold'>a misery memory:</b>taking a new friend to a misery party and just sitting, talking and eating all evening.
-</  p>
-
-      <p className='  font-light'>
-      <b className=' font-bold'>when i am sad this makes me feel better:</b>nkinder bueno and cuddles
-
-</p>
-
-            </div>
-            </div>
-            </div>
-            </div>
-      </div>
-      </div>
-      {/* end*/}
-      
 </div>
 
 
-
-{/* row 3------------------------- */}
-<div className=' flex '>
-   {/* p1 */}
-      <div className=' w-2/6 h-2/6  '>
-            <div className=' duration-500 p-10 hover:skew-x-6 '>
-            <div className={styles.card}>
-            <div className="  hover:drop-shadow-[0_35px_35px_#ffffffd3]   duration-1000 bg-[#ffffffd3]  items-center border-[1px]  border-black">
-
-            <div className="  text-xs  ">
-            <p className=' text-base text-center font-bold  border-b-[.5px] border-[#030303] p-5 '>ella j fros</p>
-            {/* <Link href="https://www.youtube.com/watch?v=r-Nw7HbaeWY&ab_channel=MIAVEVO"><a target="_blank" className=' font-bold' >
-            <img className='hover:drop-shadow-[0_35px_35px_#ffffffd3]  bg-[#ffffffd3] items-center m-auto  w-screen absolute z-0 hover:opacity-0 ' src="https://i.ibb.co/dkdhD8Q/babetheory.jpg"/></a></Link> */}
-            {/* <h6 className=' flex-none  text-xl py-8 font-black tracking-wide underline underline-offset-8 decoration-sky-500 '>aisha mirza</h6> */}
-            <div className={styles.card7}>
-            <p  className=' font-light'>
-      <b className=' font-bold '>my pronouns:</b> they/them </p>
-
-      <p className=' font-light'>
-      <b className=' font-bold'>my offerings:</b> video editing/film making, photography, i contribute my eyes/style</p>
-
-      <p className=' font-light'>
-      <b className=' font-bold'>a misery memory:</b>  many many memories to choose from, the first misery where someone said (poss aish) that we looked like footage from an anthropological documentary after an apocalyptic event and everyone was learning how to dance. that first misery felt tangibly new, i like feeling how i’m actually feeling at misery events, nothings heightened or numbed, it is what it is. i take photos at the parties and collaborated with misery with my collective bfz. i luv my role, i like having a role at sober parties cos i usually do enjoy a drink. i am buzzing and filled with a sort of nervous energy to be working on the new films for the plant magic events. filming nature is one of my top muses and having the excuse to document my community is truly wonderful. i am deeply grateful and happy to be involved in misery cos it feels like genuine community at its most wholesome, not afraid to be cute and sentimental cos we are all deeply aware that it’s not always that way so we deserve some of it too.
+                  {/* <div className='z-0 w-[100%]'>
+                      <img src="/2.jpg" alt="image2" />
+                  </div> */}
 
 
-</p>
-
-      <p className=' font-light'>
-      <b className=' font-bold'>when i am sad this makes me feel better:</b> posting on my tumblr, watering my plants, talking to them, listening to post punk, tattooing, eating, buying clothes, swimming, texting, sexting 
-
-</p>
-
-<p className="hover:skew-y-6"> 
-      <a target="_blank" className=' font-bold' >find me @: @oozing_thru
- </a></p>
-            
+        {/* <Link href="https://www.youtube.com/watch?v=5TY_VbQXlkU"><p className="text-2xl  text-center italic pt-10 font-semibold  "> WATCH: chosen family: exploring the importance of LGBTQI+ safe spaces with Aisha Mirza </p></Link> */}
             </div>
-            </div>
-            </div>
-            </div>
-      </div>
-      </div>
-      {/* end*/}
-      <div className=' w-2/6 h-2/6  '>
-            <div className=' duration-500 p-10 hover:skew-x-6 '>
-            <div className={styles.card}>
-            <div className="  hover:drop-shadow-[0_35px_35px_#ffffffd3]   duration-1000 bg-[#ffffffd3]  items-center border-[1px]  border-black">
+            {/* <FooterComponent></FooterComponent>  */}
+  </div>
 
-            <div className="  text-base  ">
-            <p className=' text-base text-center font-bold  border-b-[.5px] border-[#030303] p-5 '>firpal jawanda</p>
-            {/* <Link href="https://www.youtube.com/watch?v=r-Nw7HbaeWY&ab_channel=MIAVEVO"><a target="_blank" className=' font-bold' >
-            <img className='hover:drop-shadow-[0_35px_35px_#ffffffd3]  bg-[#ffffffd3] items-center m-auto  w-screen absolute z-0 hover:opacity-0 ' src="https://i.ibb.co/dkdhD8Q/babetheory.jpg"/></a></Link> */}
-            {/* <h6 className=' flex-none  text-xl py-8 font-black tracking-wide underline underline-offset-8 decoration-sky-500 '>aisha mirza</h6> */}
-            <div className={styles.card8}>
-            <p  className=' font-light'>
-      <b className=' font-bold '>my pronouns:</b> they/them </p>
+  </section>
 
-      <p className=' font-light'>
-      <b className=' font-bold'>my offerings:</b>   i am an artist, illustrator, and print maker. designing zines mostly. across the board drawing creature fantasies and abstracted south asian folklores & mythologies is my forte x
-</p>
 
-      <p className=' font-light'>
-      <b className=' font-bold'>a misery memory:</b>cooking! if i remember correctly it was parathas, curries and chutneys in an observatory on a forested hill in liverpool, then watching the sunset from the roof, the sun setting on the sea over wales in the distance.
 
-</  p>
 
-      <p className='  font-light'>
-      <b className=' font-bold'>when i am sad this makes me feel better:</b> i do that hand on head, other hand on heart hold that aisha mentioned once. i listen to glenn copeland or grouper, i take a bath. i call a friend.
 
-</p>
 
-<p className="hover:skew-y-6"> 
-      <a target="_blank" className=' font-bold' >find me @: @firpal
- </a>
- </p>
-            
-            </div>
-            </div>
-            </div>
-            </div>
-      </div>
-      </div>
-      
-      
+{/* mini nav          ---------------- */}
+{/* TEAM MEMBERS  hover:drop-shadow-[0_35px_35px_#d1b200] */}
+{/* <section className='max-w-5xl mx-auto my-lg'> */}
+
+{/* <section className=" max-w-2xl font-normal text-xl mx-auto px-0 pt-28 ">
+      <div className=" flex ">
+<Link  href="../videoBlogPost/our-story"><a className='  hover:bg-[#dbff00]  rounded-full p-4 m-auto items-center justify-evenly font-black tracking-wide"'>our story</a></Link>
+<Link href="./"><a className='  hover:bg-[#dbff00] rounded-full p-4 m-auto items-center justify-evenly font-black tracking-wide"'>the team</a></Link>
+<Link href="./collaborators"><a className='  hover:bg-[#dbff00] rounded-full p-4 m-auto items-center justify-evenly font-black tracking-wide"'>collaborators</a></Link>
+<Link href="./faq"><a className='  hover:bg-[#dbff00] rounded-full p-4 m-auto items-center justify-evenly font-black tracking-wide"'>faqs </a></Link>
 </div>
+</section>
+ */}
+{/* old */}
+
+{/* <div className={styles.main}>
+        <section className=' pt-36 w-4/6  z-50 text-4xl font-normal text-center items-center m-auto  justify-center pb-5 px-8'>
+        <p className=' font-bold p-3'>.｡.:*☆ ㆜hƐ ㆜Ɛ𝓐m.｡.:*☆</p>
+ <p className=' font-light text-3xl'> Get to know the team behind misery :) </p>
+        </section> 
+</div> */}
+
+{/* 
+        <section className=" z-50 w-screen border-t-[.5px] border-[#030303] font-normal text-base mx-auto px-0 ">
+      <div className=" flex border-b-[.5px] w-screen border-[#030303] ">
+<Link  href="../videoBlogPost/our-story"><a className='  hover:bg-[#dbff00] border-l-[.5px] border-[#030303] rounded-full p-4 m-auto items-center justify-evenly  tracking-wide"'>our story</a></Link>
+<Link href="../../theteam"><a className='  hover:bg-[#dbff00] border-l-[.5px] border-[#030303] rounded-full p-4 m-auto items-center justify-evenly tracking-wide"'>the team</a></Link>
+<Link href="../../collaborators"><a className='  hover:bg-[#dbff00] border-l-[.5px] border-[#030303] rounded-full p-4 m-auto items-center justify-evenly  tracking-wide"'>collaborators</a></Link>
+<Link href="../../faq"><a className='  hover:bg-[#dbff00] border-l-[.5px] border-[#030303] rounded-full p-4 m-auto items-center justify-evenly tracking-wide"'>faqs </a></Link>
+</div>
+</section> */}
+
+
+{/* <div className=" bg-[white] ">
+  <div className=" p-3 font-normal text-xl w-screen overflow-x-hidden ">
+
+<Marquee>
+<span className="mx-4  text-[#2b2b2b]">  .｡.:☆.｡.:(ง❍_❍)ง &nbsp;  chOOsƐ УouᎡ fighteʀ</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.:(ง❍_❍)ง &nbsp;  chOOsƐ УouᎡ fighteʀ</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.:(ง❍_❍)ง &nbsp;  chOOsƐ УouᎡ fighteʀ</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.:(ง❍_❍)ง &nbsp;  chOOsƐ УouᎡ fighteʀ</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.:(ง❍_❍)ง &nbsp;  chOOsƐ УouᎡ fighteʀ</span>
+    <span className="mx-4  text-[#2b2b2b]">  &nbsp; .｡.:☆.｡.:(ง❍_❍)ง &nbsp;  chOOsƐ УouᎡ fighteʀ</span>
+</Marquee>
+
+</div>
+</div> */}
+
+
+
+
+
+
 
 {showButton && (
         <button onClick={scrollToTop} className={styles.backtotop}>

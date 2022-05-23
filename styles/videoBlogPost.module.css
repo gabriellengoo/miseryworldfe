@@ -1,4 +1,85 @@
 
+
+.swerl{
+  position: fixed;
+  /* position: absolute; */
+  /* top: 50%;
+  left: 50%; */
+  transform: translate(0vh + -50vh);
+  animation: y 30s linear infinite alternate;
+  /* z-index: 0; */
+  width: 10%;
+  z-index: 20;
+  mix-blend-mode: multiply;
+  filter: drop-shadow(0 0 0.75rem #86eab4);
+}
+
+.swerl1{
+  position: fixed;
+  /* position: absolute; */
+  /* top: 50%;
+  left: 50%; */
+  transform: translate(0vh + -20vh);
+  animation: y 10s linear infinite alternate;
+  /* z-index: 0; */
+  width: 10%;
+  z-index: 20;
+  /* mix-blend-mode: multiply; */
+  filter: drop-shadow(0 0 0.75rem #86eab4);
+}
+
+.swerl2{
+  position: fixed;
+  /* position: absolute; */
+  /* top: 50%;
+  left: 50%; */
+  transform: translate(10vh + -10vh);
+  animation: y 50s linear infinite alternate;
+  /* z-index: 0; */
+  width: 10%;
+  z-index: 0;
+  /* mix-blend-mode: multiply; */
+  filter: drop-shadow(0 0 0.75rem #86eab4);
+}
+
+.swerltwo{
+  /* position: fixed; */
+  position: absolute;
+  /* top: 50%;
+  left: 50%; */
+  transform: translate(0vh + -50vh);
+  animation: y 30s linear infinite alternate;
+  /* z-index: 0; */
+  width: auto;
+  z-index: 10;
+  /* mix-blend-mode: multiply; */
+  filter: drop-shadow(0 0 0.75rem #86eab4);
+}
+
+
+.figure {
+  position: relative;
+  max-width: 100%;
+  position: absolute;
+  top: 30vh;
+  left: 33vw;
+  width: 5%;
+  z-index: 100;
+  animation: glitter 5s infinite;
+}
+.figure2 {
+  position: relative;
+  max-width: 100%;
+  position: absolute;
+  top: 50vh;
+  left: 70vw;
+  width: 10%;
+  z-index: 100;
+  animation: glitter 5s infinite;
+  filter: drop-shadow(0 0 0.75rem crimson);
+}
+
+
 .main h1{
         font-size: 48px; 
 }
@@ -55,4 +136,59 @@ color: grey;
 
 .main p a{
     text-decoration: underline 1px solid;
+          }
+
+
+          @keyframes y {
+            0% {
+              transform: translateX( calc(50vw - 50vh) );
+            }
+            50% {
+              transform: translateY( calc(50vh + -50vh) );
+            }
+            75% {
+              transform: translateX( calc(50vh - -90vh) );
+            }
+            100% {
+              transform: translateY( calc(90vh +  50vh) );
+            }
+          }
+          
+          
+          @keyframes twink {
+            0% {
+              transform: rotate(-20deg);
+          }
+          
+          25% {
+              transform: rotate(20deg);
+          }
+          50% {
+              transform: rotate(-20deg);
+          }
+          70% {
+              transform: rotate(20deg);
+          }
+          100% {
+              transform: rotate(-20deg);
+          }
+          }
+
+          @keyframes glitter {
+            0% {
+              transform: rotate(-2deg);
+          }
+          
+          25% {
+              transform: rotate(2deg);
+          }
+          50% {
+              transform: rotate(-2deg);
+          }
+          70% {
+              transform: rotate(2deg);
+          }
+          100% {
+              transform: rotate(-2deg);
+          }
           }
