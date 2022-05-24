@@ -13,16 +13,16 @@ import { Carousel } from 'react-responsive-carousel';
 import Head from 'next/head';
 
 export const videoBlogPost = ({ name, body, bodytwo, bodythree, bodyfour, bodyfive }) => {
-  const [imageUrl, setImageUrl] = useState('');
-
-  useEffect(() => {
-    const imgBuilder = imageUrlBuilder({
-      projectId: 'jgs4s870',
-      dataset: 'production',
-    });
+  // const [imageUrl, setImageUrl] = useState('');
+ 
+  // useEffect(() => {
+  //   const imgBuilder = imageUrlBuilder({
+  //     projectId: 'jgs4s870',
+  //     dataset: 'production',
+  //   });
 
     // setImageUrl(imgBuilder.image(image));
-  }, []);
+  // }, []);
 
   return (
     
