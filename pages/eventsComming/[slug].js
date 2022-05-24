@@ -10,7 +10,7 @@ import Footer from '../../components/Footer';
 import FooterComponent from '../../components/foottest';
 import Marquee from "react-fast-marquee";
 import Head from 'next/head';
-
+import Router from 'next/router'
 
 export const EventsComming = ({ name, description, image, summary }) => {
   const [imageUrl, setImageUrl] = useState('');
@@ -24,6 +24,8 @@ export const EventsComming = ({ name, description, image, summary }) => {
     setImageUrl(imgBuilder.image(image));
   }, []);
 
+  
+
   return (
   
   
@@ -35,14 +37,16 @@ export const EventsComming = ({ name, description, image, summary }) => {
   <title> events </title>
         </Head>
       
-      <Toolbar />
+      {/* <Toolbar /> */}
       
 
       {/* <div className={styles.main}> */}
         {/* <h1>{name}</h1> */}
         {/* {imageUrl && <img className={styles.mainImage} src={imageUrl} />} */}
-        <section className=' pt-36  z-50 text-4xl font-normal items-center m-auto flex pb-5 px-8 font-black '>
+        <section className=' w-1/6 pt-10  z-50 text-4xl items-center m-auto flex pb-5 px-8 font-black hover:underline'>
         {/* <h1>{name}</h1>        */}
+        {/* <h1>Back</h1>    */}
+        <div onClick={() => Router.back()}>Back ↗</div>
          </section> 
 
       <div className='flex'>
@@ -77,7 +81,7 @@ export const EventsComming = ({ name, description, image, summary }) => {
         </div>
       </div> */}
 
-      <Footer></Footer> 
+      {/* <Footer></Footer>  */}
     </div>
 
     
@@ -110,7 +114,7 @@ export const getServerSideProps = async pageContext => {
         name: post.name,
         image: post.image,
         summary: post.summary,
-        date: post.date,
+        // date: post.date,
       }
     }
   }

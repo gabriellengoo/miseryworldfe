@@ -12,17 +12,17 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import Head from 'next/head';
 
-export const videoBlogPost = ({ name, description }) => {
-//   const [imageUrl, setImageUrl] = useState('');
+export const videoBlogPost = ({ name, body, bodytwo, bodythree, bodyfour, bodyfive }) => {
+  const [imageUrl, setImageUrl] = useState('');
 
-//   useEffect(() => {
-//     const imgBuilder = imageUrlBuilder({
-//       projectId: 'ngizar2r',
-//       dataset: 'production',
-//     });
+  useEffect(() => {
+    const imgBuilder = imageUrlBuilder({
+      projectId: 'jgs4s870',
+      dataset: 'production',
+    });
 
-//     // setImageUrl(imgBuilder.image(image));
-//   }, []);
+    // setImageUrl(imgBuilder.image(image));
+  }, []);
 
   return (
     
@@ -46,7 +46,7 @@ export const videoBlogPost = ({ name, description }) => {
  
 
 
-    <div className='float-right h-screen right-0 overflow-hidden w-2/6 top-0 font-normal text-lg '>
+    <div className='float-right h-screen right-0 overflow-hidden  w-3/12 top-0 font-normal text-lg '>
     <div className={styles.righthome}>
           {/* <BlockContent blocks={description} /> */}
           
@@ -65,16 +65,16 @@ export const videoBlogPost = ({ name, description }) => {
    
 
           {/* /text */}
-          {/* <p className="text-left pt-10 object-center text-base z-50 font-light ">misery is a mental health community and sober rave based in london and led by and for queer, trans, intersex, black people and people of colour (qtibpoc)
+          {/* <p className="text-left pt-10  text-base z-50 font-light ">misery is a mental health community and sober rave based in london and led by and for queer, trans, intersex, black people and people of colour (qtibpoc)
            with lived experience of madness, mental health challenges, time in hospital, addiction, public service use, disability, trauma, medication and ...      
            <Link  href="#whatwedo"><a className=' hover:text-[#dbff00] font-semibold p-4 m-auto items-center justify-evenly  tracking-wide"'>read more ↗</a></Link>
            </p> */}
 
 
            <div className="flex items-center justify-center min-h-screen w-full">
-           <img className="w-5/6 object-center justify-center" src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/>
-           {/* <img className="w-5/6 object-center justify-center" src="https://i.ibb.co/qB2YqyQ/MISERY-FAUX-FUR.png"/> */}
-          {/* <p className="text-center object-center font-serif font-light "> u can cry if u want to</p> */}
+           <img className="w-5/6  justify-center" src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/>
+           {/* <img className="w-5/6  justify-center" src="https://i.ibb.co/qB2YqyQ/MISERY-FAUX-FUR.png"/> */}
+          {/* <p className="text-center  font-serif font-light "> u can cry if u want to</p> */}
           </div>
 
 {/* links */}
@@ -111,14 +111,14 @@ export const videoBlogPost = ({ name, description }) => {
     </div>
 
 {/* -------------------------------------------- left */}
-        <div className='  z-0 p-5 top-0 h-screen w-4/6 overflow-scroll'>
+        <div className='  z-0 p-5 top-0 h-screen w-9/12 overflow-scroll'>
           
         <img className={styles.figure} src="https://i.ibb.co/sFyFWsf/Bald.png"/>
         <img className={styles.figure2} src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" /> 
         <Toolbar /> 
 
         <p className="text-6xl  text-center pt-20 font-semibold  "> .｡.:*☆ our story ☆*: </p> 
-        {/* <p className="text-center object-center font-serif font-light "> u can cry if u want to</p> */}
+        {/* <p className="text-center  font-serif font-light "> u can cry if u want to</p> */}
 
 <section className=" z-50  font-normal text-base pt-5  text-center  ">
       <div className=" text-center   ">
@@ -135,14 +135,36 @@ export const videoBlogPost = ({ name, description }) => {
                   </div> */}
 
 <p className="text-2xl  text-center italic pt-10 font-semibold  "> our story </p> 
-<p className=" object-center text-center text-base z-50 font-light ">  <BlockContent blocks={description} /> </p> 
+
+<div><p className="  text-center text-base  font-light p-5 ">  <BlockContent blocks={body} /> 
+</p> </div>
+
+
+<div><p className="  text-center text-base  font-light p-5 ">  <BlockContent  blocks={bodytwo} />
+</p> </div>
+
+
+<div><p className="  text-center text-base  font-light p-5 ">  <BlockContent  blocks={bodythree} />
+</p> </div>
+
+
+<div><p className="  text-center text-base font-light  p-5 ">   <BlockContent  blocks={bodyfour} />
+</p></div>
+ 
+
+<div><p className="  text-center text-base  font-light  p-5 ">   <BlockContent  blocks={bodyfive} />
+</p> 
+</div>
 
 
 
-<div className=' object-center  w-5/6 '>
+
+
+
+<div className='  mx-auto w-5/6 p-5 '>
         {/* <iframe className=' h-screen w-5/6 z-0' src="https://player.vimeo.com/video/402987081?h=1d50017fb2" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen></iframe> */}
-        {/* <iframe width="712" height="620" className=' p-10 object-center px-auto mx-auto' src="https://www.youtube.com/embed/5TY_VbQXlkU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
-        <iframe width="700" height="393.75" className=' object-center mx-auto' src="https://www.youtube.com/embed/5TY_VbQXlkU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        {/* <iframe width="712" height="620" className=' p-10  px-auto mx-auto' src="https://www.youtube.com/embed/5TY_VbQXlkU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
+        <iframe width="700" height="393.75" className='  mx-auto' src="https://www.youtube.com/embed/5TY_VbQXlkU" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         {/* <iframe width="1424" height="620" src="https://www.youtube.com/embed/5TY_VbQXlkU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
         </div>
         {/* <Link href="https://www.youtube.com/watch?v=5TY_VbQXlkU"><p className="text-2xl  text-center italic pt-10 font-semibold  "> WATCH: chosen family: exploring the importance of LGBTQI+ safe spaces with Aisha Mirza </p></Link> */}
@@ -232,7 +254,7 @@ export const videoBlogPost = ({ name, description }) => {
 
       {/* <FooterComponent></FooterComponent> */}
       {/* <Footer></Footer>  */}
-    // </div>
+     </div>
 
     
   );
@@ -247,8 +269,11 @@ export const getServerSideProps = async pageContext => {
     }
   }
 
-  const query = encodeURIComponent(`*[ _type == "videoBlogPost" && slug.current == "${pageSlug}" ]`);
-  const url = `https://ngizar2r.api.sanity.io/v1/data/query/production?query=${query}`;
+  const query = encodeURIComponent(`*[ _type == "videoBlogPost" && slug.current == "${pageSlug}" ]{ 
+ name, body, bodytwo,
+    bodythree, bodyfour, bodyfive
+}`);
+  const url = `https://jgs4s870.api.sanity.io/v1/data/query/production?query=${query}`;
 
   const result = await fetch(url).then(res => res.json());
   const post = result.result[0];
@@ -260,8 +285,13 @@ export const getServerSideProps = async pageContext => {
   } else {
     return {
       props: {
-        description: post.description,
+        // description: post.description,
         name: post.name,
+        body: post.body,
+        bodytwo: post.bodytwo,
+      bodythree: post.bodythree,
+      bodyfour: post.bodyfour,
+      bodyfive: post.bodyfive,
       }
     }
   }

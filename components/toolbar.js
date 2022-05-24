@@ -94,8 +94,8 @@ export const Toolbar = () => {
 
 
 
- <div className="top-0  fixed  ">
-<div className='flex overflow-scroll h-min bg-[#f2f2f28a] shadow-slate-200 mix-blend-overlay '>
+ <div className="top-0 z-50 fixed  ">
+<div className='flex z-50 overflow-scroll h-min bg-[#f2f2f28a] shadow-slate-200 mix-blend-overlay '>
     {/* newsec  hover:w-3/12 pb-20 z-50 drop-shadow-[0_0px_5px_grey] */}
     <img className="pl-2 flex w-2/12 h-1/6  duration-500 hover:drop-shadow-[0_0px_5px_#30ff35] " onClick={() => router.push('/Miserysite')} src="https://i.ibb.co/37Sd6XV/Layer-1.png"/>
     <img className="pl-4 flex w-2/12 h-1/6 -rotate-3 duration-500 hover:drop-shadow-[0_0px_5px_#3d9335] " onClick={() => router.push('/videoBlogPost/our-story')} src="https://i.ibb.co/DMmhFb6/Layer-2.png"/>

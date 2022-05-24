@@ -141,7 +141,7 @@ export default function Home({ posts }) {
  
 
 
-    <div className='float-right h-screen right-0 overflow-hidden w-2/6 top-0 font-normal text-lg '>
+    <div className='float-right h-screen right-0 overflow-hidden w-3/12 top-0 font-normal text-lg '>
     <div className={styles.righthome}>
           {/* <BlockContent blocks={description} /> */}
           
@@ -206,7 +206,7 @@ export default function Home({ posts }) {
     </div>
 
 {/* -------------------------------------------- left */}
-        <div className='  z-0 p-5 top-0 h-screen w-4/6 overflow-scroll'>
+        <div className='  z-0 p-5 top-0 h-screen w-9/12 overflow-scroll'>
           
         <img className={styles.figure} src="https://i.ibb.co/sFyFWsf/Bald.png"/>
         <img className={styles.figure2} src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" /> 
