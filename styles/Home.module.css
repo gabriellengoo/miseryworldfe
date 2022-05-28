@@ -7,6 +7,27 @@
 #c0ff3c */
 
 
+.back{
+  background-image: linear-gradient( rgba(242,242,242,0.8), rgba(242,242,242,1) ,rgba(255,255,255,0));
+  position: fixed;
+  top: 0;
+  width: 25%;
+}
+
+
+
+.summary {
+  background: linear-gradient( rgba(#f2f2f2),rgba(#f2f2f2), rgba(220,220,220,0));
+  font-size: 3rem;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.85);
+  font-family: Interstate, Icons;
+  font-style: normal;
+  line-height: 1.5;
+  padding: 10px;
+}
+
+
 .righthome{
   /* background: linear-gradient(90deg, #ffffff 0%, #ffffff 36%, #dff78a 48%, #dff78a 52%, #ffffff 64%, #ffffff 100%); */
   /* box-shadow: inset 0vw -3.47222vw 3.47222vw -3.47222vw #dff78a; */
@@ -288,9 +309,9 @@ transition-duration: 5s;
   position: relative;
   max-width: 100%;
   position: absolute;
-  top: 30vh;
-  left: 33vw;
-  width: 5%;
+  top: 45vh;
+  left: 23vw;
+  width: 8%;
   z-index: 100;
   animation: glitter 5s infinite;
 }
@@ -298,11 +319,11 @@ transition-duration: 5s;
   position: relative;
   max-width: 100%;
   position: absolute;
-  top: 50vh;
+  top: 10vh;
   left: 70vw;
   width: 10%;
   z-index: 100;
-  animation: glitter 5s infinite;
+  /* animation: glitter 5s infinite; */
   filter: drop-shadow(0 0 0.75rem crimson);
 }
 

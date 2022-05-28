@@ -141,11 +141,11 @@ export default function Home({ posts }) {
  
 
 
-    <div className='float-right h-screen right-0 overflow-hidden w-3/12 top-0 font-normal text-lg '>
+    <div className='float-right h-screen right-0 overflow-scroll w-3/12 top-0 font-normal text-lg '>
     <div className={styles.righthome}>
           {/* <BlockContent blocks={description} /> */}
           
-          <div className=' p-5  h-screen '>
+          <div className=' pl-5  h-screen '>
           
           <img className={styles.swerl} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" /> 
   <img className={styles.swerl1} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" /> 
@@ -165,9 +165,20 @@ export default function Home({ posts }) {
            <Link  href="#whatwedo"><a className=' hover:text-[#dbff00] font-semibold p-4 m-auto items-center justify-evenly  tracking-wide"'>read more ↗</a></Link>
            </p> */}
 
-
-           <div className="flex items-center justify-center min-h-screen w-full">
-           <img className="w-5/6 object-center justify-center" src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/>
+{/* min-h-screen w-full */}
+{/* flex items-center justify-center */}
+{/* className=" mx-auto p-auto fixed w-2/12 object-center justify-center" */}
+           <div className=" ">
+           <div className={styles.back}>
+           <img className={styles.back}  src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/>
+           </div>
+           {/* <p className="text-left pt-56 object-center text-base z-50 font-light ">misery is a mental health community and sober rave based in london and led by and for queer, trans, intersex, black people and people of colour (qtibpoc)
+           with lived experience of madness, mental health challenges, time in hospital, addiction, public service use, disability, trauma, medication and ...      
+           <Link  href="#whatwedo"><a className=' hover:text-[#dbff00] font-semibold p-4 m-auto items-center justify-evenly  tracking-wide"'>read more ↗</a></Link>
+           </p> */}
+           <div className="pt-56"><Toolbar /> </div>
+           
+           {/* <img className="" src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/> */}
            {/* <img className="w-5/6 object-center justify-center" src="https://i.ibb.co/qB2YqyQ/MISERY-FAUX-FUR.png"/> */}
           {/* <p className="text-center object-center font-serif font-light "> u can cry if u want to</p> */}
           </div>
@@ -210,23 +221,22 @@ export default function Home({ posts }) {
           
         <img className={styles.figure} src="https://i.ibb.co/sFyFWsf/Bald.png"/>
         <img className={styles.figure2} src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" /> 
-        <Toolbar /> 
+        {/* <Toolbar />  */}
 
-        <p className="text-6xl  text-center pt-20 font-base  "> 💧 u can cry if u want to 💧 </p> 
-        {/* <p className="text-center object-center font-serif font-light "> u can cry if u want to</p> */}
+        <p className="text-6xl  text-center  font-base  "> 💧 u can cry if u want to 💧 </p> 
+        {/* <p className="text-center object-center pt-20 font-serif font-light "> u can cry if u want to</p> */}
 
 
 
-        <div className=' flex w-auto pt-5 h-auto '>
+        {/* <div className=' flex w-auto pt-5 h-auto '>
           {mappedPosts.length ? mappedPosts.map((p, index) => (
             <div onClick={() => router.push(`/eventsComming/${p.slug.current}`)} key={index}>
               <div className='z-0'>
-                {/* hover:saturate-50  hover:z-0 */}
                       <img className='flex w-80 h-auto p-1 ' src={p.image} />
                   </div>
             </div>
           )) : <>No Posts Yet</>}
-        </div>
+        </div> */}
 
 
                   {/* <div className='z-0 w-[100%]'>

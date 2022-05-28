@@ -58,15 +58,15 @@ export default function Home({ posts }) {
  
 
 
-    <div className='float-right h-screen right-0 overflow-hidden w-3/12 top-0 font-normal text-lg '>
+    <div className='float-right h-screen right-0 overflow-scroll w-3/12 top-0 font-normal text-lg '>
     <div className={styles.righthome}>
           {/* <BlockContent blocks={description} /> */}
-          
+          {/* <Toolbar />    */}
           <div className=' p-5  h-screen '>
           
-          <img className={styles.swerl} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" /> 
+          {/* <img className={styles.swerl} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" /> 
   <img className={styles.swerl1} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" /> 
-  <img className={styles.swerl2} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" /> 
+  <img className={styles.swerl2} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" />  */}
 
   {/* <img className={styles.logomishome} src="https://i.ibb.co/qB2YqyQ/MISERY-FAUX-FUR.png"/> */}
  
@@ -81,10 +81,21 @@ export default function Home({ posts }) {
            with lived experience of madness, mental health challenges, time in hospital, addiction, public service use, disability, trauma, medication and ...      
            <Link  href="#whatwedo"><a className=' hover:text-[#dbff00] font-semibold p-4 m-auto items-center justify-evenly  tracking-wide"'>read more ↗</a></Link>
            </p> */}
+             <div className={styles.back}>
+           <img className={styles.back}  src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/>
+           </div>
+           {/* <p className="text-left pt-56 object-center text-base z-50 font-light ">misery is a mental health community and sober rave based in london and led by and for queer, trans, intersex, black people and people of colour (qtibpoc)
+           with lived experience of madness, mental health challenges, time in hospital, addiction, public service use, disability, trauma, medication and ...      
+           <Link  href="#whatwedo"><a className=' hover:text-[#dbff00] font-semibold p-4 m-auto items-center justify-evenly  tracking-wide"'>read more ↗</a></Link>
+           </p> */}
+           <div className="pt-56"><Toolbar /> </div>
+           
 
 
-           <div className="flex items-center justify-center min-h-screen w-full">
-           <img className="w-5/6 object-center justify-center" src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/>
+           <div className="flex items-center  w-full">
+           {/* <div className="flex items-center justify-center min-h-screen w-full"> */}
+           {/* <img className="w-4/6 " src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/> */}
+           {/* <img className="w-5/6 object-center justify-center" src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/> */}
            {/* <img className="w-5/6 object-center justify-center" src="https://i.ibb.co/qB2YqyQ/MISERY-FAUX-FUR.png"/> */}
           {/* <p className="text-center object-center font-serif font-light "> u can cry if u want to</p> */}
           </div>
@@ -127,18 +138,20 @@ export default function Home({ posts }) {
           
         <img className={styles.figure} src="https://i.ibb.co/sFyFWsf/Bald.png"/>
         <img className={styles.figure2} src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" /> 
-        <Toolbar /> 
+        {/* <Toolbar />  */}
 
         {/* <p className="text-3xl  text-left pt-20 font-semibold  "> now & coming up</p>  */}
         {/* <p className="text-center object-center font-light "> now & coming up</p> */}
 
   
-        <div className=' pt-20 container grid grid-cols-3 gap-2 mx-auto'>
+        <div className=' container grid grid-cols-2 gap-1 mx-auto'>
           {mappedPosts.length ? mappedPosts.map((p, index) => (
             <div onClick={() => router.push(`/eventsComming/${p.slug.current}`)} key={index}>
               <div className='z-0'>
-                {/* hover:saturate-50  hover:z-0 */}
-                      <img  className='w-96 h-auto p-1 hover:saturate-50  hover:z-0' src={p.image} />
+                {/* hover:saturate-50 w-96  hover:z-0 */}
+                      <img  className='flex w-12/12 h-auto p-1 float-left hover:z-0' src={p.image} />
+                      {/* <div className={styles.summary}>{p.name}</div> */}
+
                   </div>
             </div>
           )) : <>No Posts Yet</>}
@@ -191,7 +204,7 @@ export default function Home({ posts }) {
           {mappedPosts.length ? mappedPosts.map((p, index) => (
             <div onClick={() => router.push(`/eventsComming/${p.slug.current}`)} key={index} className={styles.post}>
               <h3>{p.name}</h3>
-              <h3>{p.summary}</h3>
+              <h3>{p.div}</h3>
               <img className=' w-56 h-auto ' src={p.image} /> */}
 {/* <a href="#" className="relative">
     <div className="w-56 h-auto flex flex-wrap content-center">
