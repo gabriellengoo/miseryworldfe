@@ -68,13 +68,13 @@ Donate
 		© 2022 - {new Date().getFullYear()}, Misery
 		</div>
 	</Typography>
-	<Typography align="center" padding={0} color="common.black">
+	{/* <Typography align="center" padding={0} color="common.black">
 	<div className="font-light">
 		Built by <MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="https://www.instagram.com/is_this_gabrielle/" target="_blank" rel="noopener noreferrer" >
 		The internet architect
 		
 		</MuiNextLink> 🔗</div>
-	</Typography>
+	</Typography> */}
 </Box>
 </div>)
 }

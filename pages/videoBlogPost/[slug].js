@@ -5,6 +5,7 @@ import BlockContent from '@sanity/block-content-to-react';
 import { Toolbar } from '../../components/toolbar';
 import { Aboutnav } from '../../components/aboutnav';
 import FooterComponent from '../../components/foottest';
+import Footer from '../../components/Footer';
 import ReactPlayer from 'react-player'
 import Link from 'next/link'
 // import Footer from '../../components/Footer';
@@ -170,14 +171,18 @@ export const videoBlogPost = ({ name, body, bodytwo, bodythree, bodyfour, bodyfi
         <iframe width="700" height="393.75" className='  mx-auto' src="https://www.youtube.com/embed/5TY_VbQXlkU" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         {/* <iframe width="1424" height="620" src="https://www.youtube.com/embed/5TY_VbQXlkU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
         </div>
+
+        <Footer></Footer>
         {/* <Link href="https://www.youtube.com/watch?v=5TY_VbQXlkU"><p className="text-2xl  text-center italic pt-10 font-semibold  "> WATCH: chosen family: exploring the importance of LGBTQI+ safe spaces with Aisha Mirza </p></Link> */}
             </div>
             {/* <FooterComponent></FooterComponent>  */}
+            
   </div>
+
 
   </section>
 
-
+  
 
       {/* <div className={styles.main}>
         <section className=' pt-36 border-b-[.5px] border-[#030303] z-50 text-4xl font-normal text-center items-center m-auto flex justify-center pb-5 px-8 font-black '>
