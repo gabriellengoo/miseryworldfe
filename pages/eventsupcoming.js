@@ -7,7 +7,7 @@ import { useRouter } from 'next/router';
 import Footer from '../components/Footer';
 import FooterComponent from '../components/foottest';
 import Marquee from "react-fast-marquee";
-
+import Link from 'next/link';
 
 export default function Home({ posts }) {
   const router = useRouter();
@@ -84,12 +84,15 @@ export default function Home({ posts }) {
              <div className={styles.back}>
            <img className={styles.back}  src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/>
            </div>
+           <p className="pt-56 text-center object-center text-base z-50 font-light ">misery is a mental health community and sober rave based in london and led by and for queer, trans, intersex, black people and people of colour (qtibpoc)
+           with lived experience of madness, mental health challenges, time in hospital, addiction, public service use, disability, trauma, medication and ...      
+           <Link  href="#whatwedo"><a className=' hover:text-[#dbff00] font-semibold p-4 m-auto items-center justify-evenly  tracking-wide"'>read more ↗</a></Link>
+           </p> 
+           <div className=""><Toolbar /> </div>
            {/* <p className="text-left pt-56 object-center text-base z-50 font-light ">misery is a mental health community and sober rave based in london and led by and for queer, trans, intersex, black people and people of colour (qtibpoc)
            with lived experience of madness, mental health challenges, time in hospital, addiction, public service use, disability, trauma, medication and ...      
            <Link  href="#whatwedo"><a className=' hover:text-[#dbff00] font-semibold p-4 m-auto items-center justify-evenly  tracking-wide"'>read more ↗</a></Link>
            </p> */}
-           <div className="pt-56"><Toolbar /> </div>
-           
 
 
            <div className="flex items-center  w-full">
@@ -143,20 +146,25 @@ export default function Home({ posts }) {
         {/* <p className="text-3xl  text-left pt-20 font-semibold  "> now & coming up</p>  */}
         {/* <p className="text-center object-center font-light "> now & coming up</p> */}
 
+
+
+        <p className={styles.crytext2}> events </p> 
+        <p className="pb-10 italic text-center font-light justify-center text-2xl ">now & coming up </p> 
   
-        <div className=' container grid grid-cols-2 gap-1 mx-auto'>
+        <div className=' container grid grid-cols-3 gap-1 mx-auto '>
           {mappedPosts.length ? mappedPosts.map((p, index) => (
             <div onClick={() => router.push(`/eventsComming/${p.slug.current}`)} key={index}>
               <div className='z-0'>
                 {/* hover:saturate-50 w-96  hover:z-0 */}
-                      <img  className='flex w-12/12 h-auto p-1 float-left hover:z-0' src={p.image} />
-                      {/* <div className={styles.summary}>{p.name}</div> */}
-
+                      <img  className='flex w-12/12 h-auto p-1 float-left hover:z-0 font-italic' src={p.image} />
+                      <div className=" text-center object-center text-lg z-50 font-semibold ">{p.name}</div>
+                      <div className=" text-center object-center text-lg z-50 font-light ">{p.summary}</div>
                   </div>
             </div>
           )) : <>No Posts Yet</>}
         </div>
 
+        <p className="pb-10 pt-20 italic text-center font-light justify-center text-2xl "> archive </p> 
 
         {/* <Link href="https://www.youtube.com/watch?v=5TY_VbQXlkU"><p className="text-2xl  text-center italic pt-10 font-semibold  "> WATCH: chosen family: exploring the importance of LGBTQI+ safe spaces with Aisha Mirza </p></Link> */}
             </div>

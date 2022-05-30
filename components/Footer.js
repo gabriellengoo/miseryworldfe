@@ -11,7 +11,8 @@ import TextField from '@mui/material/TextField';
 function FooterComponent() {    
 	return ( 
 		// #fef1ef
-<Box component="footer" sx={{ py: 5, bgcolor: "white" , border: "solid" }}>
+		<div className="font-light">
+<Box component="footer" sx={{ pt: 5, bgcolor: "none" , border: "none" }}>
 
 <Stack padding={2} justifyContent="center" direction={{ xs: 'column', sm: 'row' }} spacing={{ xs: 1, sm: 2, md: 4 }}>
 <MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="https://YourTwitterLink/" target="_blank" rel="noopener noreferrer" >
@@ -62,10 +63,19 @@ Donate
 </Stack>
 
 
-	<Typography align="right" padding={2} color="common.black">
-		© 2022 - {new Date().getFullYear()}, Misery 
+	<Typography align="center" padding={0} color="common.black">
+	<div className="font-light">
+		© 2022 - {new Date().getFullYear()}, Misery
+		</div>
+	</Typography>
+	<Typography align="center" padding={0} color="common.black">
+	<div className="font-light">
+		Built by <MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="https://www.instagram.com/is_this_gabrielle/" target="_blank" rel="noopener noreferrer" >
+		The internet architect
+		
+		</MuiNextLink> 🔗</div>
 	</Typography>
 </Box>
-	)
+</div>)
 }
 export default FooterComponent

@@ -145,11 +145,11 @@ export default function Home({ posts }) {
     <div className={styles.righthome}>
           {/* <BlockContent blocks={description} /> */}
           
-          <div className=' pl-5  h-screen '>
+          <div className=' p-5  h-screen '>
           
           <img className={styles.swerl} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" /> 
-  <img className={styles.swerl1} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" /> 
-  <img className={styles.swerl2} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" /> 
+  {/* <img className={styles.swerl1} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" /> 
+  <img className={styles.swerl2} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" />  */}
 
   {/* <img className={styles.logomishome} src="https://i.ibb.co/qB2YqyQ/MISERY-FAUX-FUR.png"/> */}
  
@@ -162,21 +162,30 @@ export default function Home({ posts }) {
           {/* /text */}
           {/* <p className="text-left pt-10 object-center text-base z-50 font-light ">misery is a mental health community and sober rave based in london and led by and for queer, trans, intersex, black people and people of colour (qtibpoc)
            with lived experience of madness, mental health challenges, time in hospital, addiction, public service use, disability, trauma, medication and ...      
-           <Link  href="#whatwedo"><a className=' hover:text-[#dbff00] font-semibold p-4 m-auto items-center justify-evenly  tracking-wide"'>read more ↗</a></Link>
+           <Link  href="#whatwedo"><a className=' hover:text-[#7da392] font-semibold p-4 m-auto items-center justify-evenly  tracking-wide"'>read more ↗</a></Link>
            </p> */}
 
 {/* min-h-screen w-full */}
 {/* flex items-center justify-center */}
 {/* className=" mx-auto p-auto fixed w-2/12 object-center justify-center" */}
            <div className=" ">
+           {/* <div className={styles.back}>
+           <img className={styles.back}  src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/>
+           </div> */}
+           {/* <p className="text-left pt-56 object-center text-base z-50 font-light ">misery is a mental health community and sober rave based in london and led by and for queer, trans, intersex, black people and people of colour (qtibpoc)
+           with lived experience of madness, mental health challenges, time in hospital, addiction, public service use, disability, trauma, medication and ...      
+           <Link  href="#whatwedo"><a className=' hover:text-[#7da392] font-semibold p-4 m-auto items-center justify-evenly  tracking-wide"'>read more ↗</a></Link>
+           </p> */}
+           {/* <div className="pt-56"><Toolbar /> </div> */}
+
            <div className={styles.back}>
            <img className={styles.back}  src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/>
            </div>
-           {/* <p className="text-left pt-56 object-center text-base z-50 font-light ">misery is a mental health community and sober rave based in london and led by and for queer, trans, intersex, black people and people of colour (qtibpoc)
+           <p className="pt-56 text-center object-center text-base z-50 font-light ">misery is a mental health community and sober rave based in london and led by and for queer, trans, intersex, black people and people of colour (qtibpoc)
            with lived experience of madness, mental health challenges, time in hospital, addiction, public service use, disability, trauma, medication and ...      
-           <Link  href="#whatwedo"><a className=' hover:text-[#dbff00] font-semibold p-4 m-auto items-center justify-evenly  tracking-wide"'>read more ↗</a></Link>
-           </p> */}
-           <div className="pt-56"><Toolbar /> </div>
+           <Link  href="#whatwedo"><a className=' hover:text-[#7da392] font-semibold p-4 m-auto items-center justify-evenly  tracking-wide"'>read more ↗</a></Link>
+           </p> 
+           <div className=""><Toolbar /> </div>
            
            {/* <img className="" src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/> */}
            {/* <img className="w-5/6 object-center justify-center" src="https://i.ibb.co/qB2YqyQ/MISERY-FAUX-FUR.png"/> */}
@@ -185,11 +194,11 @@ export default function Home({ posts }) {
 
 {/* links */}
            {/* <div className=" pt-10 list-[none] text-2xl font-base   ">
-      <Link  href="#whatismisery"><a className=' hover:text-[#dbff00]'>☆ what is misery?</a></Link>
-<Link href="#whatwedo"><a className=' hover:text-[#dbff00] '>☆ what we do</a></Link>
-<Link href="#ourgoals"><a className=' hover:text-[#dbff00] '>☆ our goals</a></Link>
-<Link href="#ourroots"><a className=' hover:text-[#dbff00] '>☆ our roots</a></Link>
-<Link href="#ourdreams"><a className=' hover:text-[#dbff00] '>☆ our dreams</a></Link>
+      <Link  href="#whatismisery"><a className=' hover:text-[#7da392]'>☆ what is misery?</a></Link>
+<Link href="#whatwedo"><a className=' hover:text-[#7da392] '>☆ what we do</a></Link>
+<Link href="#ourgoals"><a className=' hover:text-[#7da392] '>☆ our goals</a></Link>
+<Link href="#ourroots"><a className=' hover:text-[#7da392] '>☆ our roots</a></Link>
+<Link href="#ourdreams"><a className=' hover:text-[#7da392] '>☆ our dreams</a></Link>
 </div> */}
 
 
@@ -223,9 +232,10 @@ export default function Home({ posts }) {
         <img className={styles.figure2} src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" /> 
         {/* <Toolbar />  */}
 
-        <p className="text-6xl  text-center  font-base  "> 💧 u can cry if u want to 💧 </p> 
+        {/* <p className="text-6xl font-semibold text-left text-[#ff00000] justify-center  "> 💧 u can cry if u want to 💧 </p>  */}
         {/* <p className="text-center object-center pt-20 font-serif font-light "> u can cry if u want to</p> */}
-
+        <p className={styles.crytext}> u can cry if u want to 🥲 </p> 
+{/* -webkit-text-stroke: 2px black; */}
 
 
         {/* <div className=' flex w-auto pt-5 h-auto '>
@@ -238,32 +248,40 @@ export default function Home({ posts }) {
           )) : <>No Posts Yet</>}
         </div> */}
 
-
-                  {/* <div className='z-0 w-[100%]'>
+<div className='flex'>
+                  <div className='z-0 pt-24 p-2 w-6/12'>
                       <img src="/2.jpg" alt="image2" />
+                  </div>
+                  <div className='z-0 pt-24 p-2  w-6/12'>
+                      <img src="/7.gif" alt="image2" />
+                  </div>
+                  {/* <div className='z-0 p-1 pt-20  w-4/12'>
+                      <img src="/4.jpg" alt="image2" />
                   </div> */}
+</div>
+                 
 
-<p className="text-left pt-10 object-center text-base z-50 font-light ">ok so here’s the story so far. misery was created in late 2018 by aisha mirza and babetheory. we were frustrated with how unwell us and our friends were and how little support was accessible to us. we had dealt with the suicide of friends and other qtibpoc, our own suicidality and chronic mental health struggles, and the addiction issues that famously taunt the qtibpoc community were feeling all too close to home ...      
-           <Link  href="./videoBlogPost/our-story"><a className=' hover:text-[#dbff00] font-semibold p-4 m-auto items-center justify-evenly  tracking-wide"'>read more ↗</a></Link>
-           </p> 
+{/* <p className="text-left pt-10 object-center text-base z-50 font-light ">ok so here’s the story so far. misery was created in late 2018 by aisha mirza and babetheory. we were frustrated with how unwell us and our friends were and how little support was accessible to us. we had dealt with the suicide of friends and other qtibpoc, our own suicidality and chronic mental health struggles, and the addiction issues that famously taunt the qtibpoc community were feeling all too close to home ...      
+           <Link  href="./videoBlogPost/our-story"><a className=' hover:text-[#7da392] font-semibold p-4 m-auto items-center justify-evenly  tracking-wide"'>read more ↗</a></Link>
+           </p>  */}
 
 
 {/* links */}
 {/* <div className=" pt-10 list-[none] text-center text-2xl font-base   ">
-      <Link  href="#whatismisery"><li className='pt-2'><a className=' hover:text-[#dbff00]'>☆ what is misery? ☆</a></li></Link>
-<Link href="#whatwedo"><li className='pt-2'><a className=' hover:text-[#dbff00] '>☆ what we do ☆</a></li></Link>
-<Link href="#ourgoals"><li className='pt-2'><a className=' hover:text-[#dbff00] '>☆ our goals ☆</a></li></Link>
-<Link href="#ourroots"><li className='pt-2'><a className=' hover:text-[#dbff00] '>☆ our roots ☆</a></li></Link>
-<Link href="#ourdreams"><li className='pt-2'><a className=' hover:text-[#dbff00] '>☆ our dreams ☆</a></li></Link>
+      <Link  href="#whatismisery"><li className='pt-2'><a className=' hover:text-[#7da392]'>☆ what is misery? ☆</a></li></Link>
+<Link href="#whatwedo"><li className='pt-2'><a className=' hover:text-[#7da392] '>☆ what we do ☆</a></li></Link>
+<Link href="#ourgoals"><li className='pt-2'><a className=' hover:text-[#7da392] '>☆ our goals ☆</a></li></Link>
+<Link href="#ourroots"><li className='pt-2'><a className=' hover:text-[#7da392] '>☆ our roots ☆</a></li></Link>
+<Link href="#ourdreams"><li className='pt-2'><a className=' hover:text-[#7da392] '>☆ our dreams ☆</a></li></Link>
 </div> */}
 
 
-<div className=" pt-20 list-[none] text-center text-4xl font-base  ">
-      <Link  href="#whatismisery"><a className=' hover:text-[#dbff00]'>☆ what is misery? </a></Link>
-<Link href="#whatwedo"><a className=' hover:text-[#dbff00] '>☆ what we do </a></Link>
-<Link href="#ourgoals"><a className=' hover:text-[#dbff00] '>☆ our goals </a></Link>
-<Link href="#ourroots"><a className=' hover:text-[#dbff00] '>☆ our roots </a></Link>
-<Link href="#ourdreams"><a className=' hover:text-[#dbff00] '>☆ our dreams ☆</a></Link>
+<div className=" pt-10 list-[none] text-center max-w-3xl object-center mx-auto text-4xl font-base  ">
+      <Link  href="#whatismisery"><a className=' hover:text-[#7da392]'>☆ what is misery? </a></Link>
+<Link href="#whatwedo"><a className=' hover:text-[#7da392] '>☆ what we do </a></Link>
+<Link href="#ourgoals"><a className=' hover:text-[#7da392] '>☆ our goals </a></Link>
+<Link href="#ourroots"><a className=' hover:text-[#7da392] '>☆ our roots </a></Link>
+<Link href="#ourdreams"><a className=' hover:text-[#7da392] '>☆ our dreams ☆</a></Link>
 </div>
 
 
@@ -314,7 +332,7 @@ misery is a reminder that you’re not too sensitive, it’s mad out here.</p>
 
 {/* our dreams */}
 <section id="ourdreams">
-<div className=' font-normal pt-10 '>
+<div className=' font-normal pt-10 p-5 '>
             <p className=' text-xl text-center font-semibold  '>our dreams</p>
             {/* <div className=' text-center flex p-10   font-normal  '>
             <p className=' flex-none text-8xl duration-500 font-light  m-auto'> 1｡ </p>
@@ -329,6 +347,7 @@ misery is a reminder that you’re not too sensitive, it’s mad out here.</p>
         </div>
 </section>
 
+<Footer></Footer>
             </div>
 
   </div>
@@ -451,11 +470,11 @@ misery is a reminder that you’re not too sensitive, it’s mad out here.</p>
         <div className=''>
         <section className=" z-50 w-screen text-base mx-auto px-0  border-[.5px] border-b-[#030303] ">
       <div className=" flex border-[.5px] w-screen ">
-      <Link  href="#whatismisery"><a className='  hover:bg-[#dbff00] border-l-[.5px] border-[#030303] rounded-full p-4 m-auto items-center justify-evenly  tracking-wide"'>what is misery?</a></Link>
-<Link href="#whatwedo"><a className='  hover:bg-[#dbff00] border-l-[.5px] border-[#030303] rounded-full p-4 m-auto items-center justify-evenly tracking-wide"'>what we do</a></Link>
-<Link href="#ourgoals"><a className='  hover:bg-[#dbff00] border-l-[.5px] border-[#030303] rounded-full p-4 m-auto items-center justify-evenly  tracking-wide"'>our goals</a></Link>
-<Link href="#ourroots"><a className='  hover:bg-[#dbff00] border-l-[.5px] border-[#030303] rounded-full p-4 m-auto items-center justify-evenly tracking-wide"'>our roots </a></Link>
-<Link href="#ourdreams"><a className='  hover:bg-[#dbff00] border-l-[.5px] border-[#030303] rounded-full p-4 m-auto items-center justify-evenly tracking-wide"'>our dreams (for a less miserable world) </a></Link>
+      <Link  href="#whatismisery"><a className='  hover:bg-[#7da392] border-l-[.5px] border-[#030303] rounded-full p-4 m-auto items-center justify-evenly  tracking-wide"'>what is misery?</a></Link>
+<Link href="#whatwedo"><a className='  hover:bg-[#7da392] border-l-[.5px] border-[#030303] rounded-full p-4 m-auto items-center justify-evenly tracking-wide"'>what we do</a></Link>
+<Link href="#ourgoals"><a className='  hover:bg-[#7da392] border-l-[.5px] border-[#030303] rounded-full p-4 m-auto items-center justify-evenly  tracking-wide"'>our goals</a></Link>
+<Link href="#ourroots"><a className='  hover:bg-[#7da392] border-l-[.5px] border-[#030303] rounded-full p-4 m-auto items-center justify-evenly tracking-wide"'>our roots </a></Link>
+<Link href="#ourdreams"><a className='  hover:bg-[#7da392] border-l-[.5px] border-[#030303] rounded-full p-4 m-auto items-center justify-evenly tracking-wide"'>our dreams (for a less miserable world) </a></Link>
 </div>
 </section>
 </div> */}

@@ -1,5 +1,26 @@
 
 
+.back{
+  background-image: linear-gradient( rgba(242,242,242,0.8), rgba(242,242,242,1) ,rgba(255,255,255,0));
+  position: fixed;
+  top: 0;
+  width: 25%;
+}
+
+.crytext{
+  /* -webkit-text-stroke: 1px rgb(26, 26, 26); */
+  color: #ffffff;
+  text-align: center;
+  font-size: 6rem;
+  text-shadow:
+  3px  3px 0 #000,
+ -1px -1px 0 #000,  
+  1px -1px 0 #000,
+ -1px  1px 0 #000,
+  1px  1px 0 #000;
+font-style: italic;
+}
+
 .swerl{
   position: fixed;
   /* position: absolute; */
@@ -61,9 +82,9 @@
   position: relative;
   max-width: 100%;
   position: absolute;
-  top: 30vh;
-  left: 33vw;
-  width: 5%;
+  top: 45vh;
+  left: 23vw;
+  width: 8%;
   z-index: 100;
   animation: glitter 5s infinite;
 }
@@ -71,11 +92,11 @@
   position: relative;
   max-width: 100%;
   position: absolute;
-  top: 50vh;
+  top: 10vh;
   left: 70vw;
   width: 10%;
   z-index: 100;
-  animation: glitter 5s infinite;
+  /* animation: glitter 5s infinite; */
   filter: drop-shadow(0 0 0.75rem crimson);
 }
 

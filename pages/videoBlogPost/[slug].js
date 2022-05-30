@@ -46,7 +46,7 @@ export const videoBlogPost = ({ name, body, bodytwo, bodythree, bodyfour, bodyfi
  
 
 
-    <div className='float-right h-screen right-0 overflow-hidden  w-3/12 top-0 font-normal text-lg '>
+    <div className='float-right h-screen right-0 overflow-scroll  w-3/12 top-0 font-normal text-lg '>
     <div className={styles.righthome}>
           {/* <BlockContent blocks={description} /> */}
           
@@ -71,11 +71,14 @@ export const videoBlogPost = ({ name, body, bodytwo, bodythree, bodyfour, bodyfi
            </p> */}
 
 
-           <div className="flex items-center justify-center min-h-screen w-full">
-           <img className="w-5/6  justify-center" src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/>
-           {/* <img className="w-5/6  justify-center" src="https://i.ibb.co/qB2YqyQ/MISERY-FAUX-FUR.png"/> */}
-          {/* <p className="text-center  font-serif font-light "> u can cry if u want to</p> */}
-          </div>
+<div className={styles.back}>
+           <img className={styles.back}  src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/>
+           </div>
+           <p className="pt-56 text-center object-center text-base z-50 font-light ">misery is a mental health community and sober rave based in london and led by and for queer, trans, intersex, black people and people of colour (qtibpoc)
+           with lived experience of madness, mental health challenges, time in hospital, addiction, public service use, disability, trauma, medication and ...      
+           <Link  href="#whatwedo"><a className=' hover:text-[#dbff00] font-semibold p-4 m-auto items-center justify-evenly  tracking-wide"'>read more ↗</a></Link>
+           </p> 
+           <div className=""><Toolbar /> </div>
 
 {/* links */}
            {/* <div className=" pt-10 list-[none] text-2xl font-base   ">
@@ -115,9 +118,9 @@ export const videoBlogPost = ({ name, body, bodytwo, bodythree, bodyfour, bodyfi
           
         <img className={styles.figure} src="https://i.ibb.co/sFyFWsf/Bald.png"/>
         <img className={styles.figure2} src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" /> 
-        <Toolbar /> 
+        {/* <Toolbar />  */}
 
-        <p className="text-6xl  text-center pt-20 font-semibold  "> .｡.:*☆ our story ☆*: </p> 
+        <p className={styles.crytext}> .｡.:*☆ our story ☆*: </p> 
         {/* <p className="text-center  font-serif font-light "> u can cry if u want to</p> */}
 
 <section className=" z-50  font-normal text-base pt-5  text-center  ">
