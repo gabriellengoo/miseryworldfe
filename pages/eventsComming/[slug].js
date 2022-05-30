@@ -43,7 +43,7 @@ export const EventsComming = ({ name, description, image, summary }) => {
       {/* <div className={styles.main}> */}
         {/* <h1>{name}</h1> */}
         {/* {imageUrl && <img className={styles.mainImage} src={imageUrl} />} */}
-        <section className=' w-1/6 pt-10  z-50 text-4xl items-center m-auto flex pb-5 px-8 font-black hover:underline'>
+        <section className=' w-1/6 pt-10  z-50  items-center m-auto flex pb-5 px-8 hover:underline text-4xl font-light tracking-tighter'>
         {/* <h1>{name}</h1>        */}
         {/* <h1>Back</h1>    */}
         <div onClick={() => Router.back()}>Back ↗</div>
@@ -65,10 +65,10 @@ export const EventsComming = ({ name, description, image, summary }) => {
                 
               {/* </Carousel> */}
             </div>
-            <div className='float-right right-0  w-4/6 h-6/6 top-0 font-light text-lg p-10  '>
-            <h1 className='text-4xl font-black p-5 items-center'>{name}</h1>  
-            <p className='text-4xl font-normal p-5'>{summary}</p>
-          <BlockContent className='p-5' blocks={description} />
+            <div className='float-right right-0 space-x-2  w-4/6 h-6/6 top-0 font-light text-lg p-10  '>
+            <h1 className={styles.crytext2}>{name} 💧 </h1>  
+            <p className='text-4xl font-normal pt-20'>{summary}</p>
+          <BlockContent className='pt-5 font-light' blocks={description} />
         </div>
             </div>
             {/* </div> */}

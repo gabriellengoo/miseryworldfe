@@ -154,7 +154,7 @@ export default function Index() {
         {/* <p className="text-center  font-serif font-light "> u can cry if u want to</p> */}
 
         <div className=" flex-auto mb-2 w-full p-2  text-center text[red]">
-                    <h1 className="text-center font-semibold text-7xl">f𝓐q</h1>
+                    <h1 className={styles.crytext2}>f𝓐q</h1>
                     {/* {faqComponents} */}
                 </div> 
 
@@ -178,7 +178,8 @@ export default function Index() {
   </section>
 
 
-
+  {/* <div className={styles.test}>
+                </div> */}
 
 
 

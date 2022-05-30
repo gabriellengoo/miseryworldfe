@@ -71,7 +71,7 @@ const NewsletterForm = ( { status, message, onValidated }) => {
             className=" border-[#000000] text-center text-base  w-3/6 p-5 border-[.5] border-black;"
             onKeyUp={(event) => handleInputKeyEvent(event)}
           />
-          <button className="wp-block-button__link text-center text-base border-[.5px] font-light border-[#000000]  hover:bg-[#ffffff] hover:text-[#000000] rounded-full  p-5" onClick={handleFormSubmit}>
+          <button className="wp-block-button__link text-center text-base border-[1px] font-light border-[#bfbfbf]  bg-[#ffffff] hover:text-[#000000]   p-5" onClick={handleFormSubmit}>
           subscribe
           </button>
         </div>

@@ -149,8 +149,8 @@ export default function Home({ posts }) {
 
 
         <p className={styles.crytext2}> events </p> 
-        <p className="pb-10 italic text-center font-light justify-center text-2xl ">now & coming up </p> 
-  
+        <p className=" italic text-left font-base text-[black] justify-center text-3xl pb-10 underline ">now & coming up <p className='no-underline float-right text-[#1b1b1b] hover:text-[black]  hover:underline'><Link  href="/">archive</Link></p> </p> 
+
         <div className=' container grid grid-cols-3 gap-1 mx-auto '>
           {mappedPosts.length ? mappedPosts.map((p, index) => (
             <div onClick={() => router.push(`/eventsComming/${p.slug.current}`)} key={index}>
@@ -164,7 +164,7 @@ export default function Home({ posts }) {
           )) : <>No Posts Yet</>}
         </div>
 
-        <p className="pb-10 pt-20 italic text-center font-light justify-center text-2xl "> archive </p> 
+       
 
         {/* <Link href="https://www.youtube.com/watch?v=5TY_VbQXlkU"><p className="text-2xl  text-center italic pt-10 font-semibold  "> WATCH: chosen family: exploring the importance of LGBTQI+ safe spaces with Aisha Mirza </p></Link> */}
             </div>

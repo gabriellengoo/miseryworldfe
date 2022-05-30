@@ -7,9 +7,12 @@
 #c0ff3c */
 
 
+
+
 .crytext{
   /* -webkit-text-stroke: 1px rgb(26, 26, 26); */
-  color: #544aaf;
+  /* color: #544aaf; */
+  color: #f2f2f2;
   text-align: left;
   font-size: 6rem;
   text-shadow:
@@ -18,7 +21,7 @@
   1px -1px 0 #000,
  -1px  1px 0 #000,
   1px  1px 0 #000;
-font-style: italic;
+/* font-style: italic; */
 }
 
 
@@ -981,4 +984,20 @@ transition-duration: 1s;
 
 .backtotop:hover {
   background: #88e3b0;
+}
+
+
+.crytext3{
+  /* -webkit-text-stroke: 1px rgb(26, 26, 26); */
+  color: #f2f2f2;
+  text-align: left;
+  font-size: 6rem;
+  text-shadow:
+  3px  3px 0 #000,
+ -1px -1px 0 #000,  
+  1px -1px 0 #000,
+ -1px  1px 0 #000,
+  1px  1px 0 #000;
+/* font-style: italic; */
+padding: 0;
 }
