@@ -11,14 +11,14 @@
 } */
 
 .test{
-  /* background-image: url("../public/images/background1.jpg"); */
-  background: linear-gradient(169.78deg, rgba(255, 255, 255, 0.23) 4.65%, rgba(255, 255, 255, 0) 91.48%), radial-gradient(62.3% 67.27% at 20.42% 27.48%, #d4d4d4 0%, #9fadb8c1 100%), linear-gradient(112.91deg, #676561 3.51%, #242321 111.71%);
-  height: 100%;
+  background-image: url("../public/images/background1.jpg");
+  /* background: linear-gradient(169.78deg, rgba(255, 255, 255, 0.23) 4.65%, rgba(255, 255, 255, 0) 91.48%), radial-gradient(62.3% 67.27% at 20.42% 27.48%, #d4d4d4 0%, #9fadb8c1 100%), linear-gradient(112.91deg, #676561 3.51%, #242321 111.71%); */
+  height: 200vh;
   position: absolute;
   top: 0;
-  mix-blend-mode:multiply;
+  /* mix-blend-mode:multiply; */
   pointer-events: none;
-  width: 100%;
+  width: 100vw;
 }
 
 .back{

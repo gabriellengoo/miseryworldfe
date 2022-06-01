@@ -14,6 +14,7 @@ import Floor from "../components/Floor";
 import Draggable from "../components/Draggable";
 import OrbitControls from "../components/OrbitControls";
 import mypic from '../public/rotatelogo.gif'
+import Scene3 from "./sceneBabylon";
 {/* <h1 className='text-3xl text-[#1fd705] m-auto z-0 max-w-2xl justify-center '> misery is.. </h1> */}
 
 
@@ -31,6 +32,7 @@ export default function FirstPost() {
 
 
 
+      {/* <Scene3 className="canvas3d"></Scene3> */}
 <div className={styles.das}>
    
     

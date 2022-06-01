@@ -65,7 +65,9 @@
     "styled-components": "^5.3.5",
     "three": "^0.138.3",
     "unstyled-components": "^0.1.5",
-    "web-vitals": "^0.2.4"
+    "web-vitals": "^0.2.4",
+    "babylonjs": "^5.5.5",
+    "babylonjs-loaders": "^5.5.5"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.2",

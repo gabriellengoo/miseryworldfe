@@ -149,7 +149,7 @@ export default function Home({ posts }) {
 
 
         <p className={styles.crytext2}> events </p> 
-        <p className=" italic text-left font-base text-[black] justify-center text-3xl pb-10 underline ">now & coming up <p className='no-underline float-right text-[#1b1b1b] hover:text-[black]  hover:underline'><Link  href="/">archive</Link></p> </p> 
+        <p className=" italic text-left font-base text-[black] justify-center text-3xl pb-10 underline ">now & coming up <p className='no-underline float-right text-[#1b1b1b] hover:text-[black]  hover:underline'><Link  href="./eventarchive">archive</Link></p> </p> 
 
         <div className=' container grid grid-cols-3 gap-1 mx-auto '>
           {mappedPosts.length ? mappedPosts.map((p, index) => (

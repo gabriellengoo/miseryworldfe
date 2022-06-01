@@ -9,12 +9,12 @@ import Link from 'next/link'
 import Footer from '../../components/Footer';
 
 
-export const Eventsarchivebby = ({ name, description, images, summary }) => {
+export const Eventsarchivebby = ({ name, description, images, summary, mainImage }) => {
   const [imageUrl, setImageUrl] = useState('');
 
   useEffect(() => {
     const imgBuilder = imageUrlBuilder({
-      projectId: 'ngizar2r',
+      projectId: 'jgs4s870',
       dataset: 'production',
     });
 
@@ -55,7 +55,7 @@ export const getServerSideProps = async pageContext => {
   }
 
   const query = encodeURIComponent(`*[ _type == "Eventsarchivebby" && slug.current == "${pageSlug}" ]`);
-  const url = `https://ngizar2r.api.sanity.io/v1/data/query/production?query=${query}`;
+  const url = `https://jgs4s870.api.sanity.io/v1/data/query/production?query=${query}`;
 
   const result = await fetch(url).then(res => res.json());
   const post = result.result[0];
@@ -71,6 +71,7 @@ export const getServerSideProps = async pageContext => {
         name: post.name,
         images: post.images,
         summary: post.summary,
+        mainImage: post.mainImage,
       }
     }
   }

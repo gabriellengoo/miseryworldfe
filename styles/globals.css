@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 
+.canvas3d{
+  width: 100vw;
+  height: 100vh;
+}
+
 body::-webkit-scrollbar {
   display: none !important;
 }

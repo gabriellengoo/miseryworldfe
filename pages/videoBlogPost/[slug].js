@@ -165,7 +165,7 @@ export const videoBlogPost = ({ name, body, bodytwo, bodythree, bodyfour, bodyfi
 
 
 
-<div className='  mx-auto w-6/6 p-5 '>
+<div className='  mx-auto p-5 '>
         {/* <iframe className=' h-screen w-5/6 z-0' src="https://player.vimeo.com/video/402987081?h=1d50017fb2" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen></iframe> */}
         {/* <iframe width="712" height="620" className=' p-10  px-auto mx-auto' src="https://www.youtube.com/embed/5TY_VbQXlkU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
         <iframe width="700" height="393.75" className='  mx-auto' src="https://www.youtube.com/embed/5TY_VbQXlkU" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>

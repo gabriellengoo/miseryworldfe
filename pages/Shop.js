@@ -147,12 +147,12 @@ export default function FirstPost() {
         <img className={styles.figure2} src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" /> 
         {/* <Toolbar />  */}
 
-        <p className={styles.crytext3}> Shop </p> 
+        <p className={styles.crytext3}> shop </p> 
 
 
       <div className=" my-auto grid place-items-center text-5xl">
   
-   <p  className=" tracking-wide m-auto  font-semibold"> <p  className=" tracking-wide  m-auto   text-5xl font-semibold place-items-center text-center">Coming soon</p></p>
+   <p  className=" tracking-wide m-auto  font-semibold"> <p  className=" tracking-wide  m-auto   text-5xl font-semibold place-items-center text-center">misery merch coming soon!</p></p>
    </div>
    
 

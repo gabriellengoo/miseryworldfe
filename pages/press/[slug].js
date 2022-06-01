@@ -150,13 +150,37 @@ export const Pressp = ({ title, bodypanels, images, imagestwo, body, bodytwo,
 {/* -webkit-text-stroke: 2px black; */}
 
 
-<section className=' list-decimal text-center mx-auto  '>
+<section className=' p-5 list-decimal text-center mx-auto  '>
             {/* <div className={styles.links}> */}
         <div className="   mx-auto px-0 text-2xl font-light tracking-tighter">
       <div className=" ">
 <Link  href="https://brainchildfestival.co.uk/lineup/rave-to-resist-community-partying-politics/"><a className='pl-10'>BRAINCHILD ↗</a></Link>
-<Link href="https://www.somaskool.com/"><a className='pl-10'>INFERNO ↗</a></Link>
+</div>
+{/* </div> */}
+</div>
+</section>
+<section className=' p-5 list-decimal text-center mx-auto  '>
+            {/* <div className={styles.links}> */}
+        <div className="   mx-auto px-0 text-2xl font-light tracking-tighter">
+      <div className=" ">
+      <Link href="https://www.somaskool.com/"><a className='pl-10'>INFERNO ↗</a></Link>
+</div>
+{/* </div> */}
+</div>
+</section>
+<section className=' p-5 list-decimal text-center mx-auto  '>
+            {/* <div className={styles.links}> */}
+        <div className="   mx-auto px-0 text-2xl font-light tracking-tighter">
+      <div className=" ">
 <Link href="https://www.youtube.com/watchv=saPZI5aNGTw&ab_channel=LewisGBurton"><a className='pl-10'>NIGHT EMBASSY ↗</a></Link>
+</div>
+{/* </div> */}
+</div>
+</section>
+<section className=' p-5 list-decimal text-center mx-auto  '>
+            {/* <div className={styles.links}> */}
+        <div className="   mx-auto px-0 text-2xl font-light tracking-tighter">
+      <div className=" ">
 <Link href="https://night-embassy.com/berlin/events/1193/-sweetest-taboo-present-mental-health-in-nightlife-panel"><a className='pl-10'>THE YARD ↗</a></Link>
 </div>
 {/* </div> */}
@@ -241,7 +265,7 @@ export const Pressp = ({ title, bodypanels, images, imagestwo, body, bodytwo,
         <div className='p-3 m-auto text-xl font-light'>
         {imageUrl && <img className={styles.images} src={imageUrl} />} */}
 
-        {/* <section className=' list-decimal text-center mx-auto h-2/6 border-[.5px] border-[#030303] '>
+        {/* <section className=' p-5 list-decimal text-center mx-auto h-2/6 border-[.5px] border-[#030303] '>
             <div className={styles.links}>
         <div className="  text-3xl tracking-wide justify-center mx-auto px-0 p-5 ">
       <div className="  p-5 ">
