@@ -124,14 +124,14 @@ export const videoBlogPost = ({ name, body, bodytwo, bodythree, bodyfour, bodyfi
         <p className={styles.crytext}> .｡.:*☆ our story ☆*: </p> 
         {/* <p className="text-center  font-serif font-light "> u can cry if u want to</p> */}
 
-<section className=" z-50  font-normal text-base pt-5  text-center  ">
+{/* <section className=" z-50  font-normal text-base pt-5  text-center  ">
       <div className=" text-center   ">
 <Link  href="../videoBlogPost/our-story"><a className=' text-xl pl-5 text-center  hover:text-[#dbff00] font-light'>our story</a></Link>
 <Link href="../../theteam"><a className=' text-xl pl-5 text-center hover:text-[#dbff00] font-light'>the team</a></Link>
 <Link href="../../collaborators"><a className=' pl-5 text-xl text-center hover:text-[#dbff00]  font-light'>collaborators</a></Link>
 <Link href="../../faq"><a className=' text-xl pl-5 text-center hover:text-[#dbff00]  font-light'>faqs </a></Link>
 </div>
-</section>
+</section> */}
 
 
                   {/* <div className='z-0 w-[100%]'>

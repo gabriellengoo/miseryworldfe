@@ -160,6 +160,7 @@ color: #88e3b0;
   position: fixed;
   top: 0;
   width: 25%;
+  z-index: 100;
 }
 
 .crytext{
@@ -220,7 +221,7 @@ padding: 0;
   animation: y 10s linear infinite alternate;
   /* z-index: 0; */
   width: 10%;
-  z-index: 20;
+  z-index: 110;
   /* mix-blend-mode: multiply; */
   filter: drop-shadow(0 0 0.75rem #86eab4);
 }
@@ -290,7 +291,7 @@ padding: 0;
   animation: y 30s linear infinite alternate;
   /* z-index: 0; */
   width: 10%;
-  z-index: 20;
+  z-index: 110;
   mix-blend-mode: multiply;
   filter: drop-shadow(0 0 0.75rem #86eab4);
 }

@@ -1,17 +1,124 @@
 
 
 /* .card:hover {
-    filter: drop-shadow(0 0 0.75rem rgb(0, 231, 255));
+  border-radius: 5%; 
+  filter: drop-shadow(0 0 0.75rem rgb(0, 231, 255));
 }
 
 
 .card:before {
-   background: linear-gradient(transparent 0%,#fff 100%);transform:scale(1.2);
+border-radius: 5%;
+  background: linear-gradient(transparent 0%,#fff 100%);transform:scale(1.2);
 } */
 
 
+
+
+.back{
+  background-image: linear-gradient( rgba(242,242,242,0.8), rgba(242,242,242,1) ,rgba(255,255,255,0));
+  position: fixed;
+  top: 0;
+  width: 25%;
+  z-index: 100;
+}
+
+.crytext{
+  /* -webkit-text-stroke: 1px rgb(26, 26, 26); */
+  color: #ffffff;
+  text-align: center;
+  font-size: 6rem;
+  text-shadow:
+  3px  3px 0 #000,
+ -1px -1px 0 #000,  
+  1px -1px 0 #000,
+ -1px  1px 0 #000,
+  1px  1px 0 #000;
+font-style: italic;
+}
+
+.swerl{
+  position: fixed;
+  /* position: absolute; */
+  /* top: 50%;
+  left: 50%; */
+  transform: translate(0vh + -50vh);
+  animation: y 30s linear infinite alternate;
+  /* z-index: 0; */
+  width: 10%;
+  z-index: 110;
+  mix-blend-mode: multiply;
+  filter: drop-shadow(0 0 0.75rem #86eab4);
+}
+
+.swerl1{
+  position: fixed;
+  /* position: absolute; */
+  /* top: 50%;
+  left: 50%; */
+  transform: translate(0vh + -20vh);
+  animation: y 10s linear infinite alternate;
+  /* z-index: 0; */
+  width: 10%;
+  z-index: 110;
+  /* mix-blend-mode: multiply; */
+  filter: drop-shadow(0 0 0.75rem #86eab4);
+}
+
+.swerl2{
+  position: fixed;
+  /* position: absolute; */
+  /* top: 50%;
+  left: 50%; */
+  transform: translate(10vh + -10vh);
+  animation: y 50s linear infinite alternate;
+  /* z-index: 0; */
+  width: 10%;
+  z-index: 0;
+  /* mix-blend-mode: multiply; */
+  filter: drop-shadow(0 0 0.75rem #86eab4);
+}
+
+.swerltwo{
+  /* position: fixed; */
+  position: absolute;
+  /* top: 50%;
+  left: 50%; */
+  transform: translate(0vh + -50vh);
+  animation: y 30s linear infinite alternate;
+  /* z-index: 0; */
+  width: auto;
+  z-index: 10;
+  /* mix-blend-mode: multiply; */
+  filter: drop-shadow(0 0 0.75rem #86eab4);
+}
+
+
+.figure {
+  position: relative;
+  max-width: 100%;
+  position: absolute;
+  top: 45vh;
+  left: 23vw;
+  width: 8%;
+  z-index: 100;
+  animation: glitter 5s infinite;
+}
+.figure2 {
+  position: relative;
+  max-width: 100%;
+  position: absolute;
+  top: 25vh;
+  left: 70vw;
+  width: 10%;
+  z-index: 100;
+  /* animation: glitter 5s infinite; */
+  filter: drop-shadow(0 0 0.75rem crimson);
+}
+
+
 .card:hover{
-    /* opacity: 1; */
+border-radius: 5%;
+  /* opacity: 1; */
     background-image: url("https://assets.codepen.io/13471/sparkles.gif");
     /* url(https://assets.codepen.io/13471/holo.png);  */
       /* linear-gradient(125deg, #ff008450 15%, #fca40040 30%, #ffff0030 40%, #00ff8a20 60%, #00cfff40 70%, #cc4cfa50 85%); */
@@ -27,13 +134,15 @@
     animation:  holoSparkle 5s infinite;
     animation:  holoGradient 5s infinite;
     animation:  holoCard 5s infinite;
-    transform: skewY(50px);
-    /* border-radius: 5%; */
+    border-radius: 5%;transform: skew
+    Y(50px);
+    border-radius: 5%;
     /* flex: 10; */
   }
   
   
   .card {
+  border-radius: 5%;
     transform: translate(-17.5px, 0);
     filter: drop-shadow(0 30px 2px rgba(0, 0, 0, 0.05));
     /* background-color: rgba(255, 255, 255, 0.548); */
@@ -41,6 +150,7 @@
   
   
   .card-md {
+  border-radius: 5%;
     transform: translate(-20%, 0);
     margin-top: 0;
     /*top:50px;*/
@@ -52,6 +162,7 @@
   } */
   
   .cardone{
+  border-radius: 5%;
     background-image:url('https://i.ibb.co/9sckD7N/nooriyah.jpg');
     position:relative;
     z-index: 100;
@@ -66,6 +177,7 @@
   
   
   .cardone:hover{
+  border-radius: 5%;
     background-image:none;
     position:relative;
     z-index: 100;
@@ -78,6 +190,7 @@
   }
   
   .card2{
+  border-radius: 5%;
     background-image:url('https://i.ibb.co/SNM6D4f/lady-shaka.jpg');
     position:relative;
     z-index: 100;
@@ -92,6 +205,7 @@
   
   
   .card2:hover{
+  border-radius: 5%;
     background-image:none;
     position:relative;
     z-index: 100;
@@ -104,6 +218,7 @@
   }
   
   .card3{
+  border-radius: 5%;
     background-image:url('https://i.ibb.co/S0s3c3S/hannah.png');
     position:relative;
     z-index: 100;
@@ -118,6 +233,7 @@
   
   
   .card3:hover{
+  border-radius: 5%;
     background-image:none;
     position:relative;
     z-index: 100;
@@ -130,6 +246,7 @@
   }
   
   .card4{
+  border-radius: 5%;
     background-image:url('https://i.ibb.co/fn0xZ73/leala.jpg');
     position:relative;
     z-index: 100;
@@ -144,6 +261,7 @@
   
   
   .card4:hover{
+  border-radius: 5%;
     background-image:none;
     position:relative;
     z-index: 100;
@@ -158,6 +276,7 @@
   
   /*  */
   .card5{
+  border-radius: 5%;
     /* background-image:url('https://i.ibb.co/hKgXMHS/maymana.png'); */
     position:relative;
     z-index: 100;
@@ -172,6 +291,7 @@
   
   
   .card5:hover{
+  border-radius: 5%;
     background-image:none;
     position:relative;
     z-index: 100;
@@ -184,6 +304,7 @@
   }
   
   .card6{
+  border-radius: 5%;
     background-image:url('https://i.ibb.co/N3r4Y2H/huq-that.jpg');
     position:relative;
     z-index: 100;
@@ -198,6 +319,7 @@
   
   
   .card6:hover{
+  border-radius: 5%;
     background-image:none;
     position:relative;
     z-index: 100;
@@ -210,6 +332,7 @@
   }
   
   .card7{
+  border-radius: 5%;
     background-image:url('https://i.ibb.co/31CmbLP/oopie.png');
     position:relative;
     z-index: 100;
@@ -223,6 +346,7 @@
   
   
   .card7:hover{
+  border-radius: 5%;
     background-image:none;
     position:relative;
     z-index: 100;
@@ -236,6 +360,7 @@
   }
   
   .card8{
+  border-radius: 5%;
     background-image:url('https://i.ibb.co/KjxFQ5V/kemoy.png');
     position:relative;
     z-index: 100;
@@ -250,6 +375,7 @@
   
   
   .card8:hover{
+  border-radius: 5%;
     background-image:none;
     position:relative;
     z-index: 100;
@@ -263,9 +389,67 @@
 
   /* more */
   
+  .card777{
+    background-image:url('https://i.ibb.co/KscjFt6/ella.jpg');
+    position:relative;
+    z-index: 100;
+    top: 0;
+    width:  auto;
+     border-radius: 5%;
+    height: 100%;
+    overflow: hidden;
+    opacity: 100%;
+    color: #00000000;
+  }
+  
+  
+  .card777:hover{
+    background-image:none;
+    position:relative;
+    z-index: 100;
+    top: 0;
+    width:  auto;
+     border-radius: 5%;
+    height: 100%;
+    overflow: hidden;
+    /* opacity: 0; */
+    color: #000000;
+    border-radius: 5%;
+  }
+  
+  .card888{
+    background-image:url('https://i.ibb.co/rsGx8n6/firpii.jpg');
+    position:relative;
+    z-index: 100;
+    top: 0;
+    width:  auto;
+     border-radius: 5%;
+    height: 100%;
+    overflow: hidden;
+    opacity: 100%;
+    color: #00000000;
+  }
+  
+  
+  .card888:hover{
+    background-image:none;
+    position:relative;
+    z-index: 100;
+    top: 0;
+    width:  auto;
+     border-radius: 5%;
+    height: 100%;
+    overflow: hidden;
+    /* opacity: 0; */
+    color: #000000;
+    border-radius: 5%;
+  }
+  
+  
 
 
   .card9{
+  border-radius: 5%;
     /* background-image:url('https://i.ibb.co/WknQLNZ/bones.jpg'); */
     position:relative;
     z-index: 100;
@@ -280,6 +464,7 @@
   
   
   .card9:hover{
+  border-radius: 5%;
     background-image:none;
     position:relative;
     z-index: 100;
@@ -292,6 +477,7 @@
   }
   
   .card11{
+  border-radius: 5%;
     background-image:url('https://i.ibb.co/WknQLNZ/minara-el-waters.jpg');
     position:relative;
     z-index: 100;
@@ -306,6 +492,7 @@
   }
 
   .card11:hover{
+  border-radius: 5%;
     background-image:none;
     position:relative;
     z-index: 100;
@@ -319,6 +506,7 @@
   }
   
   .card22{
+  border-radius: 5%;
     background-image:none;
     position:relative;
     z-index: 100;
@@ -332,6 +520,7 @@
   }
   
   .card22:hover{
+  border-radius: 5%;
     background-image:none;
     position:relative;
     z-index: 100;
@@ -344,6 +533,7 @@
   }
   
   .card33{
+  border-radius: 5%;
     /* background-image:url('https://i.ibb.co/55Djvb5/soha.jpg'); */
     position:relative;
     z-index: 100;
@@ -358,6 +548,7 @@
   
   
   .card33:hover{
+  border-radius: 5%;
     background-image:none;
     position:relative;
     z-index: 100;
@@ -370,6 +561,7 @@
   }
   
   .card44{
+  border-radius: 5%;
     background-image:url('https://i.ibb.co/ZXTSp9g/tryb.jpg');
     position:relative;
     z-index: 100;
@@ -384,6 +576,7 @@
   
   
   .card44:hover{
+  border-radius: 5%;
     background-image:none;
     position:relative;
     z-index: 100;
@@ -398,6 +591,7 @@
   
   /*  */
   .card55{
+  border-radius: 5%;
     /* background-image:url('https://i.ibb.co/hKgXMHS/maymana.png'); */
     position:relative;
     z-index: 100;
@@ -412,6 +606,7 @@
   
   
   .card55:hover{
+  border-radius: 5%;
     background-image:none;
     position:relative;
     z-index: 100;
@@ -424,6 +619,7 @@
   }
   
   .card66{
+  border-radius: 5%;
     /* background-image:url('https://i.ibb.co/XYQjJmm/neo10y.jpg'); */
     position:relative;
     z-index: 100;
@@ -438,6 +634,7 @@
   
   
   .card66:hover{
+  border-radius: 5%;
     background-image:none;
     position:relative;
     z-index: 100;
@@ -450,6 +647,7 @@
   }
   
   .card77{
+  border-radius: 5%;
     background-image:url('https://i.ibb.co/wKqJ6k2/parissah.png');
     position:relative;
     z-index: 100;
@@ -463,6 +661,7 @@
   
   
   .card77:hover{
+  border-radius: 5%;
     background-image:none;
     position:relative;
     z-index: 100;
@@ -475,6 +674,7 @@
   }
   
   .card88{
+  border-radius: 5%;
     background-image:url('https://i.ibb.co/gtbwHf2/jamilla.jpg');
     position:relative;
     z-index: 100;
@@ -489,6 +689,7 @@
   
   
   .card88:hover{
+  border-radius: 5%;
     background-image:none;
     position:relative;
     z-index: 100;
@@ -501,6 +702,7 @@
   }
 
   .card99{
+  border-radius: 5%;
     /* background-image:url('https://i.ibb.co/rsGx8n6/firpii.jpg'); */
     position:relative;
     z-index: 100;
@@ -514,6 +716,7 @@
   
   
   .card99:hover{
+  border-radius: 5%;
     background-image:none;
     position:relative;
     z-index: 100;
@@ -601,6 +804,7 @@
   
   @keyframes holoCard {
     0%, 100% {
+
       transform: rotateZ(0deg) rotateX(0deg) rotateY(0deg);
     }
     5%, 8% {

@@ -234,7 +234,7 @@ export default function Home({ posts }) {
 
         {/* <p className="text-6xl font-semibold text-left text-[#ff00000] justify-center  "> 💧 u can cry if u want to 💧 </p>  */}
         {/* <p className="text-center object-center pt-20 font-serif font-light "> u can cry if u want to</p> */}
-        <p className={styles.crytext}> u can cry if u want to 🥲 </p> 
+       
 {/* -webkit-text-stroke: 2px black; */}
 
 
@@ -248,7 +248,7 @@ export default function Home({ posts }) {
           )) : <>No Posts Yet</>}
         </div> */}
 
-<div className='flex'>
+<div className='flex pt-5'>
                   <div className='z-0  p-1 w-6/12'>
                       <img src="/2.jpg" alt="miseryparty" />
                   </div>
@@ -259,7 +259,7 @@ export default function Home({ posts }) {
                       <img src="/4.jpg" alt="image2" />
                   </div> */}
 </div>
-                 
+<p className={styles.crytext4}> u can cry if u want to 🥲 </p> 
 
 {/* <p className="text-left pt-10 object-center text-base z-50 font-light ">ok so here’s the story so far. misery was created in late 2018 by aisha mirza and babetheory. we were frustrated with how unwell us and our friends were and how little support was accessible to us. we had dealt with the suicide of friends and other qtibpoc, our own suicidality and chronic mental health struggles, and the addiction issues that famously taunt the qtibpoc community were feeling all too close to home ...      
            <Link  href="./videoBlogPost/our-story"><a className=' hover:text-[#7da392] font-semibold p-4 m-auto items-center justify-evenly  tracking-wide"'>read more ↗</a></Link>
