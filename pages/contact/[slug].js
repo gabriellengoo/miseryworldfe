@@ -104,7 +104,7 @@ const MAILCHIMP_URL = process.env.NEXT_PUBLIC_MAILCHIMP_URL;
            </div>
            <p className="pt-56 text-center object-center text-base z-50 font-light ">misery is a mental health community and sober rave based in london and led by and for queer, trans, intersex, black people and people of colour (qtibpoc)
            with lived experience of madness, mental health challenges, time in hospital, addiction, public service use, disability, trauma, medication and ...      
-           <Link  href="#whatwedo"><a className=' hover:text-[#7da392] font-semibold p-4 m-auto items-center justify-evenly  tracking-wide"'>read more ↗</a></Link>
+           <Link  href="../../Miserysite#whatwedo"><a className=' hover:text-[#7da392] font-semibold p-4 m-auto items-center justify-evenly  tracking-wide"'>read more ↗</a></Link>
            </p> 
            <div className=""><Toolbar /> </div>
            
@@ -154,10 +154,10 @@ const MAILCHIMP_URL = process.env.NEXT_PUBLIC_MAILCHIMP_URL;
         {/* <Toolbar />  */}
 
 
-<div className=' max-w-3xl'>
+<div className=''>
         {/* <p className="text-6xl font-semibold text-left text-[#ff00000] justify-center  "> 💧 u can cry if u want to 💧 </p>  */}
         {/* <p className="text-center object-center pt-20 font-serif font-light "> u can cry if u want to</p> */}
-        <p className={styles.crytext2}> {title}</p> 
+        <p className={styles.crytext4}>{title}</p> 
 {/* -webkit-text-stroke: 2px black; */}
 
 
@@ -178,11 +178,13 @@ const MAILCHIMP_URL = process.env.NEXT_PUBLIC_MAILCHIMP_URL;
 
         <div className='   text-base  relative hidden md:block '>
         {/* <h1 className=' text-2xl font-light tracking-tighter ptracking-wide'>{title}</h1> */}
-        <h1 className='  text-2xl font-light tracking-tighter  '>  email:<a href="mailto:hello@miseryparty.org"> hello@miseryparty.org</a></h1>
+        {/* <h1 className='  text-2xl font-light   '>  email:<a href="mailto:hello@miseryparty.org"> hello@miseryparty.org</a></h1> */}
+        <h1 className='  text-2xl font-light text-center   '> <a href="mailto:hello@miseryparty.org"> hello@miseryparty.org</a></h1>
+
         </div>
 
         <div className='   text-base  relative hidden md:block '>
-        <h1 className=' text-2xl font-light tracking-tighter  '>anonymous Feedback form! misery confessions: tell us ur secrets</h1>
+        <h1 className=' text-2xl font-light text-center   '>anonymous Feedback form! misery confessions: tell us ur secrets</h1>
          </div>
 {/*         
         <div className='text-l indent-5 tracking-wide  m-auto text-2xl font-light'> */}
@@ -191,7 +193,7 @@ const MAILCHIMP_URL = process.env.NEXT_PUBLIC_MAILCHIMP_URL;
         </div> */}
         
 
-        <div className=' pt-10 text-left relative hidden md:block text-2xl font-light tracking-tighter '>
+        <div className=' pt-10 text-center relative hidden md:block text-2xl font-light  '>
             <h1 className='  '>sign up to our Newsletter</h1>
         </div>
               <MailchimpSubscribe

@@ -23,7 +23,7 @@ function FooterComponent() {
             <TextField id="outlined-basic" label="Search" variant="outlined" color="secondary" />
             </div>
 
-  <Link  href="./"><a className=' text-center     p-4 m-auto items-center justify-evenly  tracking-wide'>about</a></Link>
+  <Link  href="../videoBlogPost/our-story"><a className=' text-center     p-4 m-auto items-center justify-evenly  tracking-wide'>about</a></Link>
   <Link href="../../contact/contact"><a className=' text-center      p-4 m-auto items-center justify-evenly tracking-wide"'>contact</a></Link>
   <Link href="../../resources/resources-for-qtibpoc-healing"><a className=' text-center      p-4 m-auto items-center justify-evenly  tracking-wide"'>resources</a></Link>
   <Link href="../../getinvolved/get-involved"><a className=' text-center      p-4 m-auto items-center justify-evenly tracking-wide"'>get involved </a></Link>

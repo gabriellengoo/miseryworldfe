@@ -15,19 +15,19 @@ function FooterComponent() {
 <Box component="footer" sx={{ pt: 5, bgcolor: "none" , border: "none" }}>
 
 <Stack padding={2} justifyContent="center" direction={{ xs: 'column', sm: 'row' }} spacing={{ xs: 1, sm: 2, md: 4 }}>
-<MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="https://YourTwitterLink/" target="_blank" rel="noopener noreferrer" >
+<MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="../../Miserysite"  rel="noopener noreferrer" >
 Home
 		</MuiNextLink>
-		<MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="https://YourTwitterLink/" target="_blank" rel="noopener noreferrer" >
+		<MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="../videoBlogPost/our-story"  rel="noopener noreferrer" >
 		About
 		</MuiNextLink>
-		<MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="https://YourTwitterLink/" target="_blank" rel="noopener noreferrer" >
+		<MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="../../contact/contact"  rel="noopener noreferrer" >
 		Contact
 		</MuiNextLink>
-		<MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="https://YourTwitterLink/" target="_blank" rel="noopener noreferrer" >
+		<MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="../../resources/resources-for-qtibpoc-healing"  rel="noopener noreferrer" >
 		Resources
 		</MuiNextLink>
-		<MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="https://YourTwitterLink/" target="_blank" rel="noopener noreferrer" >
+		<MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="../../getinvolved/get-involved"  rel="noopener noreferrer" >
 		Get involved
 		</MuiNextLink>
 </Stack>
@@ -39,11 +39,11 @@ Home
 >
 
 
-		<MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="https://YourInstagramLink/" target="_blank" rel="noopener noreferrer">
+		<MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="https://www.instagram.com/miseryparty/?hl=en" target="_blank" rel="noopener noreferrer">
 		<Instagram fontSize="large" />
 		</MuiNextLink>
 
-		<MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="https://YourTwitterLink/" target="_blank" rel="noopener noreferrer" >
+		<MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="https://twitter.com/miseryparty_" target="_blank" rel="noopener noreferrer" >
 		<Twitter fontSize="large" />
 		</MuiNextLink>
 
@@ -53,10 +53,10 @@ Home
 
 
 	<Stack padding={2} justifyContent="center" direction={{ xs: 'column', sm: 'row' }} spacing={{ xs: 1, sm: 2, md: 4 }}>
-<MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="https://YourTwitterLink/" target="_blank" rel="noopener noreferrer" >
+<MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="../../getinvolved/get-involved"  rel="noopener noreferrer" >
 Donate 
 		</MuiNextLink>
-		<MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="https://YourTwitterLink/" target="_blank" rel="noopener noreferrer" >
+		<MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="../../faq"  rel="noopener noreferrer" >
 		Newsletter
 		</MuiNextLink>
 		
@@ -70,7 +70,7 @@ Donate
 	</Typography>
 	{/* <Typography align="center" padding={0} color="common.black">
 	<div className="font-light">
-		Built by <MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="https://www.instagram.com/is_this_gabrielle/" target="_blank" rel="noopener noreferrer" >
+		Built by <MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="https://www.instagram.com/is_this_gabrielle/"  rel="noopener noreferrer" >
 		The internet architect
 		
 		</MuiNextLink> 🔗</div>

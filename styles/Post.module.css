@@ -1,3 +1,22 @@
+
+
+
+.crytext4{
+  /* -webkit-text-stroke: 1px rgb(26, 26, 26); */
+  /* color: #544aaf; */
+  color: #f2f2f2;
+  text-align: center;
+  font-size: 5rem;
+  text-shadow:
+  3px  3px 0 #000,
+ -1px -1px 0 #000,  
+  1px -1px 0 #000,
+ -1px  1px 0 #000,
+  1px  1px 0 #000;
+/* font-style: italic; */
+}
+
+
 .main {
     margin: auto;
     width: 950px;

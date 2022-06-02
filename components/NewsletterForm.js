@@ -62,13 +62,13 @@ const NewsletterForm = ( { status, message, onValidated }) => {
 
   return (
     <>
-      <div className="d-flex border-[#000000] newsletter-input-fields w-3/6 ">
+      <div className="d-flex border-[#000000] pt-5 newsletter-input-fields  ">
         <div className="mc-field-group border-[#000000] text-center ">
           <input
             onChange={(event) => setEmail(event?.target?.value ?? '')}
             type="email"
             placeholder="Insert email here"
-            className=" border-[#000000] text-center text-base  w-3/6 p-5 border-[.5] border-black;"
+            className=" border-[#000000] text-center text-base  p-5 border-[.5] border-black;"
             onKeyUp={(event) => handleInputKeyEvent(event)}
           />
           <button className="wp-block-button__link text-center text-base border-[1px] font-light border-[#bfbfbf]  bg-[#ffffff] hover:text-[#000000]   p-5" onClick={handleFormSubmit}>
