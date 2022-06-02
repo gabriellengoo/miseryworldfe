@@ -91,7 +91,7 @@ export const Pressp = ({ title, bodypanels, images, imagestwo, body, bodytwo,
            {/* <div className="pt-56"><Toolbar /> </div> */}
 
            <div className={styles.back}>
-           <img className={styles.back}  src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/>
+           <Link  href="../"><a className=''><img className={styles.back}  src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/></a></Link>
            </div>
            <p className="pt-56 text-center object-center text-base z-50 font-light ">misery is a mental health community and sober rave based in london and led by and for queer, trans, intersex, black people and people of colour (qtibpoc)
            with lived experience of madness, mental health challenges, time in hospital, addiction, public service use, disability, trauma, medication and ...      
@@ -116,12 +116,12 @@ export const Pressp = ({ title, bodypanels, images, imagestwo, body, bodytwo,
 
   {/* <div className=" p-5 flex bottom-0 absolute ">
             <div className="p-5 ">
-        <MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="https://www.instagram.com/miseryparty/?hl=en" target="_blank" rel="noopener noreferrer">
+        <MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="https://www.instagram.com/miseryparty/?hl=en"  rel="noopener noreferrer">
 		<Instagram fontSize="large" />
 		</MuiNextLink>
         </div>
         <div className=" p-5">
-        <MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="https://twitter.com/miseryparty_" target="_blank" rel="noopener noreferrer" >
+        <MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="https://twitter.com/miseryparty_"  rel="noopener noreferrer" >
 		<Twitter fontSize="large" />
 		</MuiNextLink>
         </div>
@@ -154,7 +154,24 @@ export const Pressp = ({ title, bodypanels, images, imagestwo, body, bodytwo,
             {/* <div className={styles.links}> */}
         <div className="   mx-auto px-0 text-2xl font-light tracking-tighter">
       <div className=" ">
-<Link  href="https://brainchildfestival.co.uk/lineup/rave-to-resist-community-partying-politics/"><a className='pl-10'>BRAINCHILD ↗</a></Link>
+<Link   href="https://brainchildfestival.co.uk/lineup/rave-to-resist-community-partying-politics/"><a target="_blank" className='pl-10'><span>BRAINCHILD ↗</span><img className={styles.imgpop} src="https://cdn.shortpixel.ai/spai/w_2180+q_glossy+ret_img+to_webp/https://brainchildfestival.co.uk/wp-content/uploads/2019/07/Rave-to-Resist-Image-1.jpg"/></a></Link>
+
+</div>
+{/* </div> */}
+</div>
+</section>
+
+{/* <p>This is some text. <span>HOVER OVER ME</span>
+<img className={styles.imgpop} src="http://www.placecage.com/100/100"/>
+ </p> */}
+
+<section className=' p-5 list-decimal text-center mx-auto  '>
+            {/* <div className={styles.links}> */}
+        <div className="   mx-auto px-0 text-2xl font-light tracking-tighter">
+      <div className=" ">
+      {/* <Link  href="https://www.somaskool.com/"><a target="_blank" className='pl-10'>INFERNO ↗</a></Link> */}
+      <Link   href="https://www.somaskool.com/"><a target="_blank" className='pl-10'><span>INFERNO ↗</span><img className={styles.imgpop} src="https://www.somaskool.com/media/images/flyer_2021.png"/></a></Link>
+
 </div>
 {/* </div> */}
 </div>
@@ -163,7 +180,8 @@ export const Pressp = ({ title, bodypanels, images, imagestwo, body, bodytwo,
             {/* <div className={styles.links}> */}
         <div className="   mx-auto px-0 text-2xl font-light tracking-tighter">
       <div className=" ">
-      <Link href="https://www.somaskool.com/"><a className='pl-10'>INFERNO ↗</a></Link>
+{/* <Link  href="https://www.youtube.com/watchv=saPZI5aNGTw&ab_channel=LewisGBurton"><a target="_blank" className='pl-10'>NIGHT EMBASSY ↗</a></Link> */}
+<Link   href="https://www.youtube.com/watchv=saPZI5aNGTw&ab_channel=LewisGBurton"><a target="_blank" className='pl-10'><span>THE YARD ↗</span><img className={styles.imgpop} src=""/></a></Link>
 </div>
 {/* </div> */}
 </div>
@@ -172,16 +190,8 @@ export const Pressp = ({ title, bodypanels, images, imagestwo, body, bodytwo,
             {/* <div className={styles.links}> */}
         <div className="   mx-auto px-0 text-2xl font-light tracking-tighter">
       <div className=" ">
-<Link href="https://www.youtube.com/watchv=saPZI5aNGTw&ab_channel=LewisGBurton"><a className='pl-10'>NIGHT EMBASSY ↗</a></Link>
-</div>
-{/* </div> */}
-</div>
-</section>
-<section className=' p-5 list-decimal text-center mx-auto  '>
-            {/* <div className={styles.links}> */}
-        <div className="   mx-auto px-0 text-2xl font-light tracking-tighter">
-      <div className=" ">
-<Link href="https://night-embassy.com/berlin/events/1193/-sweetest-taboo-present-mental-health-in-nightlife-panel"><a className='pl-10'>THE YARD ↗</a></Link>
+{/* <Link  href="https://night-embassy.com/berlin/events/1193/-sweetest-taboo-present-mental-health-in-nightlife-panel"><a target="_blank" className='pl-10'>THE YARD ↗</a></Link> */}
+<Link   href="https://night-embassy.com/berlin/events/1193/-sweetest-taboo-present-mental-health-in-nightlife-panel"><a target="_blank" className='pl-10'><span>NIGHT EMBASSY ↗</span><img className={styles.imgpop} src="https://night-embassy.com/berlin/media/content/1165_large.jpg"/></a></Link>
 </div>
 {/* </div> */}
 </div>

@@ -179,7 +179,7 @@ export default function Home({ posts }) {
            {/* <div className="pt-56"><Toolbar /> </div> */}
 
            <div className={styles.back}>
-           <img className={styles.back}  src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/>
+           <Link  href="./"><a className=''><img className={styles.back}  src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/></a></Link>
            </div>
            <p className="pt-56 text-center object-center text-base z-50 font-light ">misery is a mental health community and sober rave based in london and led by and for queer, trans, intersex, black people and people of colour (qtibpoc)
            with lived experience of madness, mental health challenges, time in hospital, addiction, public service use, disability, trauma, medication and ...      
@@ -305,9 +305,33 @@ misery is a reminder that you’re not too sensitive, it’s mad out here.</p>
 
 
 
-        <div className='z-0  pt-5  w-12/12'>
+        {/* <div className='z-0  pt-5  w-12/12'>
                       <img src="/3.jpg" alt="miseryparty" />
+                  </div> */}
+
+<div className=' z-0 top-0 cursor-grabbing h-auto pt-5 overflow-hidden'>
+              <Carousel  zIndex={-2}  dynamicHeight={false} minHeight={5} interval={4000} showThumbs={false} showIndicators={false} showArrows={false} infiniteLoop={true} emulateTouch={true} swipeable={true} autoPlay >
+                
+                
+                  <div className='z-0 '>
+                      <img src="/2.jpg" alt="image2" />
+  
                   </div>
+                  <div className='z-0 '>
+                      <img src="/3.jpg" alt="image3"/>
+  
+                  </div>
+                  <div className='z-0 '>
+                      <img src="/4.jpg" alt="image4"/>
+  
+                  </div>
+                  <div className='z-0 '>
+                      <img src="/5.jpg" alt="image5"/>
+                      
+  
+                  </div>
+              </Carousel>
+            </div>
 
 {/* our goals */}
 <section id="ourgoals">
@@ -352,6 +376,24 @@ misery is a reminder that you’re not too sensitive, it’s mad out here.</p>
        
 </section>
 </div>
+
+
+<p className=' pt-20 overflow-hidden text-4xl font-semibold  m-auto items-center justify-evenly  tracking-wide '> latest events </p>
+<Link  href="../../eventsupcoming"><a className=' overflow-hidden  hover:text-[#7da392] text-4xl font-light  m-auto items-center justify-evenly  tracking-wide"'>click here to see more events ↗</a></Link>
+<div className=' z-0 top-0  h-auto w-auto overflow-scroll'>
+<div className=' flex w-screen  h-auto overflow-scroll '>
+          {mappedPosts.length ? mappedPosts.map((p, index) => (
+            <div onClick={() => router.push(`/eventsComming/${p.slug.current}`)} key={index}>
+              <div className='z-0'>
+                      <img className='w-50 w-96 p-1 ' src={p.image} />
+                  </div>
+            </div>
+          )) : <>No Posts Yet</>}
+        </div>
+        {/* <p className=' text-xl text-left font-semibold  '> click her to see more events </p> */}
+
+            </div>
+
 
 <Footer></Footer>
             </div>

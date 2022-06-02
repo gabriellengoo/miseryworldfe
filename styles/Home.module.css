@@ -7,6 +7,71 @@
 #c0ff3c */
 
 
+.imageright {
+  position: absolute;
+  top: 3%;
+  right: 10%;
+  /* width: clamp(204px,27vw,430px); */
+  width: clamp(144px,25vw,300px);
+  max-width: 31.25rem;
+  /* -webkit-animation: move-updown 50s ease-in-out infinite; */
+  /* animation: move-updown 50s ease-in-out infinite; */
+  animation: spin 300s linear infinite;
+  transform: rotate(66deg);
+}
+
+.imageleft {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  width: clamp(144px,25vw,300px);
+  -webkit-animation: floatimageleft 20s ease-in-out infinite;
+  animation: floatimageleft 20s ease-in-out infinite;
+  /* transform: rotate(66deg); */
+}
+
+.decorimage {
+  position: relative;
+  pointer-events: none;
+}
+
+
+@keyframes move-updown{
+  0% {
+    transform: translate(0);
+}
+50% {
+    transform: translateY(120px);
+}
+100% {
+    transform: translate(0);
+}
+}
+
+
+@keyframes floatimageleft{
+  0% {
+    transform: translate(0) rotate(26deg);
+}
+
+50% {
+    transform: translate(3px,-40px) rotate(26deg);
+}
+100% {
+    transform: translate(0) rotate(26deg);
+}
+}
+
+
+@keyframes spin{
+  50% {
+    transform: rotate(180deg);
+}
+
+100% {
+    transform: rotate(1turn);
+}
+}
 
 
 .crytext{
@@ -87,9 +152,11 @@ font-style: italic;
 
 /* #f579f5 */
 /* #d1c8cd */
+/* , #91e5ef 65% */
+/* #f479f45d */
 .das{
   --bg-gradient: linear-gradient(169.78deg, rgba(255, 255, 255, 0.23) 4.65%, rgba(255, 255, 255, 0) 91.48%), radial-gradient(62.3% 67.27% at 20.42% 27.48%, #5E4B1E 0%, #2B2A28 100%), linear-gradient(112.91deg, #676561 3.51%, #242321 111.71%);
-  background:radial-gradient(circle,#9beea6, rgba(142,233,181,1) 0%, rgba(159,238,163,1) 16%, #ece97d, #f479f4, #ffffff93,  #d1c8cd3c, #91e5ef 65%);
+  background:radial-gradient(circle,#9beea6, rgba(142,233,181,1) 0%, rgba(159,238,163,1) 16%, #ece97d, #91e5ef5d, #ffffff93,  #d1c8cd3c);
   height:100vh;
   overflow: hidden;
 }

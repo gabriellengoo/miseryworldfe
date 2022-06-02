@@ -1,6 +1,20 @@
 
 
 
+
+.imgpop{
+  display: none
+}
+
+span:hover + .imgpop{
+  display: block;
+  width: 20vw;
+  position:absolute;
+  top:10vh;
+  left:40vw;
+}
+
+
 .crytext4{
   /* -webkit-text-stroke: 1px rgb(26, 26, 26); */
   /* color: #544aaf; */

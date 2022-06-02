@@ -11,19 +11,68 @@ import FooterComponent from '../../components/foottest';
 import Marquee from "react-fast-marquee";
 import Head from 'next/head';
 import Router from 'next/router'
+import { useRouter } from 'next/router';
 
-export const EventsComming = ({ name, description, image, summary }) => {
+export const EventsComming = ({ name, description, image, summary, posts }) => {
   const [imageUrl, setImageUrl] = useState('');
+      const router = useRouter();
+    const [mappedPosts, setMappedPosts] = useState([]);
 
-  useEffect(() => {
-    const imgBuilder = imageUrlBuilder({
-      projectId: 'jgs4s870',
-      dataset: 'production',
-    });
+  // useEffect(() => {
+  //   const imgBuilder = imageUrlBuilder({
+  //     projectId: 'jgs4s870',
+  //     dataset: 'production',
+  //   });
+
+    useEffect(() => {
+          if (posts.length) {
+            const imgBuilder = imageUrlBuilder({
+              projectId: 'jgs4s870',
+              dataset: 'production',
+            });
+      
+            setMappedPosts(
+              posts.map(p => {
+                return {
+                  ...p,
+                  image: imgBuilder.image(p.image),
+                }
+              })
+            );
+          } else {
+            setMappedPosts([]);
+          }
 
     setImageUrl(imgBuilder.image(image));
-  }, []);
+  }, [posts]);
 
+  
+
+
+  // export default function Home({ posts }) {
+  //   const router = useRouter();
+  //   const [mappedPosts, setMappedPosts] = useState([]);
+  
+  //   useEffect(() => {
+  //     if (posts.length) {
+  //       const imgBuilder = imageUrlBuilder({
+  //         projectId: 'jgs4s870',
+  //         dataset: 'production',
+  //       });
+  
+  //       setMappedPosts(
+  //         posts.map(p => {
+  //           return {
+  //             ...p,
+  //             image: imgBuilder.image(p.image),
+  //           }
+  //         })
+  //       );
+  //     } else {
+  //       setMappedPosts([]);
+  //     }
+  //   }, [posts]);
+  
   
 
   return (
@@ -81,12 +130,31 @@ export const EventsComming = ({ name, description, image, summary }) => {
         </div>
       </div> */}
 
+
+{/* <p className=' pt-20 p-5 overflow-hidden text-4xl font-semibold  m-auto items-center justify-evenly  tracking-wide '> latest events </p>
+<Link  href="../../eventsupcoming"><a className=' p-5 overflow-hidden  hover:text-[#7da392] text-4xl font-light  m-auto items-center justify-evenly  tracking-wide"'>click here to see more events ↗</a></Link>
+<div className=' p-5 z-0 top-0  h-auto w-auto overflow-scroll'>
+<div className=' p-5 flex w-screen  h-auto overflow-scroll '>
+          {mappedPosts.length ? mappedPosts.map((p, index) => (
+            <div onClick={() => router.push(`/eventsComming/${p.slug.current}`)} key={index}>
+              <div className='z-0'>
+                      <img className='w-50 w-96 p-1 ' src={p.image} />
+                  </div>
+            </div>
+          )) : <>No Posts Yet</>}
+        </div>
+
+            </div> */}
+
       {/* <Footer></Footer>  */}
     </div>
 
     
   );
 };
+
+
+
 
 export const getServerSideProps = async pageContext => {
   const pageSlug = pageContext.query.slug;
@@ -97,11 +165,22 @@ export const getServerSideProps = async pageContext => {
     }
   }
 
+
+
+
   const query = encodeURIComponent(`*[ _type == "eventsComming" && slug.current == "${pageSlug}" ]`);
   const url = `https://jgs4s870.api.sanity.io/v1/data/query/production?query=${query}`;
 
   const result = await fetch(url).then(res => res.json());
   const post = result.result[0];
+
+  if (!result.result || !result.result.length) {
+    return {
+      props: {
+        posts: [],
+      }
+    }
+  }
 
   if (!post) {
     return {
@@ -114,6 +193,7 @@ export const getServerSideProps = async pageContext => {
         name: post.name,
         image: post.image,
         summary: post.summary,
+        posts: result.result,
         // date: post.date,
       }
     }

@@ -82,12 +82,12 @@ export default function FirstPost() {
 
 
 <div className=' p-5 flex  w-6/6 h-screen mx-auto px-0  '>
-        <div className=" overflow-hidden z-50 float-right absolute pl-20   w-4/12 duration-500 drop-shadow-[1rem_1rem_1rem_yellow] absolute bottom-0" >
+        <div className=" overflow-hidden z-50 float-right absolute pl-10   w-3/12 duration-500 drop-shadow-[1rem_1rem_1rem_yellow] absolute bottom-50" >
         <Link  href="./"><img className={styles.misworld}  src="https://i.ibb.co/6yR3mjn/misery-world-glitter.png"/></Link>
         </div>
         {/* <div className=" text-8xl text-[#ef549d] overflow-hidden z-50 float-right absolute duration-500 drop-shadow-[1rem_1rem_1rem_yellow]" > ← </div> */}
 
-        <div className="overflow-hidden z-50 absolute right-0   w-4/12   duration-500 drop-shadow-[1rem_1rem_1rem_yellow] absolute bottom-0" >
+        <div className="overflow-hidden z-50 right-0   w-3/12  pr-10  duration-500 drop-shadow-[1rem_1rem_1rem_yellow] absolute bottom-50" >
         <Link  href="./Miserysite"><img className={styles.misworld}  src="https://i.ibb.co/bQ4n39B/misery-site-slime.png"/></Link>
         </div>
         {/* <div className=" text-8xl text-[green] overflow-hidden z-50 absolute right-0   w-2/12  duration-500 drop-shadow-[1rem_1rem_1rem_yellow]">→</div> */}
@@ -95,8 +95,13 @@ export default function FirstPost() {
         </div>
         {/* <p class="text-center ">Is this <a>The Internet Arcitect</a> ?</p> p-15 */}
 
-
+        <div className={styles.imageright}>
+            <img className={styles.decorimage} src="https://i.ibb.co/sFyFWsf/Bald.png" data-spai="1" data-spai-upd="389"/>
+        </div>
     
+        <div class={styles.imageleft}>
+            <img class={styles.decorimage} src="https://i.ibb.co/JyJxKXh/Esther-copy-2-Glow.png" data-spai="1" data-spai-upd="200"/>
+        </div>
 
 
 {/* bottom poem */}
