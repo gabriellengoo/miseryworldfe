@@ -93,14 +93,14 @@ export default function FirstPost() {
         {/* <div className=" text-8xl text-[green] overflow-hidden z-50 absolute right-0   w-2/12  duration-500 drop-shadow-[1rem_1rem_1rem_yellow]">→</div> */}
 
         </div>
-        {/* <p class="text-center ">Is this <a>The Internet Arcitect</a> ?</p> p-15 */}
+        {/* <p className="text-center ">Is this <a>The Internet Arcitect</a> ?</p> p-15 */}
 
         <div className={styles.imageright}>
             <img className={styles.decorimage} src="https://i.ibb.co/sFyFWsf/Bald.png" data-spai="1" data-spai-upd="389"/>
         </div>
     
-        <div class={styles.imageleft}>
-            <img class={styles.decorimage} src="https://i.ibb.co/JyJxKXh/Esther-copy-2-Glow.png" data-spai="1" data-spai-upd="200"/>
+        <div className={styles.imageleft}>
+            <img className={styles.decorimage} src="https://i.ibb.co/JyJxKXh/Esther-copy-2-Glow.png" data-spai="1" data-spai-upd="200"/>
         </div>
 
 
