@@ -24,33 +24,6 @@ import Footer from '../components/Footer';
 
 export const miserymoods = ({ name,summary, phonetextsupport, inperson, communitiesUk, communitiesGlobal, housing, grief,sexualhealth, antiblackness,fatphobia, }) => {
 
-  const router = useRouter();
-
-    // console.log( name, phonetextsupport, inperson, communitiesUk, communitiesGlobal, housing,
-    //   ,);
-    // // The back-to-top button is hidden at the beginning
-    const [mappedPosts, setMappedPosts] = useState([]);
-  
-    useEffect(() => {
-      if (posts.length) {
-        const imgBuilder = imageUrlBuilder({
-          projectId: 'jgs4s870',
-          dataset: 'production',
-        });
-  
-        setMappedPosts(
-          posts.map(p => {
-            return {
-              ...p,
-              image: imgBuilder.image(p.image),
-            }
-          })
-        );
-      } else {
-        setMappedPosts([]);
-      }
-    }, [posts]);
-  
 
   return (
     
