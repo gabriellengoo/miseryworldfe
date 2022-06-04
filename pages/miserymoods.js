@@ -24,30 +24,33 @@ import Footer from '../components/Footer';
 
 export const miserymoods = ({ name,summary, phonetextsupport, inperson, communitiesUk, communitiesGlobal, housing, grief,sexualhealth, antiblackness,fatphobia, }) => {
 
+  const router = useRouter();
 
     // console.log( name, phonetextsupport, inperson, communitiesUk, communitiesGlobal, housing,
     //   ,);
     // // The back-to-top button is hidden at the beginning
-    const [showButton, setShowButton] = useState(false);
+    const [mappedPosts, setMappedPosts] = useState([]);
   
     useEffect(() => {
-      window.addEventListener("scroll", () => {
-        if (window.pageYOffset > 300) {
-          setShowButton(true);
-        } else {
-          setShowButton(false);
-        }
-      });
-    }, []);
+      if (posts.length) {
+        const imgBuilder = imageUrlBuilder({
+          projectId: 'jgs4s870',
+          dataset: 'production',
+        });
   
-    // This function will scroll the window to the top 
-    const scrollToTop = () => {
-      window.scrollTo({
-        top: 0,
-        behavior: 'smooth' // for smoothly scrolling
-      });
-    };
-
+        setMappedPosts(
+          posts.map(p => {
+            return {
+              ...p,
+              image: imgBuilder.image(p.image),
+            }
+          })
+        );
+      } else {
+        setMappedPosts([]);
+      }
+    }, [posts]);
+  
 
   return (
     

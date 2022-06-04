@@ -227,10 +227,10 @@ export default function Home({ posts }) {
         <div >
         <div className='pt-36 flex p-10 pb-0 mx-auto '>
           {mappedPosts.length ? mappedPosts.map((p, index) => (
-            // <div onClick={() => router.push(`/homeimage/${p.slug.current}`)} key={index}>
+            <div key={index}>
               <div className='z-0'>
                       <img className='mx-auto  w-[55rem] p-1 ' src={p.image} />
-                  {/* </div> */}
+                  </div>
             </div>
           )) : <>No Posts Yet</>}
         </div>
