@@ -12,8 +12,8 @@ import Link from 'next/link'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import Head from 'next/head';
-
-export const videoBlogPost = ({ name, body, bodytwo, bodythree, bodyfour, bodyfive }) => {
+ 
+export const videoBlogPost = ({ name, body, bodytwo, bodythree, bodyfour, bodyfive, bodysix,bodyseven, bodyeight,}) => {
   // const [imageUrl, setImageUrl] = useState('');
  
   // useEffect(() => {
@@ -32,7 +32,7 @@ export const videoBlogPost = ({ name, body, bodytwo, bodythree, bodyfour, bodyfi
   <title> .｡.:*☆ our story</title>
         </Head>
 
-      {/* <Toolbar /> */}
+      <Toolbar />
       
       <section className="h-screen relative hidden md:block">
 {/* <img className=" w-2/6 absolute drop-shadow-[0_0px_5px_red]" src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" />  */}
@@ -47,11 +47,11 @@ export const videoBlogPost = ({ name, body, bodytwo, bodythree, bodyfour, bodyfi
  
 
 
-    <div className='float-right h-screen right-0 overflow-scroll  w-3/12 top-0 font-normal text-lg '>
+    {/* <div className='float-right h-screen right-0 overflow-scroll  w-3/12 top-0 font-normal text-lg '>
     <div className={styles.righthome}>
-          {/* <BlockContent blocks={description} /> */}
+
           
-          <div className=' p-5  h-screen '>
+          <div className=' p-5  h-screen '> */}
           
           {/* <img className={styles.swerl} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" /> 
   <img className={styles.swerl1} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" /> 
@@ -72,14 +72,14 @@ export const videoBlogPost = ({ name, body, bodytwo, bodythree, bodyfour, bodyfi
            </p> */}
 
 
-<div className={styles.back}>
+{/* <div className={styles.back}>
            <Link  href="../"><a className=''><img className={styles.back}  src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/></a></Link>
            </div>
            <p className="pt-56 text-center object-center text-base z-50 font-light ">misery is a mental health community and sober rave based in london and led by and for queer, trans, intersex, black people and people of colour (qtibpoc)
            with lived experience of madness, mental health challenges, time in hospital, addiction, public service use, disability, trauma, medication and ...      
            <Link  href="../../Miserysite#whatwedo"><a className=' hover:text-[#dbff00] font-semibold p-4 m-auto items-center justify-evenly  tracking-wide"'>read more ↗</a></Link>
            </p> 
-           <div className=""><Toolbar /> </div>
+           <div className=""><Toolbar /> </div> */}
 
 {/* links */}
            {/* <div className=" pt-10 list-[none] text-2xl font-base   ">
@@ -108,14 +108,14 @@ export const videoBlogPost = ({ name, body, bodytwo, bodythree, bodyfour, bodyfi
   </div> */}
 
 
-    </div>
+    {/* </div>
 
     
     </div>
-    </div>
+    </div> */}
 
 {/* -------------------------------------------- left */}
-        <div className='  z-0 p-5 top-0 h-screen w-9/12 overflow-scroll'>
+        <div className=' pt-36 z-0 p-5 top-0 mx-auto h-screen w-9/12 overflow-scroll'>
           
         <img className={styles.figure} src="https://i.ibb.co/sFyFWsf/Bald.png"/>
         <img className={styles.figure2} src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" /> 
@@ -161,6 +161,20 @@ export const videoBlogPost = ({ name, body, bodytwo, bodythree, bodyfour, bodyfi
 </div>
 
 
+<div><p className="  text-center text-base  font-light  p-5 ">   <BlockContent  blocks={bodysix} />
+</p> 
+</div>
+
+<div><p className="  text-center text-base  font-light  p-5 ">   <BlockContent  blocks={bodyseven} />
+</p> 
+</div>
+
+<div><p className="  text-center text-base  font-light  p-5 ">   <BlockContent  blocks={bodyeight} />
+</p> 
+</div>
+
+
+
 
 
 
@@ -168,7 +182,7 @@ export const videoBlogPost = ({ name, body, bodytwo, bodythree, bodyfour, bodyfi
 <div className='  mx-auto p-5 '>
         {/* <iframe className=' h-screen w-5/6 z-0' src="https://player.vimeo.com/video/402987081?h=1d50017fb2" frameBorder="0" allow="autoplay; fullscreen; picture-in-picture" allowFullScreen></iframe> */}
         {/* <iframe width="712" height="620" className=' p-10  px-auto mx-auto' src="https://www.youtube.com/embed/5TY_VbQXlkU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
-        <iframe width="700" height="393.75" className='  mx-auto' src="https://www.youtube.com/embed/5TY_VbQXlkU" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+        <iframe width="950" height="500" className='  mx-auto' src="https://www.youtube.com/embed/5TY_VbQXlkU" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         {/* <iframe width="1424" height="620" src="https://www.youtube.com/embed/5TY_VbQXlkU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> */}
         </div>
 
@@ -279,7 +293,8 @@ export const getServerSideProps = async pageContext => {
 
   const query = encodeURIComponent(`*[ _type == "videoBlogPost" && slug.current == "${pageSlug}" ]{ 
  name, body, bodytwo,
-    bodythree, bodyfour, bodyfive
+    bodythree, bodyfour, bodyfive , bodysix,
+    bodyseven, bodyeight
 }`);
   const url = `https://jgs4s870.api.sanity.io/v1/data/query/production?query=${query}`;
 
@@ -300,6 +315,9 @@ export const getServerSideProps = async pageContext => {
       bodythree: post.bodythree,
       bodyfour: post.bodyfour,
       bodyfive: post.bodyfive,
+      bodysix: post.bodysix,
+      bodyseven: post.bodyseven,
+      bodyeight: post.bodyeight,
       }
     }
   }

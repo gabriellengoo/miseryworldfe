@@ -3,6 +3,10 @@
 @tailwind utilities;
 
 
+p{
+  padding: 1px;
+}
+
 .canvas3d{
   width: 100vw;
   height: 100vh;
@@ -26,8 +30,8 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
     cursor:url(https://babesonwaves.club/wp-content/uploads/2021/07/bow-cursor-20px.png) -10 -10, auto!important;
-    /* background: #6686e9; */
-    background: #f2f2f2;
+    /* background: #ffffff; */
+    /* background: #f2f2f2; */
     /* background: var(--bg-gradient); */
     /* background-image: url(https://preview--misery-6bc10.stackbit.dev/images/bg1.jpg); */
     /* background:linear-gradient(  #8addad,#ffffff 40%); */
@@ -39,6 +43,7 @@ scrollbar-width: none;
 a {
   color: inherit;
   text-decoration: none;
+  
 }
 
 * {

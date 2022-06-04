@@ -11,28 +11,29 @@ import Footer from '../../components/Footer';
 import Head from 'next/head';
 import { SectionTitle } from "../../components/SectionTitle";
 
-export const Moods = ({ title, phonetextsupport, inperson, communitiesUk, communitiesGlobal, housing, }) => {
-  
+export const eventsMiseryMoods = ({ name, phonetextsupport, inperson, communitiesUk, communitiesGlobal, housing,  
+  grief,sexualhealth, antiblackness,fatphobia,}) => {
+    
+   
+      // const [imageUrl, setImageUrl] = useState('');
+    
+      // useEffect(() => {
+        // const imgBuilder = imageUrlBuilder({
+          // projectId: 'jgs4s870',
+          // dataset: 'production',
+        // });
+    
+        // console.log(images)
+        // setImageUrl(imgBuilder.image(mainImage));
+        
+      // }, []);
     // The back-to-top button is hidden at the beginning
-  const [showButton, setShowButton] = useState(false);
+  // const [showButton, setShowButton] = useState(false);
 
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      if (window.pageYOffset > 300) {
-        setShowButton(true);
-      } else {
-        setShowButton(false);
-      }
-    });
-  }, []);
+
 
   // This function will scroll the window to the top 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth' // for smoothly scrolling
-    });
-  };
+
 
 
   return (
@@ -49,7 +50,7 @@ export const Moods = ({ title, phonetextsupport, inperson, communitiesUk, commun
       <div className={styles.main}>
  
         <div className='pt-28  p-5 text-center text-xl  relative hidden md:block '>
-        <h1 className=' pl-3 py-8 font-black text-6xl tracking-wide'>{title}</h1>
+        <h1 className=' pl-3 py-8 font-black text-6xl tracking-wide'>{name}</h1>
 <p className=' p-3 m-auto text-xl font-light'>
 misery has 5 main strands of work and we dip into, enrich and expand each one depending on our mood and what we feel us and our community really needs at a given time. 
 </p>
@@ -144,33 +145,35 @@ export const getServerSideProps = async pageContext => {
     }
   }
 
-  const query = encodeURIComponent(`*[ _type == "resources" && slug.current == "${pageSlug}" ] { 
-    title, phonetextsupport, inperson, communitiesUk, communitiesGlobal, housing,
-    grief, sexualhealth, antiblackness, fatphobia, suicide, substancereduction, lgbtqiaherbalism, therapy, movingyourbody, transformativejustice,
-}`);
+  const query = encodeURIComponent(`*[ _type == "eventsMiseryMoods" && slug.current == "${pageSlug}" ]`);
 
-  const url = `https://ngizar2r.api.sanity.io/v1/data/query/production?query=${query}`;
+  const url = `https://jgs4s870.api.sanity.io/v1/data/query/production?query=${query}`;
 
   const result = await fetch(url).then(res => res.json());
-  const resources = result.result[0];
+  const post = result.result[0];
 
-  if (!resources) {
+  if (!post) {
     return {
       notFound: true
     }
   } else {
     return {
       props: {
-        // body: resources.body,
-        title: resources.title,
-        phonetextsupport: resources.phonetextsupport,
-        inperson: resources.inperson,
-        communitiesUk: resources.communitiesUk,
-        communitiesGlobal: resources.communitiesGlobal,
-        housing: resources.housing,
+        name: post.name,
+        phonetextsupport: post.phonetextsupport,
+        inperson: post.inperson,
+        communitiesUk: post.communitiesUk,
+        communitiesGlobal: post.communitiesGlobal,
+        housing: post.housing,
+        grief: post.grief,
+        sexualhealth: post.sexualhealth,
+        antiblackness: post.antiblackness,
+        fatphobia: post.fatphobia,
+
+  
       }
     }
   }
 };
 
-export default Moods;
+export default eventsMiseryMoods;

@@ -67,7 +67,8 @@
     "unstyled-components": "^0.1.5",
     "web-vitals": "^0.2.4",
     "babylonjs": "^5.5.5",
-    "babylonjs-loaders": "^5.5.5"
+    "babylonjs-loaders": "^5.5.5",
+    "next-sanity": "^0.1.12"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.2",

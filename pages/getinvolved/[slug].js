@@ -21,7 +21,7 @@ export const getin = ({ title, body, bodytwo,
 
 //   useEffect(() => {
 //     const imgBuilder = imageUrlBuilder({
-//       projectId: 'ngizar2r',
+//       projectId: 'jgs4s870',
 //       dataset: 'production',
 //     });
 
@@ -35,31 +35,31 @@ export const getin = ({ title, body, bodytwo,
 <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script> */}
 <title>getinvolved</title>
       </Head>
-  
+      <Toolbar />
 
 
 
 
-      <section className="h-screen relative hidden md:block">
+      <section className=" mx-auto pt-36  ">
 {/* <img className=" w-2/6 absolute drop-shadow-[0_0px_5px_red]" src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" />  */}
 
 
 
 
-  <div className='flex h-screen'>
+  {/* <div className=''> */}
 
 
  {/* --------------------------------------------  right */}
  
 
 
-    <div className='float-right h-screen right-0 overflow-scroll w-3/12 top-0 font-normal text-lg '>
-    <div className={styles.righthome}>
+    {/* <div className='float-right h-screen right-0 overflow-scroll w-3/12 top-0 font-normal text-lg '>
+    <div className={styles.righthome}> */}
           {/* <BlockContent blocks={description} /> */}
           
-          <div className=' p-5  h-screen '>
+          {/* <div className=' p-5  h-screen '> */}
           
-          <img className={styles.swerl} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" /> 
+          {/* <img className={styles.swerl} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" />  */}
   {/* <img className={styles.swerl1} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" /> 
   <img className={styles.swerl2} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" />  */}
 
@@ -80,7 +80,7 @@ export const getin = ({ title, body, bodytwo,
 {/* min-h-screen w-full */}
 {/* flex items-center justify-center */}
 {/* className=" mx-auto p-auto fixed w-2/12 object-center justify-center" */}
-           <div className=" ">
+           {/* <div className=" "> */}
            {/* <div className={styles.back}>
            <img className={styles.back}  src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/>
            </div> */}
@@ -90,19 +90,19 @@ export const getin = ({ title, body, bodytwo,
            </p> */}
            {/* <div className="pt-56"><Toolbar /> </div> */}
 
-           <div className={styles.back}>
+           {/* <div className={styles.back}>
            <Link  href="../"><a className=''><img className={styles.back}  src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/></a></Link>
            </div>
            <p className="pt-56 text-center object-center text-base z-50 font-light ">misery is a mental health community and sober rave based in london and led by and for queer, trans, intersex, black people and people of colour (qtibpoc)
            with lived experience of madness, mental health challenges, time in hospital, addiction, public service use, disability, trauma, medication and ...      
            <Link  href="../../Miserysite#whatwedo"><a className=' hover:text-[#7da392] font-semibold p-4 m-auto items-center justify-evenly  tracking-wide"'>read more ↗</a></Link>
            </p> 
-           <div className=""><Toolbar /> </div>
+           <div className=""><Toolbar /> </div> */}
            
            {/* <img className="" src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/> */}
            {/* <img className="w-5/6 object-center justify-center" src="https://i.ibb.co/qB2YqyQ/MISERY-FAUX-FUR.png"/> */}
           {/* <p className="text-center object-center font-serif font-light "> u can cry if u want to</p> */}
-          </div>
+          {/* </div> */}
 
 {/* links */}
            {/* <div className=" pt-10 list-[none] text-2xl font-base   ">
@@ -131,21 +131,21 @@ export const getin = ({ title, body, bodytwo,
   </div> */}
 
 
-    </div>
+    {/* </div>
 
     
     </div>
-    </div>
+    </div> */}
 
 {/* -------------------------------------------- left */}
-        <div className='  z-0 p-5 top-0 h-screen w-9/12 overflow-scroll'>
+        <div className='  z-0 p-5 '>
           
         <img className={styles.figure} src="https://i.ibb.co/sFyFWsf/Bald.png"/>
         <img className={styles.figure2} src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" /> 
         {/* <Toolbar />  */}
 
 
-<div className=' max-w-3xl'>
+<div className=' max-w-3xl mx-auto'>
         {/* <p className="text-6xl font-semibold text-left text-[#ff00000] justify-center  "> 💧 u can cry if u want to 💧 </p>  */}
         {/* <p className="text-center object-center pt-20 font-serif font-light "> u can cry if u want to</p> */}
         <p className={styles.crytext3}> {title}</p> 
@@ -234,7 +234,7 @@ export const getin = ({ title, body, bodytwo,
 <Footer></Footer>
             </div>
 
-  </div>
+  {/* </div> */}
   </section>
 
 
@@ -291,7 +291,7 @@ export const getServerSideProps = async pageContext => {
     bodythree, bodyfour, bodyfive
 }`);
 
-  const url = `https://ngizar2r.api.sanity.io/v1/data/query/production?query=${query}`;
+  const url = `https://jgs4s870.api.sanity.io/v1/data/query/production?query=${query}`;
 
   const result = await fetch(url).then(res => res.json());
   const getinvolved = result.result[0];

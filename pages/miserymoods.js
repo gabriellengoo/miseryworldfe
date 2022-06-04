@@ -1,55 +1,77 @@
+import Head from 'next/head'
+import styles from '../styles/Home.module.css'
+import { Toolbar } from '../components/toolbar';
 import imageUrlBuilder from '@sanity/image-url';
-// import client from './sanityClient'
 import { useState, useEffect } from 'react';
-import styles from '../../styles/Post.module.css';
-import BlockContent from '@sanity/block-content-to-react';
-import { Toolbar } from '../../components/toolbar';
-import { sanityClient } from '@sanity/client'
-// import Image from "../../components/Image"
-import Link from "next/link"
-// import Footer from '../../components/Footer';
-import Head from 'next/head';
-import { SectionTitle } from "../../components/SectionTitle";
+import { useRouter } from 'next/router';
+import Link from 'next/link';
+import Layout from "../components/Layout";
+import { Canvas } from "@react-three/fiber";
+import css from "../styles/Home.module.css";
+import Box from "../components/Box";
+import LightBulb from "../components/LightBulb";
+import Floor from "../components/Floor";
+import Draggable from "../components/Draggable";
+import OrbitControls from "../components/OrbitControls";
+import mypic from '../public/rotatelogo.gif'
+import FooterComponent from '../components/foottest';
 import { Facebook, Instagram, Twitter } from "@mui/icons-material";
-import MuiNextLink from "../../components/MuiNextLink"
-import MailchimpSubscribe from 'react-mailchimp-subscribe';
-import NewsletterForm from '../../components/NewsletterForm';
-// import FooterComponent from '../components/foottest';
-import FooterComponent from '../../components/foottest';
-import Marquee from "react-fast-marquee";
-import Footer from '../../components/Footer';
+import MuiNextLink from "../components/MuiNextLink"
+import BlockContent from '@sanity/block-content-to-react';
+{/* <h1 className='text-3xl text-[#1fd705] m-auto z-0 max-w-2xl justify-center '> misery is.. </h1> */}
+import Footer from '../components/Footer';
 
-export const contactus = ({ title, body, bodytwo, }) => {
-//   const [imageUrl, setImageUrl] = useState('');
-  console.log(title, body, bodytwo,);
 
-//   useEffect(() => {
-//     const imgBuilder = imageUrlBuilder({
-//       projectId: 'jgs4s870',
-//       dataset: 'production',
-//     });
+export const miserymoods = ({ name,summary, phonetextsupport, inperson, communitiesUk, communitiesGlobal, housing, grief,sexualhealth, antiblackness,fatphobia, }) => {
 
-    // setImageUrl(imgBuilder.image(images));
-//   }, [images, imagestwo,]);
 
-const MAILCHIMP_URL = process.env.NEXT_PUBLIC_MAILCHIMP_URL;
+    // console.log( name, phonetextsupport, inperson, communitiesUk, communitiesGlobal, housing,
+    //   ,);
+    // // The back-to-top button is hidden at the beginning
+    const [showButton, setShowButton] = useState(false);
+  
+    useEffect(() => {
+      window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 300) {
+          setShowButton(true);
+        } else {
+          setShowButton(false);
+        }
+      });
+    }, []);
+  
+    // This function will scroll the window to the top 
+    const scrollToTop = () => {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth' // for smoothly scrolling
+      });
+    };
+
 
   return (
-    <div>
-             <Head>
+    
+    <Layout>
+       <Head>
+      {/* absolute   bottom-0 justify-evenly */}
        {/* <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
 <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script> */}
-<title>contact</title>
+<name>misery moods</name>
+
       </Head>
-      <div className=""><Toolbar /> </div> 
-     
+      <div className=""><Toolbar /> </div>
+
+
+{/* <div> */}
 
 
 
 
 
 
-      <section className="">
+
+
+<section className="relative hidden md:block">
 {/* <img className=" w-2/6 absolute drop-shadow-[0_0px_5px_red]" src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" />  */}
 
 
@@ -100,7 +122,7 @@ const MAILCHIMP_URL = process.env.NEXT_PUBLIC_MAILCHIMP_URL;
            {/* <div className="pt-56"><Toolbar /> </div> */}
 
            {/* <div className={styles.back}>
-           <Link  href="../"><a className=''><img className={styles.back}  src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/></a></Link>
+           <Link  href="./"><a className=''><img className={styles.back}  src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/></a></Link>
            </div>
            <p className="pt-56 text-center object-center text-base z-50 font-light ">misery is a mental health community and sober rave based in london and led by and for queer, trans, intersex, black people and people of colour (qtibpoc)
            with lived experience of madness, mental health challenges, time in hospital, addiction, public service use, disability, trauma, medication and ...      
@@ -139,111 +161,72 @@ const MAILCHIMP_URL = process.env.NEXT_PUBLIC_MAILCHIMP_URL;
         </div>
   </div> */}
 
-{/* 
-    </div>
+
+    {/* </div>
 
     
     </div>
     </div> */}
 
 {/* -------------------------------------------- left */}
-        <div className='  z-0 p-5 top-0 mx-auto pt-36'>
+        <div className='  z-0 p-5 top-0 h-screen w-9/12 mx-auto pt-36'>
           
         {/* <img className={styles.figure} src="https://i.ibb.co/sFyFWsf/Bald.png"/> */}
         <img className={styles.figure2} src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" /> 
         {/* <Toolbar />  */}
 
-
-<div className=''>
-        {/* <p className="text-6xl font-semibold text-left text-[#ff00000] justify-center  "> 💧 u can cry if u want to 💧 </p>  */}
-        {/* <p className="text-center object-center pt-20 font-serif font-light "> u can cry if u want to</p> */}
-        <p className={styles.crytext4}>{title}</p> 
-{/* -webkit-text-stroke: 2px black; */}
+        <p className={styles.crytext2}> misery moods </p> 
 
 
-  
-
-
-  
-<div className=' '>
-      {/* <div className={styles.main}> */}
-
-
-
-
-        {/* <div className=' pb-5  text-base  relative hidden md:block '>
-        <h1 className='  text-2xl font-light tracking-tighter  '>contact</h1>
-        </div> */}
-
-
-        <div className='   text-base  relative hidden md:block '>
-        {/* <h1 className=' text-2xl font-light tracking-tighter ptracking-wide'>{title}</h1> */}
-        {/* <h1 className='  text-2xl font-light   '>  email:<a href="mailto:hello@miseryparty.org"> hello@miseryparty.org</a></h1> */}
-        <h1 className='  text-2xl font-light text-center   '> <a href="mailto:hello@miseryparty.org"> hello@miseryparty.org</a></h1>
-
+        <section id="phonetextsupport" className=' reletive flex  pt-12 lg:pt-62 px-8  z-50 '>
+        <div className={styles.body}>
+                    {/* <h1 className='  py-8 tracking-wide  text-5xl font-semibold '>phone/text support</h1> */}
+          <BlockContent blocks={phonetextsupport} />
         </div>
+        </section>
 
-        <div className='   text-base  relative hidden md:block '>
-        {/* <BlockContent className=' mx-auto text-2xl font-light text-center   ' blocks={body} /> */}
-        <h1 className=' text-2xl font-light text-center   '>anonymous Feedback form! misery confessions: tell us ur secrets</h1>
-         </div>
-{/*         
-        <div className='text-l indent-5 tracking-wide  m-auto text-2xl font-light'> */}
-        {/* <div className='text-l indent-5 tracking-wide p-3 m-auto text-2xl font-light'>
-          <BlockContent className={styles.body} blocks={bodytwo} />
-        </div> */}
-        
 
-        <div className=' pt-10 text-center relative hidden md:block text-2xl font-light  '>
-            <h1 className='  '>sign up to our Newsletter</h1>
+        <section id="inperson" className=' reletive flex  pt-12 lg:pt-62 px-8  z-50 '>
+        <div className={styles.body}>
+                    {/* <h1 className='  py-8 tracking-wide  text-5xl font-semibold '>in-person london-based support</h1> */}
+          <BlockContent blocks={inperson} />
         </div>
-              <MailchimpSubscribe
-            url={ MAILCHIMP_URL }
-            render={ ( props ) => {
-              const { subscribe, status, message } = props || {};
-              return (
-                <NewsletterForm
-                  status={ status }
-                  message={ message }
-                  onValidated={ formData => subscribe( formData ) }
-                />
-              );
-            } }
-    />
+        </section>
+
+
+        <section id="communitiesUk" className=' reletive flex  pt-12 lg:pt-62 px-8  z-50 '>
+        <div className={styles.body}>
+                    {/* <h1 className='  py-8 tracking-wide  text-5xl font-semibold '>communities & collectives (uk)</h1> */}
+          <BlockContent blocks={communitiesUk} />
+        </div>
+        </section>
 
 
 
-{/* <MuiNextLink sx={{ textDecoration: "none", }} href="https://www.instagram.com/miseryparty/?hl=en" target="_blank" rel="noopener noreferrer">
-		<Instagram  className=' text-[#de2a7b]   text-3xl' />
-		</MuiNextLink>
-
-		<MuiNextLink sx={{ textDecoration: "none", color: "common.blue" }} href="https://twitter.com/miseryparty_" target="_blank" rel="noopener noreferrer" >
-		<Twitter className=' text-3xl ' />
-		</MuiNextLink> */}
-
-    {/* </div> */}
-        
-       
+        <section id="communitiesGlobal" className=' reletive flex  pt-12 lg:pt-62 px-8 z-50 p-10 '>
+        <div className={styles.body}>
+                    {/* <h1 className='  py-8 tracking-wide  text-5xl font-semibold '>communities & collectives (global)</h1> */}
+          <BlockContent className={styles.body} blocks={communitiesGlobal} />
+        </div>
+        </section>
 
 
-  
+
+
+        <section id="housing" className=' reletive flex  pt-12 lg:pt-62 px-8 z-50 p-10 '>
+        <div className={styles.body}>
+                    {/* <h1 className='  py-8 tracking-wide  text-5xl font-semibold '>housing (london/uk)</h1> */}
+          <BlockContent className={styles.body} blocks={housing} />
+        </div>
+        </section>
  
 
-      {/* </div> */}
-      </div>
-
-
- 
-
-      {/* </div> */}
-             
-      </div>
 
 
 <Footer></Footer>
-            {/* </div> */}
+            </div>
 
-  </div>
+  {/* </div> */}
   </section>
 
 
@@ -257,72 +240,63 @@ const MAILCHIMP_URL = process.env.NEXT_PUBLIC_MAILCHIMP_URL;
 
 
 
+{/* old */}
+
+{/* <div className="h-screen grid place-items-center text-5xl">
+  
+   <p  className="py-8 tracking-wide m-auto  font-semibold"> <p  className="py-8 tracking-wide  m-auto   text-5xl font-semibold place-items-center text-center">shop</p>＊misery merch coming soon!＊</p>
+   </div>
+   <div className="flex  grid place-items-center text-5xl">
+        </div> */}
+    {/* // </div> */}
+    {/* <FooterComponent></FooterComponent> */}
+    </Layout>
+  )
+}
 
 
-
-
-      {/* <Toolbar /> */}
-      
-
-      {/* <div className="pt-28 bg-[white] ">
-  <div className=" p-3 border-[.5px] border-[#030303] font-normal text-xl w-screen overflow-x-hidden text-[#005c99] underline ">
-  <a href="mailto:hello@miseryparty.org">
-<Marquee>
-<span className="mx-4  ]">  &nbsp; .｡.:☆.｡.: &nbsp; hello@miseryparty.org</span>
-    <span className="mx-4  ]">  &nbsp; .｡.:☆.｡.: &nbsp; hello@miseryparty.org</span>
-    <span className="mx-4  ]">  &nbsp; .｡.:☆.｡.: &nbsp; hello@miseryparty.org</span>
-    <span className="mx-4  ]">  &nbsp; .｡.:☆.｡.: &nbsp; hello@miseryparty.org</span>
-    <span className="mx-4  ]">  &nbsp; .｡.:☆.｡.: &nbsp; hello@miseryparty.org</span>
-</Marquee>
-</a>
-</div>
-</div> */}
-
-
-
-      {/* <FooterComponent></FooterComponent> */}
-    </div>
-  );
-};
 
 export const getServerSideProps = async pageContext => {
-  const pageSlug = pageContext.query.slug;
-  console.log(pageSlug)
-
-
-  if (!pageSlug) {
-    return {
-      notFound: true
-    }
-  }
-
-  const query = encodeURIComponent(`*[ _type == "contact" && slug.current == "${pageSlug}" ] { 
-    title, body, bodytwo,
-}`);
-
-  const url = `https://jgs4s870.api.sanity.io/v1/data/query/production?query=${query}`;
-
-  const result = await fetch(url).then(res => res.json());
-  const contact = result.result[0];
-
-  if (!contact) {
-    return {
-      notFound: true
-    }
-  } else {
-    return {
-      props: {
-        body: contact.body,
-        title: contact.title,
-        // bodytwo: contact.bodytwo,
-    //   venue: contact.venue,
-        // address: contact.address,
-        // coordinates: contact.coordinates,
-    //     url: contact.url,
-    //   category: contact.category,
+    const pageSlug = pageContext.query.slug;
+    console.log(pageSlug)
+  
+  
+    if (!pageSlug) {
+      return {
+        notFound: true
       }
     }
-  }
-};
+  
+    const query = encodeURIComponent(`*[ _type == "eventsMiseryMoods" && slug.current == "${pageSlug}" ] { 
+      name, phonetextsupport, inperson, communitiesUk, communitiesGlobal, housing, grief,sexualhealth, antiblackness,fatphobia,}`);
+  
+    const url = `https://jgs4s870.api.sanity.io/v1/data/query/production?query=${query}`;
+  
+    const result = await fetch(url).then(res => res.json());
+    const eventsMiseryMoods = result.result[0];
+  
+    if (!eventsMiseryMoods) {
+      return {
+        notFound: true
+      }
+    } else {
+      return {
+        props: {
+          name: eventsMiseryMoods.name,
+          phonetextsupport: eventsMiseryMoods.phonetextsupport,
+          inperson: eventsMiseryMoods.inperson,
+          communitiesUk: eventsMiseryMoods.communitiesUk,
+          communitiesGlobal: eventsMiseryMoods.communitiesGlobal,
+          housing: eventsMiseryMoods.housing,
+          grief: eventsMiseryMoods.grief,
+          sexualhealth: eventsMiseryMoods.sexualhealth,
+          antiblackness: eventsMiseryMoods.antiblackness,
+          fatphobia: eventsMiseryMoods.fatphobia,
 
-export default contactus;
+    
+        }
+      }
+    }
+  };
+  
+  export default miserymoods;

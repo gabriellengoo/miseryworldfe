@@ -8,6 +8,7 @@ import Footer from '../components/Footer';
 import FooterComponent from '../components/foottest';
 import Marquee from "react-fast-marquee";
 import Link from 'next/link';
+import { urlFor } from "../sanity"
 
 export default function Home({ posts }) {
   const router = useRouter();
@@ -24,7 +25,7 @@ export default function Home({ posts }) {
         posts.map(p => {
           return {
             ...p,
-            image: imgBuilder.image(p.image),
+            image: imgBuilder.image(p.mainImage),
           }
         })
       );
@@ -43,26 +44,26 @@ export default function Home({ posts }) {
 <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script> */}
 <title>events</title>
       </Head>
-
+      <Toolbar />  
    
-      <section className="h-screen relative hidden md:block">
+      <section className="relative hidden md:block">
 {/* <img className=" w-2/6 absolute drop-shadow-[0_0px_5px_red]" src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" />  */}
 
 
 
 
-  <div className='flex h-screen'>
+  {/* <div className='flex'> */}
 
 
  {/* --------------------------------------------  right */}
  
 
 
-    <div className='float-right h-screen right-0 overflow-scroll w-3/12 top-0 font-normal text-lg '>
-    <div className={styles.righthome}>
+    {/* <div className='float-right h-screen right-0 overflow-scroll w-3/12 top-0 font-normal text-lg '>
+    <div className={styles.righthome}> */}
           {/* <BlockContent blocks={description} /> */}
           {/* <Toolbar />    */}
-          <div className=' p-5  h-screen '>
+          {/* <div className=' p-5  h-screen '> */}
           
           {/* <img className={styles.swerl} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" /> 
   <img className={styles.swerl1} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" /> 
@@ -81,27 +82,27 @@ export default function Home({ posts }) {
            with lived experience of madness, mental health challenges, time in hospital, addiction, public service use, disability, trauma, medication and ...      
            <Link  href="#whatwedo"><a className=' hover:text-[#dbff00] font-semibold p-4 m-auto items-center justify-evenly  tracking-wide"'>read more ↗</a></Link>
            </p> */}
-         <div className={styles.back}>
+         {/* <div className={styles.back}>
            <Link  href="./"><a className=''><img className={styles.back}  src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/></a></Link>
            </div>
            <p className="pt-56 text-center object-center text-base z-50 font-light ">misery is a mental health community and sober rave based in london and led by and for queer, trans, intersex, black people and people of colour (qtibpoc)
            with lived experience of madness, mental health challenges, time in hospital, addiction, public service use, disability, trauma, medication and ...      
            <Link  href="../../Miserysite#whatwedo"><a className=' hover:text-[#dbff00] font-semibold p-4 m-auto items-center justify-evenly  tracking-wide"'>read more ↗</a></Link>
            </p> 
-           <div className=""><Toolbar /> </div>
+           <div className=""><Toolbar /> </div> */}
            {/* <p className="text-left pt-56 object-center text-base z-50 font-light ">misery is a mental health community and sober rave based in london and led by and for queer, trans, intersex, black people and people of colour (qtibpoc)
            with lived experience of madness, mental health challenges, time in hospital, addiction, public service use, disability, trauma, medication and ...      
            <Link  href="#whatwedo"><a className=' hover:text-[#dbff00] font-semibold p-4 m-auto items-center justify-evenly  tracking-wide"'>read more ↗</a></Link>
            </p> */}
 
 
-           <div className="flex items-center  w-full">
+           {/* <div className="flex items-center  w-full"> */}
            {/* <div className="flex items-center justify-center min-h-screen w-full"> */}
            {/* <img className="w-4/6 " src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/> */}
            {/* <img className="w-5/6 object-center justify-center" src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/> */}
            {/* <img className="w-5/6 object-center justify-center" src="https://i.ibb.co/qB2YqyQ/MISERY-FAUX-FUR.png"/> */}
           {/* <p className="text-center object-center font-serif font-light "> u can cry if u want to</p> */}
-          </div>
+          {/* </div> */}
 
 {/* links */}
            {/* <div className=" pt-10 list-[none] text-2xl font-base   ">
@@ -129,15 +130,15 @@ export default function Home({ posts }) {
         </div>
   </div> */}
 
-
+{/* 
     </div>
 
     
     </div>
-    </div>
+    </div> */}
 
 {/* -------------------------------------------- left */}
-        <div className='  z-0 p-5 top-0 h-screen w-9/12 overflow-scroll'>
+        <div className=' pt-36 mx-auto  z-0 p-5 top-0 h-screen w-9/12'>
           
         <img className={styles.figure} src="https://i.ibb.co/sFyFWsf/Bald.png"/>
         <img className={styles.figure2} src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" /> 
@@ -149,17 +150,21 @@ export default function Home({ posts }) {
 
 
         <p className={styles.crytext2}> archive </p> 
-        <p className=" italic text-left font-base text-[black] justify-center text-3xl pb-10 no-underline hover:underline "> <Link  href="./eventsupcoming">events</Link> <p className='underline float-right text-[#1b1b1b] hover:text-[black]  '><Link  href="./">archive</Link></p> </p> 
+        <div className='w-9/12 flex'>
+        <Link  href="./eventsupcoming"><a className=" w-1/6 hover:underline float-left italic text-left font-base text-[black] justify-center text-3xl pb-10 no-underline  ">events</a></Link>
+        <Link href="./"><a className="  w-1/6 underline float-right text-[#1b1b1b] hover:text-[black]  text-3xl ">archive</a></Link>
+         </div>
 
         <div className=' container grid grid-cols-3 gap-1 mx-auto '>
           {mappedPosts.length ? mappedPosts.map((p, index) => (
             <div onClick={() => router.push(`/eventsarchivebby/${p.slug.current}`)} key={index}>
               <div className='z-0'>
                 {/* hover:saturate-50 w-96  hover:z-0 */}
-                      <img  className='flex w-12/12 h-auto p-1 float-left hover:z-0 font-italic' src={p.image} />
+                      {/* <img  className='flex w-12/12 h-auto p-1 float-left hover:z-0 font-italic' src={p.mainImage} /> */}
+                      <img  className='flex w-12/12 h-auto p-1 float-left hover:z-0 font-italic' src={urlFor(p.mainImage)} /> 
                       <div className=" text-center object-center text-lg z-50 font-semibold ">{p.name}</div>
                       <div className=" text-center object-center text-lg z-50 font-light ">{p.summary}</div>
-                  </div>
+                  </div> 
             </div>
           )) : <>No Posts Yet</>}
         </div>
@@ -169,11 +174,11 @@ export default function Home({ posts }) {
         {/* <Link href="https://www.youtube.com/watch?v=5TY_VbQXlkU"><p className="text-2xl  text-center italic pt-10 font-semibold  "> WATCH: chosen family: exploring the importance of LGBTQI+ safe spaces with Aisha Mirza </p></Link> */}
             </div>
             {/* <FooterComponent></FooterComponent>  */}
-  </div>
+  {/* </div> */}
 
   </section>
 
-
+  <Footer></Footer>
 
 
 

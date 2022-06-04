@@ -47,7 +47,7 @@ function FooterComponent() {
 		</MuiNextLink>
         </div>
         <div className=" bg-white m-auto items-center justify-evenly  tracking-wide">
-        <Link  href="./"><a className='  m-auto items-center justify-evenly  tracking-wide'>© Misery 2022</a></Link>
+        <Link  href="./"><a className='  m-auto items-center justify-evenly  tracking-wide'>© misery 2022</a></Link>
         </div>
         </div>
 

@@ -80,22 +80,26 @@ font-style: italic;
 
 
 .figure {
-  position: relative;
+  /* position: relative; */
+   position: fixed;
   max-width: 100%;
-  position: absolute;
+  /* position: absolute; */
   top: 45vh;
-  left: 23vw;
-  width: 8%;
+  left: 5vw;
+  width: 5%;
   z-index: 100;
   animation: glitter 5s infinite;
+  mix-blend-mode: multiply;
+  filter: drop-shadow(0 0 0.75rem crimson);
 }
 .figure2 {
-  position: relative;
+  /* position: relative; */
+   position: fixed;
   max-width: 100%;
-  position: absolute;
-  top: 25vh;
-  left: 70vw;
-  width: 10%;
+  /* position: absolute; */
+  top: 70vh;
+  left: 85vw;
+  width: 15%;
   z-index: 100;
   /* animation: glitter 5s infinite; */
   filter: drop-shadow(0 0 0.75rem crimson);

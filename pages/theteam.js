@@ -47,7 +47,7 @@ export default function MiserySite() {
   <script src="https://unpkg.com/react-dom@16.12.0/ulg/react-dom.development.js"></script> */}
   <title>.｡.:*☆ thƐ tƐ𝓐m.｡.:*☆</title>
         </Head>
-        {/* <Toolbar />  */}
+        <Toolbar /> 
 
 
         <section className="h-screen relative hidden lg:block">
@@ -63,13 +63,13 @@ export default function MiserySite() {
  
 
 
-    <div className='float-right h-screen right-0 overflow-scroll w-3/12 top-0 font-normal text-lg '>
-    <div className={styles.righthome}>
+    {/* <div className=' h-screen right-0 overflow-scroll w-3/12 top-0 font-normal text-lg '> */}
+    {/* <div className={styles.righthome}> */}
           {/* <BlockContent blocks={description} /> */}
           
-          <div className=' p-5  h-screen '>
+          {/* <div className=' p-5  h-screen '> */}
           
-          <img className={styles.swerl} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" /> 
+          {/* <img className={styles.swerl} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" />  */}
   {/* <img className={styles.swerl1} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" /> 
   <img className={styles.swerl2} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" />  */}
 
@@ -88,14 +88,14 @@ export default function MiserySite() {
            </p> */}
 
 
-<div className={styles.back}>
+{/* <div className={styles.back}>
            <Link  href="./"><a className=''><img className={styles.back}  src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/></a></Link>
            </div>
            <p className="pt-56 text-center object-center text-base z-50 font-light ">misery is a mental health community and sober rave based in london and led by and for queer, trans, intersex, black people and people of colour (qtibpoc)
            with lived experience of madness, mental health challenges, time in hospital, addiction, public service use, disability, trauma, medication and ...      
            <Link  href="../../Miserysite#whatwedo"><a className=' hover:text-[#dbff00] font-semibold p-4 m-auto items-center justify-evenly  tracking-wide"'>read more ↗</a></Link>
            </p> 
-           <div className=""><Toolbar /> </div>
+           <div className=""><Toolbar /> </div> */}
 
 
 {/* links */}
@@ -125,14 +125,14 @@ export default function MiserySite() {
   </div> */}
 
 
-    </div>
+    {/* </div> */}
 
     
-    </div>
-    </div>
+    {/* </div> */}
+    {/* </div> */}
 
 {/* -------------------------------------------- left */}
-        <div className='  z-0 p-5 top-0 h-screen w-9/12 overflow-scroll'>
+        <div className=' mx-auto pt-36 z-0 p-5 top-0 h-screen w-9/12 '>
           
         <img className={styles.figure} src="https://i.ibb.co/sFyFWsf/Bald.png"/>
         <img className={styles.figure2} src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" /> 

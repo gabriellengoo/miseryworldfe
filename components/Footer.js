@@ -16,19 +16,19 @@ function FooterComponent() {
 
 <Stack padding={2} justifyContent="center" direction={{ xs: 'column', sm: 'row' }} spacing={{ xs: 1, sm: 2, md: 4 }}>
 <MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="../../Miserysite"  rel="noopener noreferrer" >
-Home
+home
 		</MuiNextLink>
 		<MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="../videoBlogPost/our-story"  rel="noopener noreferrer" >
-		About
+		about
 		</MuiNextLink>
 		<MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="../../contact/contact"  rel="noopener noreferrer" >
-		Contact
+		contact
 		</MuiNextLink>
 		<MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="../../resources/resources-for-qtibpoc-healing"  rel="noopener noreferrer" >
-		Resources
+		resources
 		</MuiNextLink>
 		<MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="../../getinvolved/get-involved"  rel="noopener noreferrer" >
-		Get involved
+		get involved
 		</MuiNextLink>
 </Stack>
 
@@ -54,10 +54,10 @@ Home
 
 	<Stack padding={2} justifyContent="center" direction={{ xs: 'column', sm: 'row' }} spacing={{ xs: 1, sm: 2, md: 4 }}>
 <MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="../../getinvolved/get-involved"  rel="noopener noreferrer" >
-Donate 
+donate 
 		</MuiNextLink>
 		<MuiNextLink sx={{ textDecoration: "none", color: "common.black" }} href="../../faq"  rel="noopener noreferrer" >
-		Newsletter
+		newsletter
 		</MuiNextLink>
 		
 </Stack>
@@ -65,7 +65,7 @@ Donate
 
 	<Typography align="center" padding={0} color="common.black">
 	<div className="font-light">
-		© 2022 - {new Date().getFullYear()}, Misery
+		© 2022 - {new Date().getFullYear()}, misery
 		</div>
 	</Typography>
 	{/* <Typography align="center" padding={0} color="common.black">

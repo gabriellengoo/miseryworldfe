@@ -11,7 +11,7 @@ import Footer from '../../components/Footer';
 import Head from 'next/head';
 import { SectionTitle } from "../../components/SectionTitle";
 
-export const Crisisp = ({ title, phonetextsupport, inperson, communitiesUk, communitiesGlobal, housing, grief, sexualhealth, antiblackness,fatphobia, }) => {
+export const Crisisp = ({ title, phonetextsupport, inperson, communitiesUk, communitiesGlobal, housing, grief, sexualhealth, antiblackness,fatphobia,suicide, substancereduction, lgbtqiaherbalism, therapy, movingyourbody, }) => {
 
 
   console.log( title, phonetextsupport, inperson, communitiesUk, communitiesGlobal, housing,
@@ -46,7 +46,7 @@ export const Crisisp = ({ title, phonetextsupport, inperson, communitiesUk, comm
 <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script> */}
 <title>crisis</title>
       </Head>
-      {/* <Toolbar />  */}
+      <Toolbar /> 
 
 
 
@@ -55,24 +55,23 @@ export const Crisisp = ({ title, phonetextsupport, inperson, communitiesUk, comm
 
 
    
-      <section className="h-screen relative hidden md:block">
+      <section className=" relative hidden md:block">
 {/* <img className=" w-2/6 absolute drop-shadow-[0_0px_5px_red]" src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" />  */}
 
 
 
 
-  <div className='flex h-screen'>
+  {/* <div className='flex '> */}
 
 
  {/* --------------------------------------------  right */}
  
 
 
-    <div className='float-right h-screen right-0 overflow-scroll  w-3/12 top-0 font-normal text-lg '>
+    {/* <div className='float-right h-screen right-0 overflow-scroll  w-3/12 top-0 font-normal text-lg '>
     <div className={styles.righthome}>
-          {/* <BlockContent blocks={description} /> */}
           
-          <div className=' p-5  h-screen '>
+          <div className=' p-5  h-screen '> */}
           
           {/* <img className={styles.swerl} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" /> 
   <img className={styles.swerl1} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" /> 
@@ -93,14 +92,14 @@ export const Crisisp = ({ title, phonetextsupport, inperson, communitiesUk, comm
            </p> */}
 
 
-<div className={styles.back}>
+{/* <div className={styles.back}>
            <Link  href="../"><a className=''><img className={styles.back}  src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/></a></Link>
            </div>
            <p className="pt-56 text-center object-center text-base z-50 font-light ">misery is a mental health community and sober rave based in london and led by and for queer, trans, intersex, black people and people of colour (qtibpoc)
            with lived experience of madness, mental health challenges, time in hospital, addiction, public service use, disability, trauma, medication and ...      
            <Link  href="../../Miserysite#whatwedo"><a className=' hover:text-[#dbff00] font-semibold p-4 m-auto items-center justify-evenly  tracking-wide"'>read more ↗</a></Link>
            </p> 
-           <div className=""><Toolbar /> </div>
+           <div className=""><Toolbar /> </div> */}
 
 {/* links */}
            {/* <div className=" pt-10 list-[none] text-2xl font-base   ">
@@ -129,14 +128,14 @@ export const Crisisp = ({ title, phonetextsupport, inperson, communitiesUk, comm
   </div> */}
 
 
-    </div>
+    {/* </div>
 
     
     </div>
-    </div>
+    </div> */}
 
 {/* -------------------------------------------- left */}
-        <div className='  z-0 p-5 top-0 h-screen w-9/12 overflow-scroll'>
+        <div className=' mx-auto pt-36 z-0 p-5 top-0 h-screen w-9/12 overflow-scroll'>
           
         <img className={styles.figure} src="https://i.ibb.co/sFyFWsf/Bald.png"/>
         <img className={styles.figure2} src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" /> 
@@ -204,20 +203,54 @@ export const Crisisp = ({ title, phonetextsupport, inperson, communitiesUk, comm
  </section>
 
 
- <section className=' reletive flex p-20   px-8  z-50 '>
+ <section className=' reletive flex p-5   px-8  z-50 '>
  <div className={styles.body}>
  <BlockContent className={styles.body} blocks={sexualhealth} />
          </div>
  </section>
 
 
- <section className=' reletive flex p-20   px-8  z-50 '>
+ <section className=' reletive flex p-5   px-8  z-50 '>
  <div className={styles.body}>
  <BlockContent className={styles.body} blocks={antiblackness} />
          </div>
  </section>
 
+ <section className=' reletive flex p-5   px-8  z-50 '>
+ <div className={styles.body}>
+ <BlockContent className={styles.body} blocks={fatphobia} />
+         </div>
+ </section>
 
+ <section className=' reletive flex p-5   px-8  z-50 '>
+ <div className={styles.body}>
+ <BlockContent className={styles.body} blocks={suicide} />
+         </div>
+ </section>
+
+ {/* <section className=' reletive flex p-5   px-8  z-50 '>
+ <div className={styles.body}>
+ <BlockContent className={styles.body} blocks={substancereduction} />
+         </div>
+ </section> */}
+
+ {/* <section className=' reletive flex p-5   px-8  z-50 '>
+ <div className={styles.body}>
+ <BlockContent className={styles.body} blocks={lgbtqiaherbalism} />
+         </div>
+ </section> */}
+
+ {/* <section className=' reletive flex p-5   px-8  z-50 '>
+ <div className={styles.body}>
+ <BlockContent className={styles.body} blocks={therapy} />
+         </div>
+ </section> */}
+
+ <section className=' reletive flex p-5   px-8  z-50 '>
+ <div className={styles.body}>
+         <Link href="../resources/resources-for-qtibpoc-healing"><p className="text-2xl  text-center italic pt-10 font-semibold  "> if you’re looking for more resources: click here </p></Link>
+         </div>
+ </section>
 
  {showButton && (
  <button onClick={scrollToTop} className={styles.backtotop}>
@@ -235,7 +268,7 @@ export const Crisisp = ({ title, phonetextsupport, inperson, communitiesUk, comm
 
         <Footer></Footer>
         {/* <Link href="https://www.youtube.com/watch?v=5TY_VbQXlkU"><p className="text-2xl  text-center italic pt-10 font-semibold  "> WATCH: chosen family: exploring the importance of LGBTQI+ safe spaces with Aisha Mirza </p></Link> */}
-            </div>
+            {/* </div> */}
             {/* <FooterComponent></FooterComponent>  */}
             
   </div>
@@ -298,8 +331,13 @@ export const getServerSideProps = async pageContext => {
         housing: crisis.housing,
         grief: crisis.grief,
         sexualhealth: crisis.sexualhealth,
-        antiblackness: crisis.antiblackness,
+        antiblackness: crisis.antiblackness, 
         fatphobia: crisis.fatphobia,
+        suicide: crisis.suicide,
+        // substancereduction: crisis.substancereduction,
+        // lgbtqiaherbalism: crisis.lgbtqiaherbalism,
+        // therapy: crisis.therapy,
+        // movingyourbody: crisis.movingyourbody,
       }
     }
   }

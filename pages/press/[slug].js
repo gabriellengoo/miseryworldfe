@@ -11,20 +11,20 @@ import Footer from '../../components/Footer';
 import Head from 'next/head';
 import { SectionTitle } from "../../components/SectionTitle";
 
-export const Pressp = ({ title, bodypanels, images, imagestwo, body, bodytwo,
+export const Pressp = ({ title, bodypanels,  body, bodytwo,
     bodythree, }) => {
   const [imageUrl, setImageUrl] = useState('');
-  console.log(title, bodypanels, images, imagestwo, body, bodytwo,
+  console.log(title, bodypanels,  body, bodytwo,
     bodythree,);
 
-  useEffect(() => {
-    const imgBuilder = imageUrlBuilder({
-      projectId: 'ngizar2r',
-      dataset: 'production',
-    });
+  // useEffect(() => {
+  //   const imgBuilder = imageUrlBuilder({
+  //     projectId: 'jgs4s870',
+  //     dataset: 'production',
+  //   });
 
-    setImageUrl(imgBuilder.image(images));
-  }, [images, imagestwo,]);
+  //   setImageUrl(imgBuilder.image(images));
+  // }, [images]);
 
   return (
     <div>
@@ -33,7 +33,7 @@ export const Pressp = ({ title, bodypanels, images, imagestwo, body, bodytwo,
 <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script> */}
 <title>press</title>
       </Head>
-      {/* <Toolbar />  */}
+      <Toolbar /> 
 
 
 
@@ -46,18 +46,18 @@ export const Pressp = ({ title, bodypanels, images, imagestwo, body, bodytwo,
 
 
 
-  <div className='flex h-screen'>
+  {/* <div className='flex h-screen'> */}
 
 
  {/* --------------------------------------------  right */}
  
 
 
-    <div className='float-right h-screen right-0 overflow-scroll w-3/12 top-0 font-normal text-lg '>
-    <div className={styles.righthome}>
+    {/* <div className='float-right h-screen right-0 overflow-scroll w-3/12 top-0 font-normal text-lg '>
+    <div className={styles.righthome}> */}
           {/* <BlockContent blocks={description} /> */}
           
-          <div className=' p-5  h-screen '>
+          {/* <div className=' p-5  h-screen '> */}
           
           <img className={styles.swerl} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" /> 
   {/* <img className={styles.swerl1} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" /> 
@@ -80,7 +80,7 @@ export const Pressp = ({ title, bodypanels, images, imagestwo, body, bodytwo,
 {/* min-h-screen w-full */}
 {/* flex items-center justify-center */}
 {/* className=" mx-auto p-auto fixed w-2/12 object-center justify-center" */}
-           <div className=" ">
+           {/* <div className=" "> */}
            {/* <div className={styles.back}>
            <img className={styles.back}  src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/>
            </div> */}
@@ -90,19 +90,19 @@ export const Pressp = ({ title, bodypanels, images, imagestwo, body, bodytwo,
            </p> */}
            {/* <div className="pt-56"><Toolbar /> </div> */}
 
-           <div className={styles.back}>
+           {/* <div className={styles.back}>
            <Link  href="../"><a className=''><img className={styles.back}  src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/></a></Link>
            </div>
            <p className="pt-56 text-center object-center text-base z-50 font-light ">misery is a mental health community and sober rave based in london and led by and for queer, trans, intersex, black people and people of colour (qtibpoc)
            with lived experience of madness, mental health challenges, time in hospital, addiction, public service use, disability, trauma, medication and ...      
            <Link  href="../../Miserysite#whatwedo"><a className=' hover:text-[#7da392] font-semibold p-4 m-auto items-center justify-evenly  tracking-wide"'>read more ↗</a></Link>
            </p> 
-           <div className=""><Toolbar /> </div>
+           <div className=""><Toolbar /> </div> */}
            
            {/* <img className="" src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/> */}
            {/* <img className="w-5/6 object-center justify-center" src="https://i.ibb.co/qB2YqyQ/MISERY-FAUX-FUR.png"/> */}
           {/* <p className="text-center object-center font-serif font-light "> u can cry if u want to</p> */}
-          </div>
+          {/* </div> */}
 
 {/* links */}
            {/* <div className=" pt-10 list-[none] text-2xl font-base   ">
@@ -131,14 +131,14 @@ export const Pressp = ({ title, bodypanels, images, imagestwo, body, bodytwo,
   </div> */}
 
 
-    </div>
+    {/* </div>
 
     
     </div>
-    </div>
+    </div> */}
 
 {/* -------------------------------------------- left */}
-        <div className='  z-0 p-5 top-0 h-screen w-9/12 overflow-scroll'>
+        <div className='  z-0 p-5 top-0 h-screen w-9/12 mx-auto pt-36'>
           
         <img className={styles.figure} src="https://i.ibb.co/sFyFWsf/Bald.png"/>
         <img className={styles.figure2} src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" /> 
@@ -150,12 +150,31 @@ export const Pressp = ({ title, bodypanels, images, imagestwo, body, bodytwo,
 {/* -webkit-text-stroke: 2px black; */}
 
 
+        {/* <div className=' flex w-auto pt-5 h-auto '>
+          {mappedPosts.length ? mappedPosts.map((p, index) => (
+            <div onClick={() => router.push(`/eventsComming/${p.slug.current}`)} key={index}>
+              <div className='z-0'>
+                      <img className='flex w-80 h-auto p-1 ' src={p.image} />
+                  </div>
+            </div>
+          )) : <>No Posts Yet</>}
+        </div> */}
+
+
+<div className={styles.main}>
+
+
+<div className=' text-l  font-light indent-5 text-left tracking-wide'>
+        <h1 className=' py-8 tracking-wide  text-5xl font-semibold '>panels </h1>
+        </div>
+
+
 <section className=' p-5 list-decimal text-center mx-auto  '>
             {/* <div className={styles.links}> */}
         <div className="   mx-auto px-0 text-2xl font-light tracking-tighter">
       <div className=" ">
-<Link   href="https://brainchildfestival.co.uk/lineup/rave-to-resist-community-partying-politics/"><a target="_blank" className='pl-10'><span>BRAINCHILD ↗</span><img className={styles.imgpop} src="https://cdn.shortpixel.ai/spai/w_2180+q_glossy+ret_img+to_webp/https://brainchildfestival.co.uk/wp-content/uploads/2019/07/Rave-to-Resist-Image-1.jpg"/></a></Link>
-
+<Link   href="https://brainchildfestival.co.uk/lineup/rave-to-resist-community-partying-politics/">
+  <a target="_blank" className='pl-10'><span>BRAINCHILD ↗</span><img className={styles.imgpop} src="https://cdn.shortpixel.ai/spai/w_2180+q_glossy+ret_img+to_webp/https://brainchildfestival.co.uk/wp-content/uploads/2019/07/Rave-to-Resist-Image-1.jpg"/></a></Link>
 </div>
 {/* </div> */}
 </div>
@@ -196,23 +215,13 @@ export const Pressp = ({ title, bodypanels, images, imagestwo, body, bodytwo,
 {/* </div> */}
 </div>
 </section>
-        {/* <div className=' flex w-auto pt-5 h-auto '>
-          {mappedPosts.length ? mappedPosts.map((p, index) => (
-            <div onClick={() => router.push(`/eventsComming/${p.slug.current}`)} key={index}>
-              <div className='z-0'>
-                      <img className='flex w-80 h-auto p-1 ' src={p.image} />
-                  </div>
-            </div>
-          )) : <>No Posts Yet</>}
-        </div> */}
 
 
-<div className={styles.main}>
         {/* <div className={`container mx-auto flex items-center  ${styles.wrapper}`}>
         <div className={"flex-auto flex-col md:flex-row items-center bg-white rounded-xl m-5 p-3 md:m-10 " + styles.shadow}> */}
-        <div className=' text-l  font-light indent-5 text-left tracking-wide'>
+        <div className=' text-l  font-light  text-left tracking-wide'>
         <h1 className=' py-8 tracking-wide  text-5xl font-semibold '>press </h1>
-          <BlockContent className={styles.body} blocks={bodythree} />
+          <BlockContent className={styles.body} blocks={bodypanels} />
         </div>
         {/* </div>
     </div> */}
@@ -220,7 +229,7 @@ export const Pressp = ({ title, bodypanels, images, imagestwo, body, bodytwo,
 
         {/* <div className={`container mx-auto flex items-center  ${styles.wrapper}`}>
         <div className={"flex-auto flex-col md:flex-row items-center bg-white rounded-xl m-5 p-3 md:m-10 " + styles.shadow}> */}
-        <div className=' text-l  font-light indent-5 text-left tracking-wide'>
+        <div className=' text-l  font-light  text-left tracking-wide'>
         <h1 className=' py-8 tracking-wide  text-5xl font-semibold '>awards</h1>
           <p><BlockContent className={styles.body} blocks={body} /></p>
         </div>
@@ -230,7 +239,7 @@ export const Pressp = ({ title, bodypanels, images, imagestwo, body, bodytwo,
 
         {/* <div className={`container mx-auto flex items-center  ${styles.wrapper}`}>
         <div className={"flex-auto flex-col md:flex-row items-center bg-white rounded-xl m-5 p-3 md:m-10 " + styles.shadow}> */}
-        <div className=' text-l p-5 font-light text-left indent-5 tracking-wide'>
+        <div className=' text-l font-light text-left  tracking-wide'>
         <h1 className=' py-8 tracking-wide  text-5xl font-semibold '>research</h1>
           <BlockContent className={styles.body} blocks={bodytwo} />
         </div>
@@ -248,7 +257,7 @@ export const Pressp = ({ title, bodypanels, images, imagestwo, body, bodytwo,
 
 
 <Footer></Footer>
-            </div>
+            {/* </div> */}
 
   </div>
   </section>
@@ -308,12 +317,11 @@ export const getServerSideProps = async pageContext => {
   }
 
   const query = encodeURIComponent(`*[ _type == "press" && slug.current == "${pageSlug}" ] { 
-    title, images, imagestwo, body, bodytwo,
-    bodythree,
-    bodypanels,
+    title, body, bodytwo,bodypanels,
+  
 }`);
 
-  const url = `https://ngizar2r.api.sanity.io/v1/data/query/production?query=${query}`;
+  const url = `https://jgs4s870.api.sanity.io/v1/data/query/production?query=${query}`;
 
   const result = await fetch(url).then(res => res.json());
   const press = result.result[0];
@@ -327,10 +335,10 @@ export const getServerSideProps = async pageContext => {
       props: {
         body: press.body,
         title: press.title,
-        images: press.images,
+        // images: press.images,
         bodytwo: press.bodytwo,
-      bodythree: press.bodythree,
-      imagestwo: press.imagestwo,
+      // bodythree: press.bodythree,
+      // imagestwo: press.imagestwo,
       bodypanels: press.bodypanels,
     //   venue: press.venue,
         // address: press.address,

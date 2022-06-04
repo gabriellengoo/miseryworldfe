@@ -43,26 +43,26 @@ export default function Home({ posts }) {
 <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script> */}
 <title>events</title>
       </Head>
-
+      <Toolbar />
    
-      <section className="h-screen relative hidden md:block">
+      <section className="  md:block">
 {/* <img className=" w-2/6 absolute drop-shadow-[0_0px_5px_red]" src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" />  */}
 
 
 
 
-  <div className='flex h-screen'>
+  <div className=' '>
 
 
  {/* --------------------------------------------  right */}
  
 
 
-    <div className='float-right h-screen right-0 overflow-scroll w-3/12 top-0 font-normal text-lg '>
-    <div className={styles.righthome}>
+    {/* <div className='float-right h-screen right-0 overflow-scroll w-3/12 top-0 font-normal text-lg '>
+    <div className={styles.righthome}> */}
           {/* <BlockContent blocks={description} /> */}
           {/* <Toolbar />    */}
-          <div className=' p-5  h-screen '>
+          {/* <div className=' p-5  h-screen '> */}
           
           {/* <img className={styles.swerl} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" /> 
   <img className={styles.swerl1} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" /> 
@@ -81,27 +81,27 @@ export default function Home({ posts }) {
            with lived experience of madness, mental health challenges, time in hospital, addiction, public service use, disability, trauma, medication and ...      
            <Link  href="#whatwedo"><a className=' hover:text-[#dbff00] font-semibold p-4 m-auto items-center justify-evenly  tracking-wide"'>read more ↗</a></Link>
            </p> */}
-         <div className={styles.back}>
+         {/* <div className={styles.back}>
            <Link  href="./"><a className=''><img className={styles.back}  src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/></a></Link>
            </div>
            <p className="pt-56 text-center object-center text-base z-50 font-light ">misery is a mental health community and sober rave based in london and led by and for queer, trans, intersex, black people and people of colour (qtibpoc)
            with lived experience of madness, mental health challenges, time in hospital, addiction, public service use, disability, trauma, medication and ...      
            <Link  href="../../Miserysite#whatwedo"><a className=' hover:text-[#dbff00] font-semibold p-4 m-auto items-center justify-evenly  tracking-wide"'>read more ↗</a></Link>
            </p> 
-           <div className=""><Toolbar /> </div>
+           <div className=""><Toolbar /> </div> */}
            {/* <p className="text-left pt-56 object-center text-base z-50 font-light ">misery is a mental health community and sober rave based in london and led by and for queer, trans, intersex, black people and people of colour (qtibpoc)
            with lived experience of madness, mental health challenges, time in hospital, addiction, public service use, disability, trauma, medication and ...      
            <Link  href="#whatwedo"><a className=' hover:text-[#dbff00] font-semibold p-4 m-auto items-center justify-evenly  tracking-wide"'>read more ↗</a></Link>
            </p> */}
 
 
-           <div className="flex items-center  w-full">
+           {/* <div className="flex items-center  w-full"> */}
            {/* <div className="flex items-center justify-center min-h-screen w-full"> */}
            {/* <img className="w-4/6 " src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/> */}
            {/* <img className="w-5/6 object-center justify-center" src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/> */}
            {/* <img className="w-5/6 object-center justify-center" src="https://i.ibb.co/qB2YqyQ/MISERY-FAUX-FUR.png"/> */}
           {/* <p className="text-center object-center font-serif font-light "> u can cry if u want to</p> */}
-          </div>
+          {/* </div> */}
 
 {/* links */}
            {/* <div className=" pt-10 list-[none] text-2xl font-base   ">
@@ -129,15 +129,15 @@ export default function Home({ posts }) {
         </div>
   </div> */}
 
-
+{/* 
     </div>
 
     
     </div>
-    </div>
+    </div> */}
 
 {/* -------------------------------------------- left */}
-        <div className='  z-0 p-5 top-0 h-screen w-9/12 overflow-scroll'>
+        <div className=' mx-auto pt-36 z-0 p-5 top-0  w-9/12  '>
           
         <img className={styles.figure} src="https://i.ibb.co/sFyFWsf/Bald.png"/>
         <img className={styles.figure2} src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" /> 
@@ -149,7 +149,10 @@ export default function Home({ posts }) {
 
 
         <p className={styles.crytext2}> events </p> 
-        <p className=" italic text-left font-base text-[black] justify-center text-3xl pb-10 underline ">now & coming up <p className='no-underline float-right text-[#1b1b1b] hover:text-[black]  hover:underline'><Link  href="./eventarchive">archive</Link></p> </p> 
+        <div className='w-9/12 flex'>
+        <Link  href="./eventsupcoming"><a className=" w-1/6 underline float-left italic text-left font-base text-[black] justify-center text-3xl pb-10  ">events</a></Link>
+        <Link href="./eventarchive"><a className="  w-1/6 hover:underline float-right text-[#1b1b1b] hover:text-[black]  text-3xl ">archive</a></Link>
+         </div>
 
         <div className=' container grid grid-cols-3 gap-1 mx-auto '>
           {mappedPosts.length ? mappedPosts.map((p, index) => (
@@ -173,7 +176,7 @@ export default function Home({ posts }) {
 
   </section>
 
-
+  <Footer></Footer>
 
 
 
@@ -263,6 +266,8 @@ export default function Home({ posts }) {
           </div>
         </div>
         </div> */}
+        
+        
 
     {/* <FooterComponent></FooterComponent> */}
     </div>
