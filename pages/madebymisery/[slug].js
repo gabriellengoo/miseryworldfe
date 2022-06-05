@@ -6,7 +6,7 @@ import BlockContent from '@sanity/block-content-to-react';
 import { Toolbar } from '../../components/toolbar';
 import { sanityClient } from '@sanity/client'
 // import Image from "../../components/Image"
-import Link from "next/link"
+import Link from "next/link";
 // import Footer from '../../components/Footer';
 import FooterComponent from '../../components/foottest';
 import Head from 'next/head';
@@ -17,18 +17,20 @@ import { Carousel } from 'react-responsive-carousel';
 import Spotify from 'react-spotify-embed';
 import Footer from '../../components/Footer';
 
-export const Madebymisery = ({ title, mainImage, images, body, bodytwo,
-    bodythree, }) => {
-  const [imageUrl, setImageUrl] = useState('');
 
-  useEffect(() => {
-    const imgBuilder = imageUrlBuilder({
-      projectId: 'ngizar2r',
-      dataset: 'production',
-    });
+export const Madebymisery = ({ title, body, bodytwo,
+    bodythree,  mixtapes, }) => {
+      // const mixtapesAmount = mixtapes.length
+  // const [imageUrl, setImageUrl] = useState('');
 
-    setImageUrl(imgBuilder.image(images));
-  }, [images]);
+  // useEffect(() => {
+  //   const imgBuilder = imageUrlBuilder({
+  //     projectId: 'jgs4s870',
+  //     dataset: 'production',
+  //   });
+
+  //   setImageUrl(imgBuilder.image(images));
+  // }, [images]);
 
   return (
     <div>
@@ -126,7 +128,7 @@ export const Madebymisery = ({ title, mainImage, images, body, bodytwo,
     </div> */}
 
 {/* -------------------------------------------- left */}
-        <div className=' mx-auto z-0 p-5 top-0 h-screen w-9/12 pt-36 max-w-4xl'>
+        <div className=' mx-auto z-0 p-5 top-0  w-9/12 pt-36 max-w-4xl'>
           
         <img className={styles.figure} src="https://i.ibb.co/sFyFWsf/Bald.png"/>
         <img className={styles.figure2} src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" /> 
@@ -149,7 +151,7 @@ export const Madebymisery = ({ title, mainImage, images, body, bodytwo,
 
 <div id="zine" className=' pt-10 m-auto text-large font-light'>
         <h1 className="flex-none  text-left justify-center font-semibold border-b-[.5px] text-5xl tracking-wide">zine</h1>
-        <p className=' border-b-[.5px] text-left justify-center font-base text-2xl font-light tracking-tighter '> <BlockContent blocks={bodythree} /></p>
+        <p className=' border-b-[.5px] text-left justify-center font-base text-2xl font-light tracking-tighter '> <BlockContent blocks={body} /></p>
         <p>zine will be here</p>
           </div>
         
@@ -159,14 +161,19 @@ export const Madebymisery = ({ title, mainImage, images, body, bodytwo,
 
           <div id="mixtapes" className=' pt-10 m-auto text-large font-light'>
         <h1 className="flex-none  text-left justify-center font-semibold border-b-[.5px] text-5xl tracking-wide">mixtapes</h1>
-        <p className=' text-left justify-center font-base text-2xl font-light tracking-tighter '>misery has a mixtape for every occasion. treat yourself to these communally compiled wonders</p>
+        {/* <p className=' text-left justify-center font-base text-2xl font-light tracking-tighter '>misery has a mixtape for every occasion. treat yourself to these communally compiled wonders</p> */}
+        <p className='text-left justify-center font-base '><BlockContent blocks={bodytwo} /></p>
+        <Link href="../mixtapes" >See them here ↗ </Link>
           </div>
 
-    
+
+       
+
+
 
         
-        <div className=' font-base p-3  z-0 overflow-scroll'>
-            {/* mix tapes */}
+        {/* <div className=' font-base p-3  z-0 overflow-scroll'>
+
             <p  className='   z-0 p-3 text-left '>it’s my race war and i’ll cry if i want to (songs 2 cry 2)</p>
             <Spotify wide link="https://open.spotify.com/playlist/6mTp95jFfaVmnYYdht2xTt?si=Ph6mbWZ3Q0GQFEno7XzCFQ&nd=1"/>
             
@@ -206,11 +213,11 @@ export const Madebymisery = ({ title, mainImage, images, body, bodytwo,
             <p  className='   z-0 p-3 text-left overflow-hidden'>confidence (felix and bronze edition)</p>
             <Spotify wide link="https://open.spotify.com/playlist/5eUdDWCjqyaxCPMzbYChiA?si=94425ac5f1064d89"/>
             </div>
-
+ */}
 
             <div id="radio" className=' m-auto font-light'>
         <h1 className="flex-none pt-10 text-left justify-center font-semibold border-b-[.5px] text-5xl tracking-wide">radio</h1>
-        <p className='text-left justify-center font-base '><BlockContent blocks={bodytwo} /></p>
+        <p className='text-left justify-center font-base '><BlockContent blocks={bodythree} /></p>
           </div>
 
 
@@ -379,11 +386,18 @@ export const getServerSideProps = async pageContext => {
   }
 
   const query = encodeURIComponent(`*[ _type == "madebymisery" && slug.current == "${pageSlug}" ] { 
-    title, mainImage, images, body, bodytwo,
-    bodythree,
+    title, body, bodytwo,
+    bodythree, 
+    mixtapes->{
+      _id,
+      name,
+      slug,
+      image,
+      url
+    },
 }`);
 
-  const url = `https://ngizar2r.api.sanity.io/v1/data/query/production?query=${query}`;
+  const url = `https://jgs4s870.api.sanity.io/v1/data/query/production?query=${query}`;
 
   const result = await fetch(url).then(res => res.json());
   const press = result.result[0];
@@ -397,10 +411,11 @@ export const getServerSideProps = async pageContext => {
       props: {
         body: press.body,
         title: press.title,
-        images: press.images,
-        mainImage: press.mainImage,
+        // images: press.images,
+        // mainImage: press.mainImage,
         bodytwo: press.bodytwo,
       bodythree: press.bodythree,
+      mixtapes: press.mixtapes,
       }
     }
   }

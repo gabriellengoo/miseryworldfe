@@ -1,3 +1,4 @@
+import Map from "../components/Map"
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 import { Toolbar } from '../components/toolbar';
@@ -17,14 +18,40 @@ import mypic from '../public/rotatelogo.gif'
 import FooterComponent from '../components/foottest';
 import { Facebook, Instagram, Twitter } from "@mui/icons-material";
 import MuiNextLink from "../components/MuiNextLink"
-import BlockContent from '@sanity/block-content-to-react';
 {/* <h1 className='text-3xl text-[#1fd705] m-auto z-0 max-w-2xl justify-center '> misery is.. </h1> */}
 import Footer from '../components/Footer';
+import { sanityClient } from "../sanity"
 
 
-export const miserymoods = ({ name,summary, phonetextsupport, inperson, communitiesUk, communitiesGlobal, housing, grief,sexualhealth, antiblackness,fatphobia, }) => {
+// const Miserydatabase = ({
+//     location,
+//   }) => {
+    // const reviewAmount = reviews.length
 
+export default function Miserydatabase({ posts }) {
+  const router = useRouter();
+  const [mappedPosts, setMappedPosts] = useState([]);
 
+  useEffect(() => {
+    if (posts.length) {
+      const imgBuilder = imageUrlBuilder({
+        projectId: 'jgs4s870',
+        dataset: 'production',
+      });
+
+      setMappedPosts(
+        posts.map(p => {
+          return {
+            ...p,
+            image: imgBuilder.image(p.mainImage),
+          }
+        })
+      );
+    } else {
+      setMappedPosts([]);
+    }
+  }, [posts]);
+    
   return (
     
     <Layout>
@@ -32,7 +59,7 @@ export const miserymoods = ({ name,summary, phonetextsupport, inperson, communit
       {/* absolute   bottom-0 justify-evenly */}
        {/* <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
 <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script> */}
-<name>misery moods</name>
+<title>misery database</title>
 
       </Head>
       <div className=""><Toolbar /> </div>
@@ -53,18 +80,18 @@ export const miserymoods = ({ name,summary, phonetextsupport, inperson, communit
 
 
 
-  {/* <div className='flex h-screen'> */}
+  {/* <div className='flex '> */}
 
 
  {/* --------------------------------------------  right */}
  
 
 
-    {/* <div className='float-right h-screen right-0 overflow-scroll w-3/12 top-0 font-normal text-lg '>
+    {/* <div className='float-right  right-0 overflow-scroll w-3/12 top-0 font-normal text-lg '>
     <div className={styles.righthome}> */}
           {/* <BlockContent blocks={description} /> */}
           
-          {/* <div className=' p-5  h-screen '> */}
+          {/* <div className=' p-5   '> */}
           
           <img className={styles.swerl} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" /> 
   {/* <img className={styles.swerl1} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" /> 
@@ -84,7 +111,7 @@ export const miserymoods = ({ name,summary, phonetextsupport, inperson, communit
            <Link  href="#whatwedo"><a className=' hover:text-[#7da392] font-semibold p-4 m-auto items-center justify-evenly  tracking-wide"'>read more ↗</a></Link>
            </p> */}
 
-{/* min-h-screen w-full */}
+{/* min- w-full */}
 {/* flex items-center justify-center */}
 {/* className=" mx-auto p-auto fixed w-2/12 object-center justify-center" */}
            {/* <div className=" "> */}
@@ -145,57 +172,63 @@ export const miserymoods = ({ name,summary, phonetextsupport, inperson, communit
     </div> */}
 
 {/* -------------------------------------------- left */}
-        <div className='  z-0 p-5 top-0 h-screen w-9/12 mx-auto pt-36'>
+        <div className='  z-0 p-5 top-0  w-9/12 mx-auto pt-36'>
           
+        <p className={styles.crytext2}> misery database </p> 
+
+
+        <div  className={styles.songinfo}>
+          {mappedPosts.length ? mappedPosts.map((p, index) => (
+            <div key={index}>
+              {/* <div className='p-20 border-b border-[#1e90ff]'> */}
+              <div className={styles.songcontainer}>
+              <div  className={styles.songinfo}>
+    <div  className={styles.songlink} >
+    {/* <h2>Location</h2> */}
+      <Map location={location}></Map>
+            <div>
+
+            {/* <img className={styles.songimg} src={p.mainImage} /> */}
+            {/* <Link className={styles.songartist} href='../'></Link> */}
+        
+            {/* <Link className={styles.songartist} href={p.url}><img className={styles.songimg} src={p.image} /></Link> */}
+                    {/* <div  className={styles.play}>▶︎</div> */}
+                
+            </div>
+            
+    </div>
+
+                <span  className={styles.songname}>{p.name}</span>
+                
+                <div  className={styles.songdescription} >
+                    <div>{p.summary}</div>
+                    <div>{p.body}</div>
+                    {/* ↗ */}
+                    {/* <a  className={styles.songartist}> {p.url}</a> */}
+                    {/* <Link className={styles.songartist} href={p.url}>listen here ↗ </Link> */}
+                </div>
+</div>
+                </div>
+                {/* </div> */}
+            </div>
+          )) : <>Coming Soon !</>}
+        </div>
+
+
+
         {/* <img className={styles.figure} src="https://i.ibb.co/sFyFWsf/Bald.png"/> */}
         <img className={styles.figure2} src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" /> 
         {/* <Toolbar />  */}
 
-        <p className={styles.crytext2}> misery moods </p> 
+       
+        {/* <h2>Location</h2>
+      <Map location={location}></Map> */}
 
-
-        <section id="phonetextsupport" className=' reletive flex  pt-12 lg:pt-62 px-8  z-50 '>
-        <div className={styles.body}>
-                    {/* <h1 className='  py-8 tracking-wide  text-5xl font-semibold '>phone/text support</h1> */}
-          <BlockContent blocks={phonetextsupport} />
-        </div>
-        </section>
-
-
-        <section id="inperson" className=' reletive flex  pt-12 lg:pt-62 px-8  z-50 '>
-        <div className={styles.body}>
-                    {/* <h1 className='  py-8 tracking-wide  text-5xl font-semibold '>in-person london-based support</h1> */}
-          <BlockContent blocks={inperson} />
-        </div>
-        </section>
-
-
-        <section id="communitiesUk" className=' reletive flex  pt-12 lg:pt-62 px-8  z-50 '>
-        <div className={styles.body}>
-                    {/* <h1 className='  py-8 tracking-wide  text-5xl font-semibold '>communities & collectives (uk)</h1> */}
-          <BlockContent blocks={communitiesUk} />
-        </div>
-        </section>
-
-
-
-        <section id="communitiesGlobal" className=' reletive flex  pt-12 lg:pt-62 px-8 z-50 p-10 '>
-        <div className={styles.body}>
-                    {/* <h1 className='  py-8 tracking-wide  text-5xl font-semibold '>communities & collectives (global)</h1> */}
-          <BlockContent className={styles.body} blocks={communitiesGlobal} />
-        </div>
-        </section>
-
-
-
-
-        <section id="housing" className=' reletive flex  pt-12 lg:pt-62 px-8 z-50 p-10 '>
-        <div className={styles.body}>
-                    {/* <h1 className='  py-8 tracking-wide  text-5xl font-semibold '>housing (london/uk)</h1> */}
-          <BlockContent className={styles.body} blocks={housing} />
-        </div>
-        </section>
- 
+      <div className=" my-auto grid place-items-center text-5xl">
+  
+   {/* <p  className=" tracking-wide m-auto  font-semibold"> <p  className=" tracking-wide  m-auto   text-5xl font-semibold place-items-center text-center">misery merch coming soon!</p></p> */}
+   </div>
+   
 
 
 
@@ -218,7 +251,7 @@ export const miserymoods = ({ name,summary, phonetextsupport, inperson, communit
 
 {/* old */}
 
-{/* <div className="h-screen grid place-items-center text-5xl">
+{/* <div className=" grid place-items-center text-5xl">
   
    <p  className="py-8 tracking-wide m-auto  font-semibold"> <p  className="py-8 tracking-wide  m-auto   text-5xl font-semibold place-items-center text-center">shop</p>＊misery merch coming soon!＊</p>
    </div>
@@ -230,49 +263,23 @@ export const miserymoods = ({ name,summary, phonetextsupport, inperson, communit
   )
 }
 
+export const getServerSideProps = async (pageContext) => {
+  const query = encodeURIComponent('*[ _type == "miserydatabase" ]');
+  const url = `https://jgs4s870.api.sanity.io/v1/data/query/production?query=${query}`;
+  const result = await fetch(url).then(res => res.json());
 
-
-export const getServerSideProps = async pageContext => {
-    const pageSlug = pageContext.query.slug;
-    console.log(pageSlug)
-  
-  
-    if (!pageSlug) {
-      return {
-        notFound: true
+  if (!result.result || !result.result.length) {
+    return {
+      props: {
+        posts: [],
       }
     }
-  
-    const query = encodeURIComponent(`*[ _type == "eventsMiseryMoods" && slug.current == "${pageSlug}" ] { 
-      name, phonetextsupport, inperson, communitiesUk, communitiesGlobal, housing, grief,sexualhealth, antiblackness,fatphobia,}`);
-  
-    const url = `https://jgs4s870.api.sanity.io/v1/data/query/production?query=${query}`;
-  
-    const result = await fetch(url).then(res => res.json());
-    const eventsMiseryMoods = result.result[0];
-  
-    if (!eventsMiseryMoods) {
-      return {
-        notFound: true
-      }
-    } else {
-      return {
-        props: {
-          name: eventsMiseryMoods.name,
-          phonetextsupport: eventsMiseryMoods.phonetextsupport,
-          inperson: eventsMiseryMoods.inperson,
-          communitiesUk: eventsMiseryMoods.communitiesUk,
-          communitiesGlobal: eventsMiseryMoods.communitiesGlobal,
-          housing: eventsMiseryMoods.housing,
-          grief: eventsMiseryMoods.grief,
-          sexualhealth: eventsMiseryMoods.sexualhealth,
-          antiblackness: eventsMiseryMoods.antiblackness,
-          fatphobia: eventsMiseryMoods.fatphobia,
-
-    
-        }
+  } else {
+    return {
+      props: {
+        posts: result.result,
       }
     }
-  };
-  
-  export default miserymoods;
+  }
+};
+  // export default Miserydatabase

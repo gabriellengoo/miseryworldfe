@@ -3,7 +3,7 @@
 </div>
 <img className={styles.figure} src="https://i.ibb.co/sFyFWsf/Bald.png"/> */}
 
-
+import CookieConsent from "react-cookie-consent";
 import Link from 'next/link';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
@@ -405,8 +405,20 @@ misery is a reminder that you’re not too sensitive, it’s mad out here.</p>
         </div>
             </div> */}
 
+<CookieConsent
+  location="bottom"
+  buttonText="Sure man!!"
+  cookieName="myAwesomeCookieName2"
+  style={{ background: "#ffffff" }}
+  buttonStyle={{ color: "#4e503b", fontSize: "13px" }}
+  expires={150}
+>
+  This website uses cookies 🍪 to enhance the user experience.{" "}
+</CookieConsent>
 
-<Footer></Footer>
+  {/* <span style={{ fontSize: "10px" }}>This bit of text is smaller :O</span>*/}
+
+<Footer></Footer> 
             </div>
             </div>
   </div>

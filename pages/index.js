@@ -108,6 +108,7 @@ export default function FirstPost() {
         <section className=' p-5 flex  justify-center text-center w-6/6 h-screen mx-auto px-0 mix-blend-difference  '>
     <p className=' text-[#515151d3]  text-2xl m-auto p-6 font-normal z-0 h-2/5 w-3/6  overflow-scroll justify-center absolute bottom-0' >
     <p className=' z-0 p-3  '></p>
+    <p className=' text-[#1fd705] ml-0 hover:ml-9 duration-1000 drop-shadow-[1rem_1rem_1rem_yellow] '><i>misery is...</i></p>
       <p className=' hover:text-[#1fd705] drop-shadow-[1rem_1rem_1rem_red] hover:font-normal  p-7 m-auto hover:ml-9 duration-1000  '> ＊*•̩̩͙✩•̩̩͙*˚ crying at the party *•̩̩͙✩•̩̩͙*˚＊</p>
       <p className=' hover:text-[#1fd705] drop-shadow-[1rem_1rem_1rem_red] hover:font-normal  p-7  hover:ml-9 duration-1000 '>＊*•̩̩͙✩•̩̩͙*˚ your emotional support stuffed animal that looks more depressed than you do *•̩̩͙✩•̩̩͙*˚</p>
       <p className=' hover:text-[#1fd705] drop-shadow-[1rem_1rem_1rem_red] hover:font-normal  p-7  hover:ml-9 duration-1000 '>＊*•̩̩͙✩•̩̩͙*˚being a fag and a dyke at the same time *•̩̩͙✩•̩̩͙*˚</p>

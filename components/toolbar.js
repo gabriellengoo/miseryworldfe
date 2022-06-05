@@ -156,7 +156,7 @@ export const Toolbar = () => {
       <div className={styles.dropdowncontent}>
       <a><Link href="../crisis/crisis">crisis section</Link></a>
       <a><Link href="../resources/resources-for-qtibpoc-healing"> resources </Link></a>
-      <a><Link href="../"> misery’s database </Link></a>
+      <a><Link href="../miserydatabase"> misery’s database </Link></a>
       </div>
     </div>
     </div>
