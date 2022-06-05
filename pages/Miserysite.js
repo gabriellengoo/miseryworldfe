@@ -414,7 +414,7 @@ misery is a reminder that you’re not too sensitive, it’s mad out here.</p>
   box-shadow= "0 -1px 10px 0 rgba(172, 171, 171, 0.3)"
   color="#000000"
   font-weight="semibold"
-  buttonStyle={{ color="#000000",  }}
+  buttonStyle={{ color: "#000000;"  }}
   expires={150}
 >
   This website uses cookies to enhance the user experience.{" "}
