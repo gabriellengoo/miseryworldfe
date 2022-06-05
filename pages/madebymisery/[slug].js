@@ -19,7 +19,7 @@ import Footer from '../../components/Footer';
 
 
 export const Madebymisery = ({ title, body, bodytwo,
-    bodythree,  mixtapes, }) => {
+    bodythree,  }) => {
       // const mixtapesAmount = mixtapes.length
   // const [imageUrl, setImageUrl] = useState('');
 
@@ -151,8 +151,8 @@ export const Madebymisery = ({ title, body, bodytwo,
 
 <div id="zine" className=' pt-10 m-auto text-large font-light'>
         <h1 className="flex-none  text-left justify-center font-semibold border-b-[.5px] text-5xl tracking-wide">zine</h1>
-        <p className=' border-b-[.5px] text-left justify-center font-base text-2xl font-light tracking-tighter '> <BlockContent blocks={body} /></p>
-        <p>zine will be here</p>
+        <p className='text-left justify-center font-base '> <BlockContent blocks={body} /></p>
+        <p className='text-left pl-5 justify-center font-base '>zine will be here</p>
           </div>
         
 
@@ -163,7 +163,9 @@ export const Madebymisery = ({ title, body, bodytwo,
         <h1 className="flex-none  text-left justify-center font-semibold border-b-[.5px] text-5xl tracking-wide">mixtapes</h1>
         {/* <p className=' text-left justify-center font-base text-2xl font-light tracking-tighter '>misery has a mixtape for every occasion. treat yourself to these communally compiled wonders</p> */}
         <p className='text-left justify-center font-base '><BlockContent blocks={bodytwo} /></p>
-        <Link href="../mixtapes" >See them here ↗ </Link>
+        <div className='text-left pl-5 justify-center font-base '>
+        <Link  href="../mixtapes" >see them here ↗ </Link>
+        </div>
           </div>
 
 
@@ -388,13 +390,6 @@ export const getServerSideProps = async pageContext => {
   const query = encodeURIComponent(`*[ _type == "madebymisery" && slug.current == "${pageSlug}" ] { 
     title, body, bodytwo,
     bodythree, 
-    mixtapes->{
-      _id,
-      name,
-      slug,
-      image,
-      url
-    },
 }`);
 
   const url = `https://jgs4s870.api.sanity.io/v1/data/query/production?query=${query}`;
@@ -415,7 +410,7 @@ export const getServerSideProps = async pageContext => {
         // mainImage: press.mainImage,
         bodytwo: press.bodytwo,
       bodythree: press.bodythree,
-      mixtapes: press.mixtapes,
+      // mixtapes: press.mixtapes,
       }
     }
   }

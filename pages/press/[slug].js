@@ -11,10 +11,10 @@ import Footer from '../../components/Footer';
 import Head from 'next/head';
 import { SectionTitle } from "../../components/SectionTitle";
 
-export const Pressp = ({ title, bodypanels,  body, bodytwo,
+export const Pressp = ({ title, bodyfirst , bodypanels,  body, bodytwo,
     bodythree, }) => {
   const [imageUrl, setImageUrl] = useState('');
-  console.log(title, bodypanels,  body, bodytwo,
+  console.log(title, bodyfirst, bodypanels,  body, bodytwo,
     bodythree,);
 
   // useEffect(() => {
@@ -67,41 +67,41 @@ export const Pressp = ({ title, bodypanels,  body, bodytwo,
  
   
   {/* <img className={styles.figurenew} src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/> */}
-  {/* <img className='flex justify-center m-auto items-center h-4/4 w-1/4  ' src="https://i.ibb.co/sFyFWsf/Bald.png"/> */}
+  {/* <img className='flex justify-left m-auto items-left h-4/4 w-1/4  ' src="https://i.ibb.co/sFyFWsf/Bald.png"/> */}
       {/* <img className={styles.logoa} src="https://i.ibb.co/JyJxKXh/Esther-copy-2-Glow.png"/> */}
    
 
           {/* /text */}
-          {/* <p className="text-left pt-10 object-center text-base z-50 font-light ">misery is a mental health community and sober rave based in london and led by and for queer, trans, intersex, black people and people of colour (qtibpoc)
+          {/* <p className="text-left pt-10 object-left text-base z-50 font-light ">misery is a mental health community and sober rave based in london and led by and for queer, trans, intersex, black people and people of colour (qtibpoc)
            with lived experience of madness, mental health challenges, time in hospital, addiction, public service use, disability, trauma, medication and ...      
-           <Link  href="#whatwedo"><a className=' hover:text-[#7da392] font-semibold p-4 m-auto items-center justify-evenly  tracking-wide"'>read more ↗</a></Link>
+           <Link  href="#whatwedo"><a className=' hover:text-[#7da392] font-semibold p-4 m-auto items-left justify-evenly  tracking-wide"'>read more ↗</a></Link>
            </p> */}
 
 {/* min-h-screen w-full */}
-{/* flex items-center justify-center */}
-{/* className=" mx-auto p-auto fixed w-2/12 object-center justify-center" */}
+{/* flex items-left justify-left */}
+{/* className=" mx-auto p-auto fixed w-2/12 object-left justify-left" */}
            {/* <div className=" "> */}
            {/* <div className={styles.back}>
            <img className={styles.back}  src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/>
            </div> */}
-           {/* <p className="text-left pt-56 object-center text-base z-50 font-light ">misery is a mental health community and sober rave based in london and led by and for queer, trans, intersex, black people and people of colour (qtibpoc)
+           {/* <p className="text-left pt-56 object-left text-base z-50 font-light ">misery is a mental health community and sober rave based in london and led by and for queer, trans, intersex, black people and people of colour (qtibpoc)
            with lived experience of madness, mental health challenges, time in hospital, addiction, public service use, disability, trauma, medication and ...      
-           <Link  href="#whatwedo"><a className=' hover:text-[#7da392] font-semibold p-4 m-auto items-center justify-evenly  tracking-wide"'>read more ↗</a></Link>
+           <Link  href="#whatwedo"><a className=' hover:text-[#7da392] font-semibold p-4 m-auto items-left justify-evenly  tracking-wide"'>read more ↗</a></Link>
            </p> */}
            {/* <div className="pt-56"><Toolbar /> </div> */}
 
            {/* <div className={styles.back}>
            <Link  href="../"><a className=''><img className={styles.back}  src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/></a></Link>
            </div>
-           <p className="pt-56 text-center object-center text-base z-50 font-light ">misery is a mental health community and sober rave based in london and led by and for queer, trans, intersex, black people and people of colour (qtibpoc)
+           <p className="pt-56 text-left object-left text-base z-50 font-light ">misery is a mental health community and sober rave based in london and led by and for queer, trans, intersex, black people and people of colour (qtibpoc)
            with lived experience of madness, mental health challenges, time in hospital, addiction, public service use, disability, trauma, medication and ...      
-           <Link  href="../../Miserysite#whatwedo"><a className=' hover:text-[#7da392] font-semibold p-4 m-auto items-center justify-evenly  tracking-wide"'>read more ↗</a></Link>
+           <Link  href="../../Miserysite#whatwedo"><a className=' hover:text-[#7da392] font-semibold p-4 m-auto items-left justify-evenly  tracking-wide"'>read more ↗</a></Link>
            </p> 
            <div className=""><Toolbar /> </div> */}
            
            {/* <img className="" src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/> */}
-           {/* <img className="w-5/6 object-center justify-center" src="https://i.ibb.co/qB2YqyQ/MISERY-FAUX-FUR.png"/> */}
-          {/* <p className="text-center object-center font-serif font-light "> u can cry if u want to</p> */}
+           {/* <img className="w-5/6 object-left justify-left" src="https://i.ibb.co/qB2YqyQ/MISERY-FAUX-FUR.png"/> */}
+          {/* <p className="text-left object-left font-serif font-light "> u can cry if u want to</p> */}
           {/* </div> */}
 
 {/* links */}
@@ -125,8 +125,8 @@ export const Pressp = ({ title, bodypanels,  body, bodytwo,
 		<Twitter fontSize="large" />
 		</MuiNextLink>
         </div>
-        <div className=" p-5 m-auto items-center justify-evenly  tracking-wide">
-        <Link  href="./"><a className='  m-auto items-center font-light justify-evenly  tracking-wide'>© Misery 2022</a></Link>
+        <div className=" p-5 m-auto items-left justify-evenly  tracking-wide">
+        <Link  href="./"><a className='  m-auto items-left font-light justify-evenly  tracking-wide'>© Misery 2022</a></Link>
         </div>
   </div> */}
 
@@ -144,8 +144,8 @@ export const Pressp = ({ title, bodypanels,  body, bodytwo,
         <img className={styles.figure2} src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" /> 
         {/* <Toolbar />  */}
 
-        {/* <p className="text-6xl font-semibold text-left text-[#ff00000] justify-center  "> 💧 u can cry if u want to 💧 </p>  */}
-        {/* <p className="text-center object-center pt-20 font-serif font-light "> u can cry if u want to</p> */}
+        {/* <p className="text-6xl font-semibold text-left text-[#ff00000] justify-left  "> 💧 u can cry if u want to 💧 </p>  */}
+        {/* <p className="text-left object-left pt-20 font-serif font-light "> u can cry if u want to</p> */}
         <p className={styles.crytext}> {title}</p> 
 {/* -webkit-text-stroke: 2px black; */}
 
@@ -168,8 +168,18 @@ export const Pressp = ({ title, bodypanels,  body, bodytwo,
         <h1 className=' py-8 tracking-wide  text-5xl font-semibold '>panels </h1>
         </div>
 
+        <section className=' p-5 list-decimal text-left mx-auto  '>
+            {/* <div className={styles.links}> */}
+        <div className="   mx-auto px-0 text-2xl font-light tracking-tighter">
+      <div className="text-left pl-9 mx-auto">
+{/* <Link  href="https://night-embassy.com/berlin/events/1193/-sweetest-taboo-present-mental-health-in-nightlife-panel"><a target="_blank" className='pl-10'>THE YARD ↗</a></Link> */}
+<BlockContent  blocks={bodyfirst} />
+</div>
+{/* </div> */}
+</div>
+</section>
 
-<section className=' p-5 list-decimal text-center mx-auto  '>
+<section className=' p-5 list-decimal text-left mx-auto  '>
             {/* <div className={styles.links}> */}
         <div className="   mx-auto px-0 text-2xl font-light tracking-tighter">
       <div className=" ">
@@ -184,7 +194,7 @@ export const Pressp = ({ title, bodypanels,  body, bodytwo,
 <img className={styles.imgpop} src="http://www.placecage.com/100/100"/>
  </p> */}
 
-<section className=' p-5 list-decimal text-center mx-auto  '>
+<section className=' p-5 list-decimal text-left mx-auto  '>
             {/* <div className={styles.links}> */}
         <div className="   mx-auto px-0 text-2xl font-light tracking-tighter">
       <div className=" ">
@@ -195,17 +205,14 @@ export const Pressp = ({ title, bodypanels,  body, bodytwo,
 {/* </div> */}
 </div>
 </section>
-<section className=' p-5 list-decimal text-center mx-auto  '>
-            {/* <div className={styles.links}> */}
+{/* <section className=' p-5 list-decimal text-left mx-auto  '>
         <div className="   mx-auto px-0 text-2xl font-light tracking-tighter">
       <div className=" ">
-{/* <Link  href="https://www.youtube.com/watchv=saPZI5aNGTw&ab_channel=LewisGBurton"><a target="_blank" className='pl-10'>NIGHT EMBASSY ↗</a></Link> */}
 <Link   href="https://www.youtube.com/watchv=saPZI5aNGTw&ab_channel=LewisGBurton"><a target="_blank" className='pl-10'><span>THE YARD ↗</span><img className={styles.imgpop} src=""/></a></Link>
 </div>
-{/* </div> */}
 </div>
-</section>
-<section className=' p-5 list-decimal text-center mx-auto  '>
+</section> */}
+<section className=' p-5 list-decimal text-left mx-auto  '>
             {/* <div className={styles.links}> */}
         <div className="   mx-auto px-0 text-2xl font-light tracking-tighter">
       <div className=" ">
@@ -216,9 +223,17 @@ export const Pressp = ({ title, bodypanels,  body, bodytwo,
 </div>
 </section>
 
+{/* <section className=' p-5 list-decimal text-left mx-auto  '>
+        <div className="   mx-auto px-0 text-2xl font-light tracking-tighter">
+      <div className=" ">
+<BlockContent className={styles.body} blocks={bodyfirst} />
+</div>
+</div>
+</section> */}
 
-        {/* <div className={`container mx-auto flex items-center  ${styles.wrapper}`}>
-        <div className={"flex-auto flex-col md:flex-row items-center bg-white rounded-xl m-5 p-3 md:m-10 " + styles.shadow}> */}
+
+        {/* <div className={`container mx-auto flex items-left  ${styles.wrapper}`}>
+        <div className={"flex-auto flex-col md:flex-row items-left bg-white rounded-xl m-5 p-3 md:m-10 " + styles.shadow}> */}
         <div className=' text-l  font-light  text-left tracking-wide'>
         <h1 className=' py-8 tracking-wide  text-5xl font-semibold '>press </h1>
           <BlockContent className={styles.body} blocks={bodypanels} />
@@ -227,8 +242,8 @@ export const Pressp = ({ title, bodypanels,  body, bodytwo,
     </div> */}
 
 
-        {/* <div className={`container mx-auto flex items-center  ${styles.wrapper}`}>
-        <div className={"flex-auto flex-col md:flex-row items-center bg-white rounded-xl m-5 p-3 md:m-10 " + styles.shadow}> */}
+        {/* <div className={`container mx-auto flex items-left  ${styles.wrapper}`}>
+        <div className={"flex-auto flex-col md:flex-row items-left bg-white rounded-xl m-5 p-3 md:m-10 " + styles.shadow}> */}
         <div className=' text-l  font-light  text-left tracking-wide'>
         <h1 className=' py-8 tracking-wide  text-5xl font-semibold '>awards</h1>
           <p><BlockContent className={styles.body} blocks={body} /></p>
@@ -237,8 +252,8 @@ export const Pressp = ({ title, bodypanels,  body, bodytwo,
     // </div> */}
 
 
-        {/* <div className={`container mx-auto flex items-center  ${styles.wrapper}`}>
-        <div className={"flex-auto flex-col md:flex-row items-center bg-white rounded-xl m-5 p-3 md:m-10 " + styles.shadow}> */}
+        {/* <div className={`container mx-auto flex items-left  ${styles.wrapper}`}>
+        <div className={"flex-auto flex-col md:flex-row items-left bg-white rounded-xl m-5 p-3 md:m-10 " + styles.shadow}> */}
         <div className=' text-l font-light text-left  tracking-wide'>
         <h1 className=' py-8 tracking-wide  text-5xl font-semibold '>research</h1>
           <BlockContent className={styles.body} blocks={bodytwo} />
@@ -276,17 +291,17 @@ export const Pressp = ({ title, bodypanels,  body, bodytwo,
 
 
       {/* <Toolbar /> */}
-      {/* <h1 className='pt-28  py-8 text-center font-base font-semibold tracking-wide text-5xl border-[.5px] border-[#030303]'>{title}</h1> */}
+      {/* <h1 className='pt-28  py-8 text-left font-base font-semibold tracking-wide text-5xl border-[.5px] border-[#030303]'>{title}</h1> */}
 
       
         {/* <h1>hi</h1> */}
-        {/* <div className='pb-5 p-5 text-center text-xl  relative hidden md:block '>
+        {/* <div className='pb-5 p-5 text-left text-xl  relative hidden md:block '>
         <div className='p-3 m-auto text-xl font-light'>
         {imageUrl && <img className={styles.images} src={imageUrl} />} */}
 
-        {/* <section className=' p-5 list-decimal text-center mx-auto h-2/6 border-[.5px] border-[#030303] '>
+        {/* <section className=' p-5 list-decimal text-left mx-auto h-2/6 border-[.5px] border-[#030303] '>
             <div className={styles.links}>
-        <div className="  text-3xl tracking-wide justify-center mx-auto px-0 p-5 ">
+        <div className="  text-3xl tracking-wide justify-left mx-auto px-0 p-5 ">
       <div className="  p-5 ">
 <Link  href="https://brainchildfestival.co.uk/lineup/rave-to-resist-community-partying-politics/"><a className='pl-10'>BRAINCHILD ↗</a></Link>
 <Link href="https://www.somaskool.com/"><a className='pl-10'>INFERNO ↗</a></Link>
@@ -317,7 +332,7 @@ export const getServerSideProps = async pageContext => {
   }
 
   const query = encodeURIComponent(`*[ _type == "press" && slug.current == "${pageSlug}" ] { 
-    title, body, bodytwo,bodypanels,
+    title, body,bodyfirst, bodytwo,bodypanels,
   
 }`);
 
@@ -339,6 +354,7 @@ export const getServerSideProps = async pageContext => {
         bodytwo: press.bodytwo,
       // bodythree: press.bodythree,
       // imagestwo: press.imagestwo,
+      bodyfirst: press.bodyfirst,
       bodypanels: press.bodypanels,
     //   venue: press.venue,
         // address: press.address,

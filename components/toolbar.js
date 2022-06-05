@@ -132,7 +132,7 @@ export const Toolbar = () => {
   <div className={styles.dropdowncontent}>
   <a><Link href="../eventsupcoming"> now & coming up</Link></a>
   <a><Link href="../eventarchive"> archive </Link></a>
-  <a><Link href="../miserymoods"> misery moods </Link></a>
+  <a><Link href="../miserymoods/misery-mood"> misery moods </Link></a>
   </div>
 </div>
 </div>
@@ -160,7 +160,7 @@ export const Toolbar = () => {
       </div>
     </div>
     </div>
-    
+     
     
     
     {/* press  */}
