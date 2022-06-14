@@ -16,3 +16,7 @@ export default function Model({ ...props }) {
 }
 
 useGLTF.preload('/mislogoae.gltf')
+
+
+
+rsync --archive --chown=gabrielle:gabrielle ~/.ssh /home/gabrielle

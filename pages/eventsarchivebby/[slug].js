@@ -66,7 +66,7 @@ export const Eventsarchivebby = ({ name, description, summary, mainImage, images
           <BlockContent className='pt-5 font-light' blocks={description} />
         </div>
             </div>
-            
+             
 
         <div className={styles.column}>
   <div className={styles.subimagessection}>
