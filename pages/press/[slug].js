@@ -164,6 +164,16 @@ export const Pressp = ({ title, bodyfirst , bodypanels,  body, bodytwo,
 <div className={styles.main}>
 
 
+     {/* <div className={`container mx-auto flex items-left  ${styles.wrapper}`}>
+        <div className={"flex-auto flex-col md:flex-row items-left bg-white rounded-xl m-5 p-3 md:m-10 " + styles.shadow}> */}
+        <div className=' text-l  font-light  text-left tracking-wide'>
+        <h1 className=' py-8 tracking-wide  text-5xl font-semibold '>press </h1>
+          <BlockContent className={styles.body} blocks={bodypanels} />
+        </div>
+        {/* </div>
+    </div> */}
+
+
 <div className=' text-l  font-light indent-5 text-left tracking-wide'>
         <h1 className=' py-8 tracking-wide  text-5xl font-semibold '>panels </h1>
         </div>
@@ -232,14 +242,7 @@ export const Pressp = ({ title, bodyfirst , bodypanels,  body, bodytwo,
 </section> */}
 
 
-        {/* <div className={`container mx-auto flex items-left  ${styles.wrapper}`}>
-        <div className={"flex-auto flex-col md:flex-row items-left bg-white rounded-xl m-5 p-3 md:m-10 " + styles.shadow}> */}
-        <div className=' text-l  font-light  text-left tracking-wide'>
-        <h1 className=' py-8 tracking-wide  text-5xl font-semibold '>press </h1>
-          <BlockContent className={styles.body} blocks={bodypanels} />
-        </div>
-        {/* </div>
-    </div> */}
+     
 
 
         {/* <div className={`container mx-auto flex items-left  ${styles.wrapper}`}>

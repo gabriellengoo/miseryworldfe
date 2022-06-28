@@ -138,7 +138,7 @@ export const videoBlogPost = ({ name, body, bodytwo, bodythree, bodyfour, bodyfi
                       <img src="/2.jpg" alt="image2" />
                   </div> */}
 
-<p className="text-2xl  text-center italic pt-10 font-semibold  "> our story </p> 
+{/* <p className="text-2xl  text-center italic pt-10 font-semibold  "> our story </p>  */}
 
 <div><p className="  text-center text-base  font-light p-5 ">  <BlockContent blocks={body} /> 
 </p> </div>

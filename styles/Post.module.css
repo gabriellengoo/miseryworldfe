@@ -61,13 +61,14 @@
   display: none;
    mix-blend-mode: multiply;
    pointer-events: none;
+   position:relative;
 }
 
 span:hover + .imgpop{
   display: block;
   width: 30vw;
   position:absolute;
-  top:35vh;
+  top:145vh;
   left:35vw;
   z-index: 0;
 }
@@ -101,6 +102,10 @@ span:hover + .imgpop{
 color: #88e3b0;
 }
 
+
+.links{
+  white-space: nowrap
+}
 
 .div a:hover{
   color: #88e3b0;

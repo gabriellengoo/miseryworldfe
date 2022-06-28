@@ -81,7 +81,7 @@ export const Resourcesp = ({ title, phonetextsupport, inperson, communitiesUk, c
 
 <div className=' p-3'>
           <div className='  m-auto text-xl font-light'>
-          <Link href="../resources/resources"><a target="_blank" className=' ' >*click here for resources support* ↗</a></Link>
+          <Link href="../crisis/crisis"><a className=' ' >*IF UR IN CRISIS CLICK HERE* ↗</a></Link>
             </div>
                   
                   <div className='  m-auto text-xl font-light'>
@@ -91,47 +91,48 @@ export const Resourcesp = ({ title, phonetextsupport, inperson, communitiesUk, c
 
 
        
-        <section className=' max-w-2xl list-decimal text-center mx-auto pt-10 text-2xl font-thin '>
+        <section className='  max-w-2xl list-none text-center mx-auto pt-10 text-2xl font-thin '>
             <div className={styles.links}>
         <div className="  text-3xl tracking-wide px-0 ">
       <div className="  ">
-<Link  href="#phonetextsupport"><a className=''>☆ phone/text support ☆</a></Link>
-<Link href="#inperson"><a className=''>☆ in-person london-based support ☆</a></Link>
-<Link href="#communitiesUk"><a className=''>☆ communities & collectives (uk) ☆</a></Link>
+
+<li><Link  href="#phonetextsupport"><a className=''>☆ phone/text support ☆</a></Link></li>
+<li><Link href="#inperson"><a className=''>☆ in-person london-based support ☆</a></Link></li>
+<li><Link href="#communitiesUk"><a className=''>☆ communities & collectives (uk) ☆</a></Link></li>
 <div></div>
-<Link href="#communitiesGlobal"><a className=''>☆ communities & collectives (global) ☆</a></Link>
+<li><Link href="#communitiesGlobal"><a className=''>☆ communities & collectives (global) ☆</a></Link></li>
 <div></div>
-<Link href="#housing"><a className=''>☆ housing (london/uk) ☆</a></Link>
+<li><Link href="#housing"><a className=''>☆ housing (london/uk) ☆</a></Link></li>
 </div>
 </div>
 </div>
 </section>
-<section className=' max-w-2xl list-decimal text-center mx-auto  text-2xl font-thin '>
+<section className=' max-w-2xl list-none text-center mx-auto  text-2xl font-thin '>
             <div className={styles.links}>
         <div className="  text-3xl tracking-wide px-0 ">
       <div className="  ">
-<Link  href="#grief"><a className=''>☆ grief ☆</a></Link>
-<Link href="#sexual"><a className=''>☆ sexual health ☆</a></Link>
-<Link href="#anti"><a className=''>☆ anti-blackness ☆</a></Link>
+      <li><Link  href="#grief"><a className=''>☆ grief ☆</a></Link></li>
+      <li><Link href="#sexual"><a className=''>☆ sexual health ☆</a></Link></li>
+      <li><Link href="#anti"><a className=''>☆ anti-blackness ☆</a></Link></li>
 <div></div>
-<Link href="#fatphobia"><a className=''>☆ fatphobia ☆</a></Link>
+<li><Link href="#fatphobia"><a className=''>☆ fatphobia ☆</a></Link></li>
 <div></div>
-<Link href="#suicide"><a className=''>☆ suicide ☆</a></Link>
+<li><Link href="#suicide"><a className=''>☆ suicide ☆</a></Link></li>
 </div>
 </div>
 </div>
 </section>
-<section className=' max-w-2xl list-decimal text-center mx-auto text-2xl font-thin '>
+<section className=' max-w-2xl list-none text-center mx-auto text-2xl font-thin '>
             <div className={styles.links}>
         <div className="  text-3xl tracking-wide px-0 ">
       <div className="  ">
-<Link  href="#substance"><a className=''>☆ substance use/harm reduction ☆</a></Link>
-<Link href="#lgbtqia"><a className=''>☆ lgbtqia+ & trauma herbalism ☆</a></Link>
-<Link href="#therapy"><a className=''>☆ therapy ☆</a></Link>
+      <li><Link  href="#substance"><a className=''>☆ substance use/harm reduction ☆</a></Link></li>
+      <li><Link href="#lgbtqia"><a className=''>☆ lgbtqia+ & trauma herbalism ☆</a></Link></li>
+      <li><Link href="#therapy"><a className=''>☆ therapy ☆</a></Link></li>
 <div></div>
-<Link href="#queer"><a className=''>☆ queer and trans friendly: moving your body! ☆</a></Link>
+<li><Link href="#queer"><a className=''>☆ queer and trans friendly: moving your body! ☆</a></Link></li>
 <div></div>
-<Link href="#transformative"><a className=''>☆ transformative justice ☆</a></Link>
+<li><Link href="#transformative"><a className=''>☆ transformative justice ☆</a></Link></li>
 </div>
 </div>
 </div>

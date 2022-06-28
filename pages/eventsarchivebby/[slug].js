@@ -9,11 +9,21 @@ import Link from 'next/link';
 import Footer from '../../components/Footer';
 import Image from "../../components/Image";
 import Router from 'next/router'
+import CarouselComponent from "../../components/carousel";
+import ImgPreviewer from'img-previewer'
+import Head from 'next/head';
+import'img-previewer/dist/index.css'
+
+
+
+
+
 
 
 export const Eventsarchivebby = ({ name, description, summary, mainImage, images  }) => {
   const [imageUrl, setImageUrl] = useState('');
 
+  
   useEffect(() => {
     const imgBuilder = imageUrlBuilder({
       projectId: 'jgs4s870',
@@ -22,13 +32,30 @@ export const Eventsarchivebby = ({ name, description, summary, mainImage, images
 
     console.log(images)
     setImageUrl(imgBuilder.image(mainImage));
+
+  
+
     
   }, []);
 
+  
+
+
+
+
+    
+  
+   
   return (
     <div>
       {/* <Toolbar /> */}
-      
+      <Head>
+       {/* <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script> */}
+<title>{name}</title>
+<script  type="module" src="../assets/app.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/img-previewer@2.1.6/dist/img-previewer.min.js" defer></script>
+      </Head>
 
 
       {/* <div className={styles.main}>
@@ -68,13 +95,19 @@ export const Eventsarchivebby = ({ name, description, summary, mainImage, images
             </div>
              
 
+           
+
         <div className={styles.column}>
   <div className={styles.subimagessection}>
-          {images.map(({ _key, asset }, image) => (
+  <CarouselComponent images={images} />
+          {/* {images.map(({ _key, asset }, image) => (
             <Image key={_key} identifier="image" className={styles.imagegallery} image={asset} />
-          ))}
+          ))} */}
         </div>
   </div>
+
+
+
 
 {/* format start */}
       {/* <div  className={styles.main}> */}
@@ -139,10 +172,11 @@ export const Eventsarchivebby = ({ name, description, summary, mainImage, images
 
       <Footer></Footer> 
     </div>
+    );
+  }
 
-    
-  );
-};
+
+
 
 export const getServerSideProps = async pageContext => {
   const pageSlug = pageContext.query.slug;

@@ -164,7 +164,7 @@ export default function Home({ posts }) {
                       <img  className='flex w-12/12 h-auto p-1 float-left hover:z-0 font-italic' src={urlFor(p.mainImage)} /> 
                       <div className=" text-center object-center text-lg z-50 font-semibold ">{p.name}</div>
                       <div className=" text-center object-center text-lg z-50 font-light ">{p.summary}</div>
-                  </div> 
+                  </div>  
             </div>
           )) : <>No Posts Yet</>}
         </div>

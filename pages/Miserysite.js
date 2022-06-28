@@ -68,6 +68,39 @@ export default function Home({ posts }) {
   const router = useRouter();
   const [mappedPosts, setMappedPosts] = useState([]);
 
+  const [data, setData] = useState([ <div className={styles.imgs}>
+    <img className={styles.figure} src="https://i.ibb.co/sFyFWsf/Bald.png"/>
+    <img className={styles.figure2} src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" />
+
+    <img className={styles.figure3} src="https://i.ibb.co/x3yXp21/Misery-Meets2square-copy-2.png" /> 
+    <img className={styles.figure5} src="https://i.ibb.co/VvxBzzg/Misery-Meets2square.png" /> 
+    <img className={styles.figure4} src="https://i.ibb.co/42kZCsV/Miserymeets08-25-Recovered.png" /> 
+    {/* <Toolbar />  */}
+    </div>]);
+
+  const [showAll, setShowAll] = useState(false);
+  const [currentIdx, setCurrentIdx] = useState(0);
+  const [showCurrent, setShowCurrent] = useState(false);
+
+  const toggleAll = () => {
+    setShowAll(val => !val);
+    setShowCurrent(false);
+  };
+
+  const toggleCurrent = () => {
+    if (!showCurrent) {
+      setShowCurrent(true);
+      setShowAll(false);
+      return;
+    }
+  };
+
+  const setCurrent = index => {
+    setCurrentIdx(index);
+    toggleCurrent();
+  };
+
+  
   useEffect(() => {
     if (posts.length) {
       const imgBuilder = imageUrlBuilder({
@@ -96,13 +129,14 @@ export default function Home({ posts }) {
        {/* <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
 <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script> */}
 <title>misery</title>
+<script  type="module" src="../assets/app.js" defer></script>
       </Head>
       <Toolbar />  
 
 
       <img className={styles.swerl} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" /> 
-      <img className={styles.figure} src="https://i.ibb.co/sFyFWsf/Bald.png"/>
-          <img className={styles.figure2} src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" /> 
+      {/* <img className={styles.figure} src="https://i.ibb.co/sFyFWsf/Bald.png"/>
+          <img className={styles.figure2} src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" />  */}
 
 {/* 
 <div className=" h-screen z-0">
@@ -237,10 +271,29 @@ export default function Home({ posts }) {
 
 
         <div className=' pt-10 z-0 pb-5 pl-5 pr-5 top-0 h-screen w-9/12 mx-auto '>
-        <img className={styles.figure} src="https://i.ibb.co/sFyFWsf/Bald.png"/>
-        <img className={styles.figure2} src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" /> 
-        {/* <Toolbar />  */}
 
+        <div>
+      <div>
+        <button className={styles.overlaybut} onClick={toggleAll}>{showAll ? "hide overlay images" : "show overlay images"}</button>
+        {/* <button onClick={() => setCurrent(0)}>First</button> */}
+      </div>
+      <div>
+        {showAll && data.map((el, i) => <p key={`content-${i}`}>{el}</p>)}
+      </div>
+
+      {showCurrent ? <div>{data[currentIdx]}</div> : null}
+    </div>
+
+
+
+          {/* <div className={styles.imgs}>
+        <img className={styles.figure} src="https://i.ibb.co/sFyFWsf/Bald.png"/>
+        <img className={styles.figure2} src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" />
+
+        <img className={styles.figure3} src="https://i.ibb.co/x3yXp21/Misery-Meets2square-copy-2.png" /> 
+        <img className={styles.figure5} src="https://i.ibb.co/VvxBzzg/Misery-Meets2square.png" /> 
+        <img className={styles.figure4} src="https://i.ibb.co/42kZCsV/Miserymeets08-25-Recovered.png" /> 
+        </div> */}
         {/* <p className="text-6xl font-semibold text-left text-[#ff00000] justify-center  "> 💧 u can cry if u want to 💧 </p>  */}
         {/* <p className="text-center object-center pt-20 font-serif font-light "> u can cry if u want to</p> */}
        
@@ -409,12 +462,12 @@ misery is a reminder that you’re not too sensitive, it’s mad out here.</p>
   location="bottom"
   buttonText="Sure babes!!"
   cookieName="myAwesomeCookieName2"
-  style={{ background: "#f7f7f7;" }}
+  style={{ background: "grey" }}
   // fontSize: "13px"
-  box-shadow= "0 -1px 10px 0 rgba(172, 171, 171, 0.3)"
-  color="#000000"
+  boxshadow= "10px 10px lightblue"
+  color="grey"
   font-weight="semibold"
-  buttonStyle={{ color: "#000000;"  }}
+  buttonStyle={{ color: "grey", background: "white" , borderradius: "25px" }}
   expires={150}
 >
   This website uses cookies to enhance the user experience.{" "}

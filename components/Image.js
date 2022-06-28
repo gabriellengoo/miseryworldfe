@@ -11,7 +11,7 @@ const Image = ({ identifier, image }) => {
     </div>
 
     
-  )
+  ) 
 }
 
 export default Image

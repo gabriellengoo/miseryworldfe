@@ -99,12 +99,13 @@ export const Toolbar = () => {
    
    {/* mis home */}
  <div className={styles.back}>
- <img className="pl-2 flex w-2/12 h-auto z-50 duration-500 absolute drop-shadow-[5px_5px_5px_#30ff35] " onClick={() => router.push('../')} src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/>
+ {/* <img className="pl-2 flex w-2/12 h-auto z-50 duration-500 absolute drop-shadow-[5px_5px_5px_#30ff35] " onClick={() => router.push('../')} src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/> */}
+ <img className="pl-2 flex w-2/12 pt-5  h-auto z-50 duration-500 absolute drop-shadow-[5px_5px_5px_black] " onClick={() => router.push('../')} src="https://i.ibb.co/GJvJYg3/misery-logo-1-min.png"/>
 <div className='flex pl-56 pt-5 z-40 overflow-scroll h-min '>
 
 {/* home */}
 {/* <div className=" pt-5 w-12/12 p-5"> */}
-    <img className="pl-2 pt-5 p-5 flex w-2/12 h-1/6  duration-500 hover:drop-shadow-[0_0px_5px_#30ff35] " onClick={() => router.push('/Miserysite')} src="https://i.ibb.co/37Sd6XV/Layer-1.png"/>
+    {/* <img className="pl-2 pt-5 p-5 flex w-2/12 h-1/6  duration-500 hover:drop-shadow-[0_0px_5px_#30ff35] " onClick={() => router.push('/Miserysite')} src="https://i.ibb.co/37Sd6XV/Layer-1.png"/> */}
 {/* </div> */}
 
 {/* about */}
@@ -144,7 +145,18 @@ export const Toolbar = () => {
 
 {/* made by mis */}
 {/* <div className=" pt-5 p-5"> */}
-<img className="pt-10 pl-5   mx-auto w-4/12 h-1/6  duration-500 hover:drop-shadow-[0_0px_5px_green] " onClick={() => router.push('/madebymisery/made-by-misery')} src="https://i.ibb.co/tXp19yy/Layer-4.png"/>
+<div className=" pt-16 w-12/12 p-0">
+        <div className={styles.dropdown}>
+      <button>
+      <img className="  w-[120%] duration-500 hover:drop-shadow-[0_0px_5px_green] " onClick={() => router.push('/madebymisery/made-by-misery')} src="https://i.ibb.co/tXp19yy/Layer-4.png"/>
+      </button>
+      <div className={styles.dropdowncontent}>
+      <a><Link href="../madebymisery/made-by-misery">zine</Link></a>
+      <a><Link href="../mixtapes"> mixtapes </Link></a>
+      <a><Link href="../madebymisery/made-by-misery"> radio </Link></a>
+      </div>
+    </div>
+    </div>
     {/* </div> */}
 
     {/* resorses */}
@@ -154,7 +166,7 @@ export const Toolbar = () => {
       <img className="   duration-500 hover:drop-shadow-[0_0px_5px_#3d9335]"  onClick={() => router.push('/resources/resources-for-qtibpoc-healing')} src="https://i.ibb.co/V25jWY5/Layer-5.png"/>
       </button>
       <div className={styles.dropdowncontent}>
-      <a><Link href="../crisis/crisis">crisis section</Link></a>
+      <a><Link href="../crisis/crisis">crisis</Link></a>
       <a><Link href="../resources/resources-for-qtibpoc-healing"> resources </Link></a>
       <a><Link href="../miserydatabase"> misery’s database </Link></a>
       </div>
@@ -169,9 +181,9 @@ export const Toolbar = () => {
     
     {/* get involed */}
 
-    <img className=" pl-2  pr-2 p-5  pt-10 mx-auto  w-3/12 h-1/6 duration-500 hover:drop-shadow-[0_0px_5px_#3d9335]  " onClick={() => router.push('../getinvolved/get-involved')} src="https://i.ibb.co/s3Mfn3q/Layer-7.png"/>
+    {/* <img className=" pl-2  pr-2 p-5  pt-10 mx-auto  w-3/12 h-1/6 duration-500 hover:drop-shadow-[0_0px_5px_#3d9335]  " onClick={() => router.push('../getinvolved/get-involved')} src="https://i.ibb.co/s3Mfn3q/Layer-7.png"/> */}
  
-        {/* <div className={styles.dropdown}>
+        <div className={styles.dropdown}>
       <button>
       <img className="  pt-10 h-auto mx-auto w-12/12 duration-500 hover:drop-shadow-[0_0px_5px_#3d9335]  " onClick={() => router.push('../getinvolved/get-involved')} src="https://i.ibb.co/s3Mfn3q/Layer-7.png"/>
       </button>
@@ -182,7 +194,7 @@ export const Toolbar = () => {
       <a><Link href="../getinvolved/get-involved"> share our work with a friend </Link></a>
       <a><Link href="../getinvolved/get-involved"> give us feedback </Link></a>
       </div>
-    </div> */}
+    </div>
     
     
     

@@ -27,7 +27,8 @@ export default function FirstPost() {
        {/* <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
 <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script> */}
 <title>Misery</title>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+<script  type="module" src="../assets/app.js" defer></script>
       </Head>
 
 
@@ -40,9 +41,13 @@ export default function FirstPost() {
 <Link  href="./Miserysite"><img className="z-50 text-center pb-20 items-center m-auto w-5/12 hover:w-7/12 duration-500 drop-shadow-[0_0px_5px_#c21b9e] " src="https://i.ibb.co/bQ4n39B/misery-site-slime.png"/></Link>
      */}
 
-{/* -bottom-20  className={styles.das}*/}
+{/* -bottom-20  style="width: 100vw; height: 100vh;" className={styles.das}*/}
 
 
+{/* <div id="myCanvas" className={styles.myCanvas}>
+      <canvas id="defaultCanvas0" className={styles.p5Canvas} >
+      </canvas>
+    </div> */}
 
 {/* <Link  href="./Miserysite"><img className=" overflow-hidden z-50 absolute right-0   p-10  w-4/12 hover:w-5/12 duration-500 hover: drop-shadow-[1rem_1rem_1rem_yellow]" src="https://i.ibb.co/bQ4n39B/misery-site-slime.png"/></Link> */}
 {/* <img className={styles.figuredas} src="https://i.ibb.co/sFyFWsf/Bald.png"/> */}
@@ -71,7 +76,9 @@ export default function FirstPost() {
 
 {/* middle logo */}
 <div>
-<img  className={styles.logomis} src="https://i.ibb.co/qB2YqyQ/MISERY-FAUX-FUR.png"/>
+{/* <img  className={styles.logomis} src="https://i.ibb.co/qB2YqyQ/MISERY-FAUX-FUR.png"/> */}
+<img  className={styles.logomis} src="https://i.ibb.co/GJvJYg3/misery-logo-1-min.png"/>
+
 </div>
 
 
@@ -103,12 +110,16 @@ export default function FirstPost() {
             <img className={styles.decorimage} src="https://i.ibb.co/JyJxKXh/Esther-copy-2-Glow.png" data-spai="1" data-spai-upd="200"/>
         </div>
 
+        <div className={styles.imageleft2}>
+            <img className={styles.decorimage} src="https://i.ibb.co/VvxBzzg/Misery-Meets2square.png" data-spai="1" data-spai-upd="200"/>
+        </div> 
+
 
 {/* bottom poem */}
         <section className=' p-5 flex  justify-center text-center w-6/6 h-screen mx-auto px-0 mix-blend-difference  '>
     <p className=' text-[#515151d3]  text-2xl m-auto p-6 font-normal z-0 h-2/5 w-3/6  overflow-scroll justify-center absolute bottom-0' >
     <p className=' z-0 p-3  '></p>
-    <p className=' text-[#1fd705] ml-0 hover:ml-9 duration-1000 drop-shadow-[1rem_1rem_1rem_yellow] '><i>misery is...</i></p>
+    <p className=' text-[#1fd705] ml-0 hover:ml-9 duration-1000 justify-center text-center drop-shadow-[1rem_1rem_1rem_yellow] fixed'><i>misery is...</i></p>
       <p className=' hover:text-[#1fd705] drop-shadow-[1rem_1rem_1rem_red] hover:font-normal  p-7 m-auto hover:ml-9 duration-1000  '> ＊*•̩̩͙✩•̩̩͙*˚ crying at the party *•̩̩͙✩•̩̩͙*˚＊</p>
       <p className=' hover:text-[#1fd705] drop-shadow-[1rem_1rem_1rem_red] hover:font-normal  p-7  hover:ml-9 duration-1000 '>＊*•̩̩͙✩•̩̩͙*˚ your emotional support stuffed animal that looks more depressed than you do *•̩̩͙✩•̩̩͙*˚</p>
       <p className=' hover:text-[#1fd705] drop-shadow-[1rem_1rem_1rem_red] hover:font-normal  p-7  hover:ml-9 duration-1000 '>＊*•̩̩͙✩•̩̩͙*˚being a fag and a dyke at the same time *•̩̩͙✩•̩̩͙*˚</p>
