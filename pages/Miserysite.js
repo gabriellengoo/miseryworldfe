@@ -69,7 +69,7 @@ export default function Home({ posts }) {
   const [mappedPosts, setMappedPosts] = useState([]);
 
   // <div key={index}>
-  const [data, setData] = useState([ <div  key={index} className={styles.imgs}>
+  const [data, setData] = useState([ <div  key={data} className={styles.imgs}>
     
     <img className={styles.figure} src="https://i.ibb.co/sFyFWsf/Bald.png"/>
     <img className={styles.figure2} src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" />
