@@ -68,7 +68,9 @@ export default function Home({ posts }) {
   const router = useRouter();
   const [mappedPosts, setMappedPosts] = useState([]);
 
-  const [data, setData] = useState([ <div className={styles.imgs}>
+  // <div key={index}>
+  const [data, setData] = useState([ <div  key={index} className={styles.imgs}>
+    
     <img className={styles.figure} src="https://i.ibb.co/sFyFWsf/Bald.png"/>
     <img className={styles.figure2} src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" />
 
@@ -77,6 +79,7 @@ export default function Home({ posts }) {
     <img className={styles.figure4} src="https://i.ibb.co/42kZCsV/Miserymeets08-25-Recovered.png" /> 
     {/* <Toolbar />  */}
     </div>]);
+    // </div>
 
   const [showAll, setShowAll] = useState(false);
   const [currentIdx, setCurrentIdx] = useState(0);
