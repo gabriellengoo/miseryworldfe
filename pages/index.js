@@ -26,7 +26,7 @@ export default function FirstPost() {
       {/* absolute   bottom-0 justify-evenly */}
        {/* <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
 <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script> */}
-<title>Misery</title>
+<title>misery ♡ </title>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
 <script  type="module" src="../assets/app.js" defer></script>
       </Head>
@@ -83,6 +83,7 @@ export default function FirstPost() {
 
 
         <img className={styles.swerldas} src="https://i.ibb.co/ZR9zG0V/Miserymeets09-29-Family.png" /> 
+        {/* <img className={styles.swerldas2} src="https://i.ibb.co/B2Rcd4b/Misery-Meets-Confidence-11-24-2020.png" />  */}
 
 
 
@@ -107,7 +108,8 @@ export default function FirstPost() {
         </div>
     
         <div className={styles.imageleft}>
-            <img className={styles.decorimage} src="https://i.ibb.co/JyJxKXh/Esther-copy-2-Glow.png" data-spai="1" data-spai-upd="200"/>
+            {/* <img className={styles.decorimage} src="https://i.ibb.co/JyJxKXh/Esther-copy-2-Glow.png" data-spai="1" data-spai-upd="200"/> */}
+            <img className={styles.decorimage} src="https://i.ibb.co/TKVh7wG/Misery-Meets-Confidence-11-24-2020-1.png" data-spai="1" data-spai-upd="200"/>
         </div>
 
         <div className={styles.imageleft2}>
@@ -117,7 +119,7 @@ export default function FirstPost() {
 
 {/* bottom poem */}
         <section className=' p-5 flex  justify-center text-center w-6/6 h-screen mx-auto px-0 mix-blend-difference  '>
-    <p className=' text-[#515151d3]  text-2xl m-auto p-6 font-normal z-0 h-2/5 w-3/6  overflow-scroll justify-center absolute bottom-0' >
+    <p className=' text-[#515151d3]  text-2xl m-auto p-6 font-normal z-0 h-3/5 w-3/6  overflow-scroll justify-center absolute bottom-0' >
     <p className=' z-0 p-3  '></p>
     <p className=' text-[#1fd705] ml-0 hover:ml-9 duration-1000 justify-center text-center drop-shadow-[1rem_1rem_1rem_yellow] fixed'><i>misery is...</i></p>
       <p className=' hover:text-[#1fd705] drop-shadow-[1rem_1rem_1rem_red] hover:font-normal  p-7 m-auto hover:ml-9 duration-1000  '> ＊*•̩̩͙✩•̩̩͙*˚ crying at the party *•̩̩͙✩•̩̩͙*˚＊</p>

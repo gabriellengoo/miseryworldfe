@@ -217,6 +217,10 @@ export const Madebymisery = ({ title, body, bodytwo,
             </div>
  */}
 
+<div className='z-0  pt-5 mx-auto w-12/12'>
+                      <img src="https://i.ibb.co/6tzptwJ/radio3-1.jpg" alt="miseryparty" />
+                  </div>
+
             <div id="radio" className=' m-auto font-light'>
         <h1 className="flex-none pt-10 text-left justify-center font-semibold border-b-[.5px] text-5xl tracking-wide">radio</h1>
         <p className='text-left justify-center font-base '><BlockContent blocks={bodythree} /></p>

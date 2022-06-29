@@ -138,7 +138,7 @@ export default function Home({ posts }) {
     </div> */}
 
 {/* -------------------------------------------- left */}
-        <div className=' pt-36 mx-auto  z-0 p-5 top-0 h-screen w-9/12'>
+        <div className=' pt-36 mx-auto  z-0 p-5 top-0 w-9/12'>
           
         <img className={styles.figure} src="https://i.ibb.co/sFyFWsf/Bald.png"/>
         <img className={styles.figure2} src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" /> 
@@ -148,11 +148,12 @@ export default function Home({ posts }) {
         {/* <p className="text-center object-center font-light "> now & coming up</p> */}
 
 
-
+        <div className='pt-60'>
+<div className={styles.wrapper}>
         <p className={styles.crytext2}> archive </p> 
         <div className='w-9/12 flex'>
-        <Link  href="./eventsupcoming"><a className=" w-1/6 hover:underline float-left italic text-left font-base text-[black] justify-center text-3xl pb-10 no-underline  ">events</a></Link>
-        <Link href="./"><a className="  w-1/6 underline float-right text-[#1b1b1b] hover:text-[black]  text-3xl ">archive</a></Link>
+        <Link  href="./eventsupcoming"><a className=" w-1/6  float-left italic text-left font-base text-[#e5e5e5] justify-center text-3xl pb-10 no-underline  ">events</a></Link>
+        <Link href="./"><a className="  w-1/6 float-right text-[#1b1b1b] hover:text-[#e5e5e5]  text-3xl ">archive</a></Link>
          </div>
 
         <div className=' container grid grid-cols-3 gap-1 mx-auto '>
@@ -161,7 +162,7 @@ export default function Home({ posts }) {
               <div className='z-0'>
                 {/* hover:saturate-50 w-96  hover:z-0 */}
                       {/* <img  className='flex w-12/12 h-auto p-1 float-left hover:z-0 font-italic' src={p.mainImage} /> */}
-                      <img  className='flex w-12/12 h-auto p-1 float-left hover:z-0 font-italic' src={urlFor(p.mainImage)} /> 
+                      <img  className='flex w-12/12 rounded-[30px] h-auto p-1 float-left hover:z-0 font-italic' src={urlFor(p.mainImage)} /> 
                       <div className=" text-center object-center text-lg z-50 font-semibold ">{p.name}</div>
                       <div className=" text-center object-center text-lg z-50 font-light ">{p.summary}</div>
                   </div>  
@@ -175,7 +176,8 @@ export default function Home({ posts }) {
             </div>
             {/* <FooterComponent></FooterComponent>  */}
   {/* </div> */}
-
+  </div>
+  </div>
   </section>
 
   <Footer></Footer>

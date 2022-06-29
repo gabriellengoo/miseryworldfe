@@ -101,7 +101,7 @@ export const Toolbar = () => {
  <div className={styles.back}>
  {/* <img className="pl-2 flex w-2/12 h-auto z-50 duration-500 absolute drop-shadow-[5px_5px_5px_#30ff35] " onClick={() => router.push('../')} src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/> */}
  <img className="pl-2 flex w-2/12 pt-5  h-auto z-50 duration-500 absolute drop-shadow-[5px_5px_5px_black] " onClick={() => router.push('../')} src="https://i.ibb.co/GJvJYg3/misery-logo-1-min.png"/>
-<div className='flex pl-56 pt-5 z-40 overflow-scroll h-min '>
+<div className='flex pl-56 pt-5 z-40 overflow-scroll h-min  '>
 
 {/* home */}
 {/* <div className=" pt-5 w-12/12 p-5"> */}
@@ -109,10 +109,10 @@ export const Toolbar = () => {
 {/* </div> */}
 
 {/* about */}
-<div className=" pt-5 w-12/12 p-5">
+<div className=" pt-5 w-12/12 ">
     <div className={styles.dropdown}>
   <button>
-  <img className=" pl-2 pt-5 w-12/12 h-auto duration-500 hover:drop-shadow-[0_0px_5px_#3d9335] " onClick={() => router.push('/videoBlogPost/our-story')} src="https://i.ibb.co/DMmhFb6/Layer-2.png"/>
+  <img className=" pt-5 flex p-5 mx-auto  w-[100%] h-auto duration-500 hover:drop-shadow-[0_0px_5px_#479ab3] " onClick={() => router.push('/videoBlogPost/our-story')} src="https://i.ibb.co/DMmhFb6/Layer-2.png"/>
   </button>
   <div className={styles.dropdowncontent}>
   <a><Link href="../Miserysite#whatismisery"> what is misery?</Link></a>
@@ -125,10 +125,10 @@ export const Toolbar = () => {
 </div>
 
 {/* events */}
-<div className=" pt-6 w-12/12 p-4">
+<div className=" pt-6 w-12/12 ">
 <div className={styles.dropdown}>
   <button>
-  <img className="  pl-2 pt-5  h-auto duration-500 hover:drop-shadow-[0_0px_5px_#3d9335]" onClick={() => router.push('/eventsupcoming')} src="https://i.ibb.co/PC6ndJ5/Layer-3.png"/>
+  <img className="  pt-5 flex pr-5 mx-auto  w-[100%]  h-auto duration-500 hover:drop-shadow-[0_0px_5px_#479ab3]" onClick={() => router.push('/eventsupcoming')} src="https://i.ibb.co/PC6ndJ5/Layer-3.png"/>
   </button>
   <div className={styles.dropdowncontent}>
   <a><Link href="../eventsupcoming"> now & coming up</Link></a>
@@ -145,10 +145,10 @@ export const Toolbar = () => {
 
 {/* made by mis */}
 {/* <div className=" pt-5 p-5"> */}
-<div className=" pt-16 w-12/12 p-0">
-        <div className={styles.dropdown}>
+<div className=" pt-10 w-[150%] p-0">
+        <div className={styles.dropdownmade}>
       <button>
-      <img className="  w-[120%] duration-500 hover:drop-shadow-[0_0px_5px_green] " onClick={() => router.push('/madebymisery/made-by-misery')} src="https://i.ibb.co/tXp19yy/Layer-4.png"/>
+      <img  className="  w-[150%] duration-500 hover:drop-shadow-[0_0px_5px_#479ab3]" onClick={() => router.push('/madebymisery/made-by-misery')} src="https://i.ibb.co/MDm69D9/MISERY-Instagram-Square2.png"/>
       </button>
       <div className={styles.dropdowncontent}>
       <a><Link href="../madebymisery/made-by-misery">zine</Link></a>
@@ -159,11 +159,11 @@ export const Toolbar = () => {
     </div>
     {/* </div> */}
 
-    {/* resorses */}
-    <div className=" pt-16 w-12/12 p-5">
+    {/* resorses */} 
+    <div className=" pt-16 pl-28 w-12/12 p-5">
         <div className={styles.dropdown}>
       <button>
-      <img className="   duration-500 hover:drop-shadow-[0_0px_5px_#3d9335]"  onClick={() => router.push('/resources/resources-for-qtibpoc-healing')} src="https://i.ibb.co/V25jWY5/Layer-5.png"/>
+      <img className="   duration-500 hover:drop-shadow-[0_0px_5px_#479ab3]"  onClick={() => router.push('/resources/resources-for-qtibpoc-healing')} src="https://i.ibb.co/V25jWY5/Layer-5.png"/>
       </button>
       <div className={styles.dropdowncontent}>
       <a><Link href="../crisis/crisis">crisis</Link></a>
@@ -177,15 +177,15 @@ export const Toolbar = () => {
     
     {/* press  */}
     
-        <img className="pt-10 flex p-5 pl-auto mx-auto  w-2/12 h-1/6   duration-500 hover:drop-shadow-[0_0px_5px_red] " onClick={() => router.push('../press/press')} src="https://i.ibb.co/mCW1MxP/Layer-6.png"/>
+        <img className="pt-14 flex p-5 pl-auto mx-auto  w-[13%] h-1/6   duration-500 hover:drop-shadow-[0_0px_5px_#479ab3] " onClick={() => router.push('../press/press')} src="https://i.ibb.co/mCW1MxP/Layer-6.png"/>
     
     {/* get involed */}
 
     {/* <img className=" pl-2  pr-2 p-5  pt-10 mx-auto  w-3/12 h-1/6 duration-500 hover:drop-shadow-[0_0px_5px_#3d9335]  " onClick={() => router.push('../getinvolved/get-involved')} src="https://i.ibb.co/s3Mfn3q/Layer-7.png"/> */}
  
-        <div className={styles.dropdown}>
+        <div className={styles.dropdownmade}>
       <button>
-      <img className="  pt-10 h-auto mx-auto w-12/12 duration-500 hover:drop-shadow-[0_0px_5px_#3d9335]  " onClick={() => router.push('../getinvolved/get-involved')} src="https://i.ibb.co/s3Mfn3q/Layer-7.png"/>
+      <img className="  pt-14 h-auto mx-auto w-12/12 duration-500 hover:drop-shadow-[0_0px_5px_#479ab3]  " onClick={() => router.push('../getinvolved/get-involved')} src="https://i.ibb.co/s3Mfn3q/Layer-7.png"/>
       </button>
       <div className={styles.dropdowncontent}>
       <a><Link href="../getinvolved/get-involved"> join the team</Link></a>
@@ -199,17 +199,17 @@ export const Toolbar = () => {
     
     
     {/* contact */}
-        <img className="pt-10 p-5 flex pl-auto mx-auto  w-2/12 h-1/6  duration-500 hover:drop-shadow-[0_0px_5px_yellow] " onClick={() => router.push('/contact/contact')} src="https://i.ibb.co/6FJhfp7/Layer-8.png"/>
+        <img className="pt-10 p-5 flex pl-auto mx-auto  w-[15%] h-1/6  duration-500 hover:drop-shadow-[0_0px_5px_#479ab3] " onClick={() => router.push('/contact/contact')} src="https://i.ibb.co/6FJhfp7/Layer-8.png"/>
     
     {/* shop */}
-        <img className="pt-5 p-5 flex pl-auto mx-auto  w-2/12 h-1/6  duration-500 hover:drop-shadow-[0_0px_5px_yellow]] " onClick={() => router.push('/Shop')} src="https://i.ibb.co/g7LwM63/Layer-9.png"/>
+        <img className="pt-8 p-5 flex  mx-auto  w-[12%] h-1/6  duration-500 hover:drop-shadow-[0_0px_5px_#479ab3] " onClick={() => router.push('/Shop')} src="https://i.ibb.co/g7LwM63/Layer-9.png"/>
         
     {/* <img className="pt-5 pl-5 flex w-4/12 h-1/6  duration-500 hover:drop-shadow-[0_0px_5px_green] " onClick={() => router.push('/madebymisery/made-by-misery')} src="https://i.ibb.co/tXp19yy/Layer-4.png"/>
     <img className="pt-5 pl-5 flex  w-3/12 h-1/6  duration-500 hover:drop-shadow-[0_0px_5px_#3d9335]"  onClick={() => router.push('/resources/resources-for-qtibpoc-healing')} src="https://i.ibb.co/V25jWY5/Layer-5.png"/>
     <img className="pt-5 pl-5 flex w-2/12 h-1/6   duration-500 hover:drop-shadow-[0_0px_5px_red] " onClick={() => router.push('../press/press')} src="https://i.ibb.co/mCW1MxP/Layer-6.png"/>
     <img className="pt-5 pl-5 flex w-3/12 h-1/6  duration-500 hover:drop-shadow-[0_0px_5px_pink]  " onClick={() => router.push('../getinvolved/get-involved')} src="https://i.ibb.co/s3Mfn3q/Layer-7.png"/>
-    <img className="pt-5 pl-5 flex w-2/12 h-1/6  duration-500 hover:drop-shadow-[0_0px_5px_yellow] " onClick={() => router.push('/contact/contact')} src="https://i.ibb.co/6FJhfp7/Layer-8.png"/>
-    <img className=" pt-2 pl-2 flex w-1/12 h-1/6   duration-500 hover:drop-shadow-[0_0px_5px_blue] " onClick={() => router.push('/Shop')} src="https://i.ibb.co/g7LwM63/Layer-9.png"/> */}
+    <img className="pt-5 pl-5 flex w-2/12 h-1/6  duration-500 hover:drop-shadow-[0_0px_5px_#479ab3] " onClick={() => router.push('/contact/contact')} src="https://i.ibb.co/6FJhfp7/Layer-8.png"/>
+    <img className=" pt-2 pl-2 flex w-1/12 h-1/6   duration-500 hover:drop-shadow-[0_0px_5px_#479ab3] " onClick={() => router.push('/Shop')} src="https://i.ibb.co/g7LwM63/Layer-9.png"/> */}
     </div>
     </div>
     </div>
@@ -231,8 +231,8 @@ export const Toolbar = () => {
     <img className="p-5 flex  w-2/12 h-1/6 rotate-2  duration-500 hover:drop-shadow-[0_0px_5px_#3d9335]"  onClick={() => router.push('/resources/resources-for-qtibpoc-healing')} src="https://i.ibb.co/V25jWY5/Layer-5.png"/>
     <img className="p-4 flex w-1/12 h-1/6   duration-500 hover:drop-shadow-[0_0px_5px_red] " onClick={() => router.push('../press/press')} src="https://i.ibb.co/mCW1MxP/Layer-6.png"/>
     <img className="p-4 flex w-8/12 h-1/6  duration-500 hover:drop-shadow-[0_0px_5px_pink]  " onClick={() => router.push('../getinvolved/get-involved')} src="https://i.ibb.co/s3Mfn3q/Layer-7.png"/>
-    <img className="p-4 flex w-8/12 h-1/6  duration-500 hover:drop-shadow-[0_0px_5px_yellow] " onClick={() => router.push('/contact/contact')} src="https://i.ibb.co/6FJhfp7/Layer-8.png"/>
-    <img className=" p-4 flex w-1/12 h-1/6   duration-500 hover:drop-shadow-[0_0px_5px_blue] " onClick={() => router.push('/Shop')} src="https://i.ibb.co/g7LwM63/Layer-9.png"/>
+    <img className="p-4 flex w-8/12 h-1/6  duration-500 hover:drop-shadow-[0_0px_5px_#479ab3] " onClick={() => router.push('/contact/contact')} src="https://i.ibb.co/6FJhfp7/Layer-8.png"/>
+    <img className=" p-4 flex w-1/12 h-1/6   duration-500 hover:drop-shadow-[0_0px_5px_#479ab3] " onClick={() => router.push('/Shop')} src="https://i.ibb.co/g7LwM63/Layer-9.png"/>
    
     </div>
     </div> */}

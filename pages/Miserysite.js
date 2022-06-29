@@ -38,7 +38,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import MuiNextLink from "../components/MuiNextLink"
 import { Facebook, Instagram, Twitter } from "@mui/icons-material";
-
+import CarouselComponent from "../components/carousel";
 
 // export default function MiserySite() {
   
@@ -69,17 +69,6 @@ export default function Home({ posts }) {
   const [mappedPosts, setMappedPosts] = useState([]);
 
   // <div  key={data}>
-  const  [data, setData] = useState([ <div className={styles.imgs}>
-    {/* <div  key={`content-${i}`}> */}
-    <img className={styles.figure} src="https://i.ibb.co/sFyFWsf/Bald.png"/>
-    <img className={styles.figure2} src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" />
-
-    <img className={styles.figure3} src="https://i.ibb.co/x3yXp21/Misery-Meets2square-copy-2.png" /> 
-    <img className={styles.figure5} src="https://i.ibb.co/VvxBzzg/Misery-Meets2square.png" /> 
-    <img className={styles.figure4} src="https://i.ibb.co/42kZCsV/Miserymeets08-25-Recovered.png" /> 
-    {/* <Toolbar />  */}
-    {/* </div> */}
-    </div>]);
    
 
   const [showAll, setShowAll] = useState(false);
@@ -125,7 +114,16 @@ export default function Home({ posts }) {
     }
   }, [posts]);
 
-  
+  // const [data, setData] = useState([ <div className={styles.imgs}>
+  //   <img className={styles.figure} src="https://i.ibb.co/sFyFWsf/Bald.png"/>
+  //   <img className={styles.figure2} src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" />
+
+  //   <img className={styles.figure3} src="https://i.ibb.co/x3yXp21/Misery-Meets2square-copy-2.png" /> 
+  //   <img className={styles.figure5} src="https://i.ibb.co/VvxBzzg/Misery-Meets2square.png" /> 
+  //   <img className={styles.figure4} src="https://i.ibb.co/42kZCsV/Miserymeets08-25-Recovered.png" /> 
+  //   </div>]);
+
+
   return (
 <Layout>
    
@@ -133,7 +131,11 @@ export default function Home({ posts }) {
        {/* <script src="https://unpkg.com/react@16.12.0/umd/react.development.js"></script>
 <script src="https://unpkg.com/react-dom@16.12.0/umd/react-dom.development.js"></script> */}
 <title>misery</title>
-<script  type="module" src="../assets/app.js" defer></script>
+
+
+<script type="text/javascript" src="https://unpkg.com/jquery@1.11.1/dist/jquery.js" defer></script>
+<script type="module" src="../assets/app.js" defer></script>
+
       </Head>
       <Toolbar />  
 
@@ -160,8 +162,6 @@ export default function Home({ posts }) {
     </div>
     </div> */}
 
-
-
       {/* <ReactDimmer isOpen={isMenuOpen} exitDimmer={setMenuOpen} /> */}
      {/* <div className=' h-screen'>
      <h1 className='text-7xl'>hii</h1>
@@ -173,7 +173,6 @@ export default function Home({ posts }) {
 
 <section className="h-screen relative hidden md:block">
 {/* <img className=" w-2/6 absolute drop-shadow-[0_0px_5px_red]" src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" />  */}
-
 
 
 
@@ -262,42 +261,74 @@ export default function Home({ posts }) {
 
 
 
-        <div >
+        <div>
+    
+
+
+{/* -------------old---------- */}
         <div className='pt-36 flex p-10 pb-0 mx-auto '>
           {mappedPosts.length ? mappedPosts.map((p, index) => (
             <div key={index}>
               <div className='z-0'>
-                      <img className='mx-auto  w-[55rem] p-1 ' src={p.image} />
+                      <img className='mx-auto rounded-[30px]  w-[55rem] p-1 ' src={p.image} />
                   </div>
             </div>
           )) : <>No Posts Yet</>}
         </div>
 
+{/* className={styles.overlaypictop} pt-[85vh]*/}
+{/* old  <div className=' pt-10 z-0 pb-5 pl-5 pr-5 top-0 h-screen w-9/12 mx-auto '> */}
+        <div className=' z-0 pb-5 pl-5 pr-5 top-0 h-screen w-9/12 mx-auto '>
 
-        <div className=' pt-10 z-0 pb-5 pl-5 pr-5 top-0 h-screen w-9/12 mx-auto '>
+    
+        {/* <div className= ' z-[-10] top-0 left-0 fixed h-screen w-screen overflow-hidden '>
+          {mappedPosts.length ? mappedPosts.map((p, index) => (
+            <div key={index}>
+              <div className='z-0'>
+                      <img className=' z-[-10] h-[130vh] ' src={p.image} />
+                  </div>
+            </div>
+          )) : <>No Posts Yet</>}
+        </div> */}
 
-        <div>
-      <div>
-        <button className={styles.overlaybut} onClick={toggleAll}>{showAll ? "hide overlay images" : "show overlay images"}</button>
-        {/* <button onClick={() => setCurrent(0)}>First</button> */}
-      </div>
-      <div>
-        {showAll && data.map((el, i) => <p key={`content-${i}`}>{el}</p>)}
-      </div>
+    {/* <button id="nightModeButton" class="menu-item button">
+				<span class="nightModeButton__inner--night only-visible-in-day-mode">
+					<svg xmlns="http://www.w3.org/2000/svg" width="34.512" height="34.509" viewBox="0 0 34.512 34.509">
+  <g id="noun_Moon_805540" transform="translate(-6.996 -6.999)">
+    <g id="Group_147" data-name="Group 147" transform="translate(6.996 6.999)">
+      <path id="Path_111" data-name="Path 111" d="M18.081,959.362a1.206,1.206,0,0,0-.364.075C10.911,961.96,7,968.57,7,976.1A17.788,17.788,0,0,0,24.764,993.87c7.532,0,14.142-3.915,16.665-10.721a1.2,1.2,0,0,0-1.58-1.542,15.1,15.1,0,0,1-5.655,1.066c-8.315,0-16-7.7-16-16.013A15.094,15.094,0,0,1,19.247,961a1.2,1.2,0,0,0-1.166-1.643Zm-1.843,3.461a17.983,17.983,0,0,0-.451,3.837c0,9.766,8.642,18.42,18.408,18.42a18.127,18.127,0,0,0,3.825-.439c-2.64,4.352-7.506,6.821-13.254,6.821A15.344,15.344,0,0,1,9.4,976.1c0-5.759,2.467-10.643,6.834-13.279Z" transform="translate(-6.996 -959.361)"></path>
+    </g>
+  </g>
+</svg>
+				</span>
+				<span class="nightModeButton__inner--day only-visible-in-night-mode">
+					<svg xmlns="http://www.w3.org/2000/svg" width="36.511" height="38.22" viewBox="0 0 36.511 38.22">
+  <g id="noun_sun_1479843" transform="translate(0)">
+    <path id="Path_60" data-name="Path 60" d="M12.532,24.961A10.962,10.962,0,1,0,23.494,14,10.974,10.974,0,0,0,12.532,24.961Zm18.624,0A7.662,7.662,0,1,1,23.494,17.3,7.671,7.671,0,0,1,31.157,24.961Z" transform="translate(-5.238 -5.852)"></path>
+    <path id="Path_61" data-name="Path 61" d="M31.1,55.281a1.65,1.65,0,0,0-2.572,1.368v2.91c0,.055.011.108.016.162a1.679,1.679,0,0,0,.017.17c.009.042.026.081.038.122a1.011,1.011,0,0,0,.154.363c.02.034.034.072.057.1a1.649,1.649,0,0,0,3.018-.922V56.65A1.648,1.648,0,0,0,31.1,55.281Z" transform="translate(-11.926 -22.989)"></path>
+    <path id="Path_62" data-name="Path 62" d="M53.958,24.928a1.647,1.647,0,0,0,.51-.081l2.767-.9a1.65,1.65,0,0,0-1.02-3.138l-2.767.9a1.65,1.65,0,0,0,.51,3.219Z" transform="translate(-21.864 -8.664)"></path>
+    <path id="Path_63" data-name="Path 63" d="M3.908,37.806l-2.767.9A1.65,1.65,0,1,0,2.16,41.843l2.767-.9a1.65,1.65,0,0,0-1.019-3.138Z" transform="translate(0 -15.768)"></path>
+    <path id="Path_64" data-name="Path 64" d="M46.211,50.906a1.65,1.65,0,0,0-2.67,1.939l1.71,2.354a1.65,1.65,0,0,0,2.67-1.939Z" transform="translate(-18.068 -20.994)"></path>
+    <path id="Path_65" data-name="Path 65" d="M12.924,10.7a1.65,1.65,0,0,0,2.67-1.939l-1.71-2.354a1.65,1.65,0,0,0-2.67,1.939Z" transform="translate(-4.555 -2.395)"></path>
+    <path id="Path_66" data-name="Path 66" d="M15.228,50.541a1.651,1.651,0,0,0-2.3.365l-1.71,2.354a1.65,1.65,0,1,0,2.67,1.939l1.71-2.354A1.65,1.65,0,0,0,15.228,50.541Z" transform="translate(-4.555 -20.994)"></path>
+    <path id="Path_67" data-name="Path 67" d="M47.556,6.044a1.651,1.651,0,0,0-2.3.365L43.541,8.764a1.65,1.65,0,1,0,2.67,1.939l1.711-2.354A1.65,1.65,0,0,0,47.556,6.044Z" transform="translate(-18.068 -2.395)"></path>
+    <path id="Path_68" data-name="Path 68" d="M1.141,23.948l2.767.9a1.65,1.65,0,0,0,1.02-3.138l-2.767-.9a1.65,1.65,0,0,0-1.02,3.138Z" transform="translate(0 -8.664)"></path>
+    <path id="Path_69" data-name="Path 69" d="M57.235,38.7l-2.767-.9a1.65,1.65,0,0,0-1.02,3.138l2.767.9a1.65,1.65,0,0,0,1.02-3.138Z" transform="translate(-21.864 -15.768)"></path>
+    <path id="Path_70" data-name="Path 70" d="M30.182,6.209a1.65,1.65,0,0,0,1.65-1.65V1.65h0a1.65,1.65,0,0,0-3.3,0h0V4.559A1.65,1.65,0,0,0,30.182,6.209Z" transform="translate(-11.926)"></path>
+  </g>
+</svg>
+				</span>
+			</button> */}
 
-      {showCurrent ? <div>{data[currentIdx]}</div> : null}
-    </div>
 
-
-
-          {/* <div className={styles.imgs}>
+          <div className={styles.imgs}>
         <img className={styles.figure} src="https://i.ibb.co/sFyFWsf/Bald.png"/>
         <img className={styles.figure2} src="https://i.ibb.co/Q6g7Tk0/Masturbator-White-Thick-Transparent.png" />
 
         <img className={styles.figure3} src="https://i.ibb.co/x3yXp21/Misery-Meets2square-copy-2.png" /> 
         <img className={styles.figure5} src="https://i.ibb.co/VvxBzzg/Misery-Meets2square.png" /> 
         <img className={styles.figure4} src="https://i.ibb.co/42kZCsV/Miserymeets08-25-Recovered.png" /> 
-        </div> */}
+        </div>
         {/* <p className="text-6xl font-semibold text-left text-[#ff00000] justify-center  "> 💧 u can cry if u want to 💧 </p>  */}
         {/* <p className="text-center object-center pt-20 font-serif font-light "> u can cry if u want to</p> */}
        
@@ -315,7 +346,11 @@ export default function Home({ posts }) {
         </div> */}
 
 {/*  */}
+<div>
+{/* <img  className={styles.logomis} src="https://i.ibb.co/qB2YqyQ/MISERY-FAUX-FUR.png"/> */}
+{/* <img  className={styles.logomis2} src="https://i.ibb.co/GJvJYg3/misery-logo-1-min.png"/> */}
 
+</div>
 
 {/* <div className='flex pt-5'>
                   <div className='z-0  p-1 w-6/12'>
@@ -326,7 +361,7 @@ export default function Home({ posts }) {
                   </div>
 </div> */}
 
-
+{/* <div className={styles.crytextdown}><p className={styles.crytextdownarr}> ↓ </p>  </div>  */}
 <p className={styles.crytext4}> u can cry if u want to 🥲 </p> 
 
 {/* <p className="text-left pt-10 object-center text-base z-50 font-light ">ok so here’s the story so far. misery was created in late 2018 by aisha mirza and babetheory. we were frustrated with how unwell us and our friends were and how little support was accessible to us. we had dealt with the suicide of friends and other qtibpoc, our own suicidality and chronic mental health struggles, and the addiction issues that famously taunt the qtibpoc community were feeling all too close to home ...      
@@ -344,6 +379,20 @@ export default function Home({ posts }) {
 </div> */}
 
 
+<div className={styles.wrapper}>
+
+<div>
+      {/* <div>
+        <button className={styles.overlaybut} onClick={toggleAll}>{showAll ? "hide overlay images" : "show overlay images"}</button>
+      </div>
+      <div>
+        {showAll && data.map((el, i) => <p key={`content-${i}`}>{el}</p>)}
+      </div> */}
+
+      {/* {showCurrent ? <div>{data[currentIdx]}</div> : null} */}
+    </div>
+
+    
 <div className=" pt-10 list-[none] text-center max-w-3xl object-center mx-auto text-4xl font-thin  ">
       <Link  href="#whatismisery"><a className=' hover:text-[#cccccca5]'>☆ what is misery? </a></Link>
 <Link href="#whatwedo"><a className=' hover:text-[#cccccca5] '>☆ what we do </a></Link>
@@ -379,7 +428,15 @@ misery is a reminder that you’re not too sensitive, it’s mad out here.</p>
                       <img src="/3.jpg" alt="miseryparty" />
                   </div> */}
 
-<div className=' z-0 top-0 cursor-grabbing h-auto pt-5 overflow-hidden'>
+
+{/* 
+<div className={styles.column}>
+  <div className={styles.subimagessection}>
+  <CarouselComponent images={images} />
+        </div>
+  </div> */}
+
+{/* <div className=' z-0 top-0  rounded-[30px] cursor-grabbing h-auto pt-5 overflow-hidden'>
               <Carousel  zIndex={-2}  dynamicHeight={false} minHeight={5} interval={4000} showThumbs={false} showIndicators={false} showArrows={false} infiniteLoop={true} emulateTouch={true} swipeable={true} autoPlay >
                 
                 
@@ -401,7 +458,7 @@ misery is a reminder that you’re not too sensitive, it’s mad out here.</p>
   
                   </div>
               </Carousel>
-            </div>
+            </div> */}
 
 {/* our goals */}
 <section id="ourgoals">
@@ -446,7 +503,7 @@ misery is a reminder that you’re not too sensitive, it’s mad out here.</p>
        
 </section>
 </div>
-
+</div>
 
 {/* <p className=' pt-20 overflow-hidden text-4xl font-semibold  m-auto items-center justify-evenly  tracking-wide '> latest events </p>
 <Link  href="../../eventsupcoming"><a className=' overflow-hidden  hover:text-[#cccccca5] text-4xl font-light  m-auto items-center justify-evenly  tracking-wide"'>click here to see more events ↗</a></Link>
