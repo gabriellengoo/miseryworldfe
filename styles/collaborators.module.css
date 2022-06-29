@@ -138,8 +138,8 @@ border-radius: 5%;
     animation:  holoSparkle 5s infinite;
     animation:  holoGradient 5s infinite;
     animation:  holoCard 5s infinite;
-    border-radius: 5%;transform: skew
-    Y(50px);
+    border-radius: 5%;
+    /* transform: skewY(20px); */
     border-radius: 5%;
     /* flex: 10; */
   }
@@ -891,16 +891,16 @@ border-radius: 5%;
       transform: rotateZ(0deg) rotateX(0deg) rotateY(0deg);
     }
     5%, 8% {
-      transform: rotateZ(0deg) rotateX(6deg) rotateY(-20deg);
+      transform: rotateZ(0deg) rotateX(-4.5deg) rotateY(17deg);
     }
     13%, 16% {
-      transform: rotateZ(0deg) rotateX(-9deg) rotateY(32deg);
+      transform: rotateZ(0deg) rotateX(-4.5deg) rotateY(17deg);
     }
     35%, 38% {
-      transform: rotateZ(3deg) rotateX(12deg) rotateY(20deg);
+      transform: rotateZ(1.5deg) rotateX(6deg) rotateY(10deg);
     }
     55% {
-      transform: rotateZ(-3deg) rotateX(-12deg) rotateY(-27deg);
+      transform: rotateZ(-1.5deg) rotateX(-6deg) rotateY(-17deg);
     }
   }
   
@@ -965,3 +965,6 @@ border-radius: 5%;
   }
   
   
+  .links:hover{
+    color: black !important;
+  }

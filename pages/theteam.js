@@ -82,7 +82,7 @@ export default function MiserySite() {
    
 
           {/* /text */}
-          {/* <p className="text-left pt-10 object-center text-base z-50 font-light ">misery is a mental health community and sober rave based in london and led by and for queer, trans, intersex, black people and people of colour (qtibpoc)
+          {/* <p className="text-left pt-10 object-center text-base z-50 font-light pb-10 ">misery is a mental health community and sober rave based in london and led by and for queer, trans, intersex, black people and people of colour (qtibpoc)
            with lived experience of madness, mental health challenges, time in hospital, addiction, public service use, disability, trauma, medication and ...      
            <Link  href="#whatwedo"><a className=' hover:text-[#dbff00] font-semibold p-4 m-auto items-center justify-evenly  tracking-wide"'>read more ↗</a></Link>
            </p> */}
@@ -91,7 +91,7 @@ export default function MiserySite() {
 {/* <div className={styles.back}>
            <Link  href="./"><a className=''><img className={styles.back}  src="https://i.ibb.co/S66hH07/MISERY-SLIME-2.png"/></a></Link>
            </div>
-           <p className="pt-56 text-center object-center text-base z-50 font-light ">misery is a mental health community and sober rave based in london and led by and for queer, trans, intersex, black people and people of colour (qtibpoc)
+           <p className="pt-56 text-center object-center text-base z-50 font-light pb-10 ">misery is a mental health community and sober rave based in london and led by and for queer, trans, intersex, black people and people of colour (qtibpoc)
            with lived experience of madness, mental health challenges, time in hospital, addiction, public service use, disability, trauma, medication and ...      
            <Link  href="../../Miserysite#whatwedo"><a className=' hover:text-[#dbff00] font-semibold p-4 m-auto items-center justify-evenly  tracking-wide"'>read more ↗</a></Link>
            </p> 
@@ -120,7 +120,7 @@ export default function MiserySite() {
 		</MuiNextLink>
         </div>
         <div className=" p-5 m-auto items-center justify-evenly  tracking-wide">
-        <Link  href="./"><a className='  m-auto items-center font-light justify-evenly  tracking-wide'>© Misery 2022</a></Link>
+        <Link  href="./"><a className='  m-auto items-center font-light pb-10 justify-evenly  tracking-wide'>© Misery 2022</a></Link>
         </div>
   </div> */}
 
@@ -144,10 +144,10 @@ export default function MiserySite() {
 
 {/* <section className=" z-50  font-normal text-base pt-5  text-center  ">
       <div className=" text-center   ">
-<Link  href="../videoBlogPost/our-story"><a className=' text-xl pl-5 text-center  hover:text-[#dbff00] font-light'>(remove this part and change to drop down)our story</a></Link>
-<Link href="../../theteam"><a className=' text-xl pl-5 text-center hover:text-[#dbff00] font-light'>the team</a></Link>
-<Link href="../../collaborators"><a className=' pl-5 text-xl text-center hover:text-[#dbff00]  font-light'>collaborators</a></Link>
-<Link href="../../faq"><a className=' text-xl pl-5 text-center hover:text-[#dbff00]  font-light'>faqs </a></Link>
+<Link  href="../videoBlogPost/our-story"><a className=' text-xl pl-5 text-center  hover:text-[#dbff00] font-light pb-10'>(remove this part and change to drop down)our story</a></Link>
+<Link href="../../theteam"><a className=' text-xl pl-5 text-center hover:text-[#dbff00] font-light pb-10'>the team</a></Link>
+<Link href="../../collaborators"><a className=' pl-5 text-xl text-center hover:text-[#dbff00]  font-light pb-10'>collaborators</a></Link>
+<Link href="../../faq"><a className=' text-xl pl-5 text-center hover:text-[#dbff00]  font-light pb-10'>faqs </a></Link>
 </div>
 </section> */}
 
@@ -158,47 +158,48 @@ export default function MiserySite() {
 <div className=' flex '>
       {/* p1 */}
       <div className=' w-4/6 h-2/6  '>
-            <div className=' duration-500 p-10 hover:skew-x-6 '>
+            <div className=' duration-500 p-10  '>
                   <div className={styles.card}>
                         <div className="  hover:drop-shadow-[0_35px_35px_#ffffffd3]   duration-1000 bg-[#ffffffd3]  items-center border-[1px] rounded-[5%] rounded-[5%] z-50  border-[#efefef]">
 
                               <div className="  text-xs  ">
                                           <p className=' text-base text-center font-bold  p-5 '>aisha mirza</p>
-                                          <Link href="https://www.instagram.com/uglyinahotway/?hl=es"><a target="_blank" className=' font-bold' >
+                                          {/* <Link href="https://www.instagram.com/uglyinahotway/?hl=es"><a target="_blank" className=' font-bold' > */}
                                           {/* <img className='hover:drop-shadow-[0_35px_35px_#ffffffd3]  bg-[#ffffffd3]  w-[105%] h-5/6 absolute z-40 hover:opacity-0 ' src="https://i.ibb.co/Z6FVzYw/aisha.jpg"/> */}
                                           
                                           {/* <h6 className=' flex-none  text-xl py-8 font-black tracking-wide underline underline-offset-8 decoration-sky-500 '>aisha mirza</h6> */}
                                           {/* <img className={styles.cardone} src="https://i.ibb.co/Z6FVzYw/aisha.jpg"/> */}
                                           <div className={styles.cardone}>
                                         
-                                                <p  className=' font-light'>
+                                                <p  className=' font-light pb-10'>
                                                 <b className=' font-bold '>my pronouns:</b> they/them/anything neutral 
                                                 </p>
 
-                                                <p className=' font-light'>
+                                                <p className=' font-light pb-10'>
                                                 <b className=' font-bold'>my offerings:</b> as a writer, dj, survivor, community organizer, artist, anti-capitalist, club kid, counsellor, mad person ~ misery is the place everything i love meets. it’s the thing that has taught me the most, about friendship, self-preservation, community care, cruelty & love. thank god my journey with mental health which began overmedicated in psych wards a decade ago, has brought me here.
                                                 </p>
 
-                                                <p className=' font-light'>
+                                                <p className=' font-light pb-10'>
                                                 in 2014 i won a scholarship to study mental health & art at new york university. i went on to work as a social worker, supporting people with complex mental health needs across the city. at night, i worked at bellevue hospital as a domestic violence & sexual assault crisis counselor. in 2018, a crushing depression & no health insurance brought me back to london, where after another stint in hospital, misery was created.
                                                 </p>
 
-                                                <p className=' font-light'>
+                                                <p className=' font-light pb-10'>
                                                 these days, misery is my primary mental health offering, outside of which i choose to spend as much time as i can nourishing my other livelihoods & passions; music, writing, minding my own business, being in & around water, giggling with my wife & friends.
                                                 </p>
 
-                                                <p className=' font-light'>
+                                                <p className=' font-light pb-10'>
                                                 <b className=' font-bold'>a misery memory:</b> i’ll never forget the first party. we had no idea how misery had translated to the masses or if anyone wanted to come to a sober party at all, but when at 9pm i poked my head out the door & saw a line of shy, depressed queers… my heart burst.
                                                 </p>
 
-                                                <p className=' font-light'>
+                                                <p className=' font-light pb-10'>
                                                 <b className=' font-bold'>when i am sad this makes me feel better:</b> baths, listening to dancehall, looking at narrowboat interiors, remembering everything is temporary, chai &/or sleeping
                                                 </p>
 
-                                                <p className="hover:skew-y-6"> 
+                                                <p className=""> 
                                                 <Link href="https://www.instagram.com/uglyinahotway/?hl=es"><a target="_blank" className=' font-bold' >find me @: uglyinahotway </a></Link>
                                                 </p>
-                                           </div></a></Link>
+                                           </div>
+                                           {/* </a></Link> */}
                               </div>
                         </div>
                   </div>
@@ -208,7 +209,7 @@ export default function MiserySite() {
 {/* end*/}
       {/* p1 */}
       <div className=' w-4/6 h-2/6  '>
-      <div className=' duration-500 p-10 hover:skew-x-6 '>
+      <div className=' duration-500 p-10  '>
       <div className={styles.card}>
       <div className="  hover:drop-shadow-[0_35px_35px_#ffffffd3]   duration-1000 bg-[#ffffffd3]  items-center border-[1px] rounded-[5%] rounded-[5%]  border-[#efefef]">
 
@@ -217,20 +218,20 @@ export default function MiserySite() {
       {/* <Link href="https://www.youtube.com/watch?v=r-Nw7HbaeWY&ab_channel=MIAVEVO"><a target="_blank" className=' font-bold' >
       <img className='hover:drop-shadow-[0_35px_35px_#ffffffd3]  bg-[#ffffffd3] items-center m-auto  w-screen absolute z-0 hover:opacity-0 ' src="https://i.ibb.co/dkdhD8Q/babetheory.jpg"/></a></Link> */}
       {/* <h6 className=' flex-none  text-xl py-8 font-black tracking-wide underline underline-offset-8 decoration-sky-500 '>aisha mirza</h6> */}
-      <Link href="https://www.youtube.com/watch?v=r-Nw7HbaeWY&ab_channel=MIAVEVO"><a target="_blank" className=' font-bold' >
+      {/* <Link href="https://www.youtube.com/watch?v=r-Nw7HbaeWY&ab_channel=MIAVEVO"><a target="_blank" className=' font-bold' > */}
       <div className={styles.card2}>
-      <p  className=' font-light'>
+      <p  className=' font-light pb-10'>
       <b className=' font-bold '>my pronouns:</b> his week we’re going with we or none, or “they” if ur nasty </p>
 
-      <p className=' font-light'>
+      <p className=' font-light pb-10'>
       <b className=' font-bold'>my offerings:</b> as a mad capri-sun in recovery, i am often dreaming about a world where we are doing things differently, a place where we can play freely, be with each other, & plot & scheme safe & sustainable ways to make magic happen. currently i am trying to tap into the fountain to redistribute wealth & resources that can support cultivating & embodying resilience in our community.
       </p>
 
-      <p className=' font-light'>
+      <p className=' font-light pb-10'>
       <b className=' font-bold'>a misery memory:</b>so many memories… from going to the crisis unit to pulling it back together. misery brings me joy and hope and keeps on reminding me of how blissful and blessed life can be. when aisha called me to get involved with misery, it was like an invitation to come home. i slept in their bed one time in brooklyn during the summer of 2015 before we even really knew each other. it was the night britain decided to brexit and everything was melting but maybe that&apos;s where the seed of our miserable dreams were planted… who really knows how magic happens? 
 </p>
 
-      <p className=' font-light'>
+      <p className=' font-light pb-10'>
       <b className=' font-bold'>when i am sad this makes me feel better:</b>
       <Link href="https://cliniq.org.uk/frequently-asked-questions/"><a target="_blank" className=' font-bold' > sex </a></Link>
        and 
@@ -245,11 +246,12 @@ export default function MiserySite() {
           <Link href="https://www.wildfooduk.com/mushroom-guide/"><a target="_blank" className=' font-bold' > big world </a></Link> 
           out there…
 </p>
-<p className="hover:skew-y-6"> 
+<p className=""> 
       <Link href="https://www.youtube.com/watch?v=r-Nw7HbaeWY&ab_channel=MIAVEVO"><a target="_blank" className=' font-bold' > find me @: dancing at the front left speaker x o x o x o </a></Link>
 </p>
       
-      </div></a></Link>
+      </div>
+      {/* </a></Link> */}
       </div>
       </div>
       </div>
@@ -267,34 +269,35 @@ export default function MiserySite() {
 <div className=' flex '>
     {/* p1 */}
 <div className=' w-4/6 h-2/6  '>
-            <div className=' duration-500 p-10 hover:skew-x-6 '>
+            <div className=' duration-500 p-10  '>
             <div className={styles.card}>
             <div className="  hover:drop-shadow-[0_35px_35px_#ffffffd3]   duration-1000 bg-[#ffffffd3]  items-center border-[1px] rounded-[5%]  border-[#efefef]">
 
             <div className="  text-base  ">
             <p className=' text-base text-center font-bold  p-5 '>soha</p>
-            <Link href="https://www.instagram.com/lovely_caring_creatures/"><a target="_blank" className=' font-bold' >
+            {/* <Link href="https://www.instagram.com/lovely_caring_creatures/"><a target="_blank" className=' font-bold' > */}
             {/* <Link href="https://www.youtube.com/watch?v=r-Nw7HbaeWY&ab_channel=MIAVEVO"><a target="_blank" className=' font-bold' >
             <img className='hover:drop-shadow-[0_35px_35px_#ffffffd3]  bg-[#ffffffd3] items-center m-auto  w-screen absolute z-0 hover:opacity-0 ' src="https://i.ibb.co/dkdhD8Q/babetheory.jpg"/></a></Link> */}
             {/* <h6 className=' flex-none  text-xl py-8 font-black tracking-wide underline underline-offset-8 decoration-sky-500 '>aisha mirza</h6> */}
             <div className={styles.card3}>
-            <p  className=' font-light'>
+            <p  className=' font-light pb-10'>
             <b className=' font-bold '>my pronouns:</b> they/them </p>
 
-            <p className=' font-light'>
+            <p className=' font-light pb-10'>
             <b className=' font-bold'>my offerings:</b> a little bit of hehe and haha, a big hug if you want one, taking it slow. learning & collaborating at misery and the british trust for ornithology. talk to me about birds.</p>
 
-            <p className=' font-light'>
+            <p className=' font-light pb-10'>
             <b className=' font-bold'>a misery memory:</b> meeting one of my close friends at the christmas party. watching hannah do quick maths to figure out the water to chai ratio at deprecious. getting a noise complaint from across the road for partying too hard on zoom for misery meets.
 
       </p>
 
-      <p className="hover:skew-y-6"> 
+      <p className=""> 
             <Link href="https://www.instagram.com/lovely_caring_creatures/"><a target="_blank" className=' font-bold' >find me @: lovely_caring_creatures
       </a></Link>
       </p>
             
-            </div></a></Link>
+            </div>
+            {/* </a></Link> */}
             </div>
             </div>
             </div>
@@ -302,39 +305,40 @@ export default function MiserySite() {
       </div>
       {/* end*/}
       <div className=' w-4/6 h-2/6  '>
-            <div className=' duration-500 p-10 hover:skew-x-6 '>
+            <div className=' duration-500 p-10  '>
             <div className={styles.card}>
             <div className="  hover:drop-shadow-[0_35px_35px_#ffffffd3]   duration-1000 bg-[#ffffffd3]  items-center border-[1px] rounded-[5%]  border-[#efefef]">
 
             <div className="  text-base  ">
-            <Link href="http://www.instagram.com/leala.rain/"><a target="_blank" className=' font-bold' >
+            {/* <Link href="http://www.instagram.com/leala.rain/"><a target="_blank" className=' font-bold' > */}
 
             <p className=' text-base text-center font-bold  p-5 '>leala-rain shonaiya</p>
             {/* <Link href="https://www.youtube.com/watch?v=r-Nw7HbaeWY&ab_channel=MIAVEVO"><a target="_blank" className=' font-bold' >
             <img className='hover:drop-shadow-[0_35px_35px_#ffffffd3]  bg-[#ffffffd3] items-center m-auto  w-screen absolute z-0 hover:opacity-0 ' src="https://i.ibb.co/dkdhD8Q/babetheory.jpg"/></a></Link> */}
             {/* <h6 className=' flex-none  text-xl py-8 font-black tracking-wide underline underline-offset-8 decoration-sky-500 '>aisha mirza</h6> */}
             <div className={styles.card4}>
-            <p  className=' font-light'>
+            <p  className=' font-light pb-10'>
       <b className=' font-bold '>my pronouns:</b> she/her </p>
 
-      <p className=' font-light'>
+      <p className=' font-light pb-10'>
       <b className=' font-bold'>my offerings:</b> vibes mate. vibessss innit. it’s giving nigerian auntie at the core. i offer my shoulder for support as well as melodic musings on our monthly show for balamii radio, a song for every feeling – music will get us through.
       </p>
 
-      <p className=' font-light'>
+      <p className=' font-light pb-10'>
       <b className=' font-bold'>a misery memory:</b>walking into my first misery and bumping into my aunty! many memories of misery moments on many couches in many cities that have carried me through some serious times. aisha challenging me to learn djing in one week and then smashing it live on radio lol
 </  p>
 
-      <p className='  font-light'>
+      <p className='  font-light pb-10'>
       <b className=' font-bold'>when i am sad this makes me feel better:</b>naps / playing spider solitaire / memes in the group chat / talking to friends in different time zones / my bad ass younger siblings / raving to jungle
 
 </p>
 
-<p className="hover:skew-y-6"> 
+<p className=""> 
       <Link href="http://www.instagram.com/leala.rain/"><a target="_blank" className=' font-bold' > find me @: leala.rain </a></Link>
       </p>
             
-            </div></a></Link>
+            </div>
+            {/* </a></Link> */}
             </div>
             </div>
             </div>
@@ -384,7 +388,7 @@ export default function MiserySite() {
 {/* <div className={styles.main}>
         <section className=' pt-36 w-4/6  z-50 text-4xl font-normal text-center items-center m-auto  justify-center pb-5 px-8'>
         <p className=' font-bold p-3'>.｡.:*☆ ㆜hƐ ㆜Ɛ𝓐m.｡.:*☆</p>
- <p className=' font-light text-3xl'> Get to know the team behind misery :) </p>
+ <p className=' font-light pb-10 text-3xl'> Get to know the team behind misery :) </p>
         </section> 
 </div> */}
 

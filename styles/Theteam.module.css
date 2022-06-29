@@ -461,19 +461,20 @@ cursor:  url("https://studio-push.com/public/img/cursor-red.svg") 30 11, auto;
 
 @keyframes holoCard {
   0%, 100% {
+
     transform: rotateZ(0deg) rotateX(0deg) rotateY(0deg);
   }
   5%, 8% {
-    transform: rotateZ(0deg) rotateX(6deg) rotateY(-20deg);
+    transform: rotateZ(0deg) rotateX(-4.5deg) rotateY(17deg);
   }
   13%, 16% {
-    transform: rotateZ(0deg) rotateX(-9deg) rotateY(32deg);
+    transform: rotateZ(0deg) rotateX(-4.5deg) rotateY(17deg);
   }
   35%, 38% {
-    transform: rotateZ(3deg) rotateX(12deg) rotateY(20deg);
+    transform: rotateZ(1.5deg) rotateX(6deg) rotateY(10deg);
   }
   55% {
-    transform: rotateZ(-3deg) rotateX(-12deg) rotateY(-27deg);
+    transform: rotateZ(-1.5deg) rotateX(-6deg) rotateY(-17deg);
   }
 }
 

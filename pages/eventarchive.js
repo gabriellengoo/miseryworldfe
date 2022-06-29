@@ -152,8 +152,8 @@ export default function Home({ posts }) {
 <div className={styles.wrapper}>
         <p className={styles.crytext2}> archive </p> 
         <div className='w-9/12 flex'>
-        <Link  href="./eventsupcoming"><a className=" w-1/6  float-left italic text-left font-base text-[#e5e5e5] justify-center text-3xl pb-10 no-underline  ">events</a></Link>
-        <Link href="./"><a className="  w-1/6 float-right text-[#1b1b1b] hover:text-[#e5e5e5]  text-3xl ">archive</a></Link>
+        <Link  href="./eventsupcoming"><a className=" w-1/6  float-left italic text-left font-base text-[#1b1b1b]  justify-center text-3xl pb-10 no-underline  ">events</a></Link>
+        <Link href="./"><a className="  w-1/6 float-right text-[#e5e5e5] hover:text-[#1b1b1b]  text-3xl ">archive</a></Link>
          </div>
 
         <div className=' container grid grid-cols-3 gap-1 mx-auto '>
