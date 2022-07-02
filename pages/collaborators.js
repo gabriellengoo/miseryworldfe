@@ -1126,14 +1126,14 @@ export default function MiserySite() {
 </p>
 
       <p className=' font-light pb-10 '>
-      <b className=' font-bold'>a misery memory:</b>a big misery memory for me is my workshop-gathering 'well de memory came 💖 💖 💖 at How To Survive The End Of The World' event at Artsadmin. Was such an important sacred space, especially after and through all these lockdowns.
+      <b className=' font-bold'>a misery memory:</b>a big misery memory for me is my workshop-gathering &apos;well de memory came 💖 💖 💖 at How To Survive The End Of The World&apos; event at Artsadmin. Was such an important sacred space, especially after and through all these lockdowns.
 
  
 
 </  p>
 
       <p className='  font-light pb-10 '>
-      <b className=' font-bold'>when i am sad this makes me feel better:</b> baths with the window open looking up to the moon's beauty, being held closely by loved ones, and bare jokes memes
+      <b className=' font-bold'>when i am sad this makes me feel better:</b> baths with the window open looking up to the moon&apos;s beauty, being held closely by loved ones, and bare jokes memes
 
 </p>
 
