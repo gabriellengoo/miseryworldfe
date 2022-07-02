@@ -1026,7 +1026,7 @@ export default function MiserySite() {
 
       <p className=' font-light pb-10 '>
       <b className=' font-bold'>my offerings:</b> herbalism as community</p>
-
+ 
       <p className=' font-light pb-10 '>
       <b className=' font-bold'>a misery memory:</b>first in the pandemic! Sharing herbal medicine knowledge for emotional health with a massive online crowd of Misery family that amazed me with the connections and wisdom and energy living in the bonds and the spread around the earth that you all represented
 
